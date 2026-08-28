@@ -3,44 +3,52 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Kalshi desk live</title>
+<title>Kalshi desk · idx-0 weather</title>
 <link rel="stylesheet" href="board.css" />
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
 <body>
+<div class="scanlines"></div>
 <header>
-  <div class="pulse"></div>
-  <div class="brand">Kalshi desk · <span>idx-0 weather</span></div>
+  <div class="left">
+    <i class="pulse"></i>
+    <strong>KALSHI DESK</strong>
+    <span class="dim">IDX-0 WEATHER</span>
+    <span class="pill" id="modePill">LIVE</span>
+  </div>
   <div class="metrics">
-    <div class="m"><label>Cash</label><b id="cash">-</b></div>
-    <div class="m up"><label>All-in mid</label><b id="allin">-</b></div>
-    <div class="m"><label>All-in bid</label><b id="allinBid">-</b></div>
-    <div class="m" id="pnlMetric"><label>Trading P/L</label><b id="tradePnl">-</b></div>
-    <div class="m"><label>As of</label><b id="asof">-</b></div>
+    <div><label>CASH</label><b id="cash">—</b></div>
+    <div><label>ALL-IN</label><b id="allin" class="up">—</b></div>
+    <div><label>BID</label><b id="allinBid">—</b></div>
+    <div><label>P/L</label><b id="tradePnl">—</b></div>
+    <div><label>AS OF</label><b id="asof">—</b></div>
   </div>
-  <div class="clock" id="clock"></div>
+  <div id="clock" class="clock"></div>
 </header>
-
-<div class="totals" id="totals"></div>
-
-<div class="grid">
-  <div class="panel" id="chartWrap">
-    <div class="chart-head">
-      <h2>Growth · cash vs all-in</h2>
-      <div class="legend-note" id="growthNote"></div>
+<div class="ticker"><div class="ticker-track" id="ticker"></div></div>
+<section class="floor">
+  <div class="stations" id="stations"></div>
+  <div class="hub">
+    <div class="orb" id="orb"><span class="eye l"></span><span class="eye r"></span></div>
+    <div class="route" id="route">ROUTING · DESK</div>
+    <div class="hub-title">CHIEF OF WEATHER</div>
+    <canvas id="miniSpark"></canvas>
+    <div class="hub-stats" id="hubStats"></div>
+  </div>
+  <aside class="rail">
+    <div class="panel">
+      <h2>GROWTH</h2>
+      <canvas id="pnl"></canvas>
     </div>
-    <canvas id="pnl"></canvas>
-    <div class="note">Thursday jump is the deposit, not trading P/L. Friday lift is HOU NOLA DC printing. Trading P/L strips known adds from all-in.</div>
-  </div>
-  <div class="panel" id="tape">
-    <h2>Realtime tape</h2>
-    <div id="tape-list"></div>
-  </div>
-  <div class="cols">
-    <div class="panel"><h2>Book</h2><table id="book"></table></div>
-    <div class="panel"><h2>Seats</h2><div class="seats" id="seats"></div></div>
-  </div>
-</div>
+    <div class="panel tape-panel">
+      <h2>TAPE</h2>
+      <div id="tape-list"></div>
+    </div>
+  </aside>
+</section>
+<div class="walk" id="walk"></div>
+<div class="totals" id="totals"></div>
+<div class="fx" id="fx"></div>
 <script src="board.js"></script>
 </body>
 </html>
