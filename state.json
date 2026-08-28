@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-28T10:52:00-04:00",
-  "asOfLabel": "Fri 10:52am ET",
+  "asOf": "2026-08-28T10:57:00-04:00",
+  "asOfLabel": "Fri 10:57am ET",
   "cash": 2147.5,
   "allInMid": 2226.98,
   "allInBid": 2225.88,
@@ -14,7 +14,7 @@
       "bin": "97-98",
       "side": "100 Yes @40c rest",
       "status": "UNFILLED",
-      "note": "Book 43/45 at 10:00. KSAT 82F (Printer 9:56), peak 97@4pm CDT. 3c through, do not lift."
+      "note": "Order 01a0486a still open. Book 43/45 at 10:00. KSAT 82F (Printer 10:50), peak 97@4pm CDT. 3c through, do not lift."
     }
   ],
   "printed": [
@@ -142,6 +142,12 @@
   ],
   "tape": [
     {
+      "et": "Fri 10:50am",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "SATX all-live. KSAT 1351Z 82F vs 97-98. No kill. Rest still occupied."
+    },
+    {
       "et": "Fri 10:26am",
       "who": "Scout",
       "kind": "HOLD",
@@ -250,7 +256,7 @@
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "KSAT 82 vs 97-98 HOLD"
+      "state": "KSAT 82 vs 97-98 HOLD (10:50)"
     },
     {
       "name": "Macro",
