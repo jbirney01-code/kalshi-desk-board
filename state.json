@@ -1,20 +1,20 @@
 {
-  "asOf": "2026-08-28T11:18:00-04:00",
-  "asOfLabel": "Fri 11:18am ET",
-  "cash": 2147.5,
-  "allInMid": 2226.98,
-  "allInBid": 2225.88,
-  "weatherMarked": 0.0,
-  "otherMarked": 79.48,
+  "asOf": "2026-08-28T11:24:00-04:00",
+  "asOfLabel": "Fri 11:24am ET",
+  "cash": 2081.0,
+  "allInMid": 2254.0,
+  "allInBid": 2252.0,
+  "weatherMarked": 40.0,
+  "otherMarked": 133.0,
   "scoreboard": "$500+ now, thousands next week",
   "live": [
     {
       "ticker": "KXHIGHTSATX-26AUG28-B97.5",
       "city": "SATX",
       "bin": "97-98",
-      "side": "100 Yes @40c rest",
-      "status": "UNFILLED",
-      "note": "Order 01a0486a still open. KSAT 84F (Printer 11:08), peak 97@4pm CDT. 3c through at 10:00 book, do not lift."
+      "side": "100 Yes @40c filled",
+      "status": "HOLD",
+      "note": "Filled @40c (Macro 11:19). KSAT 84F (Printer 11:18), peak 97@4pm CDT. Live 39/40. No second SATX."
     }
   ],
   "printed": [
@@ -138,9 +138,27 @@
       "cash": 2147.5,
       "allIn": 2226.98,
       "note": "BTC 53c; prints in cash; SATX unfilled"
+    },
+    {
+      "t": "Fri 11:19am",
+      "cash": 2081.0,
+      "allIn": 2254.0,
+      "note": "SATX 100 filled @40c"
     }
   ],
   "tape": [
+    {
+      "et": "Fri 11:19am",
+      "who": "Macro",
+      "kind": "FILL",
+      "text": "SATX 100 Yes filled @40c. Cash $2,081 / weather $40 / other $133 / all-in $2,254 mid $2,252 bid. Sep Fed 47c after Warsh."
+    },
+    {
+      "et": "Fri 11:18am",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "SATX all-live. KSAT 1451Z 84F vs 97-98. No kill. Occupied."
+    },
     {
       "et": "Fri 11:13am",
       "who": "Scout",
@@ -263,17 +281,17 @@
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "SATX rest 100@40c unfilled"
+      "state": "SATX 100 Yes filled @40c HOLD"
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "KSAT 84 vs 97-98 HOLD (11:08)"
+      "state": "KSAT 84 vs 97-98 HOLD (11:18)"
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $2147.50 / all-in $2226.98 (10:00)"
+      "state": "cash $2081 / all-in $2254 (SATX fill)"
     }
   ]
 }
