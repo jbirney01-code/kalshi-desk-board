@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Kalshi desk live</title>
+<link rel="stylesheet" href="board.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header>
+<div class="pulse"></div>
+<div class="brand">Kalshi desk · <span>idx-0 weather</span></div>
+<div class="metrics">
+<div class="m"><label>Cash</label><b id="cash">-</b></div>
+<div class="m up"><label>All-in mid</label><b id="allin">-</b></div>
+<div class="m"><label>All-in bid</label><b id="allinBid">-</b></div>
+<div class="m"><label>As of</label><b id="asof">-</b></div>
+</div>
+<div class="clock" id="clock"></div>
+</header>
+<div class="grid">
+<div class="panel" id="chartWrap">
+<h2>Account cash and all-in (real snapshots)</h2>
+<canvas id="pnl"></canvas>
+<div class="note">Thursday jump is the deposit, not trading P and L. Friday lift is HOU NOLA DC printing.</div>
+</div>
+<div class="panel" id="tape">
+<h2>Realtime tape</h2>
+<div id="tape-list"></div>
+</div>
+<div class="cols">
+<div class="panel"><h2>Book</h2><table id="book"></table></div>
+<div class="panel"><h2>Seats</h2><div class="seats" id="seats"></div></div>
+</div>
+</div>
+<script src="board.js"></script>
+</body>
+</html>
