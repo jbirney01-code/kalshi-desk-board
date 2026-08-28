@@ -53,14 +53,14 @@ function draw(s){
   document.getElementById("totals").innerHTML = [
     tot("Start all-in", money2(startAllIn), first.t || "first snap"),
     tot("Capital added", money2(adds), "excluded from P/L"),
-    tot("Trading P/L", (tradePnl>=0?"+":"") + money2(tradePnl), "all-in − start − adds"),
+    tot("Trading P/L", (tradePnl>=0?"+":"") + money2(tradePnl), "all-in \u2212 start \u2212 adds"),
     tot("Printed", money2(printedCost), printCount + " cities"),
     tot("Dead premium", money2(deadCost), deadCount + " cities"),
     tot("Live rests", String(liveCount), "cash " + money2(s.cash))
   ].join("");
 
   document.getElementById("growthNote").textContent =
-    "All-in " + money2(s.allInMid) + " · cash " + money2(s.cash) + " · " + (s.scoreboard || "");
+    "All-in " + money2(s.allInMid) + " \u00b7 cash " + money2(s.cash) + " \u00b7 " + (s.scoreboard || "");
 
   document.getElementById("seats").innerHTML = (s.seats || []).map(function(x){
     return "<div class=seat><strong>"+x.name+"</strong><em>"+x.role+"</em><div class=st>"+x.state+"</div></div>";
