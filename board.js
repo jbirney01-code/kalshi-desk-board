@@ -179,10 +179,9 @@ function draw(s) {
   loop.forEach(function (item) { ticker.appendChild(el("span", item[0], item[1])); });
 
   var labels = (s.series || []).map(function (x) { return x.t; });
-  var cash = (s.series || []).map(function (x) { return x.cash; });
-  var allIn = (s.series || []).map(function (x) { return x.allIn; });
   var run = addsThrough(s.series);
   var growth = (s.series || []).map(function (x, i) { return Number(x.allIn) - startAllIn - run[i]; });
+  var zero = labels.map(function () { return 0; });
   if (window.Chart) {
     var ctx = document.getElementById("pnl");
     if (chart) chart.destroy();
@@ -191,17 +190,67 @@ function draw(s) {
       data: {
         labels: labels,
         datasets: [
-          { label: "All-in", data: allIn, borderColor: "#3dffa6", tension: 0.32, pointRadius: 0, borderWidth: 1.7, yAxisID: "y" },
-          { label: "Cash", data: cash, borderColor: "#5ce1ff", tension: 0.32, pointRadius: 0, borderWidth: 1.5, yAxisID: "y" },
-          { label: "Trade P/L", data: growth, borderColor: "#ffc14a", borderDash: [4, 3], tension: 0.32, pointRadius: 0, borderWidth: 1.4, yAxisID: "y1" }
+          {
+            label: "Zero",
+            data: zero,
+            borderColor: "rgba(232,246,255,0.35)",
+            borderDash: [4, 4],
+            pointRadius: 0,
+            borderWidth: 1,
+            tension: 0
+          },
+          {
+            label: "Trading P/L",
+            data: growth,
+            borderColor: "#ffc14a",
+            backgroundColor: "rgba(255,193,74,0.12)",
+            fill: false,
+            tension: 0.32,
+            pointRadius: 3,
+            pointBackgroundColor: "#ffc14a",
+            borderWidth: 2
+          }
         ]
       },
       options: {
         responsive: true,
         maintainAspectRatio: false,
         animation: false,
-        plugins: { legend: { display: false } },
-        scales: { x: { display: false }, y: { display: false }, y1: { display: false, position: "right" } }
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: function (item) {
+                if (item.dataset.label === "Zero") return "0 line";
+                var n = Number(item.raw);
+                return "Trading P/L  " + (n > 0 ? "+" : "") + usd(n);
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            ticks: { color: "#8aa0b8", font: { size: 10 }, maxRotation: 40, minRotation: 0, autoSkip: false },
+            grid: { display: false },
+            border: { color: "#1c2a55" },
+            title: { display: true, text: "Time", color: "#4d6080", font: { size: 10 } }
+          },
+          y: {
+            ticks: {
+              color: "#8aa0b8",
+              font: { size: 10 },
+              callback: function (v) {
+                var n = Number(v);
+                return (n < 0 ? "-" : "") + "$" + Math.abs(n).toLocaleString("en-US", { maximumFractionDigits: 0 });
+              }
+            },
+            grid: { color: "rgba(92,225,255,0.10)" },
+            border: { color: "#1c2a55" },
+            title: { display: true, text: "P/L $", color: "#4d6080", font: { size: 10 } },
+            suggestedMin: Math.min.apply(null, [0].concat(growth)),
+            suggestedMax: Math.max.apply(null, [0].concat(growth))
+          }
+        }
       }
     });
   }
