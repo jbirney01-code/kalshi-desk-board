@@ -4,18 +4,73 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Kalshi desk · idx-0 weather</title>
-<link rel="stylesheet" href="board.css" />
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --bg:#07071a; --panel:#121433; --line:#3a3a6a; --text:#eef3ff; --muted:#9aa6d4;
+  --green:#3dffa6; --pink:#ff5dcc; --cyan:#5ce1ff; --amber:#ffc14a; --red:#ff5d6c;
+}
+* { box-sizing:border-box; }
+html, body { margin:0; background:#07071a; color:var(--text); font:13px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+header { display:flex; flex-wrap:wrap; align-items:center; gap:14px; padding:12px 16px; background:#0c0c24; border-bottom:1px solid var(--line); }
+.left { display:flex; align-items:center; gap:8px; letter-spacing:.12em; font-weight:700; }
+.pulse { width:8px; height:8px; border-radius:50%; background:var(--green); box-shadow:0 0 10px var(--green); }
+.pill { border:1px solid var(--green); color:var(--green); border-radius:99px; padding:1px 8px; font-size:10px; }
+.dim { color:var(--muted); font-weight:500; }
+.metrics { display:flex; flex-wrap:wrap; gap:16px; flex:1; }
+.metrics div { min-width:90px; }
+.metrics label { display:block; font-size:9px; color:var(--muted); letter-spacing:.12em; }
+.metrics b { font-size:18px; }
+.up { color:var(--green); } .down { color:var(--red); }
+.clock { margin-left:auto; color:var(--muted); }
+.ticker { overflow:hidden; white-space:nowrap; background:#0a0a20; border-bottom:1px solid var(--line); padding:7px 0; color:var(--cyan); }
+.ticker-track { display:inline-block; padding-left:40px; animation:marquee 32s linear infinite; }
+@keyframes marquee { to { transform:translateX(-50%); } }
+.floor { display:grid; grid-template-columns:minmax(280px,1.2fr) minmax(220px,.7fr) minmax(260px,.9fr); gap:12px; padding:12px; }
+@media (max-width:1100px){ .floor { grid-template-columns:1fr; } }
+.stations { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.station { background:linear-gradient(#171744,#10102c); border:1px solid var(--line); border-radius:12px; padding:10px; min-height:110px; position:relative; }
+.station h3 { margin:0; color:var(--cyan); letter-spacing:.14em; font-size:12px; }
+.station .role { color:var(--muted); font-size:10px; }
+.station .state { color:var(--green); margin-top:6px; }
+.px { position:absolute; right:12px; bottom:10px; width:16px; }
+.px .h { width:10px; height:8px; margin:0 auto; background:#f3d2b3; }
+.px .b { width:14px; height:10px; margin:2px auto 0; }
+.px .legs { display:flex; gap:3px; justify-content:center; }
+.px .legs i { display:block; width:4px; height:7px; background:#2c2c4a; }
+.px.c0 .b{background:#5ce1ff} .px.c1 .b{background:#3dffa6} .px.c2 .b{background:#ffc14a}
+.px.c3 .b{background:#6ea8ff} .px.c4 .b{background:#ff5dcc} .px.c5 .b{background:#c4b5fd}
+.hub { background:linear-gradient(#16164a,#0c0c28); border:1px solid #4a4a88; border-radius:14px; padding:16px; text-align:center; }
+.orb { width:84px; height:84px; margin:0 auto; border-radius:50%; background:radial-gradient(circle at 35% 30%,#fff,#cfd3e6 50%,#888); box-shadow:0 0 28px rgba(92,225,255,.35); position:relative; animation:float 3s ease-in-out infinite; }
+.orb .eye { position:absolute; top:36px; width:9px; height:15px; background:#111; border-radius:5px; }
+.orb .eye.l { left:24px; } .orb .eye.r { right:24px; }
+@keyframes float { 50% { transform:translateY(-6px); } }
+.route { display:inline-block; margin-top:12px; background:#163526; color:var(--green); padding:4px 10px; border-radius:6px; letter-spacing:.1em; }
+.hub-title { margin-top:8px; color:#aab4ff; letter-spacing:.18em; font-size:11px; }
+.hub-stats { margin-top:10px; color:var(--muted); }
+.rail { display:flex; flex-direction:column; gap:10px; }
+.panel { background:#121433; border:1px solid var(--line); border-radius:12px; padding:10px 12px; }
+.panel h2 { margin:0 0 8px; font-size:11px; color:var(--muted); letter-spacing:.14em; }
+#pnl { width:100%; height:180px; display:block; }
+#tape-list { max-height:320px; overflow:auto; display:flex; flex-direction:column; gap:6px; }
+.ev { border-left:3px solid var(--line); padding:6px 8px; background:#0e0e2a; }
+.ev.PRINT,.ev.CLEAR,.ev.PASS { border-color:var(--green); }
+.ev.KILL,.ev.NO { border-color:var(--red); }
+.ev.FLAG,.ev.REST,.ev.HOLD { border-color:var(--amber); }
+.ev .meta { color:var(--muted); font-size:10px; display:flex; gap:8px; }
+.totals { display:grid; grid-template-columns:repeat(6,minmax(120px,1fr)); gap:8px; padding:0 12px 16px; }
+@media (max-width:900px){ .totals { grid-template-columns:1fr 1fr; } .stations { grid-template-columns:1fr; } }
+.tot { background:#121433; border:1px solid var(--line); border-radius:10px; padding:8px 10px; }
+.tot label { display:block; font-size:9px; color:var(--muted); letter-spacing:.12em; }
+.tot b { font-size:15px; }
+.tot .sub { color:var(--muted); font-size:10px; }
+.confetti { position:fixed; width:8px; height:8px; z-index:20; animation:fall 1.1s linear forwards; }
+@keyframes fall { to { transform:translateY(70vh) rotate(200deg); opacity:0; } }
+</style>
 </head>
 <body>
-<div class="scanlines"></div>
 <header>
-  <div class="left">
-    <i class="pulse"></i>
-    <strong>KALSHI DESK</strong>
-    <span class="dim">IDX-0 WEATHER</span>
-    <span class="pill" id="modePill">LIVE</span>
-  </div>
+  <div class="left"><i class="pulse"></i> KALSHI DESK <span class="dim">IDX-0 WEATHER</span> <span class="pill">LIVE</span></div>
   <div class="metrics">
     <div><label>CASH</label><b id="cash">—</b></div>
     <div><label>ALL-IN</label><b id="allin" class="up">—</b></div>
@@ -23,32 +78,132 @@
     <div><label>P/L</label><b id="tradePnl">—</b></div>
     <div><label>AS OF</label><b id="asof">—</b></div>
   </div>
-  <div id="clock" class="clock"></div>
+  <div class="clock" id="clock"></div>
 </header>
-<div class="ticker"><div class="ticker-track" id="ticker"></div></div>
+<div class="ticker"><div class="ticker-track" id="ticker">loading desk…</div></div>
 <section class="floor">
   <div class="stations" id="stations"></div>
   <div class="hub">
-    <div class="orb" id="orb"><span class="eye l"></span><span class="eye r"></span></div>
+    <div class="orb"><span class="eye l"></span><span class="eye r"></span></div>
     <div class="route" id="route">ROUTING · DESK</div>
     <div class="hub-title">CHIEF OF WEATHER</div>
-    <canvas id="miniSpark"></canvas>
     <div class="hub-stats" id="hubStats"></div>
   </div>
   <aside class="rail">
-    <div class="panel">
-      <h2>GROWTH</h2>
-      <canvas id="pnl"></canvas>
-    </div>
-    <div class="panel tape-panel">
-      <h2>TAPE</h2>
-      <div id="tape-list"></div>
-    </div>
+    <div class="panel"><h2>GROWTH</h2><canvas id="pnl"></canvas></div>
+    <div class="panel"><h2>TAPE</h2><div id="tape-list"></div></div>
   </aside>
 </section>
-<div class="walk" id="walk"></div>
 <div class="totals" id="totals"></div>
-<div class="fx" id="fx"></div>
-<script src="board.js"></script>
+<div id="fx"></div>
+<script>
+function money2(n){
+  if (n == null || isNaN(n)) return "\u2014";
+  var s = n < 0 ? "-" : "";
+  return s + "$" + Math.abs(Number(n)).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+}
+function tickClock(){
+  document.getElementById("clock").textContent = new Date().toLocaleString("en-US",{timeZone:"America/New_York",weekday:"short",hour:"numeric",minute:"2-digit",second:"2-digit",hour12:true}) + " ET";
+}
+setInterval(tickClock,1000); tickClock();
+function sum(arr,key){ return (arr||[]).reduce(function(a,x){ return a+Number(x[key]||0); },0); }
+function addInNote(note){ var m=String(note||"").match(/\+\$?([\d,]+(?:\.\d+)?)\s*add/i); return m?Number(m[1].replace(/,/g,"")):0; }
+function parseAdds(series){ return (series||[]).reduce(function(a,p){ return a+addInNote(p.note); },0); }
+function addsThrough(series){ var run=0; return (series||[]).map(function(p){ run+=addInNote(p.note); return run; }); }
+function tot(l,v,s){ return "<div class=tot><label>"+l+"</label><b>"+v+"</b><div class=sub>"+s+"</div></div>"; }
+function confetti(){
+  var c=["#3dffa6","#5ce1ff","#ff5dcc","#ffc14a"];
+  for (var i=0;i<16;i++){
+    var d=document.createElement("div"); d.className="confetti";
+    d.style.left=(15+Math.random()*70)+"vw"; d.style.top="6vh"; d.style.background=c[i%c.length];
+    document.getElementById("fx").appendChild(d);
+    setTimeout(function(el){ el.remove(); },1200,d);
+  }
+}
+var chart, lastPrint=0, lastSig="";
+function draw(s){
+  try {
+    document.getElementById("cash").textContent = money2(s.cash);
+    document.getElementById("allin").textContent = money2(s.allInMid);
+    document.getElementById("allinBid").textContent = money2(s.allInBid);
+    document.getElementById("asof").textContent = s.asOfLabel || "\u2014";
+    var first = (s.series && s.series[0]) || {cash:s.cash, allIn:s.allInMid};
+    var adds = parseAdds(s.series);
+    var startAllIn = Number(first.allIn||0);
+    var tradePnl = Number(s.allInMid) - startAllIn - adds;
+    var pnlEl = document.getElementById("tradePnl");
+    pnlEl.textContent = (tradePnl>=0?"+":"") + money2(tradePnl);
+    pnlEl.className = tradePnl>=0 ? "up" : "down";
+    document.getElementById("totals").innerHTML = [
+      tot("Start all-in", money2(startAllIn), first.t||""),
+      tot("Capital added", money2(adds), "not P/L"),
+      tot("Trading P/L", (tradePnl>=0?"+":"")+money2(tradePnl), "all-in - start - adds"),
+      tot("Printed", money2(sum(s.printed,"cost")), (s.printed||[]).length+" cities"),
+      tot("Dead premium", money2(sum(s.dead,"cost")), (s.dead||[]).length+" cities"),
+      tot("Live rests", String((s.live||[]).length), money2(s.cash))
+    ].join("");
+    document.getElementById("hubStats").textContent = "all-in "+money2(s.allInMid)+" \u00b7 "+(s.scoreboard||"");
+    var seats = s.seats || [];
+    document.getElementById("stations").innerHTML = seats.map(function(seat,i){
+      return '<div class="station"><h3>'+seat.name+'</h3><div class="role">'+seat.role+'</div><div class="state">'+seat.state+'</div><div class="px c'+(i%6)+'"><div class="h"></div><div class="b"></div><div class="legs"><i></i><i></i></div></div></div>';
+    }).join("") || "<div class=station><h3>NO SEATS</h3></div>";
+    var tape = s.tape || [];
+    document.getElementById("tape-list").innerHTML = tape.map(function(e){
+      return '<div class="ev '+e.kind+'"><div class="meta"><span>'+e.et+'</span><span>'+e.who+'</span><span>'+e.kind+'</span></div><div>'+e.text+'</div></div>';
+    }).join("");
+    if (tape[0]) {
+      document.getElementById("route").textContent = "ROUTING \u00b7 " + String(tape[0].who||"DESK").toUpperCase();
+      var sig = tape[0].et+"|"+tape[0].text;
+      if (lastSig && sig!==lastSig && /PRINT|CLEAR|PASS/.test(tape[0].kind||"")) confetti();
+      lastSig = sig;
+    }
+    var bits=[];
+    (s.live||[]).forEach(function(p){ bits.push("LIVE "+p.city+" "+p.bin); });
+    (s.printed||[]).forEach(function(p){ bits.push("PRINT "+p.city+" CLI "+p.cli); });
+    (s.dead||[]).forEach(function(p){ bits.push("DEAD "+p.city); });
+    var line = bits.join("   \u00b7   ") || "desk idle";
+    document.getElementById("ticker").textContent = line + "   \u00b7   " + line;
+    var labels=(s.series||[]).map(function(x){return x.t;});
+    var cash=(s.series||[]).map(function(x){return x.cash;});
+    var allIn=(s.series||[]).map(function(x){return x.allIn;});
+    var run=addsThrough(s.series);
+    var growth=(s.series||[]).map(function(x,i){return Number(x.allIn)-startAllIn-run[i];});
+    if (window.Chart) {
+      var ctx=document.getElementById("pnl");
+      if (chart) chart.destroy();
+      chart=new Chart(ctx,{
+        type:"line",
+        data:{labels:labels,datasets:[
+          {label:"All-in",data:allIn,borderColor:"#3dffa6",backgroundColor:"rgba(61,255,166,.12)",fill:true,tension:.3,pointRadius:3,borderWidth:2},
+          {label:"Cash",data:cash,borderColor:"#5ce1ff",tension:.3,pointRadius:3,borderWidth:2},
+          {label:"Trading P/L",data:growth,borderColor:"#ffc14a",borderDash:[4,3],tension:.3,pointRadius:2,borderWidth:2,yAxisID:"y1"}
+        ]},
+        options:{responsive:true,maintainAspectRatio:false,animation:{duration:700},
+          plugins:{legend:{labels:{color:"#9aa6d4",boxWidth:8,font:{size:10}}}},
+          scales:{
+            x:{ticks:{color:"#9aa6d4"},grid:{color:"#22224a"}},
+            y:{ticks:{color:"#9aa6d4",callback:function(v){return "$"+v;}},grid:{color:"#22224a"}},
+            y1:{position:"right",ticks:{color:"#ffc14a",callback:function(v){return (v>=0?"+":"")+"$"+v;}},grid:{drawOnChartArea:false}}
+          }
+        }
+      });
+    }
+    if ((s.printed||[]).length>lastPrint && lastPrint) confetti();
+    lastPrint=(s.printed||[]).length;
+  } catch (err) {
+    document.getElementById("route").textContent = "DRAW ERROR";
+    document.getElementById("hubStats").textContent = String(err);
+    console.error(err);
+  }
+}
+function load(){
+  fetch("state.json?ts="+Date.now(),{cache:"no-store"}).then(function(r){ return r.json(); }).then(draw).catch(function(err){
+    document.getElementById("route").textContent = "NO STATE";
+    document.getElementById("hubStats").textContent = String(err);
+  });
+}
+load();
+setInterval(load,8000);
+</script>
 </body>
 </html>
