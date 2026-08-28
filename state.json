@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-28T11:41:00-04:00",
-  "asOfLabel": "Fri 11:41am ET",
+  "asOf": "2026-08-28T11:55:00-04:00",
+  "asOfLabel": "Fri 11:55am ET",
   "cash": 2081.0,
   "allInMid": 2254.0,
   "allInBid": 2252.0,
@@ -14,7 +14,7 @@
       "bin": "97-98",
       "side": "100 Yes @40c filled",
       "status": "HOLD",
-      "note": "Filled @40c (Macro 11:19). KSAT 84F (Printer 11:29), peak 97@4pm CDT. Live 39/40. No second SATX."
+      "note": "Filled @40c (Macro 11:19). KSAT 87F (Printer 11:55 1551Z), peak 97@4pm CDT. Far under 97-98. No second SATX."
     }
   ],
   "printed": [
@@ -147,6 +147,12 @@
     }
   ],
   "tape": [
+    {
+      "et": "Fri 11:55am",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "SATX filled HOLD. KSAT 1551Z T0306=87.08F rnd 87 vs 97-98. Still climbing, no kill. No second SATX."
+    },
     {
       "et": "Fri 11:29am",
       "who": "Printer",
@@ -292,7 +298,7 @@
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "KSAT 84 vs 97-98 HOLD (11:29)"
+      "state": "KSAT 87 vs 97-98 HOLD (11:55)"
     },
     {
       "name": "Macro",
