@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-08-28T09:08:00-04:00",
-  "asOfLabel": "Fri 9:08am ET",
-  "cash": 2148.97,
-  "allInMid": 2255.88,
-  "allInBid": 2222.30,
-  "weatherMarked": 106.91,
-  "otherMarked": 88.0,
+  "asOf": "2026-08-28T10:52:00-04:00",
+  "asOfLabel": "Fri 10:52am ET",
+  "cash": 2147.5,
+  "allInMid": 2226.98,
+  "allInBid": 2225.88,
+  "weatherMarked": 0.0,
+  "otherMarked": 79.48,
   "scoreboard": "$500+ now, thousands next week",
   "live": [
     {
@@ -14,51 +14,248 @@
       "bin": "97-98",
       "side": "100 Yes @40c rest",
       "status": "UNFILLED",
-      "note": "Wx PASS. KSAT ~79F, peak 97@4pm CDT. Board was 99-100."
+      "note": "Book 43/45 at 10:00. KSAT 82F (Printer 9:56), peak 97@4pm CDT. 3c through, do not lift."
     }
   ],
   "printed": [
-    {"city": "HOU", "bin": "96-97", "cli": 97, "qty": 20, "cost": 6.00},
-    {"city": "NOLA", "bin": "86-87", "cli": 87, "qty": 20, "cost": 4.40},
-    {"city": "DC", "bin": "87-88", "cli": 88, "qty": 20, "cost": 5.00}
+    {
+      "city": "HOU",
+      "bin": "96-97",
+      "cli": 97,
+      "qty": 20,
+      "cost": 6.0
+    },
+    {
+      "city": "NOLA",
+      "bin": "86-87",
+      "cli": 87,
+      "qty": 20,
+      "cost": 4.4
+    },
+    {
+      "city": "DC",
+      "bin": "87-88",
+      "cli": 88,
+      "qty": 20,
+      "cost": 5.0
+    }
   ],
   "dead": [
-    {"city": "PHX", "bin": "114-115", "cost": 7.50, "why": "CLI 113"},
-    {"city": "NYC", "bin": "80-81", "cost": 7.20, "why": "CLI corrected 77"},
-    {"city": "MIA", "bin": "91-92", "cost": 9.40, "why": "CLI 93"},
-    {"city": "OKC", "bin": "93-94", "cost": 2.80, "why": "CLI 95"},
-    {"city": "AUS", "bin": "101-102", "cost": 3.00, "why": "T-group 103"},
-    {"city": "LAX", "bin": "84-85", "cost": 1.20, "why": "T-group 88"},
-    {"city": "SEA", "bin": "70-71", "cost": 1.60, "why": "T-group 72"},
-    {"city": "ATL", "bin": "92-93", "cost": 0.58, "why": "CLI 87"},
-    {"city": "PHIL", "bin": "84-85", "cost": 2.60, "why": "below"},
-    {"city": "BOS", "bin": "80-81", "cost": 0.60, "why": "T-group 82"}
+    {
+      "city": "PHX",
+      "bin": "114-115",
+      "cost": 7.5,
+      "why": "CLI 113"
+    },
+    {
+      "city": "NYC",
+      "bin": "80-81",
+      "cost": 7.2,
+      "why": "CLI corrected 77"
+    },
+    {
+      "city": "MIA",
+      "bin": "91-92",
+      "cost": 9.4,
+      "why": "CLI 93"
+    },
+    {
+      "city": "OKC",
+      "bin": "93-94",
+      "cost": 2.8,
+      "why": "CLI 95"
+    },
+    {
+      "city": "AUS",
+      "bin": "101-102",
+      "cost": 3.0,
+      "why": "T-group 103"
+    },
+    {
+      "city": "LAX",
+      "bin": "84-85",
+      "cost": 1.2,
+      "why": "T-group 88"
+    },
+    {
+      "city": "SEA",
+      "bin": "70-71",
+      "cost": 1.6,
+      "why": "T-group 72"
+    },
+    {
+      "city": "ATL",
+      "bin": "92-93",
+      "cost": 0.58,
+      "why": "CLI 87"
+    },
+    {
+      "city": "PHIL",
+      "bin": "84-85",
+      "cost": 2.6,
+      "why": "below"
+    },
+    {
+      "city": "BOS",
+      "bin": "80-81",
+      "cost": 0.6,
+      "why": "T-group 82"
+    }
   ],
   "series": [
-    {"t": "Thu 3:14pm", "cash": 131.31, "allIn": 268.12, "note": "pre-add"},
-    {"t": "Thu 3:21pm", "cash": 2091.31, "allIn": 2230.67, "note": "+$1,960 add"},
-    {"t": "Thu 6:02pm", "cash": 2089.04, "allIn": 2236.46, "note": ""},
-    {"t": "Thu 8:31pm", "cash": 2089.44, "allIn": 2235.06, "note": "PHX dead"},
-    {"t": "Fri 8:49am", "cash": 2148.97, "allIn": 2255.88, "note": "HOU/NOLA/DC printed"}
+    {
+      "t": "Thu 3:14pm",
+      "cash": 131.31,
+      "allIn": 268.12,
+      "note": "pre-add"
+    },
+    {
+      "t": "Thu 3:21pm",
+      "cash": 2091.31,
+      "allIn": 2230.67,
+      "note": "+$1,960 add"
+    },
+    {
+      "t": "Thu 6:02pm",
+      "cash": 2089.04,
+      "allIn": 2236.46,
+      "note": ""
+    },
+    {
+      "t": "Thu 8:31pm",
+      "cash": 2089.44,
+      "allIn": 2235.06,
+      "note": "PHX dead"
+    },
+    {
+      "t": "Fri 8:49am",
+      "cash": 2148.97,
+      "allIn": 2255.88,
+      "note": "HOU/NOLA/DC printed"
+    },
+    {
+      "t": "Fri 10:00am",
+      "cash": 2147.5,
+      "allIn": 2226.98,
+      "note": "BTC 53c; prints in cash; SATX unfilled"
+    }
   ],
   "tape": [
-    {"et": "Fri 9:08am", "who": "Printer", "kind": "HOLD", "text": "SATX all-live. KSAT 79F vs 97-98. No kill."},
-    {"et": "Fri 8:49am", "who": "Trader", "kind": "REST", "text": "SATX 100 Yes @40c unfilled. Cash $2,149 / all-in $2,256. Did not lift."},
-    {"et": "Fri 8:47am", "who": "Johnny", "kind": "CLEAR", "text": "SATX Fri 97-98. Wx PASS. Grid peak 97, daily 98. Board was on 99-100."},
-    {"et": "Fri 8:47am", "who": "Wx", "kind": "PASS", "text": "KSAT T-group ~79F. Hourly peak 97@4pm CDT. Daily 98. In-bin."},
-    {"et": "Fri 8:46am", "who": "Scout", "kind": "FLAG", "text": "KXHIGHTSATX-26AUG28-B97.5 38/39. Overnight cool 100→97."},
-    {"et": "Fri 8:40am", "who": "Johnny", "kind": "NO", "text": "Kalshi perpetuals are crypto perps. Hard no. $2k stays on daily highs."},
-    {"et": "Fri 8:34am", "who": "Printer", "kind": "PRINT", "text": "Thu CLI finals: HOU 97, NOLA 87, DC 88. Those three Yes print."},
-    {"et": "Thu 8:31pm", "who": "Trader", "kind": "KILL", "text": "PHX 25 Yes dead, no bid. CLI max 113 vs 114-115. Cost $7.50."},
-    {"et": "Thu 7:44pm", "who": "Johnny", "kind": "KILL", "text": "Dallas Fri 99-100 @44c. Wx FAIL. On-peak, not a miss. No rest."},
-    {"et": "Thu 6:03pm", "who": "Jason", "kind": "NOTE", "text": "Wrong direction. Flatten dead only. Do not stuff 47c Friday on-peak."}
+    {
+      "et": "Fri 10:26am",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "Sat quoted, no FLAG. CHI 82 B82.5 28/30 ON. SFO 67 B67.5 31/32 ON. MSP 82 vs T80 is 3c. Sun 404. SATX occupied."
+    },
+    {
+      "et": "Fri 10:00am",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none. CHI/MSP/SFO still on-peak. SATX occupied. Sat/Sun were unquoted then."
+    },
+    {
+      "et": "Fri 9:56am",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "SATX all-live. KSAT 1351Z 82F vs 97-98. No kill. No second SATX."
+    },
+    {
+      "et": "Fri 10:00am",
+      "who": "Macro",
+      "kind": "LEDGER",
+      "text": "Cash $2,147.50 / all-in $2,227. Weather $0 (HOU/NOLA/DC in cash). BTC 50 @53c vs Kraken $79.0k. SATX 100@40c unfilled, book 43/45. Fed Oct 2 + Dec 1 maker fills. No Macro rest."
+    },
+    {
+      "et": "Fri 9:08am",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "SATX all-live. KSAT 79F vs 97-98. No kill."
+    },
+    {
+      "et": "Fri 8:49am",
+      "who": "Trader",
+      "kind": "REST",
+      "text": "SATX 100 Yes @40c unfilled. Cash $2,149 / all-in $2,256. Did not lift."
+    },
+    {
+      "et": "Fri 8:47am",
+      "who": "Johnny",
+      "kind": "CLEAR",
+      "text": "SATX Fri 97-98. Wx PASS. Grid peak 97, daily 98. Board was on 99-100."
+    },
+    {
+      "et": "Fri 8:47am",
+      "who": "Wx",
+      "kind": "PASS",
+      "text": "KSAT T-group ~79F. Hourly peak 97@4pm CDT. Daily 98. In-bin."
+    },
+    {
+      "et": "Fri 8:46am",
+      "who": "Scout",
+      "kind": "FLAG",
+      "text": "KXHIGHTSATX-26AUG28-B97.5 38/39. Overnight cool 100\u219297."
+    },
+    {
+      "et": "Fri 8:40am",
+      "who": "Johnny",
+      "kind": "NO",
+      "text": "Kalshi perpetuals are crypto perps. Hard no. $2k stays on daily highs."
+    },
+    {
+      "et": "Fri 8:34am",
+      "who": "Printer",
+      "kind": "PRINT",
+      "text": "Thu CLI finals: HOU 97, NOLA 87, DC 88. Those three Yes print."
+    },
+    {
+      "et": "Thu 8:31pm",
+      "who": "Trader",
+      "kind": "KILL",
+      "text": "PHX 25 Yes dead, no bid. CLI max 113 vs 114-115. Cost $7.50."
+    },
+    {
+      "et": "Thu 7:44pm",
+      "who": "Johnny",
+      "kind": "KILL",
+      "text": "Dallas Fri 99-100 @44c. Wx FAIL. On-peak, not a miss. No rest."
+    },
+    {
+      "et": "Thu 6:03pm",
+      "who": "Jason",
+      "kind": "NOTE",
+      "text": "Wrong direction. Flatten dead only. Do not stuff 47c Friday on-peak."
+    }
   ],
   "seats": [
-    {"name": "Scout", "role": "SEARCH", "state": "hunting Fri empty"},
-    {"name": "Wx", "role": "FORECAST", "state": "on deck"},
-    {"name": "Johnny", "role": "RISK", "state": "standing yes"},
-    {"name": "Trader", "role": "SNIPER", "state": "SATX rest live"},
-    {"name": "Printer", "role": "PRINT", "state": "KSAT 79 vs 97-98"},
-    {"name": "Macro", "role": "LEDGER", "state": "cash + all-in"}
+    {
+      "name": "Scout",
+      "role": "SEARCH",
+      "state": "Sat quoted, no FLAG; Fri empty on-peak"
+    },
+    {
+      "name": "Wx",
+      "role": "FORECAST",
+      "state": "on deck"
+    },
+    {
+      "name": "Johnny",
+      "role": "RISK",
+      "state": "standing yes"
+    },
+    {
+      "name": "Trader",
+      "role": "SNIPER",
+      "state": "SATX rest 100@40c unfilled"
+    },
+    {
+      "name": "Printer",
+      "role": "PRINT",
+      "state": "KSAT 82 vs 97-98 HOLD"
+    },
+    {
+      "name": "Macro",
+      "role": "LEDGER",
+      "state": "cash $2148 / all-in $2227"
+    }
   ]
 }
