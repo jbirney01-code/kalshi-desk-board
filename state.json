@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-28T10:57:00-04:00",
-  "asOfLabel": "Fri 10:57am ET",
+  "asOf": "2026-08-28T11:05:00-04:00",
+  "asOfLabel": "Fri 11:05am ET",
   "cash": 2147.5,
   "allInMid": 2226.98,
   "allInBid": 2225.88,
@@ -261,7 +261,7 @@
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $2148 / all-in $2227"
+      "state": "cash $2147.50 / all-in $2226.98 (10:00)"
     }
   ]
 }
