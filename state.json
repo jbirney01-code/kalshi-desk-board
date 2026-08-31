@@ -1,28 +1,20 @@
 {
-  "asOf": "2026-08-31T15:39:00-04:00",
-  "asOfLabel": "Mon 3:39pm ET",
-  "cash": 2081.3,
-  "allInMid": 2141.33,
-  "allInBid": 2139.74,
-  "weatherMarked": 0.0,
-  "otherMarked": 60.03,
+  "asOf": "2026-08-31T15:58:00-04:00",
+  "asOfLabel": "Mon 3:58pm ET",
+  "cash": 2069.9,
+  "allInMid": 2132.87,
+  "allInBid": 2132.87,
+  "weatherMarked": 12.0,
+  "otherMarked": 51.0,
   "scoreboard": "$500+ now, thousands next week",
   "live": [
     {
       "ticker": "KXHIGHLAX-26SEP01-B78.5",
       "city": "LAX",
       "bin": "78-79",
-      "side": "100 Yes @27c rest",
-      "status": "UNFILLED",
-      "note": "Order 01a05943-b2a0-710f-8d12-a6b39aa8c505. CLEAR 26c; joined 27/29, did not lift. Printer HOLD: Mon KLAX 78.08F is not Tue print. Watch Tue 0700Z."
-    },
-    {
-      "ticker": "KXHIGHTSFO-26SEP01-B67.5",
-      "city": "SFO",
-      "bin": "67-68",
-      "side": "200 Yes @15c rest",
-      "status": "UNFILLED",
-      "note": "Order 01a05944-e738-7cff-9015-a07058cdb3f3. CLEAR 13c; joined 15/16, did not lift. Printer HOLD: Mon KSFO 62.96F is not Tue print. Watch Tue 0700Z."
+      "side": "42 Yes filled @~27.5c",
+      "status": "FILLED",
+      "note": "Macro 3:52 trial-closeout canceled leftover 58@27c. SFO 200@15c canceled unfilled (restore in flight, not live). Printer HOLD: Mon KLAX T0256=78.08F is not Tue print. Watch Tue 0700Z. No second LAX."
     }
   ],
   "printed": [
@@ -176,9 +168,33 @@
       "cash": 2081.3,
       "allIn": 2141.33,
       "note": "SFO Tue rest @15c; LAX still rest"
+    },
+    {
+      "t": "Mon 3:52pm",
+      "cash": 2069.9,
+      "allIn": 2132.87,
+      "note": "Macro trial-closeout; LAX 42 filled; SFO rest canceled"
     }
   ],
   "tape": [
+    {
+      "et": "Mon 3:58pm",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "LAX Tue 78-79 is 42 Yes filled. No second LAX. SFO off until Trader confirms restore. Watch KLAX from Tue 0700Z. Monday T0256 does not count. No kill."
+    },
+    {
+      "et": "Mon 3:55pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none. Occupied skip LAX Tue 42 Yes filled KXHIGHLAX-26SEP01-B78.5. SFO restore in flight, do not re-flag. Do not re-flag ATL B93.5, NYC B83.5, SATX, Vegas/Denver/BOS/MIA. Monday T-groups do not count for Tuesday bins."
+    },
+    {
+      "et": "Mon 3:52pm",
+      "who": "Macro",
+      "kind": "LEDGER",
+      "text": "Trial closeout canceled leftover rests: SFO 200@15c unfilled, LAX leftover 58@27c, Fed Oct 30@48c, Fed Dec 34@52c. Cash $2,069.90. Weather: LAX 42 Yes ~27.5c (~$12). Other Fed MTM ~$51. All-in MTM $2,132.87. Open: LAX 42, Sep Fed 159 HOLD, Oct -30, Dec -34."
+    },
     {
       "et": "Mon 3:39pm",
       "who": "Trader",
@@ -382,32 +398,32 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "FLAG'd NYC; killed"
+      "state": "FLAG none; LAX occupied"
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "PASS NYC; FAIL ATL; PASS SFO+LAX"
+      "state": "PASS SFO+LAX; FAIL ATL; PASS NYC killed"
     },
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "KILL NYC (storms); SFO+LAX rest"
+      "state": "restore SFO only; no second LAX"
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "LAX 100@27c + SFO 200@15c rest"
+      "state": "LAX 42 filled; SFO restore in flight"
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "LAX+SFO HOLD (Mon METAR)"
+      "state": "LAX 42 HOLD (Mon METAR); SFO off"
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $2081 / Trader all-in $2141"
+      "state": "cash $2069.90 / all-in $2132.87"
     }
   ]
 }
