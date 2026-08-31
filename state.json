@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-31T15:26:00-04:00",
-  "asOfLabel": "Mon 3:26pm ET",
+  "asOf": "2026-08-31T15:39:00-04:00",
+  "asOfLabel": "Mon 3:39pm ET",
   "cash": 2081.3,
   "allInMid": 2141.33,
   "allInBid": 2139.74,
@@ -179,6 +179,24 @@
     }
   ],
   "tape": [
+    {
+      "et": "Mon 3:39pm",
+      "who": "Trader",
+      "kind": "KILL",
+      "text": "KILL NYC Tue B83.5: no rest, no lift, no order. Tuesday book stays LAX 100 Yes @27c and SFO 200 Yes @15c. Cash $2,081.30. All-in mid $2,141.33 / bid $2,139.74."
+    },
+    {
+      "et": "Mon 3:39pm",
+      "who": "Johnny",
+      "kind": "KILL",
+      "text": "KILL NYC Tue 83-84 KXHIGHNY-26SEP01-B83.5. Wx PASS (peak 83, daily 83, grid 84 in-bin) but RISK KILL: 70% storms, daily falls to 81, already occupying LAX 100@27c and SFO 200@15c. No rest."
+    },
+    {
+      "et": "Mon 3:38pm",
+      "who": "Scout",
+      "kind": "FLAG",
+      "text": "NYC Tue KXHIGHNY-26SEP01-B83.5 32/33 post-only 32c x100. Grid peak 84 IN 83-84, daily/NDFD 84. Live T83 82-or-below 54/55. 50% storms noted. Occupied skip LAX/SFO. Wx kicked."
+    },
     {
       "et": "Mon 3:26pm",
       "who": "Printer",
@@ -364,17 +382,17 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "FLAG'd Tue ATL/SFO/LAX"
+      "state": "FLAG'd NYC; killed"
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "FAIL ATL; PASS SFO+LAX"
+      "state": "PASS NYC; FAIL ATL; PASS SFO+LAX"
     },
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "KILL ATL; CLEAR SFO+LAX"
+      "state": "KILL NYC (storms); SFO+LAX rest"
     },
     {
       "name": "Trader",
