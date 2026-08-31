@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-31T17:46:00-04:00",
-  "asOfLabel": "Mon 5:46pm ET",
+  "asOf": "2026-08-31T18:11:00-04:00",
+  "asOfLabel": "Mon 6:11pm ET",
   "cash": 2069.9,
   "allInMid": 2129.91,
   "allInBid": 2128.29,
@@ -22,7 +22,7 @@
       "bin": "67-68",
       "side": "200 Yes @15c rest",
       "status": "REST",
-      "note": "Order 01a05966-9450-7ff3-92e8-b08be893f811 unfilled. Live 15/16, did not lift. Printer HOLD: KSFO Mon 311956Z T0178=64.04F does not count. Watch Tue 0700Z. No second SFO."
+      "note": "Order 01a05966-9450-7ff3-92e8-b08be893f811 unfilled. Live 15/16, did not lift. Printer HOLD: KSFO Mon 312056Z T0183=64.94F does not count. Watch Tue 0700Z. No second SFO."
     },
     {
       "ticker": "KXHIGHTMIN-26SEP01-B89.5",
@@ -30,7 +30,7 @@
       "bin": "89-90",
       "side": "100 Yes @25c rest",
       "status": "REST",
-      "note": "Order 01a059a4-8b98-729e-a29c-d33ccfd72521 unfilled. CLEAR was 23c; joined 25, did not take 28. Printer HOLD: KMSP 312053Z T0328=91.04F is Monday, not Tuesday print. KMSP climate day starts 0500Z (CDT midnight). No second MSP."
+      "note": "Order 01a059a4-8b98-729e-a29c-d33ccfd72521 unfilled. CLEAR was 23c; joined 25, did not take 28. Printer HOLD: KMSP 312153Z T0328=91.04F is Monday, not Tuesday print. KMSP climate day starts 0500Z (CDT midnight). No second MSP."
     }
   ],
   "printed": [
@@ -205,6 +205,18 @@
     }
   ],
   "tape": [
+    {
+      "et": "Mon 5:57pm",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "All-live no kill. Still Monday. LAX 312053Z T0250=77.00F max T0256=78.08F. SFO 312056Z T0183=64.94F. MSP 312153Z T0328=91.04F. Watch Tue 0700Z KLAX/KSFO, 0500Z KMSP. Occupied: LAX 42 filled, SFO 200@15c rest, MSP 100@25c rest."
+    },
+    {
+      "et": "Mon 5:55pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none. Occupied skip LAX Tue 42.22 Yes filled KXHIGHLAX-26SEP01-B78.5, SFO Tue 200 Yes @15c rest KXHIGHTSFO-26SEP01-B67.5 order 01a05966, MSP Tue 100 Yes @25c rest KXHIGHTMIN-26SEP01-B89.5 order 01a059a4 (book 27/28, do not chase). Do not re-flag ATL B93.5, NYC B83.5, HOU B89.5, SATX, Vegas/Denver/BOS/MIA. Monday leftover OFFs are 99/100 junk, not new tickets."
+    },
     {
       "et": "Mon 5:22pm",
       "who": "Scout",
@@ -528,7 +540,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "MSP book 27/28 no re-FLAG; LAX/SFO/MSP occupied"
+      "state": "FLAG none; occupied skip LAX/SFO/MSP"
     },
     {
       "name": "Wx",
@@ -548,7 +560,7 @@
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD LAX/SFO/MSP; Mon METARs"
+      "state": "HOLD LAX/SFO/MSP; Mon METARs; watch Tue"
     },
     {
       "name": "Macro",
