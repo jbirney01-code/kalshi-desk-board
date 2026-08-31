@@ -24,7 +24,7 @@
   function bot(ctx,cx,cy,pal,armL,armR,hdx,hdy){
     var hx=cx+hdx, hy=cy-7+hdy;
     pr(ctx,cx-3,cy+1,10,8,"#1c2030");
-    pr(ctx,cx-2,cy,8,8,pal.body);
+    pr(ctx,cx-2+0,cy,8,8,pal.body);
     pr(ctx,cx-1,cy+1,6,2,pal.visor);
     pr(ctx,hx-2,hy,8,7,pal.body);
     pr(ctx,hx-1,hy+1,6,4,"#0a0c18");
@@ -87,8 +87,29 @@
       pr(ctx,19,20+(nod>>1),1,4,pal.acc);
     }
   }
+  function dockBooth(c){
+    var card = c.closest(".station");
+    if (!card || card.querySelector(".sprite-booth")) return;
+    var art = card.querySelector(".station-art");
+    if (!art) return;
+    var body = card.querySelector(".station-body");
+    if (!body) {
+      body = document.createElement("div");
+      body.className = "station-body";
+      art.parentNode.insertBefore(body, art);
+      body.appendChild(art);
+    }
+    var booth = document.createElement("div");
+    booth.className = "sprite-booth";
+    if (c.parentNode) c.parentNode.removeChild(c);
+    booth.appendChild(c);
+    body.appendChild(booth);
+  }
   function ensureCanvas(node){
-    if (node.tagName === "CANVAS") return node;
+    if (node.tagName === "CANVAS") {
+      dockBooth(node);
+      return node;
+    }
     var c = document.createElement("canvas");
     c.className = "sprite-canvas";
     c.width = 96; c.height = 96;
@@ -96,6 +117,7 @@
     c.dataset.bot = name.charAt(0).toUpperCase() + name.slice(1);
     if (name.toLowerCase() === "wx") c.dataset.bot = "Wx";
     node.parentNode.replaceChild(c, node);
+    dockBooth(c);
     return c;
   }
   var tick = 0;
