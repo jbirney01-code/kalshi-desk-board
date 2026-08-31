@@ -1,13 +1,22 @@
 {
-  "asOf": "2026-08-31T15:07:00-04:00",
-  "asOfLabel": "Mon 3:07pm ET",
+  "asOf": "2026-08-31T15:21:00-04:00",
+  "asOfLabel": "Mon 3:21pm ET",
   "cash": 2081.3,
-  "allInMid": 2196.32,
-  "allInBid": 2194.9,
+  "allInMid": 2132.48,
+  "allInBid": 2130.9,
   "weatherMarked": 0.0,
-  "otherMarked": 115.01,
+  "otherMarked": 51.18,
   "scoreboard": "$500+ now, thousands next week",
-  "live": [],
+  "live": [
+    {
+      "ticker": "KXHIGHLAX-26SEP01-B78.5",
+      "city": "LAX",
+      "bin": "78-79",
+      "side": "100 Yes @27c rest",
+      "status": "UNFILLED",
+      "note": "Order 01a05943-b2a0-710f-8d12-a6b39aa8c505. CLEAR 26c; joined 27/29, did not lift. Printer HOLD: Mon KLAX 78.08F is not Tue print. Watch Tue 0700Z. SFO CLEAR still in flight."
+    }
+  ],
   "printed": [
     {
       "city": "HOU",
@@ -147,9 +156,45 @@
       "cash": 2081.3,
       "allIn": 2196.32,
       "note": "SATX No $40; BTC miss; weather empty; Fed leftover"
+    },
+    {
+      "t": "Mon 3:21pm",
+      "cash": 2081.3,
+      "allIn": 2132.48,
+      "note": "LAX Tue rest @27c; Trader all-in; SFO in flight"
     }
   ],
   "tape": [
+    {
+      "et": "Mon 3:21pm",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "LAX Tue 78-79 on. KLAX 311853Z T0256=78.08F is Monday, not Tuesday print. No kill. No second LAX. Watch starts local Tuesday 0700Z."
+    },
+    {
+      "et": "Mon 3:20pm",
+      "who": "Trader",
+      "kind": "REST",
+      "text": "LAX Tue 100 Yes KXHIGHLAX-26SEP01-B78.5 @27c resting (CLEAR 26c; joined 27/29, did not lift). Order 01a05943-b2a0-710f-8d12-a6b39aa8c505 unfilled. Cash $2,081.30. All-in mid $2,132.48 / bid $2,130.90. SFO CLEAR still in flight."
+    },
+    {
+      "et": "Mon 3:18pm",
+      "who": "Johnny",
+      "kind": "CLEAR",
+      "text": "CLEAR SFO Tue 67-68 200 Yes @13c KXHIGHTSFO-26SEP01-B67.5. CLEAR LAX Tue 78-79 100 Yes @26c KXHIGHLAX-26SEP01-B78.5. Both post-only idx-0. Wx PASS."
+    },
+    {
+      "et": "Mon 3:18pm",
+      "who": "Johnny",
+      "kind": "KILL",
+      "text": "ATL Tue 93-94 KILL. Wx FAIL (daily/grid 95 leftover). No rest."
+    },
+    {
+      "et": "Mon 3:17pm",
+      "who": "Scout",
+      "kind": "FLAG",
+      "text": "Tue Sep 1 empty: ATL B93.5 12/13 x200; SFO B67.5 13/17 x200; LAX B78.5 26/29 x100. SATX skipped. Wx kicked."
+    },
     {
       "et": "Mon 3:01pm",
       "who": "Macro",
@@ -293,32 +338,32 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "hunting Mon empty"
+      "state": "FLAG'd Tue ATL/SFO/LAX"
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "on deck"
+      "state": "FAIL ATL; PASS SFO+LAX"
     },
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "weather empty; powder for 100-200 miss"
+      "state": "KILL ATL; CLEAR SFO+LAX"
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "no live weather rest"
+      "state": "LAX 100@27c rest; SFO in flight"
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "occupied empty"
+      "state": "LAX HOLD (Mon METAR)"
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $2081 / all-in $2196"
+      "state": "cash $2081 / Trader all-in $2132"
     }
   ]
 }
