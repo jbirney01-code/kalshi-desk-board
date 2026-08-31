@@ -7,30 +7,25 @@
 <meta http-equiv="Pragma" content="no-cache" />
 <title>Kalshi Desk IDX-0</title>
 <style>
-.station-body {
-  display: flex;
+.sprite-booth {
   flex: 1;
   min-height: 0;
-  align-items: stretch;
-}
-.sprite-booth {
-  flex: none;
-  width: 88px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   background:
-    linear-gradient(180deg, rgba(92,225,255,.08), transparent 28%),
+    radial-gradient(circle at 50% 62%, rgba(92,225,255,.10), transparent 58%),
     #07071a;
-  box-shadow: inset 1px 0 0 rgba(92,225,255,.16);
 }
 .sprite-canvas {
-  width: 80px;
-  height: 80px;
+  width: min(148px, 72%);
+  height: auto;
+  aspect-ratio: 1;
   image-rendering: pixelated;
   pointer-events: none;
-  filter: drop-shadow(0 6px 8px rgba(0,0,0,.55));
+  filter: drop-shadow(0 10px 12px rgba(0,0,0,.55));
 }
+.station-art, .station-body, .hands { display: none !important; }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -180,32 +175,6 @@ h1 span { color: var(--mint); }
   border-radius: 18px; background: #050512;
   box-shadow: 0 0 0 1px rgba(92,225,255,.16), 0 18px 28px rgba(0,0,0,.35);
 }
-.station-art { position: relative; overflow: hidden; flex: 1; min-height: 0; }
-.station-art img {
-  width: 100%; height: 100%; object-fit: contain; object-position: center; display: block;
-  transform-origin: 50% 62%;
-}
-.station:nth-child(1) img { animation: bot-scan 3.2s ease-in-out infinite; }
-.station:nth-child(2) img { animation: bot-lean 2.8s ease-in-out infinite; }
-.station:nth-child(3) img { animation: bot-nod 2.1s ease-in-out infinite; }
-.station:nth-child(4) img { animation: bot-type 1.15s ease-in-out infinite; }
-.station:nth-child(5) img { animation: bot-print 2.6s ease-in-out infinite; }
-.station:nth-child(6) img { animation: bot-ledger 3.4s ease-in-out infinite; }
-.station-art::after {
-  content: "";
-  position: absolute; inset: 0; pointer-events: none;
-  background:
-    linear-gradient(180deg, transparent 0 42%, rgba(92,225,255,.12) 50%, transparent 58%),
-    radial-gradient(circle at 50% 40%, rgba(61,255,166,.18), transparent 34%);
-  mix-blend-mode: screen;
-  animation: visor 1.8s ease-in-out infinite;
-}
-.hands {
-  position: absolute; left: 50%; bottom: 17%;
-  width: 18%; height: 5px; margin-left: -9%;
-  border-radius: 4px;
-  pointer-events: none;
-}
 .station-meta { padding: 6px 9px 2px; background: rgba(7,7,26,.55); }
 .station-meta .row { display: flex; justify-content: space-between; gap: 6px; align-items: baseline; }
 .station-meta h2 {
@@ -227,42 +196,6 @@ h1 span { color: var(--mint); }
 .confetti {
   position: fixed; width: 8px; height: 10px; z-index: 40;
   animation: fall 1.15s linear forwards;
-}
-@keyframes bot-scan {
-  0%,100% { transform: translate(0,0) rotate(0); }
-  25% { transform: translate(2px,-3px) rotate(.6deg); }
-  50% { transform: translate(0,-5px) rotate(0); }
-  75% { transform: translate(-2px,-3px) rotate(-.6deg); }
-}
-@keyframes bot-lean {
-  0%,100% { transform: translateY(0) rotate(0); }
-  40% { transform: translateY(-3px) rotate(-1.5deg); }
-  70% { transform: translateY(-2px) rotate(1.2deg); }
-}
-@keyframes bot-nod {
-  0%,100% { transform: translateY(0) scale(1,1); }
-  30% { transform: translateY(2px) scale(1.01,.98); }
-  55% { transform: translateY(-5px) scale(.99,1.03); }
-}
-@keyframes bot-type {
-  0%,100% { transform: translate(0,0) rotate(0); }
-  25% { transform: translate(-1px,1px) rotate(-.5deg); }
-  50% { transform: translate(1px,0) rotate(.5deg); }
-  75% { transform: translate(-1px,1px) rotate(-.3deg); }
-}
-@keyframes bot-print {
-  0%,100% { transform: translateY(0) rotate(0); }
-  20% { transform: translateY(-6px) rotate(.5deg); }
-  35% { transform: translateY(1px) rotate(0); }
-  70% { transform: translateY(-2px) rotate(-.4deg); }
-}
-@keyframes bot-ledger {
-  0%,100% { transform: translateX(0) rotate(0); }
-  50% { transform: translateX(3px) rotate(.6deg); }
-}
-@keyframes visor {
-  0%,100% { opacity: .3; }
-  50% { opacity: .85; }
 }
 @keyframes led { 50% { opacity: .45; } }
 @keyframes ticker { to { transform: translateX(-50%); } }
@@ -314,7 +247,7 @@ h1 span { color: var(--mint); }
   </div>
   <footer class="hud totals" id="totals"></footer>
 </main>
-<script src="board.js?v=sidebot"></script>
-<script src="sprites.js?v=sidebot"></script>
+<script src="board.js?v=nostill"></script>
+<script src="sprites.js?v=nostill"></script>
 </body>
 </html>
