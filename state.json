@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-08-31T15:21:00-04:00",
-  "asOfLabel": "Mon 3:21pm ET",
+  "asOf": "2026-08-31T15:26:00-04:00",
+  "asOfLabel": "Mon 3:26pm ET",
   "cash": 2081.3,
-  "allInMid": 2132.48,
-  "allInBid": 2130.9,
+  "allInMid": 2141.33,
+  "allInBid": 2139.74,
   "weatherMarked": 0.0,
-  "otherMarked": 51.18,
+  "otherMarked": 60.03,
   "scoreboard": "$500+ now, thousands next week",
   "live": [
     {
@@ -14,7 +14,15 @@
       "bin": "78-79",
       "side": "100 Yes @27c rest",
       "status": "UNFILLED",
-      "note": "Order 01a05943-b2a0-710f-8d12-a6b39aa8c505. CLEAR 26c; joined 27/29, did not lift. Printer HOLD: Mon KLAX 78.08F is not Tue print. Watch Tue 0700Z. SFO CLEAR still in flight."
+      "note": "Order 01a05943-b2a0-710f-8d12-a6b39aa8c505. CLEAR 26c; joined 27/29, did not lift. Printer HOLD: Mon KLAX 78.08F is not Tue print. Watch Tue 0700Z."
+    },
+    {
+      "ticker": "KXHIGHTSFO-26SEP01-B67.5",
+      "city": "SFO",
+      "bin": "67-68",
+      "side": "200 Yes @15c rest",
+      "status": "UNFILLED",
+      "note": "Order 01a05944-e738-7cff-9015-a07058cdb3f3. CLEAR 13c; joined 15/16, did not lift. Printer HOLD: Mon KSFO 62.96F is not Tue print. Watch Tue 0700Z."
     }
   ],
   "printed": [
@@ -162,9 +170,27 @@
       "cash": 2081.3,
       "allIn": 2132.48,
       "note": "LAX Tue rest @27c; Trader all-in; SFO in flight"
+    },
+    {
+      "t": "Mon 3:24pm",
+      "cash": 2081.3,
+      "allIn": 2141.33,
+      "note": "SFO Tue rest @15c; LAX still rest"
     }
   ],
   "tape": [
+    {
+      "et": "Mon 3:26pm",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "SFO Tue 67-68 on. KSFO 311856Z T0172=62.96F is Monday, not Tuesday print. No kill. No second SFO. Watch starts local Tuesday 0700Z. LAX Tue 78-79 still on."
+    },
+    {
+      "et": "Mon 3:24pm",
+      "who": "Trader",
+      "kind": "REST",
+      "text": "SFO Tue 200 Yes KXHIGHTSFO-26SEP01-B67.5 @15c resting (CLEAR 13c; joined 15/16, did not lift). Order 01a05944-e738-7cff-9015-a07058cdb3f3 unfilled. Cash $2,081.30. All-in mid $2,141.33 / bid $2,139.74. LAX 100@27c also resting."
+    },
     {
       "et": "Mon 3:21pm",
       "who": "Printer",
@@ -353,17 +379,17 @@
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "LAX 100@27c rest; SFO in flight"
+      "state": "LAX 100@27c + SFO 200@15c rest"
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "LAX HOLD (Mon METAR)"
+      "state": "LAX+SFO HOLD (Mon METAR)"
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $2081 / Trader all-in $2132"
+      "state": "cash $2081 / Trader all-in $2141"
     }
   ]
 }
