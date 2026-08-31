@@ -1,22 +1,13 @@
 {
-  "asOf": "2026-08-28T11:55:00-04:00",
-  "asOfLabel": "Fri 11:55am ET",
-  "cash": 2081.0,
-  "allInMid": 2254.0,
+  "asOf": "2026-08-31T14:57:00-04:00",
+  "asOfLabel": "Mon 2:57pm ET",
+  "cash": 2081.3,
+  "allInMid": 2253.0,
   "allInBid": 2252.0,
-  "weatherMarked": 40.0,
-  "otherMarked": 133.0,
+  "weatherMarked": 43.5,
+  "otherMarked": 128.0,
   "scoreboard": "$500+ now, thousands next week",
-  "live": [
-    {
-      "ticker": "KXHIGHTSATX-26AUG28-B97.5",
-      "city": "SATX",
-      "bin": "97-98",
-      "side": "100 Yes @40c filled",
-      "status": "HOLD",
-      "note": "Filled @40c (Macro 11:19). KSAT 87F (Printer 11:55 1551Z), peak 97@4pm CDT. Far under 97-98. No second SATX."
-    }
-  ],
+  "live": [],
   "printed": [
     {
       "city": "HOU",
@@ -41,6 +32,12 @@
     }
   ],
   "dead": [
+    {
+      "city": "SATX",
+      "bin": "97-98",
+      "cost": 40.0,
+      "why": "CLI 100 / Kalshi No"
+    },
     {
       "city": "PHX",
       "bin": "114-115",
@@ -147,6 +144,12 @@
     }
   ],
   "tape": [
+    {
+      "et": "Mon 2:57pm",
+      "who": "Printer",
+      "kind": "KILL",
+      "text": "SATX 100 Yes KXHIGHTSATX-26AUG28-B97.5 settled No. CLISAT Fri Aug 28 MAXIMUM 100 at 3:19pm. Kalshi finalized No Sat 8:12am ET. Cost $40. Live book empty. Last Macro still Fri 11:53 cash $2,081 / all-in $2,253 (marks stale, no invented P&L)."
+    },
     {
       "et": "Fri 11:55am",
       "who": "Printer",
@@ -278,7 +281,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "Sat empty ON peak, FLAG none; Fri leftover on-peak"
+      "state": "last FLAG none Fri 11:13; no Mon scout in files"
     },
     {
       "name": "Wx",
@@ -288,22 +291,22 @@
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "powder for 100\u2013200 miss only"
+      "state": "SATX dead; powder for 100\u2013200 miss only"
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "SATX 100 Yes filled @40c HOLD"
+      "state": "no live rest; SATX settled No"
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "KSAT 87 vs 97-98 HOLD (11:55)"
+      "state": "SATX CLI 100 dead; occupied empty"
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $2081 / all-in $2254 (SATX fill)"
+      "state": "last Fri 11:53 cash $2081 / all-in $2253; Mon refresh pending"
     }
   ]
 }
