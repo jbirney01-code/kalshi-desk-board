@@ -89,21 +89,18 @@
   }
   function dockBooth(c){
     var card = c.closest(".station");
-    if (!card || card.querySelector(".sprite-booth")) return;
+    if (!card) return;
     var art = card.querySelector(".station-art");
-    if (!art) return;
+    if (art) art.remove();
     var body = card.querySelector(".station-body");
-    if (!body) {
-      body = document.createElement("div");
-      body.className = "station-body";
-      art.parentNode.insertBefore(body, art);
-      body.appendChild(art);
+    var booth = card.querySelector(".sprite-booth");
+    if (!booth) {
+      booth = document.createElement("div");
+      booth.className = "sprite-booth";
+      card.appendChild(booth);
     }
-    var booth = document.createElement("div");
-    booth.className = "sprite-booth";
-    if (c.parentNode) c.parentNode.removeChild(c);
-    booth.appendChild(c);
-    body.appendChild(booth);
+    if (c.parentNode !== booth) booth.appendChild(c);
+    if (body && !body.querySelector(".sprite-canvas")) body.remove();
   }
   function ensureCanvas(node){
     if (node.tagName === "CANVAS") {
