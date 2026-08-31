@@ -1,18 +1,18 @@
 {
-  "asOf": "2026-08-31T16:09:00-04:00",
-  "asOfLabel": "Mon 4:09pm ET",
+  "asOf": "2026-08-31T16:21:00-04:00",
+  "asOfLabel": "Mon 4:21pm ET",
   "cash": 2069.9,
-  "allInMid": 2132.87,
-  "allInBid": 2131.24,
-  "weatherMarked": 12.0,
-  "otherMarked": 51.0,
+  "allInMid": 2196.03,
+  "allInBid": 2194.4,
+  "weatherMarked": 10.77,
+  "otherMarked": 115.35,
   "scoreboard": "$500+ now, thousands next week",
   "live": [
     {
       "ticker": "KXHIGHLAX-26SEP01-B78.5",
       "city": "LAX",
       "bin": "78-79",
-      "side": "42.22 Yes filled @~27.5c",
+      "side": "42.22 Yes filled @~25.5c",
       "status": "FILLED",
       "note": "No second LAX. Printer HOLD: Mon KLAX T0250=77.00F / day max T0256=78.08F is not Tue print. Watch Tue 0700Z."
     },
@@ -182,9 +182,27 @@
       "cash": 2069.9,
       "allIn": 2132.87,
       "note": "Macro trial-closeout; LAX 42 filled; SFO rest canceled"
+    },
+    {
+      "t": "Mon 4:18pm",
+      "cash": 2069.9,
+      "allIn": 2196.03,
+      "note": "Macro LEDGER only; Fed mark restored; LAX 42 @25.5c"
     }
   ],
   "tape": [
+    {
+      "et": "Mon 4:18pm",
+      "who": "Macro",
+      "kind": "LEDGER",
+      "text": "LEDGER only, will not cancel SFO/LAX. Cash $2,069.90. Weather marked $10.77 (LAX 42 @~25.5c). Other Fed $115.35. All-in mid $2,196.03 / bid $2,194.40. SFO 200@15c unfilled order 01a05966-9450-7ff3-92e8-b08be893f811."
+    },
+    {
+      "et": "Mon 4:17pm",
+      "who": "Johnny",
+      "kind": "NOTE",
+      "text": "Keep Wx. Macro tightened to LEDGER only: never cancel, never rest, never place, never trial-closeout. Cash AND all-in every line."
+    },
     {
       "et": "Mon 4:08pm",
       "who": "Trader",
@@ -473,7 +491,7 @@
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $2070 / all-in $2133"
+      "state": "cash $2070 / all-in $2196"
     }
   ]
 }
