@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-31T16:43:00-04:00",
-  "asOfLabel": "Mon 4:43pm ET",
+  "asOf": "2026-08-31T16:58:00-04:00",
+  "asOfLabel": "Mon 4:58pm ET",
   "cash": 2069.9,
   "allInMid": 2196.03,
   "allInBid": 2194.4,
@@ -14,7 +14,7 @@
       "bin": "78-79",
       "side": "42.22 Yes filled @~25.5c",
       "status": "FILLED",
-      "note": "No second LAX. Printer HOLD: Mon KLAX T0250=77.00F / day max T0256=78.08F is not Tue print. Watch Tue 0700Z."
+      "note": "No second LAX. Printer HOLD: Mon KLAX 312053Z T0250=77.00F / day max T0256=78.08F is not Tue print. Watch Tue 0700Z."
     },
     {
       "ticker": "KXHIGHTSFO-26SEP01-B67.5",
@@ -22,7 +22,7 @@
       "bin": "67-68",
       "side": "200 Yes @15c rest",
       "status": "REST",
-      "note": "Order 01a05966-9450-7ff3-92e8-b08be893f811 unfilled. Live 15/16, did not lift. Printer HOLD: KSFO Mon T0172=62.96F does not count. Watch Tue 0700Z. No second SFO."
+      "note": "Order 01a05966-9450-7ff3-92e8-b08be893f811 unfilled. Live 15/16, did not lift. Printer HOLD: KSFO Mon 311956Z T0178=64.04F does not count. Watch Tue 0700Z. No second SFO."
     }
   ],
   "printed": [
@@ -191,6 +191,18 @@
     }
   ],
   "tape": [
+    {
+      "et": "Mon 4:56pm",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "All-live no kill. Still Monday. LAX 312053Z T0250=77.00F, Monday max T0256=78.08F. SFO 311956Z T0178=64.04F Monday. Watch both Tue 0700Z. LAX 42 filled and SFO 200@15c rest still occupied."
+    },
+    {
+      "et": "Mon 4:54pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none. Occupied skip LAX Tue 42.22 Yes filled KXHIGHLAX-26SEP01-B78.5 and SFO Tue 200 Yes @15c rest KXHIGHTSFO-26SEP01-B67.5 order 01a05966-9450-7ff3-92e8-b08be893f811. Do not re-flag ATL B93.5, NYC B83.5, HOU B89.5, SATX, Vegas/Denver/BOS/MIA. Monday T-groups do not count for Tuesday bins."
+    },
     {
       "et": "Mon 4:18pm",
       "who": "Macro",
@@ -466,7 +478,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "HOU FLAG then skip; LAX/SFO occupied"
+      "state": "FLAG none; LAX/SFO occupied skip"
     },
     {
       "name": "Wx",
@@ -486,7 +498,7 @@
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD both; watch Tue 0700Z"
+      "state": "HOLD both; Mon METARs; Tue 0700Z"
     },
     {
       "name": "Macro",
