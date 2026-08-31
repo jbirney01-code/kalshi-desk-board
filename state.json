@@ -1,9 +1,9 @@
 {
-  "asOf": "2026-08-31T15:58:00-04:00",
-  "asOfLabel": "Mon 3:58pm ET",
+  "asOf": "2026-08-31T16:02:00-04:00",
+  "asOfLabel": "Mon 4:02pm ET",
   "cash": 2069.9,
   "allInMid": 2132.87,
-  "allInBid": 2132.87,
+  "allInBid": 2131.24,
   "weatherMarked": 12.0,
   "otherMarked": 51.0,
   "scoreboard": "$500+ now, thousands next week",
@@ -12,9 +12,17 @@
       "ticker": "KXHIGHLAX-26SEP01-B78.5",
       "city": "LAX",
       "bin": "78-79",
-      "side": "42 Yes filled @~27.5c",
+      "side": "42.22 Yes filled @~27.5c",
       "status": "FILLED",
-      "note": "Macro 3:52 trial-closeout canceled leftover 58@27c. SFO 200@15c canceled unfilled (restore in flight, not live). Printer HOLD: Mon KLAX T0256=78.08F is not Tue print. Watch Tue 0700Z. No second LAX."
+      "note": "No second LAX. Printer HOLD: Mon KLAX T0250=77.00F / day max T0256=78.08F is not Tue print. Watch Tue 0700Z."
+    },
+    {
+      "ticker": "KXHIGHTSFO-26SEP01-B67.5",
+      "city": "SFO",
+      "bin": "67-68",
+      "side": "200 Yes @15c rest",
+      "status": "REST",
+      "note": "Order 01a05966-9450-7ff3-92e8-b08be893f811 unfilled. Live 15/16, did not lift. Printer HOLD: KSFO Mon T0172=62.96F does not count. Watch Tue 0700Z. No second SFO."
     }
   ],
   "printed": [
@@ -177,6 +185,24 @@
     }
   ],
   "tape": [
+    {
+      "et": "Mon 4:00pm",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "HOLD both. SFO Tue 67-68 200 Yes @15c confirmed live. KSFO Mon T0172=62.96F does not count. LAX 42 Yes still on. KLAX 311953Z T0250=77.00F / day max T0256=78.08F Monday. Watch both Tue 0700Z. No kill. No second tickets."
+    },
+    {
+      "et": "Mon 4:00pm",
+      "who": "Trader",
+      "kind": "REST",
+      "text": "Restored SFO Tue 200 Yes KXHIGHTSFO-26SEP01-B67.5 @15c post-only, order 01a05966-9450-7ff3-92e8-b08be893f811, unfilled. Live 15/16, did not lift. LAX 42.22 Yes filled untouched. Cash $2,069.90. All-in mid $2,132.87 / bid $2,131.24."
+    },
+    {
+      "et": "Mon 4:00pm",
+      "who": "Macro",
+      "kind": "NOTE",
+      "text": "Will not cancel weather rests unless Johnny KILL. LAX 42 Yes stays. No new Fed. Ledger after SFO rest."
+    },
     {
       "et": "Mon 3:58pm",
       "who": "Printer",
@@ -398,7 +424,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "FLAG none; LAX occupied"
+      "state": "FLAG none; LAX+SFO occupied"
     },
     {
       "name": "Wx",
@@ -408,17 +434,17 @@
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "restore SFO only; no second LAX"
+      "state": "SFO restored; no second LAX"
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "LAX 42 filled; SFO restore in flight"
+      "state": "LAX 42.22 filled; SFO 200@15c rest live"
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "LAX 42 HOLD (Mon METAR); SFO off"
+      "state": "HOLD both LAX+SFO (Mon METAR)"
     },
     {
       "name": "Macro",
