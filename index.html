@@ -7,17 +7,29 @@
 <meta http-equiv="Pragma" content="no-cache" />
 <title>Kalshi Desk IDX-0</title>
 <style>
+.station-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  align-items: stretch;
+}
+.sprite-booth {
+  flex: none;
+  width: 88px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background:
+    linear-gradient(180deg, rgba(92,225,255,.08), transparent 28%),
+    #07071a;
+  box-shadow: inset 1px 0 0 rgba(92,225,255,.16);
+}
 .sprite-canvas {
-  position: absolute;
-  left: 50%;
-  bottom: 2%;
-  width: 108px;
-  height: 108px;
-  margin-left: -54px;
+  width: 80px;
+  height: 80px;
   image-rendering: pixelated;
   pointer-events: none;
-  z-index: 3;
-  filter: drop-shadow(0 8px 10px rgba(0,0,0,.6));
+  filter: drop-shadow(0 6px 8px rgba(0,0,0,.55));
 }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,9 +58,7 @@ html, body {
   color: var(--fg);
   font-family: var(--mono);
 }
-body {
-  min-height: 100dvh;
-}
+body { min-height: 100dvh; }
 .desk {
   position: relative;
   isolation: isolate;
@@ -131,10 +141,7 @@ h1 span { color: var(--mint); }
   .main { grid-template-columns: minmax(0, 1.7fr) minmax(240px, 0.7fr); }
 }
 .floor { display: flex; flex-direction: column; gap: 8px; min-height: 0; }
-.hero {
-  display: block;
-  flex: none;
-}
+.hero { display: block; flex: none; }
 @media (min-width: 1024px) {
   .hero { height: var(--chart-h); }
   .hero .chart { height: 100%; }
@@ -173,10 +180,10 @@ h1 span { color: var(--mint); }
   border-radius: 18px; background: #050512;
   box-shadow: 0 0 0 1px rgba(92,225,255,.16), 0 18px 28px rgba(0,0,0,.35);
 }
-.station-art { position: relative; overflow: hidden; }
+.station-art { position: relative; overflow: hidden; flex: 1; min-height: 0; }
 .station-art img {
+  width: 100%; height: 100%; object-fit: contain; object-position: center; display: block;
   transform-origin: 50% 62%;
-  will-change: transform;
 }
 .station:nth-child(1) img { animation: bot-scan 3.2s ease-in-out infinite; }
 .station:nth-child(2) img { animation: bot-lean 2.8s ease-in-out infinite; }
@@ -193,23 +200,11 @@ h1 span { color: var(--mint); }
   mix-blend-mode: screen;
   animation: visor 1.8s ease-in-out infinite;
 }
-.station:nth-child(2) .station-art::after { animation-delay: .3s; }
-.station:nth-child(3) .station-art::after { animation-delay: .6s; }
-.station:nth-child(4) .station-art::after { animation-delay: .15s; }
-.station:nth-child(5) .station-art::after { animation-delay: .9s; }
-.station:nth-child(6) .station-art::after { animation-delay: 1.2s; }
 .hands {
   position: absolute; left: 50%; bottom: 17%;
   width: 18%; height: 5px; margin-left: -9%;
   border-radius: 4px;
   pointer-events: none;
-}
-.station:nth-child(3) .hands,
-.station:nth-child(4) .hands,
-.station:nth-child(6) .hands {
-  background: rgba(92,225,255,.4);
-  box-shadow: 0 0 12px rgba(92,225,255,.5);
-  animation: keys .28s steps(2) infinite;
 }
 .station-meta { padding: 6px 9px 2px; background: rgba(7,7,26,.55); }
 .station-meta .row { display: flex; justify-content: space-between; gap: 6px; align-items: baseline; }
@@ -218,8 +213,6 @@ h1 span { color: var(--mint); }
 }
 .station-meta .role { font-family: var(--title); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
 .station-meta p { margin: 0; color: var(--muted); font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.station-art { flex: 1; min-height: 0; }
-.station-art img { width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; }
 .tape { display: flex; flex-direction: column; min-height: 220px; overflow: hidden; }
 @media (min-width: 1024px) { .tape { min-height: 0; height: 100%; } }
 .tape h2 { margin: 0; padding: 8px 12px 0; }
@@ -271,10 +264,6 @@ h1 span { color: var(--mint); }
   0%,100% { opacity: .3; }
   50% { opacity: .85; }
 }
-@keyframes keys {
-  0% { transform: scaleX(1); opacity: .25; }
-  50% { transform: scaleX(1.18); opacity: .9; }
-}
 @keyframes led { 50% { opacity: .45; } }
 @keyframes ticker { to { transform: translateX(-50%); } }
 @keyframes fall { to { transform: translateY(70vh) rotate(220deg); opacity: 0; } }
@@ -325,7 +314,7 @@ h1 span { color: var(--mint); }
   </div>
   <footer class="hud totals" id="totals"></footer>
 </main>
-<script src="board.js?v=widepnl"></script>
-<script src="sprites.js?v=sheet2"></script>
+<script src="board.js?v=sidebot"></script>
+<script src="sprites.js?v=sidebot"></script>
 </body>
 </html>
