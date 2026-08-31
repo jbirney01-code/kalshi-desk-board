@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-31T17:07:00-04:00",
-  "asOfLabel": "Mon 5:07pm ET",
+  "asOf": "2026-08-31T17:46:00-04:00",
+  "asOfLabel": "Mon 5:46pm ET",
   "cash": 2069.9,
   "allInMid": 2129.91,
   "allInBid": 2128.29,
@@ -205,6 +205,12 @@
     }
   ],
   "tape": [
+    {
+      "et": "Mon 5:22pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "MSP Tue B89.5 book moved to 27/28 (was 23/24). Edge 6c vs live B87.5 33/34, no longer \u22658c. Weather unchanged Wx PASS peak 89 IN. Not re-FLAGging. Existing 100@25c rest order 01a059a4 left unfilled; did not chase 27, did not KILL, did not lift. LAX filled and SFO rest still occupied."
+    },
     {
       "et": "Mon 5:06pm",
       "who": "Printer",
@@ -522,7 +528,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "FLAG MSP done; LAX/SFO/MSP occupied skip"
+      "state": "MSP book 27/28 no re-FLAG; LAX/SFO/MSP occupied"
     },
     {
       "name": "Wx",
@@ -532,7 +538,7 @@
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "MSP CLEAR; LAX+SFO+MSP live"
+      "state": "MSP rest left @25c; LAX+SFO+MSP live"
     },
     {
       "name": "Trader",
