@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-08-31T17:02:00-04:00",
-  "asOfLabel": "Mon 5:02pm ET",
+  "asOf": "2026-08-31T17:07:00-04:00",
+  "asOfLabel": "Mon 5:07pm ET",
   "cash": 2069.9,
-  "allInMid": 2196.03,
-  "allInBid": 2194.4,
+  "allInMid": 2129.91,
+  "allInBid": 2128.29,
   "weatherMarked": 10.77,
-  "otherMarked": 115.35,
+  "otherMarked": 49.24,
   "scoreboard": "$500+ now, thousands next week",
   "live": [
     {
@@ -23,6 +23,14 @@
       "side": "200 Yes @15c rest",
       "status": "REST",
       "note": "Order 01a05966-9450-7ff3-92e8-b08be893f811 unfilled. Live 15/16, did not lift. Printer HOLD: KSFO Mon 311956Z T0178=64.04F does not count. Watch Tue 0700Z. No second SFO."
+    },
+    {
+      "ticker": "KXHIGHTMIN-26SEP01-B89.5",
+      "city": "MSP",
+      "bin": "89-90",
+      "side": "100 Yes @25c rest",
+      "status": "REST",
+      "note": "Order 01a059a4-8b98-729e-a29c-d33ccfd72521 unfilled. CLEAR was 23c; joined 25, did not take 28. Printer HOLD: KMSP 312053Z T0328=91.04F is Monday, not Tuesday print. KMSP climate day starts 0500Z (CDT midnight). No second MSP."
     }
   ],
   "printed": [
@@ -188,9 +196,45 @@
       "cash": 2069.9,
       "allIn": 2196.03,
       "note": "Macro LEDGER only; Fed mark restored; LAX 42 @25.5c"
+    },
+    {
+      "t": "Mon 5:06pm",
+      "cash": 2069.9,
+      "allIn": 2129.91,
+      "note": "MSP Tue rest @25c; Trader all-in; LAX+SFO still on"
     }
   ],
   "tape": [
+    {
+      "et": "Mon 5:06pm",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "MSP Tue 89-90 100 Yes @25c on. KMSP 312053Z T0328=91.04F is Monday, not Tuesday print. No kill. No second MSP. KMSP climate day starts 0500Z (CDT midnight), not 0700Z. LAX 42 filled and SFO 200@15c still on."
+    },
+    {
+      "et": "Mon 5:06pm",
+      "who": "Trader",
+      "kind": "REST",
+      "text": "MSP Tue 100 Yes KXHIGHTMIN-26SEP01-B89.5 @25c resting (CLEAR was 23c; joined 25, did not take 28). Order 01a059a4-8b98-729e-a29c-d33ccfd72521 unfilled. LAX and SFO untouched. Cash $2,069.90. All-in mid $2,129.91 / bid $2,128.29."
+    },
+    {
+      "et": "Mon 5:04pm",
+      "who": "Johnny",
+      "kind": "CLEAR",
+      "text": "CLEAR MSP Tue 89-90 100 Yes @23c KXHIGHTMIN-26SEP01-B89.5. Wx PASS (peak 89, daily/grid 90 in-bin, PoP ~0). No storms unlike NYC/HOU. Post-only idx-0."
+    },
+    {
+      "et": "Mon 5:04pm",
+      "who": "Wx",
+      "kind": "PASS",
+      "text": "MSP Tue B89.5 PASS. Peak 89@16 CDT, daily 90, NDFD 90 still IN {89,90} (not exit into B91.5). PoP ~0."
+    },
+    {
+      "et": "Mon 5:04pm",
+      "who": "Scout",
+      "kind": "FLAG",
+      "text": "MSP Tue KXHIGHTMIN-26SEP01-B89.5 23/24 post-only 23c x100. KMSP peak 89@16 CDT IN 89-90, daily 90, NDFD 90 still IN. Live B87.5 33/34. Occupied skip LAX filled and SFO rest."
+    },
     {
       "et": "Mon 4:56pm",
       "who": "Printer",
@@ -478,32 +522,32 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "FLAG none; LAX/SFO occupied skip"
+      "state": "FLAG MSP done; LAX/SFO/MSP occupied skip"
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "on deck"
+      "state": "MSP PASS; on deck"
     },
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "HOU/NYC/ATL killed; LAX+SFO only"
+      "state": "MSP CLEAR; LAX+SFO+MSP live"
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "SFO 200@15c rest; LAX 42 filled"
+      "state": "MSP 100@25c rest; SFO 200@15c; LAX 42 filled"
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD both; Mon METARs; Tue 0700Z"
+      "state": "HOLD LAX/SFO/MSP; Mon METARs"
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $2070 / all-in $2196"
+      "state": "cash $2070 / all-in $2130 (Trader 5:06)"
     }
   ]
 }
