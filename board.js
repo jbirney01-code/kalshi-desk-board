@@ -1,10 +1,10 @@
 var ART = {
-  Scout: "desk/scout.jpg?v=floor4",
-  Wx: "desk/wx.jpg?v=floor4",
-  Johnny: "desk/johnny.jpg?v=floor4",
-  Trader: "desk/trader.jpg?v=floor4",
-  Printer: "desk/printer.jpg?v=floor4",
-  Macro: "desk/macro.jpg?v=floor4"
+  Scout: "desk/scout.jpg?v=floor6",
+  Wx: "desk/wx.jpg?v=floor6",
+  Johnny: "desk/johnny.jpg?v=floor6",
+  Trader: "desk/trader.jpg?v=floor6",
+  Printer: "desk/printer.jpg?v=floor6",
+  Macro: "desk/macro.jpg?v=floor6"
 };
 var ADD_RE = /\+\$?([\d,]+(?:\.\d+)?)\s*add/i;
 var REST_RE = /(\d+)\s*Yes\s*@\s*(\d+(?:\.\d+)?)c/i;
@@ -116,11 +116,13 @@ function draw(s) {
     tot("Live rests", usd(liveRests(s.live)), "cyan")
   );
 
+  var activeWho = ((s.tape || [])[0] || {}).who || "";
   var stations = document.getElementById("stations");
   stations.replaceChildren();
   (s.seats || []).forEach(function (seat) {
     var art = ART[seat.name] || ART.Scout;
-    var card = el("article", "station");
+    var card = el("article", "station" + (seat.name === activeWho ? " working" : ""));
+    card.dataset.name = seat.name;
     var meta = el("div", "station-meta");
     var row = el("div", "row");
     row.appendChild(el("h2", "", seat.name));
@@ -134,6 +136,10 @@ function draw(s) {
     img.src = art;
     img.alt = "";
     wrap.appendChild(img);
+    wrap.appendChild(el("span", "screen"));
+    wrap.appendChild(el("span", "keys"));
+    wrap.appendChild(el("span", "visor"));
+    wrap.appendChild(el("span", "scan"));
     card.appendChild(meta);
     card.appendChild(wrap);
     stations.appendChild(card);
