@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-31T19:06:00-04:00",
-  "asOfLabel": "Mon 7:06pm ET",
+  "asOf": "2026-08-31T19:17:00-04:00",
+  "asOfLabel": "Mon 7:17pm ET",
   "cash": 2069.9,
   "allInMid": 2129.91,
   "allInBid": 2128.29,
@@ -205,6 +205,12 @@
     }
   ],
   "tape": [
+    {
+      "et": "Mon 7:12pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none. Empty still on-peak or unrestable 0/1 leftover. Same six OFF as 6:10, NWS-bins still 0/1 (CHI/HOU/DC/ATL/SEA Mon). SEA Mon METAR 76 through GRID 74, live B77.5 83/84, B75.5 11/18 exits the peak. NOLA Tue 1F 0c. PHL Tue still on NDFD 91. Occupied skip LAX/SFO/MSP. No FLAG."
+    },
     {
       "et": "Mon 6:54pm",
       "who": "Printer",
