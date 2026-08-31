@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-08-31T14:57:00-04:00",
-  "asOfLabel": "Mon 2:57pm ET",
+  "asOf": "2026-08-31T15:02:00-04:00",
+  "asOfLabel": "Mon 3:02pm ET",
   "cash": 2081.3,
-  "allInMid": 2253.0,
-  "allInBid": 2252.0,
-  "weatherMarked": 43.5,
-  "otherMarked": 128.0,
+  "allInMid": 2196.32,
+  "allInBid": 2194.9,
+  "weatherMarked": 0.0,
+  "otherMarked": 115.01,
   "scoreboard": "$500+ now, thousands next week",
   "live": [],
   "printed": [
@@ -141,9 +141,21 @@
       "cash": 2081.0,
       "allIn": 2254.0,
       "note": "SATX 100 filled @40c"
+    },
+    {
+      "t": "Mon 3:02pm",
+      "cash": 2081.3,
+      "allIn": 2196.32,
+      "note": "SATX No $40; BTC miss; weather empty; Fed leftover"
     }
   ],
   "tape": [
+    {
+      "et": "Mon 3:01pm",
+      "who": "Macro",
+      "kind": "LEDGER",
+      "text": "Cash $2,081.30. Weather $0. Other (Fed) mid $115.01 / bid $113.60. All-in mid $2,196.32 / bid $2,194.90. SATX gone. BTC Yes did not pay. Weather empty."
+    },
     {
       "et": "Mon 2:57pm",
       "who": "Printer",
@@ -281,7 +293,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "last FLAG none Fri 11:13; no Mon scout in files"
+      "state": "hunting Mon empty"
     },
     {
       "name": "Wx",
@@ -291,22 +303,22 @@
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "SATX dead; powder for 100\u2013200 miss only"
+      "state": "weather empty; powder for 100-200 miss"
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "no live rest; SATX settled No"
+      "state": "no live weather rest"
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "SATX CLI 100 dead; occupied empty"
+      "state": "occupied empty"
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "last Fri 11:53 cash $2081 / all-in $2253; Mon refresh pending"
+      "state": "cash $2081 / all-in $2196"
     }
   ]
 }
