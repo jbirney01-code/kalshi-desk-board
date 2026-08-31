@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-31T18:52:00-04:00",
-  "asOfLabel": "Mon 6:52pm ET",
+  "asOf": "2026-08-31T19:04:00-04:00",
+  "asOfLabel": "Mon 7:04pm ET",
   "cash": 2069.9,
   "allInMid": 2129.91,
   "allInBid": 2128.29,
@@ -14,7 +14,7 @@
       "bin": "78-79",
       "side": "42.22 Yes filled @~25.5c",
       "status": "FILLED",
-      "note": "No second LAX. Printer HOLD: Mon KLAX 312053Z T0250=77.00F / day max T0256=78.08F is not Tue print. Watch Tue 0700Z."
+      "note": "No second LAX. Printer HOLD: Mon KLAX T0250=77.00F / day max T0256=78.08F is not Tue print. Watch Tue 0700Z."
     },
     {
       "ticker": "KXHIGHTSFO-26SEP01-B67.5",
@@ -22,7 +22,7 @@
       "bin": "67-68",
       "side": "200 Yes @15c rest",
       "status": "REST",
-      "note": "Order 01a05966-9450-7ff3-92e8-b08be893f811 unfilled. Live 15/16, did not lift. Printer HOLD: KSFO Mon 312056Z T0183=64.94F does not count. Watch Tue 0700Z. No second SFO."
+      "note": "Order 01a05966-9450-7ff3-92e8-b08be893f811 unfilled. Live 15/16, did not lift. Printer HOLD: KSFO Mon 312156Z T0189=66.02F does not count (climbing vs Tue 67-68). Watch Tue 0700Z. No second SFO."
     },
     {
       "ticker": "KXHIGHTMIN-26SEP01-B89.5",
@@ -205,6 +205,18 @@
     }
   ],
   "tape": [
+    {
+      "et": "Mon 6:54pm",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "All-live no kill. Still Monday. LAX T0250=77.00F max T0256=78.08F. SFO 312156Z T0189=66.02F Monday (climbing vs Tue 67-68, does not count). MSP 312153Z T0328=91.04F Monday. Watch Tue 0700Z KLAX/KSFO, 0500Z KMSP. Occupied: LAX 42 filled, SFO 200@15c rest, MSP 100@25c rest."
+    },
+    {
+      "et": "Mon 6:51pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none. Empty still on-peak or unrestable 0/1 leftover. CHI Mon 90 vs live B91.5 99/100, NWS-bin B89.5 0/1. HOU Mon 95 vs T94 99/100, NWS-bin B94.5 0/1. HOU Tue 90 vs T89 67/68, NWS-bin B89.5 19/22 declined. Occupied skip LAX/SFO/MSP. No FLAG."
+    },
     {
       "et": "Mon 6:10pm",
       "who": "Scout",
@@ -566,7 +578,7 @@
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD LAX/SFO/MSP; Mon METARs; watch Tue"
+      "state": "HOLD LAX/SFO/MSP; SFO 66.02F Mon; watch Tue"
     },
     {
       "name": "Macro",
