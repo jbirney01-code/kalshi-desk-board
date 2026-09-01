@@ -1,10 +1,10 @@
 {
-  "asOf": "2026-09-01T14:15:00-04:00",
-  "asOfLabel": "Tue 2:15pm ET",
+  "asOf": "2026-09-01T14:51:00-04:00",
+  "asOfLabel": "Tue 2:51pm ET",
   "cash": 2074.60,
-  "allInMid": 2167.20,
-  "allInBid": 2161.54,
-  "weatherMarked": 43.36,
+  "allInMid": 2147.67,
+  "allInBid": 2140.79,
+  "weatherMarked": 23.83,
   "otherMarked": 49.24,
   "scoreboard": "$500+ now, thousands next week",
   "live": [
@@ -14,7 +14,7 @@
       "bin": "78-79",
       "side": "42.22 Yes filled @~25.5c",
       "status": "FILLED",
-      "note": "No second LAX. Printer HOLD: Tue since 0700Z max 1639Z/1653Z T0217=71.06F rnd 71 vs 78-79 (was 70). Heating, still ~7F below bin. Monday leftovers ignored. Bins still open."
+      "note": "No second LAX. Printer HOLD 2:24: Tue T rnd 73 vs 78-79 (was 71). Heating, still ~5F below bin. Monday leftovers ignored. Bins still open."
     },
     {
       "ticker": "KXHIGHTSFO-26SEP01-B67.5",
@@ -22,7 +22,7 @@
       "bin": "67-68",
       "side": "200 Yes filled @15c",
       "status": "FILLED",
-      "note": "FILLED @15c. Printer HOLD: Tue since 0700Z max 1638Z SPECI T0183=64.94F rnd 65 vs 67-68 (was 64), ~2F headroom (hottest). Heating, still below bin. Monday leftovers ignored. No second SFO."
+      "note": "FILLED @15c. Printer HOLD 2:24: Tue T rnd 67 vs 67-68 now IN BIN (hottest; was 65). Kill if next T-group rounds 69+. Monday leftovers ignored. No second SFO."
     },
     {
       "ticker": "KXHIGHTMIN-26SEP01-B89.5",
@@ -30,7 +30,7 @@
       "bin": "89-90",
       "side": "1 Yes filled + 99@25c rest",
       "status": "PARTIAL",
-      "note": "Order 01a059a4-8b98-729e-a29c-d33ccfd72521 partial. Printer HOLD: Tue since 0500Z max 1653Z T0294=84.92F rnd 85 vs 89-90 (was 82). Heating, still ~4F below bin. Monday leftovers ignored. No second MSP."
+      "note": "Order 01a059a4-8b98-729e-a29c-d33ccfd72521 partial. Printer HOLD 2:24: Tue T rnd 87 vs 89-90 (was 85). Heating, still ~2F below bin. Monday leftovers ignored. No second MSP."
     },
     {
       "ticker": "KXHIGHTPHX-26SEP02-B100.5",
@@ -38,7 +38,7 @@
       "bin": "100-101",
       "side": "100 Yes @26c rest",
       "status": "REST",
-      "note": "Wed Sep 2. Order 01a05d8a-3208-7b99-b33f-cb4acec300d3 unfilled (joined 26/28, did not lift). Printer: Wed not started, watch Wed 0700Z MST. Tue T-group ignored."
+      "note": "Wed Sep 2. Order 01a05d8a-3208-7b99-b33f-cb4acec300d3 unfilled (joined 26/28, did not lift). Printer: Wed not started, watch Wed 0700Z MST. Tue T-group ignored. DAL Wed never landed."
     },
     {
       "ticker": "KXHIGHTDC-26SEP02-B89.5",
@@ -57,20 +57,12 @@
       "note": "FILLED 200@8c (was rest order 01a05d8c-6870-7934-a1ee-1129db3bd113). Printer: Wed not started, watch Wed 0400Z (Tue T0278=82 ignored)."
     },
     {
-      "ticker": "KXHIGHTDAL-26SEP02-B98.5",
-      "city": "DAL",
-      "bin": "98-99",
-      "side": "100 Yes @13c CLEAR",
-      "status": "CLEAR",
-      "note": "Wed Sep 2. CLEAR 100@13c KXHIGHTDAL-26SEP02-B98.5. Wx PASS KDFW peak/daily/grid 98 IN 98-99. No Trader rest/order id yet; treat occupied. Printer: Wed not started."
-    },
-    {
       "ticker": "KXHIGHAUS-26SEP02-B98.5",
       "city": "AUS",
       "bin": "98-99",
       "side": "100 Yes @27c rest",
       "status": "REST",
-      "note": "Wed Sep 2. Order 01a05dd6-5638-7337-9352-a5df1aa84e32 unfilled (joined 27/29, did not take 29). Wx PASS: KAUS peak 98@16 CDT IN 98-99, daily/grid 99 ceiling still IN, 30% storms. No averaging down. Printer added KAUS Wed."
+      "note": "Wed Sep 2. Order 01a05dd6-5638-7337-9352-a5df1aa84e32 unfilled (joined 27/29, did not take 29). Wx PASS: KAUS peak 98@16 CDT IN 98-99, daily/grid 99 ceiling still IN, 30% storms. No averaging down. Printer added KAUS Wed. DAL Wed never landed."
     }
   ],
   "printed": [
@@ -79,70 +71,70 @@
       "bin": "96-97",
       "cli": 97,
       "qty": 20,
-      "cost": 6.0
+      "cost": 6.00
     },
     {
       "city": "NOLA",
       "bin": "86-87",
       "cli": 87,
       "qty": 20,
-      "cost": 4.4
+      "cost": 4.40
     },
     {
       "city": "DC",
       "bin": "87-88",
       "cli": 88,
       "qty": 20,
-      "cost": 5.0
+      "cost": 5.00
     }
   ],
   "dead": [
     {
       "city": "SATX",
       "bin": "97-98",
-      "cost": 40.0,
+      "cost": 40.00,
       "why": "CLI 100 / Kalshi No"
     },
     {
       "city": "PHX",
       "bin": "114-115",
-      "cost": 7.5,
+      "cost": 7.50,
       "why": "CLI 113"
     },
     {
       "city": "NYC",
       "bin": "80-81",
-      "cost": 7.2,
+      "cost": 7.20,
       "why": "CLI corrected 77"
     },
     {
       "city": "MIA",
       "bin": "91-92",
-      "cost": 9.4,
+      "cost": 9.40,
       "why": "CLI 93"
     },
     {
       "city": "OKC",
       "bin": "93-94",
-      "cost": 2.8,
+      "cost": 2.80,
       "why": "CLI 95"
     },
     {
       "city": "AUS",
       "bin": "101-102",
-      "cost": 3.0,
+      "cost": 3.00,
       "why": "T-group 103"
     },
     {
       "city": "LAX",
       "bin": "84-85",
-      "cost": 1.2,
+      "cost": 1.20,
       "why": "T-group 88"
     },
     {
       "city": "SEA",
       "bin": "70-71",
-      "cost": 1.6,
+      "cost": 1.60,
       "why": "T-group 72"
     },
     {
@@ -154,13 +146,13 @@
     {
       "city": "PHIL",
       "bin": "84-85",
-      "cost": 2.6,
+      "cost": 2.60,
       "why": "below"
     },
     {
       "city": "BOS",
       "bin": "80-81",
-      "cost": 0.6,
+      "cost": 0.60,
       "why": "T-group 82"
     }
   ],
@@ -197,61 +189,61 @@
     },
     {
       "t": "Fri 10:00am",
-      "cash": 2147.5,
+      "cash": 2147.50,
       "allIn": 2226.98,
       "note": "BTC 53c; prints in cash; SATX unfilled"
     },
     {
       "t": "Fri 11:19am",
-      "cash": 2081.0,
-      "allIn": 2254.0,
+      "cash": 2081.00,
+      "allIn": 2254.00,
       "note": "SATX 100 filled @40c"
     },
     {
       "t": "Mon 3:02pm",
-      "cash": 2081.3,
+      "cash": 2081.30,
       "allIn": 2196.32,
       "note": "SATX No $40; BTC miss; weather empty; Fed leftover"
     },
     {
       "t": "Mon 3:21pm",
-      "cash": 2081.3,
+      "cash": 2081.30,
       "allIn": 2132.48,
       "note": "LAX Tue rest @27c; Trader all-in; SFO in flight"
     },
     {
       "t": "Mon 3:24pm",
-      "cash": 2081.3,
+      "cash": 2081.30,
       "allIn": 2141.33,
       "note": "SFO Tue rest @15c; LAX still rest"
     },
     {
       "t": "Mon 3:52pm",
-      "cash": 2069.9,
+      "cash": 2069.90,
       "allIn": 2132.87,
       "note": "Macro trial-closeout; LAX 42 filled; SFO rest canceled"
     },
     {
       "t": "Mon 4:18pm",
-      "cash": 2069.9,
+      "cash": 2069.90,
       "allIn": 2196.03,
       "note": "Macro LEDGER only; Fed mark restored; LAX 42 @25.5c"
     },
     {
       "t": "Mon 5:06pm",
-      "cash": 2069.9,
+      "cash": 2069.90,
       "allIn": 2129.91,
       "note": "MSP Tue rest @25c; Trader all-in; LAX+SFO still on"
     },
     {
       "t": "Tue 10:35am",
-      "cash": 2090.6,
+      "cash": 2090.60,
       "allIn": 2162.96,
       "note": "SFO 200 filled @15c; MSP 1+99 partial; Trader all-in"
     },
     {
       "t": "Tue 11:18am",
-      "cash": 2090.6,
+      "cash": 2090.60,
       "allIn": 2163.76,
       "note": "Wed PHX/DC/PHIL rests; Trader all-in; DAL CLEAR in flight"
     },
@@ -260,9 +252,57 @@
       "cash": 2074.60,
       "allIn": 2167.20,
       "note": "PHIL 200 filled @8c; AUS rest; Trader all-in"
+    },
+    {
+      "t": "Tue 2:26pm",
+      "cash": 2074.60,
+      "allIn": 2147.67,
+      "note": "DAL Wed never landed; Trader all-in"
     }
   ],
   "tape": [
+    {
+      "et": "Tue 2:43pm",
+      "who": "Johnny",
+      "kind": "KILL",
+      "text": "KILL DAL Tue leftover KXHIGHTDAL-26SEP01-B98.5. Wx FAIL: live grid/daily 101 exits 98-99 (Scout 99 was stale). No rest. Do not re-flag."
+    },
+    {
+      "et": "Tue 2:43pm",
+      "who": "Johnny",
+      "kind": "KILL",
+      "text": "OKC Wed 98-99 RISK KILL. Wx PASS (peak 98 / daily 98 / grid 98.0F IN) but concentration: already 4 Wed cities (PHX/DC/PHIL/AUS), 34c on bin floor. No rest. Do not re-flag."
+    },
+    {
+      "et": "Tue 2:43pm",
+      "who": "Wx",
+      "kind": "FAIL",
+      "text": "DAL Tue leftover B98.5 FAIL. Live KDFW hourly 14=99 15=100 16=100 17=101, peak 101 daily 101, exits 98-99. Scout 99 stale."
+    },
+    {
+      "et": "Tue 2:43pm",
+      "who": "Wx",
+      "kind": "PASS",
+      "text": "OKC Wed B98.5 PASS. Peak 98 / daily 98 / grid 98.0F IN 98-99."
+    },
+    {
+      "et": "Tue 2:42pm",
+      "who": "Scout",
+      "kind": "FLAG",
+      "text": "FLAG (1) DAL Tue leftover KXHIGHTDAL-26SEP01-B98.5 39/41 post-only 39c x100, KDFW T 96.1 climbing, peak 99 IN 98-99, B100.5 49/56; (2) OKC Wed KXHIGHTOKC-26SEP02-B98.5 34/37 post-only 34c x100, peak 98 IN, daily 98, B100.5 43/44. DAL Wed not chased. Occupied skip LAX/SFO/MSP Tue, PHX/DC/PHIL/AUS Wed. Wx kicked."
+    },
+    {
+      "et": "Tue 2:26pm",
+      "who": "Trader",
+      "kind": "KILL",
+      "text": "DAL Wed KXHIGHTDAL-26SEP02-B98.5 CLEAR 100@13c never landed (no rest, no fill, no order id). Live 24/25. Did not chase 24c. Occupied Wed now PHX/DC/PHIL/AUS only. Cash $2,074.60. All-in mid $2,147.67 / bid $2,140.79."
+    },
+    {
+      "et": "Tue 2:24pm",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "All-live no kill. Tue T-groups: LAX rnd 73 vs 78-79 (was 71). SFO rnd 67 vs 67-68 now IN BIN (hottest; was 65; kill if next T-group rounds 69+). MSP rnd 87 vs 89-90 (was 85). Wed not started. Bins still open."
+    },
     {
       "et": "Tue 1:13pm",
       "who": "Johnny",
@@ -814,32 +854,32 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "OKC Tue FLAG done (KILL, do not re-flag); skip occupied LAX/SFO/MSP + PHX/DC/PHIL/DAL/AUS; geo/tech quiet"
+      "state": "DAL Tue leftover + OKC Wed FLAG done (KILL, do not re-flag); skip occupied LAX/SFO/MSP + PHX/DC/PHIL/AUS; DAL Wed never landed, do not chase 24c; geo/tech quiet"
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "PASS OKC leftover; prior PASS Wed AUS/DAL/DC/PHX/PHIL; HOU RISK KILL"
+      "state": "FAIL DAL Tue leftover (grid 101); PASS OKC Wed (KILL); prior PASS Wed AUS/DC/PHX/PHIL; HOU RISK KILL"
     },
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "RISK KILL OKC Tue leftover; CLEARed AUS Wed 100@27c; DAL occupied; no averaging down"
+      "state": "KILL DAL Tue leftover Wx FAIL; RISK KILL OKC Wed; DAL Wed never landed; no averaging down"
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "Wed: AUS 100@27c rest, PHIL 200@8c filled, PHX 100@26c rest, DC 100@13c rest; DAL occupied; Tue LAX/SFO/MSP; OKC not rested"
+      "state": "Wed: AUS 100@27c rest, PHIL 200@8c filled, PHX 100@26c rest, DC 100@13c rest; DAL Wed never landed; Tue LAX/SFO/MSP; OKC not rested"
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD all; Tue 71/65/85; Wed watch PHX 0700Z DC/PHIL 0400Z AUS 0500Z; DAL occupied"
+      "state": "HOLD all; SFO IN BIN rnd 67 (kill if 69+); LAX 73 / MSP 87; Wed watch PHX 0700Z DC/PHIL 0400Z AUS 0500Z"
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $2074.60 / all-in mid $2167.20 / bid $2161.54 (Trader 12:39)"
+      "state": "cash $2074.60 / all-in mid $2147.67 / bid $2140.79 (Trader 2:26)"
     }
   ]
 }
