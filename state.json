@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-01T08:05:00-04:00",
-  "asOfLabel": "Tue 8:05am ET",
+  "asOf": "2026-09-01T08:53:00-04:00",
+  "asOfLabel": "Tue 8:53am ET",
   "cash": 2069.9,
   "allInMid": 2129.91,
   "allInBid": 2128.29,
@@ -215,7 +215,7 @@
       "et": "Mon 8:14pm",
       "who": "Scout",
       "kind": "HOLD",
-      "text": "FLAG none. Empty still on-peak or unrestable 0/1 leftover. CHI Tue live hopped B91.5 31/32 to B93.5 32/34 vs GRID 91; NWS-bin B91.5 still 30/31, 2c not ≥8c, adjacent sit. DC Mon GRID 91→87 now ON T91. Same 0/1 leftover CHI/HOU/ATL/SEA Mon. Occupied skip LAX/SFO/MSP. No FLAG."
+      "text": "FLAG none. Empty still on-peak or unrestable 0/1 leftover. CHI Tue live hopped B91.5 31/32 to B93.5 32/34 vs GRID 91; NWS-bin B91.5 still 30/31, 2c not \u22658c, adjacent sit. DC Mon GRID 91\u219287 now ON T91. Same 0/1 leftover CHI/HOU/ATL/SEA Mon. Occupied skip LAX/SFO/MSP. No FLAG."
     },
     {
       "et": "Mon 8:02pm",
@@ -245,7 +245,7 @@
       "et": "Mon 6:10pm",
       "who": "Scout",
       "kind": "HOLD",
-      "text": "FLAG none. Empty still on-peak or unrestable 0/1 leftover. CHI Mon 90 vs live B91.5 99/100, NWS-bin B89.5 0/1. SEA Mon METAR 75 through GRID 74, NWS-bin B73.5 0/1. PHL Tue grid 91→90 still on NDFD 91 at B91.5 51/52. Occupied skip LAX/SFO/MSP. No FLAG."
+      "text": "FLAG none. Empty still on-peak or unrestable 0/1 leftover. CHI Mon 90 vs live B91.5 99/100, NWS-bin B89.5 0/1. SEA Mon METAR 75 through GRID 74, NWS-bin B73.5 0/1. PHL Tue grid 91\u219290 still on NDFD 91 at B91.5 51/52. Occupied skip LAX/SFO/MSP. No FLAG."
     },
     {
       "et": "Mon 5:57pm",
@@ -263,7 +263,7 @@
       "et": "Mon 5:22pm",
       "who": "Scout",
       "kind": "HOLD",
-      "text": "MSP Tue B89.5 book moved to 27/28 (was 23/24). Edge 6c vs live B87.5 33/34, no longer ≥8c. Weather unchanged Wx PASS peak 89 IN. Not re-FLAGging. Existing 100@25c rest order 01a059a4 left unfilled; did not chase 27, did not KILL, did not lift. LAX filled and SFO rest still occupied."
+      "text": "MSP Tue B89.5 book moved to 27/28 (was 23/24). Edge 6c vs live B87.5 33/34, no longer \u22658c. Weather unchanged Wx PASS peak 89 IN. Not re-FLAGging. Existing 100@25c rest order 01a059a4 left unfilled; did not chase 27, did not KILL, did not lift. LAX filled and SFO rest still occupied."
     },
     {
       "et": "Mon 5:06pm",
@@ -545,7 +545,7 @@
       "et": "Fri 8:46am",
       "who": "Scout",
       "kind": "FLAG",
-      "text": "KXHIGHTSATX-26AUG28-B97.5 38/39. Overnight cool 100→97."
+      "text": "KXHIGHTSATX-26AUG28-B97.5 38/39. Overnight cool 100\u219297."
     },
     {
       "et": "Fri 8:40am",
