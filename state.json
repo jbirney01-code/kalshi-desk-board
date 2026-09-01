@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-01T11:01:00-04:00",
-  "asOfLabel": "Tue 11:01am ET",
+  "asOf": "2026-09-01T11:13:00-04:00",
+  "asOfLabel": "Tue 11:13am ET",
   "cash": 2090.6,
   "allInMid": 2162.96,
   "allInBid": 2160.29,
@@ -211,6 +211,12 @@
     }
   ],
   "tape": [
+    {
+      "et": "Tue 11:12am",
+      "who": "Scout",
+      "kind": "FLAG",
+      "text": "FLAG four Wed Sep 2 empty: DAL KXHIGHTDAL-26SEP02-B98.5 13/18 x100 KDFW peak 98 IN 98-99 live B96.5; HOU KXHIGHTHOU-26SEP02-B91.5 20/27 x100 KHOU Hobby peak 91 IN 91-92 storms likely live T89; DC KXHIGHTDC-26SEP02-B89.5 13/21 x100 KDCA peak 89 IN 89-90 live B91.5; PHX KXHIGHTPHX-26SEP02-B100.5 26/28 x100 KPHX peak 101 IN 100-101 live B102.5. Occupied skip LAX/SFO/MSP Tue. Wx kicked."
+    },
     {
       "et": "Tue 10:56am",
       "who": "Printer",
@@ -636,17 +642,17 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "CHI FLAGged then KILL; occupied skip LAX/SFO/MSP; 10:53 kick in flight"
+      "state": "FLAG Wed DAL/HOU/DC/PHX; occupied skip LAX/SFO/MSP"
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "CHI PASS; on deck"
+      "state": "on DAL/HOU/DC/PHX Wed; PASS/FAIL in flight"
     },
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "CHI RISK KILL; LAX+SFO+MSP live"
+      "state": "await Wx on Wed FLAGs; LAX+SFO+MSP live"
     },
     {
       "name": "Trader",
