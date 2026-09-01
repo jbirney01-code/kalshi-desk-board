@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-01T10:48:00-04:00",
-  "asOfLabel": "Tue 10:48am ET",
+  "asOf": "2026-09-01T11:01:00-04:00",
+  "asOfLabel": "Tue 11:01am ET",
   "cash": 2090.6,
   "allInMid": 2162.96,
   "allInBid": 2160.29,
@@ -14,7 +14,7 @@
       "bin": "78-79",
       "side": "42.22 Yes filled @~25.5c",
       "status": "FILLED",
-      "note": "No second LAX. Printer HOLD: Tue since 0700Z max T0194=66.92F rnd 67 vs 78-79 (latest 1406Z T0189). Monday leftovers ignored. Bins still open."
+      "note": "No second LAX. Printer HOLD: Tue since 0700Z max 1453Z T0200=68.00F rnd 68 vs 78-79 (was 66.92). Heating, still ~10F below bin. Monday leftovers ignored. Bins still open."
     },
     {
       "ticker": "KXHIGHTSFO-26SEP01-B67.5",
@@ -22,7 +22,7 @@
       "bin": "67-68",
       "side": "200 Yes filled @15c",
       "status": "FILLED",
-      "note": "Was rest 01a05966-9450-7ff3-92e8-b08be893f811; now FILLED. Printer HOLD: Tue since 0700Z max T0167=62.06F rnd 62 vs 67-68 (latest 1356Z). Monday leftovers ignored. No second SFO."
+      "note": "Was rest 01a05966-9450-7ff3-92e8-b08be893f811; now FILLED. Printer HOLD: Tue since 0700Z max T0167=62.06F rnd 62 vs 67-68 (1456Z not posted; latest 1356Z). Monday leftovers ignored. No second SFO."
     },
     {
       "ticker": "KXHIGHTMIN-26SEP01-B89.5",
@@ -30,7 +30,7 @@
       "bin": "89-90",
       "side": "1 Yes filled + 99@25c rest",
       "status": "PARTIAL",
-      "note": "Order 01a059a4-8b98-729e-a29c-d33ccfd72521 partial. Printer HOLD: Tue since 0500Z max T0233=73.94F rnd 74 vs 89-90, latest 1353Z T0228=73.04F. Monday leftovers ignored. No second MSP."
+      "note": "Order 01a059a4-8b98-729e-a29c-d33ccfd72521 partial. Printer HOLD: Tue since 0500Z max 1453Z T0256=78.08F rnd 78 vs 89-90 (was 73.94). Heating, still ~11F below bin. Monday leftovers ignored. No second MSP."
     }
   ],
   "printed": [
@@ -212,6 +212,12 @@
   ],
   "tape": [
     {
+      "et": "Tue 10:56am",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "All-live no kill. Tue T-groups heating: LAX 1453Z T0200=68.00F rnd 68 vs 78-79 (was 66.92). SFO max still T0167=62.06F rnd 62 vs 67-68. MSP 1453Z T0256=78.08F rnd 78 vs 89-90 (was 73.94). CHI not occupied. Bins still open. Cash $2,090.60 / all-in mid $2,162.96."
+    },
+    {
       "et": "Tue 10:33am",
       "who": "Printer",
       "kind": "HOLD",
@@ -263,7 +269,7 @@
       "et": "Mon 8:14pm",
       "who": "Scout",
       "kind": "HOLD",
-      "text": "FLAG none. Empty still on-peak or unrestable 0/1 leftover. CHI Tue live hopped B91.5 31/32 to B93.5 32/34 vs GRID 91; NWS-bin B91.5 still 30/31, 2c not ≥8c, adjacent sit. DC Mon GRID 91→87 now ON T91. Same 0/1 leftover CHI/HOU/ATL/SEA Mon. Occupied skip LAX/SFO/MSP. No FLAG."
+      "text": "FLAG none. Empty still on-peak or unrestable 0/1 leftover. CHI Tue live hopped B91.5 31/32 to B93.5 32/34 vs GRID 91; NWS-bin B91.5 still 30/31, 2c not \u22658c, adjacent sit. DC Mon GRID 91\u219287 now ON T91. Same 0/1 leftover CHI/HOU/ATL/SEA Mon. Occupied skip LAX/SFO/MSP. No FLAG."
     },
     {
       "et": "Mon 8:02pm",
@@ -293,7 +299,7 @@
       "et": "Mon 6:10pm",
       "who": "Scout",
       "kind": "HOLD",
-      "text": "FLAG none. Empty still on-peak or unrestable 0/1 leftover. CHI Mon 90 vs live B91.5 99/100, NWS-bin B89.5 0/1. SEA Mon METAR 75 through GRID 74, NWS-bin B73.5 0/1. PHL Tue grid 91→90 still on NDFD 91 at B91.5 51/52. Occupied skip LAX/SFO/MSP. No FLAG."
+      "text": "FLAG none. Empty still on-peak or unrestable 0/1 leftover. CHI Mon 90 vs live B91.5 99/100, NWS-bin B89.5 0/1. SEA Mon METAR 75 through GRID 74, NWS-bin B73.5 0/1. PHL Tue grid 91\u219290 still on NDFD 91 at B91.5 51/52. Occupied skip LAX/SFO/MSP. No FLAG."
     },
     {
       "et": "Mon 5:57pm",
@@ -311,7 +317,7 @@
       "et": "Mon 5:22pm",
       "who": "Scout",
       "kind": "HOLD",
-      "text": "MSP Tue B89.5 book moved to 27/28 (was 23/24). Edge 6c vs live B87.5 33/34, no longer ≥8c. Weather unchanged Wx PASS peak 89 IN. Not re-FLAGging. Existing 100@25c rest order 01a059a4 left unfilled; did not chase 27, did not KILL, did not lift. LAX filled and SFO rest still occupied."
+      "text": "MSP Tue B89.5 book moved to 27/28 (was 23/24). Edge 6c vs live B87.5 33/34, no longer \u22658c. Weather unchanged Wx PASS peak 89 IN. Not re-FLAGging. Existing 100@25c rest order 01a059a4 left unfilled; did not chase 27, did not KILL, did not lift. LAX filled and SFO rest still occupied."
     },
     {
       "et": "Mon 5:06pm",
@@ -593,7 +599,7 @@
       "et": "Fri 8:46am",
       "who": "Scout",
       "kind": "FLAG",
-      "text": "KXHIGHTSATX-26AUG28-B97.5 38/39. Overnight cool 100→97."
+      "text": "KXHIGHTSATX-26AUG28-B97.5 38/39. Overnight cool 100\u219297."
     },
     {
       "et": "Fri 8:40am",
@@ -630,7 +636,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "CHI FLAGged then KILL; occupied skip LAX/SFO/MSP"
+      "state": "CHI FLAGged then KILL; occupied skip LAX/SFO/MSP; 10:53 kick in flight"
     },
     {
       "name": "Wx",
@@ -650,7 +656,7 @@
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD LAX/SFO/MSP filled; Tue T-groups open (67/62/74)"
+      "state": "HOLD LAX/SFO/MSP filled; Tue T-groups heating (68/62/78)"
     },
     {
       "name": "Macro",
