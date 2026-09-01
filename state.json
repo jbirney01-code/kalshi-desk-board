@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-01T16:36:00-04:00",
-  "asOfLabel": "Tue 4:36pm ET",
+  "asOf": "2026-09-01T17:23:00-04:00",
+  "asOfLabel": "Tue 5:23pm ET",
   "cash": 2073.52,
   "allInMid": 2145.01,
   "allInBid": 2139.34,
@@ -14,7 +14,7 @@
       "bin": "78-79",
       "side": "42.22 Yes filled @~25.5c",
       "status": "FILLED",
-      "note": "No second LAX. Printer HOLD 3:57: Tue T rnd 75 vs 78-79. Still ~3F below bin. SFO dead. Bins still open."
+      "note": "No second LAX. Printer HOLD 4:54: Tue T rnd 75 vs 78-79 (2053Z not posted; latest still 1953Z). Still ~3F below bin. SFO dead. Bins still open."
     },
     {
       "ticker": "KXHIGHTMIN-26SEP01-B89.5",
@@ -22,7 +22,7 @@
       "bin": "89-90",
       "side": "1 Yes filled + 99@25c rest",
       "status": "PARTIAL",
-      "note": "Order 01a059a4-8b98-729e-a29c-d33ccfd72521 partial. Printer HOLD 3:57: Tue T rnd 88 vs 89-90 (cooled at 1953Z to 87; hottest, 1F below). No second MSP."
+      "note": "Order 01a059a4-8b98-729e-a29c-d33ccfd72521 partial. Printer HOLD 4:54: Tue T rnd 88 vs 89-90 (cooled at 1953Z to 87; hottest, 1F below). No second MSP."
     },
     {
       "ticker": "KXHIGHTSEA-26SEP01-B72.5",
@@ -30,7 +30,7 @@
       "bin": "72-73",
       "side": "50 Yes @30c rest",
       "status": "REST",
-      "note": "Tue leftover. Order 01a05e6d-8170-79a6-a933-97b942414de0 unfilled (posted 30 vs live 26/31, did not take 31). Printer HOLD 3:57: Tue T rnd 66 vs 72-73 (1953Z cooled to 65; ~6\u20137F below). Kill if 74+. Monday 4-group ignored."
+      "note": "Tue leftover. Order 01a05e6d-8170-79a6-a933-97b942414de0 unfilled (posted 30 vs live 26/31, did not take 31). Printer HOLD 4:54: Tue T rnd 66 vs 72-73 (1953Z cooled to 65; ~6-7F below). Kill if 74+. Monday 4-group ignored."
     },
     {
       "ticker": "KXHIGHTPHX-26SEP02-B100.5",
@@ -296,6 +296,18 @@
   ],
   "tape": [
     {
+      "et": "Tue 5:05pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none on 4:52 hourly. CHI Wed ON 95, DAL Wed ON 97, NOLA Wed ON 92, Thu 404. DAL Tue leftover B98.5 unrestable 0/1. SEA Wed NDFD 69 vs GRID 66. Occupied skip LAX/MSP/SEA Tue, PHX/DC/PHIL/AUS/ATL/OKC Wed. SFO dead. HOU Wed do-not-reflag."
+    },
+    {
+      "et": "Tue 4:54pm",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "All-live no kill. 2053Z hourlies not posted yet. No SPECIs since 1953Z. Tue T-group maxes unchanged. LAX max T0239=75.02F rnd 75 vs 78-79. MSP max 1853Z T0311=87.98F rnd 88 vs 89-90 (latest 1953Z rnd 87; hottest, 1F below). SEA max T0189=66.02F rnd 66 vs 72-73 (latest 1953Z rnd 65). SFO dead. Wed not started. No kill."
+    },
+    {
       "et": "Tue 4:09pm",
       "who": "Johnny",
       "kind": "KILL",
@@ -389,7 +401,7 @@
       "et": "Tue 3:05pm",
       "who": "Johnny",
       "kind": "NOTE",
-      "text": "Spread size: 50 Yes default, 100 if post-only \u226420c, 200 only if full-bin \u226410c, cap $500/name. Concentration city-count RISK KILLs OFF. Take Wx PASS empties."
+      "text": "Spread size: 50 Yes default, 100 if post-only ≤20c, 200 only if full-bin ≤10c, cap $500/name. Concentration city-count RISK KILLs OFF. Take Wx PASS empties."
     },
     {
       "et": "Tue 3:04pm",
@@ -629,7 +641,7 @@
       "et": "Mon 8:14pm",
       "who": "Scout",
       "kind": "HOLD",
-      "text": "FLAG none. Empty still on-peak or unrestable 0/1 leftover. CHI Tue live hopped B91.5 31/32 to B93.5 32/34 vs GRID 91; NWS-bin B91.5 still 30/31, 2c not \u22658c, adjacent sit. DC Mon GRID 91\u219287 now ON T91. Same 0/1 leftover CHI/HOU/ATL/SEA Mon. Occupied skip LAX/SFO/MSP. No FLAG."
+      "text": "FLAG none. Empty still on-peak or unrestable 0/1 leftover. CHI Tue live hopped B91.5 31/32 to B93.5 32/34 vs GRID 91; NWS-bin B91.5 still 30/31, 2c not ≥8c, adjacent sit. DC Mon GRID 91→87 now ON T91. Same 0/1 leftover CHI/HOU/ATL/SEA Mon. Occupied skip LAX/SFO/MSP. No FLAG."
     },
     {
       "et": "Mon 8:02pm",
@@ -659,7 +671,7 @@
       "et": "Mon 6:10pm",
       "who": "Scout",
       "kind": "HOLD",
-      "text": "FLAG none. Empty still on-peak or unrestable 0/1 leftover. CHI Mon 90 vs live B91.5 99/100, NWS-bin B89.5 0/1. SEA Mon METAR 75 through GRID 74, NWS-bin B73.5 0/1. PHL Tue grid 91\u219290 still on NDFD 91 at B91.5 51/52. Occupied skip LAX/SFO/MSP. No FLAG."
+      "text": "FLAG none. Empty still on-peak or unrestable 0/1 leftover. CHI Mon 90 vs live B91.5 99/100, NWS-bin B89.5 0/1. SEA Mon METAR 75 through GRID 74, NWS-bin B73.5 0/1. PHL Tue grid 91→90 still on NDFD 91 at B91.5 51/52. Occupied skip LAX/SFO/MSP. No FLAG."
     },
     {
       "et": "Mon 5:57pm",
@@ -677,7 +689,7 @@
       "et": "Mon 5:22pm",
       "who": "Scout",
       "kind": "HOLD",
-      "text": "MSP Tue B89.5 book moved to 27/28 (was 23/24). Edge 6c vs live B87.5 33/34, no longer \u22658c. Weather unchanged Wx PASS peak 89 IN. Not re-FLAGging. Existing 100@25c rest order 01a059a4 left unfilled; did not chase 27, did not KILL, did not lift. LAX filled and SFO rest still occupied."
+      "text": "MSP Tue B89.5 book moved to 27/28 (was 23/24). Edge 6c vs live B87.5 33/34, no longer ≥8c. Weather unchanged Wx PASS peak 89 IN. Not re-FLAGging. Existing 100@25c rest order 01a059a4 left unfilled; did not chase 27, did not KILL, did not lift. LAX filled and SFO rest still occupied."
     },
     {
       "et": "Mon 5:06pm",
@@ -959,7 +971,7 @@
       "et": "Fri 8:46am",
       "who": "Scout",
       "kind": "FLAG",
-      "text": "KXHIGHTSATX-26AUG28-B97.5 38/39. Overnight cool 100\u219297."
+      "text": "KXHIGHTSATX-26AUG28-B97.5 38/39. Overnight cool 100→97."
     },
     {
       "et": "Fri 8:40am",
@@ -996,7 +1008,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "FLAG ATL Tue leftover KILLed; occupied LAX/MSP/SEA Tue + PHX/DC/PHIL/AUS/ATL/OKC Wed; SFO dead; HOU Wed / ATL Tue leftover do-not-reflag; geo/tech EMPTY"
+      "state": "FLAG none 5:05; occupied LAX/MSP/SEA Tue + PHX/DC/PHIL/AUS/ATL/OKC Wed; SFO dead; HOU Wed / ATL Tue leftover do-not-reflag; CHI/DAL/NOLA Wed ON; geo/tech last EMPTY 3:26"
     },
     {
       "name": "Wx",
@@ -1006,7 +1018,7 @@
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "KILL ATL Tue leftover B95.5 (Wx FAIL); prior CLEAR OKC 50@34c + ATL Wed 100@20c + SEA 50@30c; concentration RISK KILLs OFF; spread 50/100\u226420c/200\u226410c; no averaging down"
+      "state": "KILL ATL Tue leftover B95.5 (Wx FAIL); prior CLEAR OKC 50@34c + ATL Wed 100@20c + SEA 50@30c; concentration RISK KILLs OFF; spread 50/100≤20c/200≤10c; no averaging down"
     },
     {
       "name": "Trader",
@@ -1016,7 +1028,7 @@
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD 3:57 SEA rnd 66 / LAX rnd 75 / MSP rnd 88; SFO dead; Wed watch PHX 0700Z DC/PHIL/ATL 0400Z AUS/OKC 0500Z"
+      "state": "HOLD 4:54 SEA rnd 66 / LAX rnd 75 / MSP rnd 88 (2053Z not posted); SFO dead; Wed watch PHX 0700Z DC/PHIL/ATL 0400Z AUS/OKC 0500Z"
     },
     {
       "name": "Macro",
