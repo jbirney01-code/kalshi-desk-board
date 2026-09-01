@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-01T17:40:00-04:00",
-  "asOfLabel": "Tue 5:40pm ET",
+  "asOf": "2026-09-01T18:09:00-04:00",
+  "asOfLabel": "Tue 6:09pm ET",
   "cash": 2073.52,
   "allInMid": 2145.01,
   "allInBid": 2139.34,
@@ -14,7 +14,7 @@
       "bin": "78-79",
       "side": "42.22 Yes filled @~25.5c",
       "status": "FILLED",
-      "note": "No second LAX. Printer HOLD 4:54: Tue T rnd 75 vs 78-79 (2053Z not posted; latest still 1953Z). Still ~3F below bin. SFO dead. Bins still open."
+      "note": "No second LAX. Printer HOLD 6:04: Tue T still rnd 75 vs 78-79 through 2153Z (2053Z and 2153Z same T0239=75.02F; stuck at 24C through 2:53pm PDT). Still ~3F below bin. SFO dead. Bins still open."
     },
     {
       "ticker": "KXHIGHTMIN-26SEP01-B89.5",
@@ -22,7 +22,7 @@
       "bin": "89-90",
       "side": "1 Yes filled + 99@25c rest",
       "status": "PARTIAL",
-      "note": "Order 01a059a4-8b98-729e-a29c-d33ccfd72521 partial. Printer HOLD 4:54: Tue T rnd 88 vs 89-90 (cooled at 1953Z to 87; hottest, 1F below). No second MSP."
+      "note": "Order 01a059a4-8b98-729e-a29c-d33ccfd72521 partial. Printer HOLD 6:04: Tue T rnd 88 vs 89-90 (max 1853Z T0311=87.98F; 2053Z rnd 87; 2153Z rnd 86 cooling; hottest, 1F below). No second MSP."
     },
     {
       "ticker": "KXHIGHTSEA-26SEP01-B72.5",
@@ -30,7 +30,7 @@
       "bin": "72-73",
       "side": "50 Yes @30c rest",
       "status": "REST",
-      "note": "Tue leftover. Order 01a05e6d-8170-79a6-a933-97b942414de0 unfilled (posted 30 vs live 26/31, did not take 31). Printer HOLD 4:54: Tue T rnd 66 vs 72-73 (1953Z cooled to 65; ~6-7F below). Kill if 74+. Monday 4-group ignored."
+      "note": "Tue leftover. Order 01a05e6d-8170-79a6-a933-97b942414de0 unfilled (posted 30 vs live 26/31, did not take 31). Printer HOLD 6:04: Tue T rnd 66 vs 72-73 (max 1853Z/1917Z T0189=66.02F; 2053Z/2153Z rnd 65; ~6-7F below). Kill if 74+. Monday 4-group ignored."
     },
     {
       "ticker": "KXHIGHTPHX-26SEP02-B100.5",
@@ -295,6 +295,12 @@
     }
   ],
   "tape": [
+    {
+      "et": "Tue 6:04pm",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "All-live no kill. 2053Z in + 2153Z. 2253Z not yet. LAX max still T0239=75.02F rnd 75 vs 78-79 (2053Z and 2153Z same T0239; stuck at 24C through 2:53pm PDT). MSP max still 1853Z T0311=87.98F rnd 88 vs 89-90 (2053Z rnd 87; 2153Z rnd 86; cooling; hottest 1F below). SEA max still 1853Z/1917Z T0189=66.02F rnd 66 vs 72-73 (2053Z/2153Z rnd 65). SFO dead. Wed not started. No kill."
+    },
     {
       "et": "Tue 5:37pm",
       "who": "Intel",
@@ -1034,7 +1040,7 @@
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD 4:54 SEA rnd 66 / LAX rnd 75 / MSP rnd 88 (2053Z not posted); SFO dead; Wed watch PHX 0700Z DC/PHIL/ATL 0400Z AUS/OKC 0500Z"
+      "state": "HOLD 6:04 SEA rnd 66 / LAX rnd 75 / MSP rnd 88 cooling 86 at 2153Z; SFO dead; Wed watch PHX 0700Z DC/PHIL/ATL 0400Z AUS/OKC 0500Z"
     },
     {
       "name": "Macro",
