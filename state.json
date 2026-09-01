@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-01T09:32:00-04:00",
-  "asOfLabel": "Tue 9:32am ET",
+  "asOf": "2026-09-01T10:30:00-04:00",
+  "asOfLabel": "Tue 10:30am ET",
   "cash": 2069.9,
   "allInMid": 2129.91,
   "allInBid": 2128.29,
@@ -205,6 +205,30 @@
     }
   ],
   "tape": [
+    {
+      "et": "Tue 10:30am",
+      "who": "Trader",
+      "kind": "KILL",
+      "text": "KILL CHI Tue B93.5: no rest, no lift, no order. Book stays LAX 42.22 filled, SFO 200@15c rest, MSP 100@25c rest. Cash $2,069.90. All-in mid $2,129.91 / bid $2,128.29."
+    },
+    {
+      "et": "Tue 10:30am",
+      "who": "Johnny",
+      "kind": "KILL",
+      "text": "CHI Tue 93-94 RISK KILL. Wx PASS (peak/daily/grid 94, PoP 19%) but already occupying LAX/SFO/MSP, 38c on-peak with 6.5h heat remaining, not a leftover. No rest."
+    },
+    {
+      "et": "Tue 10:30am",
+      "who": "Wx",
+      "kind": "PASS",
+      "text": "CHI Tue B93.5 PASS. KMDW peak/daily/grid 94 in 93-94. PoP 19%."
+    },
+    {
+      "et": "Tue 9:34am",
+      "who": "Scout",
+      "kind": "FLAG",
+      "text": "CHI Tue KXHIGHCHI-26SEP01-B93.5 KMDW 38/39 post-only 38c x100. Grid peak 94 IN 93-94, daily/NDFD 94. Live T94 95+ 49/50, 11c. T-group 78.1F / Tue tmax 80, 6.7h to 3PM CDT. 20% storms, heat index 104. Occupied skip LAX/SFO/MSP. Wx kicked."
+    },
     {
       "et": "Tue 9:16am",
       "who": "Printer",
@@ -588,17 +612,17 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "FLAG none; occupied skip LAX/SFO/MSP"
+      "state": "CHI FLAGged then KILL; occupied skip LAX/SFO/MSP"
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "MSP PASS; on deck"
+      "state": "CHI PASS; on deck"
     },
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "MSP rest left @25c; LAX+SFO+MSP live"
+      "state": "CHI RISK KILL; LAX+SFO+MSP live"
     },
     {
       "name": "Trader",
