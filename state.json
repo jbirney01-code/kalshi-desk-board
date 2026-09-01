@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-01T15:34:00-04:00",
-  "asOfLabel": "Tue 3:34pm ET",
+  "asOf": "2026-09-01T16:21:00-04:00",
+  "asOfLabel": "Tue 4:21pm ET",
   "cash": 2073.52,
   "allInMid": 2145.01,
   "allInBid": 2139.34,
@@ -14,7 +14,7 @@
       "bin": "78-79",
       "side": "42.22 Yes filled @~25.5c",
       "status": "FILLED",
-      "note": "No second LAX. Printer HOLD 3:24: Tue T rnd 75 vs 78-79 (1853Z T0239=75.02F). Still ~3F below bin. SFO dead. Bins still open."
+      "note": "No second LAX. Printer HOLD 3:57: Tue T rnd 75 vs 78-79. Still ~3F below bin. SFO dead. Bins still open."
     },
     {
       "ticker": "KXHIGHTMIN-26SEP01-B89.5",
@@ -22,7 +22,7 @@
       "bin": "89-90",
       "side": "1 Yes filled + 99@25c rest",
       "status": "PARTIAL",
-      "note": "Order 01a059a4-8b98-729e-a29c-d33ccfd72521 partial. Printer HOLD 3:24: Tue T rnd 88 vs 89-90 (1853Z T0311=87.98F). Still ~1F below bin. No second MSP."
+      "note": "Order 01a059a4-8b98-729e-a29c-d33ccfd72521 partial. Printer HOLD 3:57: Tue T rnd 88 vs 89-90 (cooled at 1953Z to 87; hottest, 1F below). No second MSP."
     },
     {
       "ticker": "KXHIGHTSEA-26SEP01-B72.5",
@@ -30,7 +30,7 @@
       "bin": "72-73",
       "side": "50 Yes @30c rest",
       "status": "REST",
-      "note": "Tue leftover. Order 01a05e6d-8170-79a6-a933-97b942414de0 unfilled (posted 30 vs live 26/31, did not take 31). Printer HOLD 3:24: Tue T rnd 66 vs 72-73 (1853Z/1917Z T0189=66.02F; ~6F below). Kill if 74+. Monday 4-group ignored."
+      "note": "Tue leftover. Order 01a05e6d-8170-79a6-a933-97b942414de0 unfilled (posted 30 vs live 26/31, did not take 31). Printer HOLD 3:57: Tue T rnd 66 vs 72-73 (1953Z cooled to 65; ~6\u20137F below). Kill if 74+. Monday 4-group ignored."
     },
     {
       "ticker": "KXHIGHTPHX-26SEP02-B100.5",
@@ -70,7 +70,7 @@
       "bin": "95-96",
       "side": "100 Yes @20c rest",
       "status": "REST",
-      "note": "Wed Sep 2. Order 01a05e6d-7d88-7adc-82d7-bd46040d0ccc unfilled (joined 20/24, did not take 24). Wx PASS peak 96 IN 95-96. Printer: Wed not started, watch Wed 0400Z EDT, kill 97+. Not Tue B93.5."
+      "note": "Wed Sep 2. Order 01a05e6d-7d88-7adc-82d7-bd46040d0ccc unfilled (joined 20/24, did not take 24). Wx PASS peak 96 IN 95-96. Printer: Wed not started, watch Wed 0400Z EDT, kill 97+. ATL Tue leftover B95.5 KILLed 4:09 (Wx FAIL tmax 93); do not chase B93.5."
     },
     {
       "ticker": "KXHIGHTOKC-26SEP02-B98.5",
@@ -295,6 +295,24 @@
     }
   ],
   "tape": [
+    {
+      "et": "Tue 4:09pm",
+      "who": "Johnny",
+      "kind": "KILL",
+      "text": "KILL ATL Tue leftover KXHIGHTATL-26SEP01-B95.5. Wx FAIL: T-max 93 falling, 2F short of 95, peak past. No rest. Do not chase B93.5. ATL Wed rest still live."
+    },
+    {
+      "et": "Tue 4:08pm",
+      "who": "Scout",
+      "kind": "FLAG",
+      "text": "FLAG ATL Tue leftover KXHIGHTATL-26SEP01-B95.5 17/21 post-only 17c x100. KATL T 91 falling, tmax 93, 2F short of 95-96, peak hour past. Live B93.5 82/84. Wx kicked. No CLEAR yet."
+    },
+    {
+      "et": "Tue 3:57pm",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "All-live no kill. LAX T rnd 75 vs 78-79. MSP T rnd 88 vs 89-90 (cooled at 1953Z to 87; hottest, 1F below). SEA T rnd 66 vs 72-73 (1953Z cooled to 65). SFO dead. Wed not started. No kill."
+    },
     {
       "et": "Tue 3:26pm",
       "who": "Intel",
@@ -978,32 +996,32 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "FLAG none; occupied LAX/MSP/SEA Tue + PHX/DC/PHIL/AUS/ATL/OKC Wed; SFO dead; HOU Wed do-not-reflag; geo/tech EMPTY"
+      "state": "FLAG ATL Tue leftover KILLed; occupied LAX/MSP/SEA Tue + PHX/DC/PHIL/AUS/ATL/OKC Wed; SFO dead; HOU Wed / ATL Tue leftover do-not-reflag; geo/tech EMPTY"
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "PASS ATL Wed 96 IN 95-96 + SEA Tue 72/73 IN 72-73; prior PASS OKC Wed; HOLD LAX 75 / MSP 88; SFO dead 70"
+      "state": "FAIL ATL Tue leftover tmax 93 (KILL); prior PASS ATL Wed 96 IN 95-96 + SEA Tue + OKC Wed; HOLD LAX 75 / MSP 88 / SEA 66; SFO dead 70"
     },
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "CLEAR OKC 50@34c + ATL 100@20c + SEA 50@30c; concentration RISK KILLs OFF; spread 50/100\u226420c/200\u226410c; no averaging down"
+      "state": "KILL ATL Tue leftover B95.5 (Wx FAIL); prior CLEAR OKC 50@34c + ATL Wed 100@20c + SEA 50@30c; concentration RISK KILLs OFF; spread 50/100\u226420c/200\u226410c; no averaging down"
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "OKC 50@34c REST 01a05e5e; ATL 100@20c REST 01a05e6d-7d88; SEA 50@30c REST 01a05e6d-8170; Wed PHX/DC/PHIL/AUS; Tue LAX/MSP; SFO dead"
+      "state": "OKC 50@34c REST 01a05e5e; ATL Wed 100@20c REST 01a05e6d-7d88; SEA 50@30c REST 01a05e6d-8170; Wed PHX/DC/PHIL/AUS; Tue LAX/MSP; SFO dead; ATL Tue never rested"
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD SEA rnd 66 / LAX rnd 75 / MSP rnd 88; SFO dead; Wed watch PHX 0700Z DC/PHIL/ATL 0400Z AUS/OKC 0500Z"
+      "state": "HOLD 3:57 SEA rnd 66 / LAX rnd 75 / MSP rnd 88; SFO dead; Wed watch PHX 0700Z DC/PHIL/ATL 0400Z AUS/OKC 0500Z"
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $2073.52 / all-in mid $2145.01 / bid $2139.34 (Trader 3:25)"
+      "state": "cash $2073.52 / all-in mid $2145.01 / bid $2139.34 (Trader 3:25; no newer ledger)"
     }
   ]
 }
