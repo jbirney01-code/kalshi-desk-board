@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-01T08:58:00-04:00",
-  "asOfLabel": "Tue 8:58am ET",
+  "asOf": "2026-09-01T09:19:00-04:00",
+  "asOfLabel": "Tue 9:19am ET",
   "cash": 2069.9,
   "allInMid": 2129.91,
   "allInBid": 2128.29,
@@ -14,7 +14,7 @@
       "bin": "78-79",
       "side": "42.22 Yes filled @~25.5c",
       "status": "FILLED",
-      "note": "No second LAX. Printer HOLD: KLAX 010053Z T0228=73.04F is 5:53pm PDT Monday (Tue starts 0700Z). Mon leftovers do not count. Watch Tue 0700Z."
+      "note": "No second LAX. Printer HOLD: Tue since 0700Z max T0194=66.92F rnd 67 vs 78-79 (latest 1253Z same). Monday leftovers ignored. Bins still open."
     },
     {
       "ticker": "KXHIGHTSFO-26SEP01-B67.5",
@@ -22,7 +22,7 @@
       "bin": "67-68",
       "side": "200 Yes @15c rest",
       "status": "REST",
-      "note": "Order 01a05966-9450-7ff3-92e8-b08be893f811 unfilled. Live 15/16, did not lift. Printer HOLD: KSFO 312356Z T0189=66.02F Monday (climbing vs Tue 67-68, does not count). Watch Tue 0700Z. No second SFO."
+      "note": "Order 01a05966-9450-7ff3-92e8-b08be893f811 unfilled. Live 15/16, did not lift. Printer HOLD: Tue since 0700Z max T0167=62.06F rnd 62 vs 67-68 (latest 1256Z same). Monday leftovers ignored. No second SFO."
     },
     {
       "ticker": "KXHIGHTMIN-26SEP01-B89.5",
@@ -30,7 +30,7 @@
       "bin": "89-90",
       "side": "100 Yes @25c rest",
       "status": "REST",
-      "note": "Order 01a059a4-8b98-729e-a29c-d33ccfd72521 unfilled. CLEAR was 23c; joined 25, did not take 28. Printer HOLD: KMSP 010053Z T0278=82.04F is 7:53pm CDT Monday (Tue starts 0500Z). Mon leftovers do not count. No second MSP."
+      "note": "Order 01a059a4-8b98-729e-a29c-d33ccfd72521 unfilled. CLEAR was 23c; joined 25, did not take 28. Printer HOLD: Tue since 0500Z max T0233=73.94F rnd 74 vs 89-90, latest T0206=69.08F. Monday leftovers ignored. No second MSP."
     }
   ],
   "printed": [
@@ -205,6 +205,12 @@
     }
   ],
   "tape": [
+    {
+      "et": "Tue 9:16am",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "All-live no kill. Tuesday T-groups only. LAX since 0700Z max T0194=66.92F rnd 67 vs 78-79. SFO since 0700Z max T0167=62.06F rnd 62 vs 67-68. MSP since 0500Z max T0233=73.94F rnd 74 vs 89-90, latest T0206=69.08F. Morning, bins still open. Monday leftovers ignored. Occupied: LAX 42 filled, SFO 200@15c rest, MSP 100@25c rest."
+    },
     {
       "et": "Mon 8:56pm",
       "who": "Printer",
@@ -602,7 +608,7 @@
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD LAX/SFO/MSP; LAX 73.04F Mon 01Z; watch Tue"
+      "state": "HOLD LAX/SFO/MSP; Tue T-groups open (67/62/74)"
     },
     {
       "name": "Macro",
