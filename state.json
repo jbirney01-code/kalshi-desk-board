@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-01T18:09:00-04:00",
-  "asOfLabel": "Tue 6:09pm ET",
+  "asOf": "2026-09-01T18:42:00-04:00",
+  "asOfLabel": "Tue 6:42pm ET",
   "cash": 2073.52,
   "allInMid": 2145.01,
   "allInBid": 2139.34,
@@ -295,6 +295,12 @@
     }
   ],
   "tape": [
+    {
+      "et": "Tue 6:04pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none on 5:57 hourly. CHI Wed ON 95, DAL Wed ON 97, NOLA Wed ON 92, Thu still 404. Leftovers still dead/unrestable/NDFD: CHI Tue ON 94, DAL Tue 0/1, HOU Tue NDFD, ATL Tue FAIL, OKC Tue 0/1, SEA Wed NDFD 69. Occupied skip unchanged. SFO dead. HOU Wed not pulled."
+    },
     {
       "et": "Tue 6:04pm",
       "who": "Printer",
@@ -1020,7 +1026,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "FLAG none 5:05; occupied LAX/MSP/SEA Tue + PHX/DC/PHIL/AUS/ATL/OKC Wed; SFO dead; HOU Wed / ATL Tue leftover do-not-reflag; CHI/DAL/NOLA Wed ON; geo/tech last EMPTY 5:37"
+      "state": "FLAG none ~6:04; occupied LAX/MSP/SEA Tue + PHX/DC/PHIL/AUS/ATL/OKC Wed; SFO dead; HOU Wed / ATL Tue leftover do-not-reflag; CHI/DAL/NOLA Wed ON; geo/tech last EMPTY 5:37"
     },
     {
       "name": "Wx",
