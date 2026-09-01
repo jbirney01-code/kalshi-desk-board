@@ -1,10 +1,10 @@
 {
-  "asOf": "2026-09-01T10:30:00-04:00",
-  "asOfLabel": "Tue 10:30am ET",
-  "cash": 2069.9,
-  "allInMid": 2129.91,
-  "allInBid": 2128.29,
-  "weatherMarked": 10.77,
+  "asOf": "2026-09-01T10:35:00-04:00",
+  "asOfLabel": "Tue 10:35am ET",
+  "cash": 2090.6,
+  "allInMid": 2162.96,
+  "allInBid": 2160.29,
+  "weatherMarked": 23.12,
   "otherMarked": 49.24,
   "scoreboard": "$500+ now, thousands next week",
   "live": [
@@ -14,23 +14,23 @@
       "bin": "78-79",
       "side": "42.22 Yes filled @~25.5c",
       "status": "FILLED",
-      "note": "No second LAX. Printer HOLD: Tue since 0700Z max T0194=66.92F rnd 67 vs 78-79 (latest 1253Z same). Monday leftovers ignored. Bins still open."
+      "note": "No second LAX. Printer HOLD: Tue since 0700Z max T0194=66.92F rnd 67 vs 78-79 (latest 1406Z T0189). Monday leftovers ignored. Bins still open."
     },
     {
       "ticker": "KXHIGHTSFO-26SEP01-B67.5",
       "city": "SFO",
       "bin": "67-68",
-      "side": "200 Yes @15c rest",
-      "status": "REST",
-      "note": "Order 01a05966-9450-7ff3-92e8-b08be893f811 unfilled. Live 15/16, did not lift. Printer HOLD: Tue since 0700Z max T0167=62.06F rnd 62 vs 67-68 (latest 1256Z same). Monday leftovers ignored. No second SFO."
+      "side": "200 Yes filled @15c",
+      "status": "FILLED",
+      "note": "Was rest 01a05966-9450-7ff3-92e8-b08be893f811; now FILLED. Printer HOLD: Tue since 0700Z max T0167=62.06F rnd 62 vs 67-68 (latest 1356Z). Monday leftovers ignored. No second SFO."
     },
     {
       "ticker": "KXHIGHTMIN-26SEP01-B89.5",
       "city": "MSP",
       "bin": "89-90",
-      "side": "100 Yes @25c rest",
-      "status": "REST",
-      "note": "Order 01a059a4-8b98-729e-a29c-d33ccfd72521 unfilled. CLEAR was 23c; joined 25, did not take 28. Printer HOLD: Tue since 0500Z max T0233=73.94F rnd 74 vs 89-90, latest T0206=69.08F. Monday leftovers ignored. No second MSP."
+      "side": "1 Yes filled + 99@25c rest",
+      "status": "PARTIAL",
+      "note": "Order 01a059a4-8b98-729e-a29c-d33ccfd72521 partial. Printer HOLD: Tue since 0500Z max T0233=73.94F rnd 74 vs 89-90, latest 1353Z T0228=73.04F. Monday leftovers ignored. No second MSP."
     }
   ],
   "printed": [
@@ -202,9 +202,27 @@
       "cash": 2069.9,
       "allIn": 2129.91,
       "note": "MSP Tue rest @25c; Trader all-in; LAX+SFO still on"
+    },
+    {
+      "t": "Tue 10:35am",
+      "cash": 2090.6,
+      "allIn": 2162.96,
+      "note": "SFO 200 filled @15c; MSP 1+99 partial; Trader all-in"
     }
   ],
   "tape": [
+    {
+      "et": "Tue 10:33am",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "All-live no kill. SFO 200 Yes now FILLED. CHI not occupied. Tue T-groups: LAX max T0194=66.92F rnd 67 vs 78-79 latest 1406Z T0189. SFO max T0167=62.06F rnd 62 vs 67-68 latest 1356Z. MSP max T0233=73.94F rnd 74 vs 89-90 latest 1353Z T0228=73.04F. Morning, bins still open. Cash $2,090.60 / all-in mid $2,162.96."
+    },
+    {
+      "et": "Tue 10:31am",
+      "who": "Trader",
+      "kind": "FILL",
+      "text": "SFO 200 Yes KXHIGHTSFO-26SEP01-B67.5 FILLED @15c. MSP 1 filled + 99@25c rest KXHIGHTMIN-26SEP01-B89.5. LAX 42.22 Yes filled. CHI Tue 93-94 not rested. Cash $2,090.60. All-in mid $2,162.96 / bid $2,160.29. Printer kicked on filled SFO + MSP partial."
+    },
     {
       "et": "Tue 10:30am",
       "who": "Trader",
@@ -627,17 +645,17 @@
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "MSP 100@25c rest; SFO 200@15c; LAX 42 filled"
+      "state": "SFO 200 filled; MSP 1+99; LAX 42 filled"
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD LAX/SFO/MSP; Tue T-groups open (67/62/74)"
+      "state": "HOLD LAX/SFO/MSP filled; Tue T-groups open (67/62/74)"
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $2070 / all-in $2130 (Trader 5:06)"
+      "state": "cash $2091 / all-in $2163 (Trader 10:31)"
     }
   ]
 }
