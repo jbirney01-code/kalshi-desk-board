@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-02T12:21:00-04:00",
-  "asOfLabel": "Wed 12:21pm ET",
+  "asOf": "2026-09-02T12:31:00-04:00",
+  "asOfLabel": "Wed 12:31pm ET",
   "cash": 1978.63,
   "allInMid": 2075.97,
   "allInBid": 2071.77,
@@ -324,6 +324,12 @@
     }
   ],
   "tape": [
+    {
+      "et": "Wed 12:31pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none. CHI Thu occupied, no re-flag B90.5, no chase B92.5. Occupied skip: Wed PHX/DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI. DAL Thu still on-bin B93.5; TODAY leftover CHI ON / DAL/NOLA NDFD-exit / MSP Wed ON. Fri 404. No FLAG."
+    },
     {
       "et": "Wed 12:19pm",
       "who": "Trader",
@@ -723,7 +729,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "12:18 FLAG CHI Thu B90.5 CLEAR/REST; occupied Wed PHX/DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI; Tue LAX/SEA/SFO dead; MSP printed; Intel last EMPTY 9:26/11:45 kick"
+      "state": "12:31 FLAG none (CHI Thu occupied); occupied Wed PHX/DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI; Tue LAX/SEA/SFO dead; MSP printed; Intel last EMPTY 9:26/11:45 kick"
     },
     {
       "name": "Wx",
