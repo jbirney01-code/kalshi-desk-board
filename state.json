@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-02T18:31:00-04:00",
-  "asOfLabel": "Wed 6:31pm ET",
+  "asOf": "2026-09-02T19:01:00-04:00",
+  "asOfLabel": "Wed 7:01pm ET",
   "cash": 1964.59,
   "allInMid": 2021.92,
   "allInBid": 2019.61,
@@ -14,7 +14,7 @@
       "bin": "89-90",
       "side": "100 Yes @13c rest",
       "status": "REST",
-      "note": "Wed Sep 2. Order 01a05d8a-dde8-7e2b-995c-a5a8d6019616 unfilled. Printer HOLD post-AUS 5:56: T-group rnd 90 IN 89-90 (2152Z now 78). Kill only if T-group rounds 91+. No kill. PHX+AUS Wed dead."
+      "note": "Wed Sep 2. Order 01a05d8a-dde8-7e2b-995c-a5a8d6019616 unfilled. Printer HOLD 6:54: T-group rnd 90 IN 89-90 (2252Z now 78). Kill only if T-group rounds 91+. No kill. PHX+AUS Wed dead."
     },
     {
       "ticker": "KXHIGHPHIL-26SEP02-B84.5",
@@ -22,7 +22,7 @@
       "bin": "84-85",
       "side": "200 Yes filled @8c",
       "status": "FILLED",
-      "note": "FILLED 200@8c. Printer HOLD post-AUS 5:56: Wed T max 77 vs 84-85. Kill 86+. No kill. PHX+AUS Wed dead."
+      "note": "FILLED 200@8c. Printer HOLD 6:54: Wed T max 77 vs 84-85. Kill 86+. No kill. PHX+AUS Wed dead."
     },
     {
       "ticker": "KXHIGHTATL-26SEP02-B95.5",
@@ -30,7 +30,7 @@
       "bin": "95-96",
       "side": "100 Yes @20c rest",
       "status": "REST",
-      "note": "Wed Sep 2. Order 01a05e6d-7d88-7adc-82d7-bd46040d0ccc unfilled. Printer HOLD post-AUS 5:56: Wed T max rnd 95 IN 95-96 (2152Z cooled 94). Kill 97+. No kill. PHX+AUS Wed dead."
+      "note": "Wed Sep 2. Order 01a05e6d-7d88-7adc-82d7-bd46040d0ccc unfilled. Printer HOLD 6:54: Wed T max rnd 95 IN 95-96 (2252Z cooled 93). Kill 97+. No kill. PHX+AUS Wed dead."
     },
     {
       "ticker": "KXHIGHTOKC-26SEP02-B98.5",
@@ -38,7 +38,7 @@
       "bin": "98-99",
       "side": "50 Yes @34c rest",
       "status": "REST",
-      "note": "Wed Sep 2. Order 01a05e5e-8198-71ee-aa8f-fdf0c753e9c4 unfilled. Printer HOLD post-AUS 5:56: Wed T max rnd 99 vs 98-99 IN BIN. Kill 100+ not 99. No kill. PHX+AUS Wed dead."
+      "note": "Wed Sep 2. Order 01a05e5e-8198-71ee-aa8f-fdf0c753e9c4 unfilled. Printer HOLD 6:54: Wed T max rnd 99 vs 98-99 IN BIN. Kill 100+ not 99. No kill. PHX+AUS Wed dead."
     },
     {
       "ticker": "KXHIGHTMIN-26SEP03-B86.5",
@@ -332,6 +332,12 @@
     }
   ],
   "tape": [
+    {
+      "et": "Wed 6:54pm",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "HOLD. DC T-group rnd 90 IN 89-90 (2252Z now 78). PHIL 77 vs 84-85. ATL rnd 95 IN 95-96 (2252Z cooled 93). OKC rnd 99 IN 98-99. PHX+AUS dead. MSP/CHI Thu not started. No kill. Cash $1,964.59 / all-in mid $2,021.92 / bid $2,019.61."
+    },
     {
       "et": "Wed 6:20pm",
       "who": "Intel",
@@ -863,12 +869,12 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "5:54 FLAG none; CHI/DAL do-not-chase; occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX+AUS Wed dead; Tue LAX/SEA/SFO dead; MSP printed; Printer last AUS KILL 5:56; Intel last EMPTY 6:20"
+      "state": "5:54 FLAG none; 6:53 kick out (reply pending); CHI/DAL do-not-chase; occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX+AUS Wed dead; Tue LAX/SEA/SFO dead; MSP printed; Printer last HOLD 6:54; Intel last EMPTY 6:20"
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "CHI Wed leftover B94.5 FAIL earlier; CHI Thu B90.5 PASS; MSP Thu B86.5 PASS; Printer 5:56 AUS KILL T100; HOLD DC 90 IN / ATL 95 IN / OKC 99 IN / PHIL 77; PHX KILL earlier T102"
+      "state": "CHI Wed leftover B94.5 FAIL earlier; CHI Thu B90.5 PASS; MSP Thu B86.5 PASS; Printer 6:54 HOLD DC 90 IN / ATL 95 IN / OKC 99 IN / PHIL 77; AUS KILL T100 + PHX KILL T102 earlier"
     },
     {
       "name": "Johnny",
@@ -883,7 +889,7 @@
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "5:56 KILL AUS T100; HOLD DC 90 IN / PHIL 77 / ATL 95 IN / OKC 99 IN; PHX skip dead (KILL T102 earlier); MSP+CHI Thu watch starts Thu 0500Z; Tue finals LAX+SEA KILL MSP 90 IN"
+      "state": "6:54 HOLD DC 90 IN / PHIL 77 / ATL 95 IN (cooled 93) / OKC 99 IN; AUS KILL T100 5:56; PHX skip dead (KILL T102 earlier); MSP+CHI Thu watch starts Thu 0500Z; Tue finals LAX+SEA KILL MSP 90 IN"
     },
     {
       "name": "Macro",
