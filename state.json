@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-02T12:31:00-04:00",
-  "asOfLabel": "Wed 12:31pm ET",
+  "asOf": "2026-09-02T13:05:00-04:00",
+  "asOfLabel": "Wed 1:05pm ET",
   "cash": 1978.63,
   "allInMid": 2075.97,
   "allInBid": 2071.77,
@@ -14,7 +14,7 @@
       "bin": "100-101",
       "side": "100 Yes @26c rest",
       "status": "REST",
-      "note": "Wed Sep 2. Order 01a05d8a-3208-7b99-b33f-cb4acec300d3 unfilled. Printer HOLD 12:01: Wed T max 93 vs 100-101. No kill. Tue LAX/SEA dead; MSP printed."
+      "note": "Wed Sep 2. Order 01a05d8a-3208-7b99-b33f-cb4acec300d3 unfilled. Printer HOLD 12:57: Wed T max 94 vs 100-101. No kill. Tue LAX/SEA dead; MSP printed."
     },
     {
       "ticker": "KXHIGHTDC-26SEP02-B89.5",
@@ -22,7 +22,7 @@
       "bin": "89-90",
       "side": "100 Yes @13c rest",
       "status": "REST",
-      "note": "Wed Sep 2. Order 01a05d8a-dde8-7e2b-995c-a5a8d6019616 unfilled. Printer HOLD 12:01: Wed T max 87 vs 89-90 (hottest, 2F below). No kill."
+      "note": "Wed Sep 2. Order 01a05d8a-dde8-7e2b-995c-a5a8d6019616 unfilled. Printer HOLD 12:57: Wed T max 89 vs 89-90 now IN BIN (hottest; kill if next T-group rounds 91+). No kill."
     },
     {
       "ticker": "KXHIGHPHIL-26SEP02-B84.5",
@@ -30,7 +30,7 @@
       "bin": "84-85",
       "side": "200 Yes filled @8c",
       "status": "FILLED",
-      "note": "FILLED 200@8c. Printer HOLD 12:01: Wed T max 76 vs 84-85 OVC. No kill."
+      "note": "FILLED 200@8c. Printer HOLD 12:57: Wed T max 77 vs 84-85 OVC. No kill."
     },
     {
       "ticker": "KXHIGHAUS-26SEP02-B98.5",
@@ -38,7 +38,7 @@
       "bin": "98-99",
       "side": "100 Yes @27c rest",
       "status": "REST",
-      "note": "Wed Sep 2. Order 01a05dd6-5638-7337-9352-a5df1aa84e32 unfilled. Printer HOLD 12:01: Wed T max 91 vs 98-99. No kill."
+      "note": "Wed Sep 2. Order 01a05dd6-5638-7337-9352-a5df1aa84e32 unfilled. Printer HOLD 12:57: Wed T max 95 vs 98-99 (3F below). No kill."
     },
     {
       "ticker": "KXHIGHTATL-26SEP02-B95.5",
@@ -46,7 +46,7 @@
       "bin": "95-96",
       "side": "100 Yes @20c rest",
       "status": "REST",
-      "note": "Wed Sep 2. Order 01a05e6d-7d88-7adc-82d7-bd46040d0ccc unfilled. Printer HOLD 12:01: Wed T max 90 vs 95-96. Kill 97+. ATL Tue leftover never rested."
+      "note": "Wed Sep 2. Order 01a05e6d-7d88-7adc-82d7-bd46040d0ccc unfilled. Printer HOLD 12:57: Wed T max 91 vs 95-96. Kill 97+. ATL Tue leftover never rested."
     },
     {
       "ticker": "KXHIGHTOKC-26SEP02-B98.5",
@@ -54,7 +54,7 @@
       "bin": "98-99",
       "side": "50 Yes @34c rest",
       "status": "REST",
-      "note": "Wed Sep 2. Order 01a05e5e-8198-71ee-aa8f-fdf0c753e9c4 unfilled. Printer HOLD 12:01: Wed T max 92 vs 98-99. Kill 100+ not 99. No second OKC."
+      "note": "Wed Sep 2. Order 01a05e5e-8198-71ee-aa8f-fdf0c753e9c4 unfilled. Printer HOLD 12:57: Wed T max 94 vs 98-99. Kill 100+ not 99. No second OKC."
     },
     {
       "ticker": "KXHIGHTMIN-26SEP03-B86.5",
@@ -324,6 +324,12 @@
     }
   ],
   "tape": [
+    {
+      "et": "Wed 12:57pm",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "Wed T max: PHX 94 vs 100-101, DC 89 vs 89-90 now IN BIN (hottest; kill if next T-group rounds 91+), PHIL 77 vs 84-85 OVC, AUS 95 vs 98-99 (3F below), ATL 91 vs 95-96, OKC 94 vs 98-99. MSP/CHI Thu not started. No kill. Cash last Trader 12:19 $1,978.63 / all-in mid $2,075.97 / bid $2,071.77."
+    },
     {
       "et": "Wed 12:31pm",
       "who": "Scout",
@@ -729,12 +735,12 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "12:31 FLAG none (CHI Thu occupied); occupied Wed PHX/DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI; Tue LAX/SEA/SFO dead; MSP printed; Intel last EMPTY 9:26/11:45 kick"
+      "state": "12:31 FLAG none (CHI Thu occupied); occupied Wed PHX/DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI; Tue LAX/SEA/SFO dead; MSP printed; 12:54 kick in flight; Intel last EMPTY 11:45 kick"
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "CHI Thu B90.5 PASS peak 90 IN KMDW; MSP Thu B86.5 PASS peak 86 IN; Wed Printer HOLD 12:01 PHX 93 DC 87 PHIL 76 AUS 91 ATL 90 OKC 92"
+      "state": "CHI Thu B90.5 PASS peak 90 IN KMDW; MSP Thu B86.5 PASS peak 86 IN; Wed Printer HOLD 12:57 PHX 94 DC 89 IN BIN PHIL 77 AUS 95 ATL 91 OKC 94"
     },
     {
       "name": "Johnny",
@@ -749,7 +755,7 @@
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "12:01 HOLD Wed T max PHX 93 / DC 87 (hottest 2F below) / PHIL 76 OVC / AUS 91 / ATL 90 / OKC 92; MSP+CHI Thu watch starts Thu 0500Z; Tue finals LAX+SEA KILL MSP 90 IN"
+      "state": "12:57 HOLD Wed T max PHX 94 / DC 89 IN BIN (hottest; kill if 91+) / PHIL 77 OVC / AUS 95 (3F below) / ATL 91 / OKC 94; MSP+CHI Thu watch starts Thu 0500Z; Tue finals LAX+SEA KILL MSP 90 IN"
     },
     {
       "name": "Macro",
