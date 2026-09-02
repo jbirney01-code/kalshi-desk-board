@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-02T08:10:00-04:00",
-  "asOfLabel": "Wed 8:10am ET",
+  "asOf": "2026-09-02T08:46:00-04:00",
+  "asOfLabel": "Wed 8:46am ET",
   "cash": 2073.52,
   "allInMid": 2145.01,
   "allInBid": 2139.34,
@@ -295,6 +295,18 @@
     }
   ],
   "tape": [
+    {
+      "et": "Wed 8:20am",
+      "who": "Intel",
+      "kind": "HOLD",
+      "text": "EMPTY geo/tech. Scanned 50. Closest miss KXBURNHAMMENTION-26SEP02-IRAN untradeable (closed last 67) conf 70% \u2014 PMQs over, no Burnham Iran; Hansard not posted so conf fails 75%. NUCL 0/1 gap ~1pp. WNT-26SEP02 still 404. No FLAG."
+    },
+    {
+      "et": "Wed 5:16am",
+      "who": "Intel",
+      "kind": "HOLD",
+      "text": "EMPTY overnight geo/tech. Scanned 50 live 26SEP02 (SNOW/AVGO/HPE/Burnham) + determined 26SEP01 WNT+PANW. Closest miss KXBURNHAMMENTION-26SEP02-IRAN gap ~15.5pp conf 65% (fails 75%). WNT 26SEP02 404. No FLAG."
+    },
     {
       "t": "Wed 5:19am ET",
       "event": "Pages feed recovered after host restart (stuck since Tue 7:44pm). Scout+Printer+Intel kicked. Wed T-groups live (DC/PHIL/ATL/AUS/OKC); PHX from 0700Z MST. Waiting Printer on Tue finals LAX/MSP/SEA. Cash still Trader Tue 3:25 $2,073.52 / all-in mid $2,145.01 / bid $2,139.34."
@@ -598,7 +610,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "FLAG none ~7:02; occupied LAX/MSP/SEA Tue + PHX/DC/PHIL/AUS/ATL/OKC Wed; SFO dead; HOU Wed / ATL Tue leftover do-not-reflag; CHI/DAL/NOLA Wed ON; SEA Wed ON B66.5; geo/tech last EMPTY 5:37 (Intel 7:31 scan in flight)"
+      "state": "5:17 Wed kick still in flight; last FLAG none ~7:02 Tue; occupied LAX/MSP/SEA Tue + PHX/DC/PHIL/AUS/ATL/OKC Wed; SFO dead; Intel EMPTY 8:20 (PMQs) + 5:16 overnight"
     },
     {
       "name": "Wx",
@@ -618,12 +630,12 @@
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD 7:01 2253Z cooling LAX rnd 75\u219274 / MSP peak 88\u219285 / SEA rnd 66\u219264; SFO dead; Wed watch PHX 0700Z DC/PHIL/ATL 0400Z AUS/OKC 0500Z"
+      "state": "5:17 Wed kick still in flight (Tue finals + Wed T-groups); last HOLD 7:01 Tue 2253Z LAX 75\u219274 / MSP 88\u219285 / SEA 66\u219264; Wed watch PHX 0700Z DC/PHIL/ATL 0400Z AUS/OKC 0500Z"
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $2073.52 / all-in mid $2145.01 / bid $2139.34 (Trader 3:25; no newer ledger this session)"
+      "state": "cash $2073.52 / all-in mid $2145.01 / bid $2139.34 (Trader Tue 3:25; no newer ledger this session)"
     }
   ]
 }
