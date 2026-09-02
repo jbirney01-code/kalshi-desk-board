@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-02T18:06:00-04:00",
-  "asOfLabel": "Wed 6:06pm ET",
+  "asOf": "2026-09-02T18:31:00-04:00",
+  "asOfLabel": "Wed 6:31pm ET",
   "cash": 1964.59,
   "allInMid": 2021.92,
   "allInBid": 2019.61,
@@ -332,6 +332,12 @@
     }
   ],
   "tape": [
+    {
+      "et": "Wed 6:20pm",
+      "who": "Intel",
+      "kind": "HOLD",
+      "text": "EMPTY geo/tech. Scanned 53. Closest miss KXWORLDNEWSMENTION-26SEP02-IRAN gap 5pp vs ask (78/85 last 77, fair ~90) conf ~70% (WNT not on-air, no 6:30 rundown). Prior 14pp gap gone. HPE leftover names not said (books 0/1). SNOW AZUR 99/100. AVGO JERI 0/1. No FLAG."
+    },
     {
       "et": "Wed 5:56pm",
       "who": "Printer",
@@ -857,7 +863,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "5:54 FLAG none; CHI/DAL do-not-chase; occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX+AUS Wed dead; Tue LAX/SEA/SFO dead; MSP printed; Printer last AUS KILL 5:56; Intel last EMPTY 1:28"
+      "state": "5:54 FLAG none; CHI/DAL do-not-chase; occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX+AUS Wed dead; Tue LAX/SEA/SFO dead; MSP printed; Printer last AUS KILL 5:56; Intel last EMPTY 6:20"
     },
     {
       "name": "Wx",
