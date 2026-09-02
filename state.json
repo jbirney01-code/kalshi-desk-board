@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-02T15:05:00-04:00",
-  "asOfLabel": "Wed 3:05pm ET",
+  "asOf": "2026-09-02T15:34:00-04:00",
+  "asOfLabel": "Wed 3:34pm ET",
   "cash": 1978.63,
   "allInMid": 2075.97,
   "allInBid": 2071.77,
@@ -325,6 +325,24 @@
   ],
   "tape": [
     {
+      "et": "Wed 3:08pm",
+      "who": "Johnny",
+      "kind": "KILL",
+      "text": "KILL CHI Wed leftover KXHIGHCHI-26SEP02-B94.5. Wx FAIL: KMDW T 95 at cap and rising, leftover vs B96.5 60/61. No rest. Do not chase B96.5. Thu CHI 90-91 rest still live. Cash last Trader 12:19 $1,978.63 / all-in mid $2,075.97 / bid $2,071.77."
+    },
+    {
+      "et": "Wed 3:08pm",
+      "who": "Wx",
+      "kind": "FAIL",
+      "text": "CHI Wed leftover B94.5 FAIL. KMDW T 95 at cap and rising, heat left ~1.1h, live hopped to B96.5 60/61. Not a hold for 29c rest."
+    },
+    {
+      "et": "Wed 3:08pm",
+      "who": "Scout",
+      "kind": "FLAG",
+      "text": "FLAG CHI Wed leftover KXHIGHCHI-26SEP02-B94.5 29/34 post-only 29c x50. KMDW T 95 rising IN 94-95, ~1.1h heat left, live hopped to B96.5 60/61. Thu CHI 90-91 rest is a different day. Wx kicked. No CLEAR yet."
+    },
+    {
       "et": "Wed 2:55pm",
       "who": "Printer",
       "kind": "HOLD",
@@ -454,7 +472,7 @@
       "et": "Wed 8:20am",
       "who": "Intel",
       "kind": "HOLD",
-      "text": "EMPTY geo/tech. Scanned 50. Closest miss KXBURNHAMMENTION-26SEP02-IRAN untradeable (closed last 67) conf 70% — PMQs over, no Burnham Iran; Hansard not posted so conf fails 75%. NUCL 0/1 gap ~1pp. WNT-26SEP02 still 404. No FLAG."
+      "text": "EMPTY geo/tech. Scanned 50. Closest miss KXBURNHAMMENTION-26SEP02-IRAN untradeable (closed last 67) conf 70% \u2014 PMQs over, no Burnham Iran; Hansard not posted so conf fails 75%. NUCL 0/1 gap ~1pp. WNT-26SEP02 still 404. No FLAG."
     },
     {
       "et": "Wed 5:16am",
@@ -602,7 +620,7 @@
       "et": "Tue 3:05pm",
       "who": "Johnny",
       "kind": "NOTE",
-      "text": "Spread size: 50 Yes default, 100 if post-only ≤20c, 200 only if full-bin ≤10c, cap $500/name. Concentration city-count RISK KILLs OFF. Take Wx PASS empties."
+      "text": "Spread size: 50 Yes default, 100 if post-only \u226420c, 200 only if full-bin \u226410c, cap $500/name. Concentration city-count RISK KILLs OFF. Take Wx PASS empties."
     },
     {
       "et": "Tue 3:04pm",
@@ -765,17 +783,17 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "2:05 FLAG none on 1:54 hourly (TODAY grids unchanged; NOLA peak happening METAR 90 not 91 NDFD-exit; DAL Thu B91.5 vs B93.5 1c not miss; occupied Wed PHX/DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI; Tue LAX/SEA/SFO dead; MSP printed); 2:53 kick in flight; Intel last EMPTY 1:28 (2:26 kick in flight)"
+      "state": "3:08 FLAG CHI Wed leftover B94.5 then KILL (Wx FAIL T 95 rising); occupied skip Wed PHX/DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI; Tue LAX/SEA/SFO dead; MSP printed; Printer last HOLD 2:55; Intel last EMPTY 1:28 (3:28 kick in flight)"
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "CHI Thu B90.5 PASS peak 90 IN KMDW; MSP Thu B86.5 PASS peak 86 IN; Wed Printer HOLD 2:55 PHX 99 (1F below) DC 90 IN BIN AUS 98 IN BIN ATL 95 IN BIN OKC 98 IN BIN PHIL 77"
+      "state": "CHI Wed leftover B94.5 FAIL (KMDW T 95 rising); CHI Thu B90.5 PASS peak 90 IN; MSP Thu B86.5 PASS peak 86 IN; Wed Printer HOLD 2:55 PHX 99 (1F below) DC 90 IN BIN AUS 98 IN BIN ATL 95 IN BIN OKC 98 IN BIN PHIL 77"
     },
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "CLEAR CHI Thu @26c + MSP Thu @13c; Wed rests live; Tue LAX+SEA dead MSP printed; concentration RISK KILLs OFF; spread 50/100≤20c/200≤10c; no averaging down"
+      "state": "KILL CHI Wed leftover B94.5 Wx FAIL; CLEAR CHI Thu @26c + MSP Thu @13c still live; Wed rests live; Tue LAX+SEA dead MSP printed; concentration RISK KILLs OFF; spread 50/100\u226420c/200\u226410c; no averaging down"
     },
     {
       "name": "Trader",
