@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-02T13:05:00-04:00",
-  "asOfLabel": "Wed 1:05pm ET",
+  "asOf": "2026-09-02T13:39:00-04:00",
+  "asOfLabel": "Wed 1:39pm ET",
   "cash": 1978.63,
   "allInMid": 2075.97,
   "allInBid": 2071.77,
@@ -325,6 +325,12 @@
   ],
   "tape": [
     {
+      "et": "Wed 1:16pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none on 12:54 hourly. TODAY GRID UNCHANGED CHI 94/94 DAL 97/98 NOLA 91/93 MSP 87/87. CHI B94.5 64/66 ON; DAL B98.5 56/59 do-not-chase NDFD-exit; NOLA onto B90.5 46/51 still NDFD 93 Wx-FAIL; MSP onto B85.5 44/45 but NWS-bin B87.5 40/42 METAR 78 climbing ~5h. DAL Thu still on-bin B93.5 29/33. Occupied skip: Wed PHX/DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI. Fri 404. No FLAG."
+    },
+    {
       "et": "Wed 12:57pm",
       "who": "Printer",
       "kind": "HOLD",
@@ -424,7 +430,7 @@
       "et": "Wed 8:20am",
       "who": "Intel",
       "kind": "HOLD",
-      "text": "EMPTY geo/tech. Scanned 50. Closest miss KXBURNHAMMENTION-26SEP02-IRAN untradeable (closed last 67) conf 70% \u2014 PMQs over, no Burnham Iran; Hansard not posted so conf fails 75%. NUCL 0/1 gap ~1pp. WNT-26SEP02 still 404. No FLAG."
+      "text": "EMPTY geo/tech. Scanned 50. Closest miss KXBURNHAMMENTION-26SEP02-IRAN untradeable (closed last 67) conf 70% — PMQs over, no Burnham Iran; Hansard not posted so conf fails 75%. NUCL 0/1 gap ~1pp. WNT-26SEP02 still 404. No FLAG."
     },
     {
       "et": "Wed 5:16am",
@@ -572,7 +578,7 @@
       "et": "Tue 3:05pm",
       "who": "Johnny",
       "kind": "NOTE",
-      "text": "Spread size: 50 Yes default, 100 if post-only \u226420c, 200 only if full-bin \u226410c, cap $500/name. Concentration city-count RISK KILLs OFF. Take Wx PASS empties."
+      "text": "Spread size: 50 Yes default, 100 if post-only ≤20c, 200 only if full-bin ≤10c, cap $500/name. Concentration city-count RISK KILLs OFF. Take Wx PASS empties."
     },
     {
       "et": "Tue 3:04pm",
@@ -735,7 +741,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "12:31 FLAG none (CHI Thu occupied); occupied Wed PHX/DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI; Tue LAX/SEA/SFO dead; MSP printed; 12:54 kick in flight; Intel last EMPTY 11:45 kick"
+      "state": "1:16 FLAG none on 12:54 hourly (TODAY grids unchanged; occupied Wed PHX/DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI; Tue LAX/SEA/SFO dead; MSP printed); Intel last EMPTY 11:45 (1:28 kick in flight)"
     },
     {
       "name": "Wx",
@@ -745,7 +751,7 @@
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "CLEAR CHI Thu @26c + MSP Thu @13c; Wed rests live; Tue LAX+SEA dead MSP printed; concentration RISK KILLs OFF; spread 50/100\u226420c/200\u226410c; no averaging down"
+      "state": "CLEAR CHI Thu @26c + MSP Thu @13c; Wed rests live; Tue LAX+SEA dead MSP printed; concentration RISK KILLs OFF; spread 50/100≤20c/200≤10c; no averaging down"
     },
     {
       "name": "Trader",
