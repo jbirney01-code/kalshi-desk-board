@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-01T19:13:00-04:00",
-  "asOfLabel": "Tue 7:13pm ET",
+  "asOf": "2026-09-02T05:19:00-04:00",
+  "asOfLabel": "Wed 5:19am ET",
   "cash": 2073.52,
   "allInMid": 2145.01,
   "allInBid": 2139.34,
@@ -296,6 +296,16 @@
   ],
   "tape": [
     {
+      "t": "Wed 5:19am ET",
+      "event": "Pages feed recovered after host restart (stuck since Tue 7:44pm). Scout+Printer+Intel kicked. Wed T-groups live (DC/PHIL/ATL/AUS/OKC); PHX from 0700Z MST. Waiting Printer on Tue finals LAX/MSP/SEA. Cash still Trader Tue 3:25 $2,073.52 / all-in mid $2,145.01 / bid $2,139.34."
+    },
+    {
+      "et": "Tue 7:02pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none on 7:00 hourly. CHI Wed ON 95, DAL Wed ON 97, NOLA Wed ON 92. SEA Wed now ON grid 66 at B66.5 (NDFD 69 still exits leftover). Thu still 404. Leftovers still dead/unrestable: CHI Tue ON 94, DAL Tue 0/1, HOU Tue NDFD, ATL Tue FAIL, OKC Tue 0/1. Occupied skip unchanged. SFO dead. HOU Wed not pulled."
+    },
+    {
       "et": "Tue 7:01pm",
       "who": "Printer",
       "kind": "HOLD",
@@ -582,457 +592,13 @@
       "who": "Trader",
       "kind": "REST",
       "text": "PHX Wed 100 Yes KXHIGHTPHX-26SEP02-B100.5 @26c resting (joined 26/28, did not lift). Order 01a05d8a-3208-7b99-b33f-cb4acec300d3 unfilled. Cash $2,090.60. All-in mid $2,163.35 / bid $2,160.68. DAL and DC CLEAR still in flight. Tuesday LAX/SFO/MSP untouched."
-    },
-    {
-      "et": "Tue 11:14am",
-      "who": "Johnny",
-      "kind": "CLEAR",
-      "text": "Wx PASS all four Wed FLAGs. RISK KILL HOU Wed 91-92 (60% storms at peak, daily falls to 88). CLEAR DAL Wed 98-99 100@13c KXHIGHTDAL-26SEP02-B98.5, DC Wed 89-90 100@13c KXHIGHTDC-26SEP02-B89.5, PHX Wed 100-101 100@26c KXHIGHTPHX-26SEP02-B100.5. Tuesday LAX/SFO/MSP untouched."
-    },
-    {
-      "et": "Tue 11:14am",
-      "who": "Johnny",
-      "kind": "KILL",
-      "text": "HOU Wed 91-92 RISK KILL. Wx PASS peak 91 IN but 60% storms at peak and daily falls to 88. No rest."
-    },
-    {
-      "et": "Tue 11:14am",
-      "who": "Wx",
-      "kind": "PASS",
-      "text": "Wed FLAGs PASS: DAL B98.5 (KDFW peak 98), HOU B91.5 (KHOU Hobby peak 91), DC B89.5 (KDCA peak 89), PHX B100.5 (KPHX peak 101). All in-bin vs grid."
-    },
-    {
-      "et": "Tue 11:12am",
-      "who": "Scout",
-      "kind": "FLAG",
-      "text": "FLAG four Wed Sep 2 empty: DAL KXHIGHTDAL-26SEP02-B98.5 13/18 x100 KDFW peak 98 IN 98-99 live B96.5; HOU KXHIGHTHOU-26SEP02-B91.5 20/27 x100 KHOU Hobby peak 91 IN 91-92 storms likely live T89; DC KXHIGHTDC-26SEP02-B89.5 13/21 x100 KDCA peak 89 IN 89-90 live B91.5; PHX KXHIGHTPHX-26SEP02-B100.5 26/28 x100 KPHX peak 101 IN 100-101 live B102.5. Occupied skip LAX/SFO/MSP Tue. Wx kicked."
-    },
-    {
-      "et": "Tue 10:56am",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "All-live no kill. Tue T-groups heating: LAX 1453Z T0200=68.00F rnd 68 vs 78-79 (was 66.92). SFO max still T0167=62.06F rnd 62 vs 67-68. MSP 1453Z T0256=78.08F rnd 78 vs 89-90 (was 73.94). CHI not occupied. Bins still open. Cash $2,090.60 / all-in mid $2,162.96."
-    },
-    {
-      "et": "Tue 10:33am",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "All-live no kill. SFO 200 Yes now FILLED. CHI not occupied. Tue T-groups: LAX max T0194=66.92F rnd 67 vs 78-79 latest 1406Z T0189. SFO max T0167=62.06F rnd 62 vs 67-68 latest 1356Z. MSP max T0233=73.94F rnd 74 vs 89-90 latest 1353Z T0228=73.04F. Morning, bins still open. Cash $2,090.60 / all-in mid $2,162.96."
-    },
-    {
-      "et": "Tue 10:31am",
-      "who": "Trader",
-      "kind": "FILL",
-      "text": "SFO 200 Yes KXHIGHTSFO-26SEP01-B67.5 FILLED @15c. MSP 1 filled + 99@25c rest KXHIGHTMIN-26SEP01-B89.5. LAX 42.22 Yes filled. CHI Tue 93-94 not rested. Cash $2,090.60. All-in mid $2,162.96 / bid $2,160.29. Printer kicked on filled SFO + MSP partial."
-    },
-    {
-      "et": "Tue 10:30am",
-      "who": "Trader",
-      "kind": "KILL",
-      "text": "KILL CHI Tue B93.5: no rest, no lift, no order. Book stays LAX 42.22 filled, SFO 200@15c rest, MSP 100@25c rest. Cash $2,069.90. All-in mid $2,129.91 / bid $2,128.29."
-    },
-    {
-      "et": "Tue 10:30am",
-      "who": "Johnny",
-      "kind": "KILL",
-      "text": "CHI Tue 93-94 RISK KILL. Wx PASS (peak/daily/grid 94, PoP 19%) but already occupying LAX/SFO/MSP, 38c on-peak with 6.5h heat remaining, not a leftover. No rest."
-    },
-    {
-      "et": "Tue 10:30am",
-      "who": "Wx",
-      "kind": "PASS",
-      "text": "CHI Tue B93.5 PASS. KMDW peak/daily/grid 94 in 93-94. PoP 19%."
-    },
-    {
-      "et": "Tue 9:34am",
-      "who": "Scout",
-      "kind": "FLAG",
-      "text": "CHI Tue KXHIGHCHI-26SEP01-B93.5 KMDW 38/39 post-only 38c x100. Grid peak 94 IN 93-94, daily/NDFD 94. Live T94 95+ 49/50, 11c. T-group 78.1F / Tue tmax 80, 6.7h to 3PM CDT. 20% storms, heat index 104. Occupied skip LAX/SFO/MSP. Wx kicked."
-    },
-    {
-      "et": "Tue 9:16am",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "All-live no kill. Tuesday T-groups only. LAX since 0700Z max T0194=66.92F rnd 67 vs 78-79. SFO since 0700Z max T0167=62.06F rnd 62 vs 67-68. MSP since 0500Z max T0233=73.94F rnd 74 vs 89-90, latest T0206=69.08F. Morning, bins still open. Monday leftovers ignored. Occupied: LAX 42 filled, SFO 200@15c rest, MSP 100@25c rest."
-    },
-    {
-      "et": "Mon 8:56pm",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "All-live no kill. UTC 01Z but local climate day still Monday. LAX 010053Z T0228=73.04F is 5:53pm PDT Monday, Tuesday starts 0700Z. SFO 312356Z T0189=66.02F Monday. MSP 010053Z T0278=82.04F is 7:53pm CDT Monday, Tuesday starts 0500Z. Monday leftovers still do not count. Occupied: LAX 42 filled, SFO 200@15c rest, MSP 100@25c rest."
-    },
-    {
-      "et": "Mon 8:14pm",
-      "who": "Scout",
-      "kind": "HOLD",
-      "text": "FLAG none. Empty still on-peak or unrestable 0/1 leftover. CHI Tue live hopped B91.5 31/32 to B93.5 32/34 vs GRID 91; NWS-bin B91.5 still 30/31, 2c not \u22658c, adjacent sit. DC Mon GRID 91\u219287 now ON T91. Same 0/1 leftover CHI/HOU/ATL/SEA Mon. Occupied skip LAX/SFO/MSP. No FLAG."
-    },
-    {
-      "et": "Mon 8:02pm",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "All-live no kill. Still Monday 2353Z. LAX T0239=75.02F, Monday 6h 10261=78.98F rnd 79 not Tuesday. SFO T0189=66.02F, Monday 6h 10194=66.92F rnd 67 not Tuesday. MSP T0300=86.00F, Monday 6h 10339=93.02F and T0328=91.04F not Tuesday. Watch Tue 0700Z KLAX/KSFO, 0500Z KMSP. Occupied: LAX 42 filled, SFO 200@15c rest, MSP 100@25c rest."
-    },
-    {
-      "et": "Mon 7:12pm",
-      "who": "Scout",
-      "kind": "HOLD",
-      "text": "FLAG none. Empty still on-peak or unrestable 0/1 leftover. Same six OFF as 6:10, NWS-bins still 0/1 (CHI/HOU/DC/ATL/SEA Mon). SEA Mon METAR 76 through GRID 74, live B77.5 83/84, B75.5 11/18 exits the peak. NOLA Tue 1F 0c. PHL Tue still on NDFD 91. Occupied skip LAX/SFO/MSP. No FLAG."
-    },
-    {
-      "et": "Mon 6:54pm",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "All-live no kill. Still Monday. LAX T0250=77.00F max T0256=78.08F. SFO 312156Z T0189=66.02F Monday (climbing vs Tue 67-68, does not count). MSP 312153Z T0328=91.04F Monday. Watch Tue 0700Z KLAX/KSFO, 0500Z KMSP. Occupied: LAX 42 filled, SFO 200@15c rest, MSP 100@25c rest."
-    },
-    {
-      "et": "Mon 6:51pm",
-      "who": "Scout",
-      "kind": "HOLD",
-      "text": "FLAG none. Empty still on-peak or unrestable 0/1 leftover. CHI Mon 90 vs live B91.5 99/100, NWS-bin B89.5 0/1. HOU Mon 95 vs T94 99/100, NWS-bin B94.5 0/1. HOU Tue 90 vs T89 67/68, NWS-bin B89.5 19/22 declined. Occupied skip LAX/SFO/MSP. No FLAG."
-    },
-    {
-      "et": "Mon 6:10pm",
-      "who": "Scout",
-      "kind": "HOLD",
-      "text": "FLAG none. Empty still on-peak or unrestable 0/1 leftover. CHI Mon 90 vs live B91.5 99/100, NWS-bin B89.5 0/1. SEA Mon METAR 75 through GRID 74, NWS-bin B73.5 0/1. PHL Tue grid 91\u219290 still on NDFD 91 at B91.5 51/52. Occupied skip LAX/SFO/MSP. No FLAG."
-    },
-    {
-      "et": "Mon 5:57pm",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "All-live no kill. Still Monday. LAX 312053Z T0250=77.00F max T0256=78.08F. SFO 312056Z T0183=64.94F. MSP 312153Z T0328=91.04F. Watch Tue 0700Z KLAX/KSFO, 0500Z KMSP. Occupied: LAX 42 filled, SFO 200@15c rest, MSP 100@25c rest."
-    },
-    {
-      "et": "Mon 5:55pm",
-      "who": "Scout",
-      "kind": "HOLD",
-      "text": "FLAG none. Occupied skip LAX Tue 42.22 Yes filled KXHIGHLAX-26SEP01-B78.5, SFO Tue 200 Yes @15c rest KXHIGHTSFO-26SEP01-B67.5 order 01a05966, MSP Tue 100 Yes @25c rest KXHIGHTMIN-26SEP01-B89.5 order 01a059a4 (book 27/28, do not chase). Do not re-flag ATL B93.5, NYC B83.5, HOU B89.5, SATX, Vegas/Denver/BOS/MIA. Monday leftover OFFs are 99/100 junk, not new tickets."
-    },
-    {
-      "et": "Mon 5:22pm",
-      "who": "Scout",
-      "kind": "HOLD",
-      "text": "MSP Tue B89.5 book moved to 27/28 (was 23/24). Edge 6c vs live B87.5 33/34, no longer \u22658c. Weather unchanged Wx PASS peak 89 IN. Not re-FLAGging. Existing 100@25c rest order 01a059a4 left unfilled; did not chase 27, did not KILL, did not lift. LAX filled and SFO rest still occupied."
-    },
-    {
-      "et": "Mon 5:06pm",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "MSP Tue 89-90 100 Yes @25c on. KMSP 312053Z T0328=91.04F is Monday, not Tuesday print. No kill. No second MSP. KMSP climate day starts 0500Z (CDT midnight), not 0700Z. LAX 42 filled and SFO 200@15c still on."
-    },
-    {
-      "et": "Mon 5:06pm",
-      "who": "Trader",
-      "kind": "REST",
-      "text": "MSP Tue 100 Yes KXHIGHTMIN-26SEP01-B89.5 @25c resting (CLEAR was 23c; joined 25, did not take 28). Order 01a059a4-8b98-729e-a29c-d33ccfd72521 unfilled. LAX and SFO untouched. Cash $2,069.90. All-in mid $2,129.91 / bid $2,128.29."
-    },
-    {
-      "et": "Mon 5:04pm",
-      "who": "Johnny",
-      "kind": "CLEAR",
-      "text": "CLEAR MSP Tue 89-90 100 Yes @23c KXHIGHTMIN-26SEP01-B89.5. Wx PASS (peak 89, daily/grid 90 in-bin, PoP ~0). No storms unlike NYC/HOU. Post-only idx-0."
-    },
-    {
-      "et": "Mon 5:04pm",
-      "who": "Wx",
-      "kind": "PASS",
-      "text": "MSP Tue B89.5 PASS. Peak 89@16 CDT, daily 90, NDFD 90 still IN {89,90} (not exit into B91.5). PoP ~0."
-    },
-    {
-      "et": "Mon 5:04pm",
-      "who": "Scout",
-      "kind": "FLAG",
-      "text": "MSP Tue KXHIGHTMIN-26SEP01-B89.5 23/24 post-only 23c x100. KMSP peak 89@16 CDT IN 89-90, daily 90, NDFD 90 still IN. Live B87.5 33/34. Occupied skip LAX filled and SFO rest."
-    },
-    {
-      "et": "Mon 4:56pm",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "All-live no kill. Still Monday. LAX 312053Z T0250=77.00F, Monday max T0256=78.08F. SFO 311956Z T0178=64.04F Monday. Watch both Tue 0700Z. LAX 42 filled and SFO 200@15c rest still occupied."
-    },
-    {
-      "et": "Mon 4:54pm",
-      "who": "Scout",
-      "kind": "HOLD",
-      "text": "FLAG none. Occupied skip LAX Tue 42.22 Yes filled KXHIGHLAX-26SEP01-B78.5 and SFO Tue 200 Yes @15c rest KXHIGHTSFO-26SEP01-B67.5 order 01a05966-9450-7ff3-92e8-b08be893f811. Do not re-flag ATL B93.5, NYC B83.5, HOU B89.5, SATX, Vegas/Denver/BOS/MIA. Monday T-groups do not count for Tuesday bins."
-    },
-    {
-      "et": "Mon 4:18pm",
-      "who": "Macro",
-      "kind": "LEDGER",
-      "text": "LEDGER only, will not cancel SFO/LAX. Cash $2,069.90. Weather marked $10.77 (LAX 42 @~25.5c). Other Fed $115.35. All-in mid $2,196.03 / bid $2,194.40. SFO 200@15c unfilled order 01a05966-9450-7ff3-92e8-b08be893f811."
-    },
-    {
-      "et": "Mon 4:17pm",
-      "who": "Johnny",
-      "kind": "NOTE",
-      "text": "Keep Wx. Macro tightened to LEDGER only: never cancel, never rest, never place, never trial-closeout. Cash AND all-in every line."
-    },
-    {
-      "et": "Mon 4:08pm",
-      "who": "Trader",
-      "kind": "KILL",
-      "text": "HOU Tue B89.5 no rest, no lift. Book stays LAX 42.22 filled and SFO 200@15c. Cash $2,069.90 / all-in $2,132.87."
-    },
-    {
-      "et": "Mon 4:08pm",
-      "who": "Johnny",
-      "kind": "KILL",
-      "text": "HOU Tue 89-90 RISK KILL. Wx PASS grid 90, but 70% storms and already in LAX+SFO. No rest."
-    },
-    {
-      "et": "Mon 4:07pm",
-      "who": "Wx",
-      "kind": "PASS",
-      "text": "HOU Hobby KHOU peak/daily/grid 90 in 89-90. 70% TS, 2-3in. IAH is 92, not settlement."
-    },
-    {
-      "et": "Mon 4:07pm",
-      "who": "Scout",
-      "kind": "FLAG",
-      "text": "KXHIGHTHOU-26SEP01-B89.5 18/23. Peak 90 IN. Live T89 88-or-below 64/68."
-    },
-    {
-      "et": "Mon 4:00pm",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "HOLD both. SFO Tue 67-68 200 Yes @15c confirmed live. KSFO Mon T0172=62.96F does not count. LAX 42 Yes still on. KLAX 311953Z T0250=77.00F / day max T0256=78.08F Monday. Watch both Tue 0700Z. No kill. No second tickets."
-    },
-    {
-      "et": "Mon 4:00pm",
-      "who": "Trader",
-      "kind": "REST",
-      "text": "Restored SFO Tue 200 Yes KXHIGHTSFO-26SEP01-B67.5 @15c post-only, order 01a05966-9450-7ff3-92e8-b08be893f811, unfilled. Live 15/16, did not lift. LAX 42.22 Yes filled untouched. Cash $2,069.90. All-in mid $2,132.87 / bid $2,131.24."
-    },
-    {
-      "et": "Mon 4:00pm",
-      "who": "Macro",
-      "kind": "NOTE",
-      "text": "Will not cancel weather rests unless Johnny KILL. LAX 42 Yes stays. No new Fed. Ledger after SFO rest."
-    },
-    {
-      "et": "Mon 3:58pm",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "LAX Tue 78-79 is 42 Yes filled. No second LAX. SFO off until Trader confirms restore. Watch KLAX from Tue 0700Z. Monday T0256 does not count. No kill."
-    },
-    {
-      "et": "Mon 3:55pm",
-      "who": "Scout",
-      "kind": "HOLD",
-      "text": "FLAG none. Occupied skip LAX Tue 42 Yes filled KXHIGHLAX-26SEP01-B78.5. SFO restore in flight, do not re-flag. Do not re-flag ATL B93.5, NYC B83.5, SATX, Vegas/Denver/BOS/MIA. Monday T-groups do not count for Tuesday bins."
-    },
-    {
-      "et": "Mon 3:52pm",
-      "who": "Macro",
-      "kind": "LEDGER",
-      "text": "Trial closeout canceled leftover rests: SFO 200@15c unfilled, LAX leftover 58@27c, Fed Oct 30@48c, Fed Dec 34@52c. Cash $2,069.90. Weather: LAX 42 Yes ~27.5c (~$12). Other Fed MTM ~$51. All-in MTM $2,132.87. Open: LAX 42, Sep Fed 159 HOLD, Oct -30, Dec -34."
-    },
-    {
-      "et": "Mon 3:39pm",
-      "who": "Trader",
-      "kind": "KILL",
-      "text": "KILL NYC Tue B83.5: no rest, no lift, no order. Tuesday book stays LAX 100 Yes @27c and SFO 200 Yes @15c. Cash $2,081.30. All-in mid $2,141.33 / bid $2,139.74."
-    },
-    {
-      "et": "Mon 3:39pm",
-      "who": "Johnny",
-      "kind": "KILL",
-      "text": "KILL NYC Tue 83-84 KXHIGHNY-26SEP01-B83.5. Wx PASS (peak 83, daily 83, grid 84 in-bin) but RISK KILL: 70% storms, daily falls to 81, already occupying LAX 100@27c and SFO 200@15c. No rest."
-    },
-    {
-      "et": "Mon 3:38pm",
-      "who": "Scout",
-      "kind": "FLAG",
-      "text": "NYC Tue KXHIGHNY-26SEP01-B83.5 32/33 post-only 32c x100. Grid peak 84 IN 83-84, daily/NDFD 84. Live T83 82-or-below 54/55. 50% storms noted. Occupied skip LAX/SFO. Wx kicked."
-    },
-    {
-      "et": "Mon 3:26pm",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "SFO Tue 67-68 on. KSFO 311856Z T0172=62.96F is Monday, not Tuesday print. No kill. No second SFO. Watch starts local Tuesday 0700Z. LAX Tue 78-79 still on."
-    },
-    {
-      "et": "Mon 3:24pm",
-      "who": "Trader",
-      "kind": "REST",
-      "text": "SFO Tue 200 Yes KXHIGHTSFO-26SEP01-B67.5 @15c resting (CLEAR 13c; joined 15/16, did not lift). Order 01a05944-e738-7cff-9015-a07058cdb3f3 unfilled. Cash $2,081.30. All-in mid $2,141.33 / bid $2,139.74. LAX 100@27c also resting."
-    },
-    {
-      "et": "Mon 3:21pm",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "LAX Tue 78-79 on. KLAX 311853Z T0256=78.08F is Monday, not Tuesday print. No kill. No second LAX. Watch starts local Tuesday 0700Z."
-    },
-    {
-      "et": "Mon 3:20pm",
-      "who": "Trader",
-      "kind": "REST",
-      "text": "LAX Tue 100 Yes KXHIGHLAX-26SEP01-B78.5 @27c resting (CLEAR 26c; joined 27/29, did not lift). Order 01a05943-b2a0-710f-8d12-a6b39aa8c505 unfilled. Cash $2,081.30. All-in mid $2,132.48 / bid $2,130.90. SFO CLEAR still in flight."
-    },
-    {
-      "et": "Mon 3:18pm",
-      "who": "Johnny",
-      "kind": "CLEAR",
-      "text": "CLEAR SFO Tue 67-68 200 Yes @13c KXHIGHTSFO-26SEP01-B67.5. CLEAR LAX Tue 78-79 100 Yes @26c KXHIGHLAX-26SEP01-B78.5. Both post-only idx-0. Wx PASS."
-    },
-    {
-      "et": "Mon 3:18pm",
-      "who": "Johnny",
-      "kind": "KILL",
-      "text": "ATL Tue 93-94 KILL. Wx FAIL (daily/grid 95 leftover). No rest."
-    },
-    {
-      "et": "Mon 3:17pm",
-      "who": "Scout",
-      "kind": "FLAG",
-      "text": "Tue Sep 1 empty: ATL B93.5 12/13 x200; SFO B67.5 13/17 x200; LAX B78.5 26/29 x100. SATX skipped. Wx kicked."
-    },
-    {
-      "et": "Mon 3:01pm",
-      "who": "Macro",
-      "kind": "LEDGER",
-      "text": "Cash $2,081.30. Weather $0. Other (Fed) mid $115.01 / bid $113.60. All-in mid $2,196.32 / bid $2,194.90. SATX gone. BTC Yes did not pay. Weather empty."
-    },
-    {
-      "et": "Mon 2:57pm",
-      "who": "Printer",
-      "kind": "KILL",
-      "text": "SATX 100 Yes KXHIGHTSATX-26AUG28-B97.5 settled No. CLISAT Fri Aug 28 MAXIMUM 100 at 3:19pm. Kalshi finalized No Sat 8:12am ET. Cost $40. Live book empty. Last Macro still Fri 11:53 cash $2,081 / all-in $2,253 (marks stale, no invented P&L)."
-    },
-    {
-      "et": "Fri 11:55am",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "SATX filled HOLD. KSAT 1551Z T0306=87.08F rnd 87 vs 97-98. Still climbing, no kill. No second SATX."
-    },
-    {
-      "et": "Fri 11:29am",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "SATX filled HOLD. KSAT 1451Z 84F vs 97-98. No kill. No second SATX."
-    },
-    {
-      "et": "Fri 11:19am",
-      "who": "Macro",
-      "kind": "FILL",
-      "text": "SATX 100 Yes filled @40c. Cash $2,081 / weather $40 / other $133 / all-in $2,254 mid $2,252 bid. Sep Fed 47c after Warsh."
-    },
-    {
-      "et": "Fri 11:18am",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "SATX all-live. KSAT 1451Z 84F vs 97-98. No kill. Occupied."
-    },
-    {
-      "et": "Fri 11:13am",
-      "who": "Scout",
-      "kind": "HOLD",
-      "text": "FLAG none. Sat empty ON peak: CHI B82.5 36/39 NWS 82, SFO B67.5 33/41 NWS 67, MSP B82.5 26/27 vs T80 28/34 is 2c. Fri leftover on-peak. SATX occupied."
-    },
-    {
-      "et": "Fri 11:08am",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "SATX all-live. KSAT 1451Z 84F vs 97-98. No kill. Rest 100@40c still occupied."
-    },
-    {
-      "et": "Fri 10:50am",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "SATX all-live. KSAT 1351Z 82F vs 97-98. No kill. Rest still occupied."
-    },
-    {
-      "et": "Fri 10:26am",
-      "who": "Scout",
-      "kind": "HOLD",
-      "text": "Sat quoted, no FLAG. CHI 82 B82.5 28/30 ON. SFO 67 B67.5 31/32 ON. MSP 82 vs T80 is 3c. Sun 404. SATX occupied."
-    },
-    {
-      "et": "Fri 10:00am",
-      "who": "Scout",
-      "kind": "HOLD",
-      "text": "FLAG none. CHI/MSP/SFO still on-peak. SATX occupied. Sat/Sun were unquoted then."
-    },
-    {
-      "et": "Fri 9:56am",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "SATX all-live. KSAT 1351Z 82F vs 97-98. No kill. No second SATX."
-    },
-    {
-      "et": "Fri 10:00am",
-      "who": "Macro",
-      "kind": "LEDGER",
-      "text": "Cash $2,147.50 / all-in $2,227. Weather $0 (HOU/NOLA/DC in cash). BTC 50 @53c vs Kraken $79.0k. SATX 100@40c unfilled, book 43/45. Fed Oct 2 + Dec 1 maker fills. No Macro rest."
-    },
-    {
-      "et": "Fri 9:08am",
-      "who": "Printer",
-      "kind": "HOLD",
-      "text": "SATX all-live. KSAT 79F vs 97-98. No kill."
-    },
-    {
-      "et": "Fri 8:49am",
-      "who": "Trader",
-      "kind": "REST",
-      "text": "SATX 100 Yes @40c unfilled. Cash $2,149 / all-in $2,256. Did not lift."
-    },
-    {
-      "et": "Fri 8:47am",
-      "who": "Johnny",
-      "kind": "CLEAR",
-      "text": "SATX Fri 97-98. Wx PASS. Grid peak 97, daily 98. Board was on 99-100."
-    },
-    {
-      "et": "Fri 8:47am",
-      "who": "Wx",
-      "kind": "PASS",
-      "text": "KSAT T-group ~79F. Hourly peak 97@4pm CDT. Daily 98. In-bin."
-    },
-    {
-      "et": "Fri 8:46am",
-      "who": "Scout",
-      "kind": "FLAG",
-      "text": "KXHIGHTSATX-26AUG28-B97.5 38/39. Overnight cool 100\u219297."
-    },
-    {
-      "et": "Fri 8:40am",
-      "who": "Johnny",
-      "kind": "NO",
-      "text": "Kalshi perpetuals are crypto perps. Hard no. $2k stays on daily highs."
-    },
-    {
-      "et": "Fri 8:34am",
-      "who": "Printer",
-      "kind": "PRINT",
-      "text": "Thu CLI finals: HOU 97, NOLA 87, DC 88. Those three Yes print."
-    },
-    {
-      "et": "Thu 8:31pm",
-      "who": "Trader",
-      "kind": "KILL",
-      "text": "PHX 25 Yes dead, no bid. CLI max 113 vs 114-115. Cost $7.50."
-    },
-    {
-      "et": "Thu 7:44pm",
-      "who": "Johnny",
-      "kind": "KILL",
-      "text": "Dallas Fri 99-100 @44c. Wx FAIL. On-peak, not a miss. No rest."
-    },
-    {
-      "et": "Thu 6:03pm",
-      "who": "Jason",
-      "kind": "NOTE",
-      "text": "Wrong direction. Flatten dead only. Do not stuff 47c Friday on-peak."
     }
   ],
   "seats": [
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "FLAG none ~6:04; occupied LAX/MSP/SEA Tue + PHX/DC/PHIL/AUS/ATL/OKC Wed; SFO dead; HOU Wed / ATL Tue leftover do-not-reflag; CHI/DAL/NOLA Wed ON; geo/tech last EMPTY 5:37"
+      "state": "FLAG none ~7:02; occupied LAX/MSP/SEA Tue + PHX/DC/PHIL/AUS/ATL/OKC Wed; SFO dead; HOU Wed / ATL Tue leftover do-not-reflag; CHI/DAL/NOLA Wed ON; SEA Wed ON B66.5; geo/tech last EMPTY 5:37 (Intel 7:31 scan in flight)"
     },
     {
       "name": "Wx",
@@ -1052,12 +618,12 @@
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD 7:01 SEA rnd 66\u219264 / LAX rnd 75\u219274 / MSP peak 88\u219285 at 2253Z; SFO dead; Wed watch PHX 0700Z DC/PHIL/ATL 0400Z AUS/OKC 0500Z"
+      "state": "HOLD 7:01 2253Z cooling LAX rnd 75\u219274 / MSP peak 88\u219285 / SEA rnd 66\u219264; SFO dead; Wed watch PHX 0700Z DC/PHIL/ATL 0400Z AUS/OKC 0500Z"
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $2073.52 / all-in mid $2145.01 / bid $2139.34 (Trader 3:25; no newer ledger)"
+      "state": "cash $2073.52 / all-in mid $2145.01 / bid $2139.34 (Trader 3:25; no newer ledger this session)"
     }
   ]
 }
