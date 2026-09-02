@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-02T17:00:00-04:00",
-  "asOfLabel": "Wed 5:00pm ET",
+  "asOf": "2026-09-02T17:33:00-04:00",
+  "asOfLabel": "Wed 5:33pm ET",
   "cash": 1964.59,
   "allInMid": 2035.58,
   "allInBid": 2031.02,
@@ -335,6 +335,12 @@
       "text": "HOLD no kill. PHX skip. MSP/CHI Thu not started. 2053Z in except AUS still 1953Z. DC T-group rnd 90 IN 89-90 (2052Z now 76). PHIL 77 vs 84-85. AUS rnd 99 IN 98-99. ATL rnd 95 IN 95-96 (2052Z cooled 94). OKC new max rnd 99 IN 98-99. No kill. Cash last Trader 3:54 $1,964.59 / all-in mid $2,035.58 / bid $2,031.02."
     },
     {
+      "et": "Wed 4:53pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none on 4:53 hourly. CHI T hit 96 then back to 95 falling, peak past; B94.5 0/1 killed, live B96.5 97/99 do-not-chase. DAL METAR 99 through 97/98, live B98.5 74/79 do-not-chase. Occupied skip Wed DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI; PHX Wed dead. No FLAG."
+    },
+    {
       "et": "Wed 3:54pm",
       "who": "Trader",
       "kind": "DEAD",
@@ -356,7 +362,7 @@
       "et": "Wed 3:50pm",
       "who": "Scout",
       "kind": "HOLD",
-      "text": "FLAG none on 3:50 hourly. CHI Wed B94.5 0/1 still killed; live B96.5 93/94 do-not-chase; T-max 95 not 96. DAL Wed NDFD 98\u219297 closed B96.5 exit. NOLA TS crash. PHX Wed dead, no new PHX bin. Occupied skip Wed DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI. Fri 404. No FLAG."
+      "text": "FLAG none on 3:50 hourly. CHI Wed B94.5 0/1 still killed; live B96.5 93/94 do-not-chase; T-max 95 not 96. DAL Wed NDFD 98→97 closed B96.5 exit. NOLA TS crash. PHX Wed dead, no new PHX bin. Occupied skip Wed DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI. Fri 404. No FLAG."
     },
     {
       "et": "Wed 3:08pm",
@@ -506,7 +512,7 @@
       "et": "Wed 8:20am",
       "who": "Intel",
       "kind": "HOLD",
-      "text": "EMPTY geo/tech. Scanned 50. Closest miss KXBURNHAMMENTION-26SEP02-IRAN untradeable (closed last 67) conf 70% \u2014 PMQs over, no Burnham Iran; Hansard not posted so conf fails 75%. NUCL 0/1 gap ~1pp. WNT-26SEP02 still 404. No FLAG."
+      "text": "EMPTY geo/tech. Scanned 50. Closest miss KXBURNHAMMENTION-26SEP02-IRAN untradeable (closed last 67) conf 70% — PMQs over, no Burnham Iran; Hansard not posted so conf fails 75%. NUCL 0/1 gap ~1pp. WNT-26SEP02 still 404. No FLAG."
     },
     {
       "et": "Wed 5:16am",
@@ -654,7 +660,7 @@
       "et": "Tue 3:05pm",
       "who": "Johnny",
       "kind": "NOTE",
-      "text": "Spread size: 50 Yes default, 100 if post-only \u226420c, 200 only if full-bin \u226410c, cap $500/name. Concentration city-count RISK KILLs OFF. Take Wx PASS empties."
+      "text": "Spread size: 50 Yes default, 100 if post-only ≤20c, 200 only if full-bin ≤10c, cap $500/name. Concentration city-count RISK KILLs OFF. Take Wx PASS empties."
     },
     {
       "et": "Tue 3:04pm",
@@ -817,7 +823,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "3:50 FLAG none; PHX Wed dead no new bin; occupied skip Wed DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI; Tue LAX/SEA/SFO dead; MSP printed; CHI Wed leftover B94.5 killed earlier; Printer last HOLD 4:55; 4:53 kick in flight; Intel last EMPTY 1:28 (4:28 kick in flight)"
+      "state": "4:53 FLAG none; CHI peak past do-not-chase B96.5; occupied skip Wed DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI; PHX Wed dead; Tue LAX/SEA/SFO dead; MSP printed; Printer last HOLD 4:55; Intel last EMPTY 1:28 (5:23 kick in flight)"
     },
     {
       "name": "Wx",
