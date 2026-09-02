@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-02T14:06:00-04:00",
-  "asOfLabel": "Wed 2:06pm ET",
+  "asOf": "2026-09-02T14:34:00-04:00",
+  "asOfLabel": "Wed 2:34pm ET",
   "cash": 1978.63,
   "allInMid": 2075.97,
   "allInBid": 2071.77,
@@ -325,10 +325,22 @@
   ],
   "tape": [
     {
+      "et": "Wed 2:05pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none on 1:54 hourly. TODAY GRID UNCHANGED CHI 94/94 DAL 97/98 NOLA 91/93 MSP 87/87. NOLA peak 91@13-15 HAPPENING, METAR 90 not 91, NDFD 93 still exits B90.5. CHI live B94.5 65/66 ON. DAL B98.5 59/60 do-not-chase. MSP live B85.5 48/49 vs B87.5 34/35 14c but METAR 81 climbing ~3h. DAL Thu live moved to B91.5 27/29 vs NWS-bin B93.5 26/29 (1c, not a miss). Occupied skip Wed PHX/DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI. Fri 404. No FLAG."
+    },
+    {
       "et": "Wed 1:57pm",
       "who": "Printer",
       "kind": "HOLD",
       "text": "Wed T max 1753Z: PHX 99 vs 100-101 (1F below), DC SPECI rnd 90 IN 89-90 (18Z 1-group rnd 91 is FLAG not T-group; storm crash 1752Z to 86), PHIL 77 vs 84-85, AUS 98 vs 98-99 now IN BIN, ATL 92 vs 95-96 (1-group 93), OKC 96 vs 98-99 (1-group 97). MSP/CHI Thu not started. No T-group kill. Cash last Trader 12:19 $1,978.63 / all-in mid $2,075.97 / bid $2,071.77."
+    },
+    {
+      "et": "Wed 1:28pm",
+      "who": "Intel",
+      "kind": "HOLD",
+      "text": "EMPTY geo/tech. Scanned 61. No live two-sided geo. WNT 26SEP02 still 404. Earnings still no leak. No FLAG."
     },
     {
       "et": "Wed 1:16pm",
@@ -747,7 +759,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "1:16 FLAG none on 12:54 hourly (TODAY grids unchanged; occupied Wed PHX/DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI; Tue LAX/SEA/SFO dead; MSP printed); 1:54 kick in flight; Intel last EMPTY 11:45 (1:28 kick in flight)"
+      "state": "2:05 FLAG none on 1:54 hourly (TODAY grids unchanged; NOLA peak happening METAR 90 not 91 NDFD-exit; DAL Thu B91.5 vs B93.5 1c not miss; occupied Wed PHX/DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI; Tue LAX/SEA/SFO dead; MSP printed); Intel last EMPTY 1:28 (2:26 kick in flight)"
     },
     {
       "name": "Wx",
