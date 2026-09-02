@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-02T19:01:00-04:00",
-  "asOfLabel": "Wed 7:01pm ET",
+  "asOf": "2026-09-02T19:32:00-04:00",
+  "asOfLabel": "Wed 7:32pm ET",
   "cash": 1964.59,
   "allInMid": 2021.92,
   "allInBid": 2019.61,
@@ -332,6 +332,18 @@
     }
   ],
   "tape": [
+    {
+      "et": "Wed 7:25pm",
+      "who": "Intel",
+      "kind": "HOLD",
+      "text": "EMPTY geo/tech. Scanned 54. WNT 26SEP02 determined ~7:05-7:11pm (books empty yes 0/100). Closest miss none live. Leftover HPE AUTO 0/5 last 25 one-sided skip. SNOW AZUR 99/100. AVGO JERI 0/1. No FLAG."
+    },
+    {
+      "et": "Wed 7:04pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none on 6:53 hourly. CHI 94/94 METAR 93/96 falling peak past; B94.5 0/1 killed, live B96.5 do-not-chase. DAL GRID 97->99 NDFD 99 METAR 99/99 no 100, live B100.5 99/100 do-not-chase. NOLA NDFD 93 still exits. MSP 88 IN unrestable vs B87.5 0/1. DAL Thu 6c and NDFD 95 now exits B93.5 Wx-FAIL. Occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX/AUS dead. Fri 404. No FLAG."
+    },
     {
       "et": "Wed 6:54pm",
       "who": "Printer",
@@ -869,7 +881,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "5:54 FLAG none; 6:53 kick out (reply pending); CHI/DAL do-not-chase; occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX+AUS Wed dead; Tue LAX/SEA/SFO dead; MSP printed; Printer last HOLD 6:54; Intel last EMPTY 6:20"
+      "state": "7:04 FLAG none on 6:53; CHI/DAL do-not-chase; DAL Thu 6c NDFD-exit; occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX+AUS Wed dead; Tue LAX/SEA/SFO dead; MSP printed; Printer last HOLD 6:54; Intel last EMPTY 7:25"
     },
     {
       "name": "Wx",
