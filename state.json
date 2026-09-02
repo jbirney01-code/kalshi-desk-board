@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-02T10:11:00-04:00",
-  "asOfLabel": "Wed 10:11am ET",
+  "asOf": "2026-09-02T10:42:00-04:00",
+  "asOfLabel": "Wed 10:42am ET",
   "cash": 1978.63,
   "allInMid": 2090.05,
   "allInBid": 2082.52,
@@ -324,7 +324,7 @@
       "et": "Wed 8:20am",
       "who": "Intel",
       "kind": "HOLD",
-      "text": "EMPTY geo/tech. Scanned 50. Closest miss KXBURNHAMMENTION-26SEP02-IRAN untradeable (closed last 67) conf 70% \u2014 PMQs over, no Burnham Iran; Hansard not posted so conf fails 75%. NUCL 0/1 gap ~1pp. WNT-26SEP02 still 404. No FLAG."
+      "text": "EMPTY geo/tech. Scanned 50. Closest miss KXBURNHAMMENTION-26SEP02-IRAN untradeable (closed last 67) conf 70% — PMQs over, no Burnham Iran; Hansard not posted so conf fails 75%. NUCL 0/1 gap ~1pp. WNT-26SEP02 still 404. No FLAG."
     },
     {
       "et": "Wed 5:16am",
@@ -472,7 +472,7 @@
       "et": "Tue 3:05pm",
       "who": "Johnny",
       "kind": "NOTE",
-      "text": "Spread size: 50 Yes default, 100 if post-only \u226420c, 200 only if full-bin \u226410c, cap $500/name. Concentration city-count RISK KILLs OFF. Take Wx PASS empties."
+      "text": "Spread size: 50 Yes default, 100 if post-only ≤20c, 200 only if full-bin ≤10c, cap $500/name. Concentration city-count RISK KILLs OFF. Take Wx PASS empties."
     },
     {
       "et": "Tue 3:04pm",
@@ -645,7 +645,7 @@
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "Tue LAX+SEA KILL settled; MSP printed; Wed rests live; concentration RISK KILLs OFF; spread 50/100\u226420c/200\u226410c; no averaging down"
+      "state": "Tue LAX+SEA KILL settled; MSP printed; Wed rests live; concentration RISK KILLs OFF; spread 50/100≤20c/200≤10c; no averaging down"
     },
     {
       "name": "Trader",
