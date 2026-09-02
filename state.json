@@ -1,10 +1,10 @@
 {
-  "asOf": "2026-09-02T11:06:00-04:00",
-  "asOfLabel": "Wed 11:06am ET",
+  "asOf": "2026-09-02T11:47:00-04:00",
+  "asOfLabel": "Wed 11:47am ET",
   "cash": 1978.63,
-  "allInMid": 2090.05,
-  "allInBid": 2082.52,
-  "weatherMarked": 62.18,
+  "allInMid": 2093.55,
+  "allInBid": 2087.52,
+  "weatherMarked": 65.68,
   "otherMarked": 49.24,
   "scoreboard": "$500+ now, thousands next week",
   "live": [
@@ -55,6 +55,14 @@
       "side": "50 Yes @34c rest",
       "status": "REST",
       "note": "Wed Sep 2. Order 01a05e5e-8198-71ee-aa8f-fdf0c753e9c4 unfilled. Printer HOLD 10:59: Wed T max 88 vs 98-99. Kill 100+ not 99. No second OKC."
+    },
+    {
+      "ticker": "KXHIGHTMIN-26SEP03-B86.5",
+      "city": "MSP",
+      "bin": "86-87",
+      "side": "100 Yes @13c rest",
+      "status": "REST",
+      "note": "Thu Sep 3. Order 01a062b3-c258-766d-9d55-da639afa9ef8 unfilled (joined 13, did not take 15). Wx PASS peak 86 IN 86-87. Watch Thu 0500Z CDT. Wed T-groups do not count. Kill 88+. No second MSP."
     }
   ],
   "printed": [
@@ -293,9 +301,39 @@
       "cash": 1978.63,
       "allIn": 2090.05,
       "note": "LAX+SEA Tue dead; MSP printed 90; Trader all-in"
+    },
+    {
+      "t": "Wed 11:19am",
+      "cash": 1978.63,
+      "allIn": 2093.55,
+      "note": "MSP Thu rest @13c; Trader all-in; Wed rests live"
     }
   ],
   "tape": [
+    {
+      "et": "Wed 11:19am",
+      "who": "Trader",
+      "kind": "REST",
+      "text": "MSP Thu 100 Yes KXHIGHTMIN-26SEP03-B86.5 @13c resting, order 01a062b3-c258-766d-9d55-da639afa9ef8 unfilled (joined 13, did not take 15). Cash $1,978.63. All-in mid $2,093.55 / bid $2,087.52. Occupied: Wed PHX/DC/PHIL/AUS/ATL/OKC + Thu MSP."
+    },
+    {
+      "et": "Wed 11:18am",
+      "who": "Johnny",
+      "kind": "CLEAR",
+      "text": "CLEAR MSP Thu KXHIGHTMIN-26SEP03-B86.5 100 Yes @13c post-only GTC idx-0. Wx PASS: KMSP peak 86 IN 86-87, daily 87 ceiling, grid 86.0F. Live 13/15 vs B88.5 23/32. Empty. Trader to rest. No averaging down."
+    },
+    {
+      "et": "Wed 11:18am",
+      "who": "Wx",
+      "kind": "PASS",
+      "text": "MSP Thu B86.5 PASS. KMSP peak 86@16-17 CDT, daily 87, NDFD 86 all IN {86,87}, not pass-through. Live B88.5 still hot."
+    },
+    {
+      "et": "Wed 11:16am",
+      "who": "Scout",
+      "kind": "FLAG",
+      "text": "FLAG MSP Thu KXHIGHTMIN-26SEP03-B86.5 13/15 post-only 13c x100. KMSP peak 86@16-17 CDT IN 86-87, daily 87, NDFD 86. Live B88.5 23/32. Empty. Wx kicked. Skipped DAL Thu B93.5 (ATL+DFW stack then lifted)."
+    },
     {
       "et": "Wed 10:59am",
       "who": "Printer",
@@ -330,7 +368,7 @@
       "et": "Wed 8:20am",
       "who": "Intel",
       "kind": "HOLD",
-      "text": "EMPTY geo/tech. Scanned 50. Closest miss KXBURNHAMMENTION-26SEP02-IRAN untradeable (closed last 67) conf 70% \u2014 PMQs over, no Burnham Iran; Hansard not posted so conf fails 75%. NUCL 0/1 gap ~1pp. WNT-26SEP02 still 404. No FLAG."
+      "text": "EMPTY geo/tech. Scanned 50. Closest miss KXBURNHAMMENTION-26SEP02-IRAN untradeable (closed last 67) conf 70% — PMQs over, no Burnham Iran; Hansard not posted so conf fails 75%. NUCL 0/1 gap ~1pp. WNT-26SEP02 still 404. No FLAG."
     },
     {
       "et": "Wed 5:16am",
@@ -478,7 +516,7 @@
       "et": "Tue 3:05pm",
       "who": "Johnny",
       "kind": "NOTE",
-      "text": "Spread size: 50 Yes default, 100 if post-only \u226420c, 200 only if full-bin \u226410c, cap $500/name. Concentration city-count RISK KILLs OFF. Take Wx PASS empties."
+      "text": "Spread size: 50 Yes default, 100 if post-only ≤20c, 200 only if full-bin ≤10c, cap $500/name. Concentration city-count RISK KILLs OFF. Take Wx PASS empties."
     },
     {
       "et": "Tue 3:04pm",
@@ -641,32 +679,32 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "9:51/9:55 FLAG none; occupied Wed PHX/DC/PHIL/AUS/ATL/OKC; Tue LAX/SEA/SFO dead; MSP printed; Intel EMPTY 9:26 (no live two-sided geo)"
+      "state": "11:16 FLAG MSP Thu B86.5 CLEAR/REST; 11:20 FLAG none DAL Thu; occupied Wed PHX/DC/PHIL/AUS/ATL/OKC + Thu MSP; Tue LAX/SEA/SFO dead; Intel EMPTY 9:26"
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "Tue finals: LAX FAIL 75 / SEA FAIL 66 / MSP HOLD 90 IN; Wed Printer HOLD 10:59 PHX 93 DC 86 PHIL 75 AUS 88 ATL 88 OKC 88"
+      "state": "MSP Thu B86.5 PASS peak 86 IN; Tue finals LAX FAIL 75 / SEA FAIL 66 / MSP HOLD 90 IN; Wed Printer HOLD 10:59 PHX 93 DC 86 PHIL 75 AUS 88 ATL 88 OKC 88"
     },
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "Tue LAX+SEA KILL settled; MSP printed; Wed rests live; concentration RISK KILLs OFF; spread 50/100\u226420c/200\u226410c; no averaging down"
+      "state": "CLEAR MSP Thu @13c; Wed rests live; Tue LAX+SEA dead MSP printed; concentration RISK KILLs OFF; spread 50/100≤20c/200≤10c; no averaging down"
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "Wed PHX 100@26c / DC 100@13c / PHIL 200@8c FILLED / AUS 100@27c / ATL 100@20c / OKC 50@34c; Tue LAX+SEA dead; MSP off book"
+      "state": "MSP Thu 100@13c REST 01a062b3; Wed PHX 100@26c / DC 100@13c / PHIL 200@8c FILLED / AUS 100@27c / ATL 100@20c / OKC 50@34c; Tue LAX+SEA dead"
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "10:59 HOLD Wed T max PHX 93 / DC 86 (hottest 3F below) / PHIL 75 overcast / AUS 88 / ATL 88 / OKC 88; Tue finals LAX+SEA KILL MSP 90 IN"
+      "state": "10:59 HOLD Wed T max PHX 93 / DC 86 (hottest 3F below) / PHIL 75 overcast / AUS 88 / ATL 88 / OKC 88; MSP Thu watch starts Thu 0500Z; Tue finals LAX+SEA KILL MSP 90 IN"
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $1978.63 / all-in mid $2090.05 / bid $2082.52 (Trader Wed 9:35; weather $62.18 other $49.24)"
+      "state": "cash $1978.63 / all-in mid $2093.55 / bid $2087.52 (Trader Wed 11:19; weather $65.68 other $49.24)"
     }
   ]
 }
