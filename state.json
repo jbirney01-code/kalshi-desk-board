@@ -1,10 +1,10 @@
 {
-  "asOf": "2026-09-02T11:47:00-04:00",
-  "asOfLabel": "Wed 11:47am ET",
+  "asOf": "2026-09-02T12:21:00-04:00",
+  "asOfLabel": "Wed 12:21pm ET",
   "cash": 1978.63,
-  "allInMid": 2093.55,
-  "allInBid": 2087.52,
-  "weatherMarked": 65.68,
+  "allInMid": 2075.97,
+  "allInBid": 2071.77,
+  "weatherMarked": 48.1,
   "otherMarked": 49.24,
   "scoreboard": "$500+ now, thousands next week",
   "live": [
@@ -14,7 +14,7 @@
       "bin": "100-101",
       "side": "100 Yes @26c rest",
       "status": "REST",
-      "note": "Wed Sep 2. Order 01a05d8a-3208-7b99-b33f-cb4acec300d3 unfilled. Printer HOLD 10:59: Wed T max 93 vs 100-101. No kill. Tue LAX/SEA dead; MSP printed."
+      "note": "Wed Sep 2. Order 01a05d8a-3208-7b99-b33f-cb4acec300d3 unfilled. Printer HOLD 12:01: Wed T max 93 vs 100-101. No kill. Tue LAX/SEA dead; MSP printed."
     },
     {
       "ticker": "KXHIGHTDC-26SEP02-B89.5",
@@ -22,7 +22,7 @@
       "bin": "89-90",
       "side": "100 Yes @13c rest",
       "status": "REST",
-      "note": "Wed Sep 2. Order 01a05d8a-dde8-7e2b-995c-a5a8d6019616 unfilled. Printer HOLD 10:59: Wed T max 86 vs 89-90 (hottest, 3F below). No kill."
+      "note": "Wed Sep 2. Order 01a05d8a-dde8-7e2b-995c-a5a8d6019616 unfilled. Printer HOLD 12:01: Wed T max 87 vs 89-90 (hottest, 2F below). No kill."
     },
     {
       "ticker": "KXHIGHPHIL-26SEP02-B84.5",
@@ -30,7 +30,7 @@
       "bin": "84-85",
       "side": "200 Yes filled @8c",
       "status": "FILLED",
-      "note": "FILLED 200@8c. Printer HOLD 10:59: Wed T max 75 vs 84-85 overcast. No kill."
+      "note": "FILLED 200@8c. Printer HOLD 12:01: Wed T max 76 vs 84-85 OVC. No kill."
     },
     {
       "ticker": "KXHIGHAUS-26SEP02-B98.5",
@@ -38,7 +38,7 @@
       "bin": "98-99",
       "side": "100 Yes @27c rest",
       "status": "REST",
-      "note": "Wed Sep 2. Order 01a05dd6-5638-7337-9352-a5df1aa84e32 unfilled. Printer HOLD 10:59: Wed T max 88 vs 98-99. No kill."
+      "note": "Wed Sep 2. Order 01a05dd6-5638-7337-9352-a5df1aa84e32 unfilled. Printer HOLD 12:01: Wed T max 91 vs 98-99. No kill."
     },
     {
       "ticker": "KXHIGHTATL-26SEP02-B95.5",
@@ -46,7 +46,7 @@
       "bin": "95-96",
       "side": "100 Yes @20c rest",
       "status": "REST",
-      "note": "Wed Sep 2. Order 01a05e6d-7d88-7adc-82d7-bd46040d0ccc unfilled. Printer HOLD 10:59: Wed T max 88 vs 95-96. Kill 97+. ATL Tue leftover never rested."
+      "note": "Wed Sep 2. Order 01a05e6d-7d88-7adc-82d7-bd46040d0ccc unfilled. Printer HOLD 12:01: Wed T max 90 vs 95-96. Kill 97+. ATL Tue leftover never rested."
     },
     {
       "ticker": "KXHIGHTOKC-26SEP02-B98.5",
@@ -54,7 +54,7 @@
       "bin": "98-99",
       "side": "50 Yes @34c rest",
       "status": "REST",
-      "note": "Wed Sep 2. Order 01a05e5e-8198-71ee-aa8f-fdf0c753e9c4 unfilled. Printer HOLD 10:59: Wed T max 88 vs 98-99. Kill 100+ not 99. No second OKC."
+      "note": "Wed Sep 2. Order 01a05e5e-8198-71ee-aa8f-fdf0c753e9c4 unfilled. Printer HOLD 12:01: Wed T max 92 vs 98-99. Kill 100+ not 99. No second OKC."
     },
     {
       "ticker": "KXHIGHTMIN-26SEP03-B86.5",
@@ -63,6 +63,14 @@
       "side": "100 Yes @13c rest",
       "status": "REST",
       "note": "Thu Sep 3. Order 01a062b3-c258-766d-9d55-da639afa9ef8 unfilled (joined 13, did not take 15). Wx PASS peak 86 IN 86-87. Watch Thu 0500Z CDT. Wed T-groups do not count. Kill 88+. No second MSP."
+    },
+    {
+      "ticker": "KXHIGHCHI-26SEP03-B90.5",
+      "city": "CHI",
+      "bin": "90-91",
+      "side": "50 Yes @26c rest",
+      "status": "REST",
+      "note": "Thu Sep 3. Order 01a062ea-dbd0-70f7-a51c-891b25b9033c unfilled (joined 26, did not take 27). Settlement KMDW not KORD. Wx PASS peak 90 IN 90-91. Watch Thu 0500Z CDT. Storms 31-39% noted. Kill 92+. No second CHI."
     }
   ],
   "printed": [
@@ -307,9 +315,45 @@
       "cash": 1978.63,
       "allIn": 2093.55,
       "note": "MSP Thu rest @13c; Trader all-in; Wed rests live"
+    },
+    {
+      "t": "Wed 12:19pm",
+      "cash": 1978.63,
+      "allIn": 2075.97,
+      "note": "CHI Thu rest @26c; Trader all-in; MSP still rest"
     }
   ],
   "tape": [
+    {
+      "et": "Wed 12:19pm",
+      "who": "Trader",
+      "kind": "REST",
+      "text": "CHI Thu 50 Yes KXHIGHCHI-26SEP03-B90.5 @26c resting, order 01a062ea-dbd0-70f7-a51c-891b25b9033c unfilled (joined 26, did not take 27). Settlement KMDW. Cash $1,978.63. All-in mid $2,075.97 / bid $2,071.77. Occupied: Wed PHX/DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI."
+    },
+    {
+      "et": "Wed 12:18pm",
+      "who": "Johnny",
+      "kind": "CLEAR",
+      "text": "CLEAR CHI Thu KXHIGHCHI-26SEP03-B90.5 50 Yes @26c post-only GTC idx-0. Settlement KMDW. Wx PASS: peak 90 IN 90-91, daily/grid 90.0F. Live 26/27 vs B92.5 29/30. Size 50. Storms 31-39% through peak noted. Trader to rest. No averaging down."
+    },
+    {
+      "et": "Wed 12:18pm",
+      "who": "Wx",
+      "kind": "PASS",
+      "text": "CHI Thu B90.5 PASS. KMDW (not KORD) peak 90@12-15 CDT, daily 90, NDFD 90 all IN {90,91}, not pass-through. Live B92.5 still hot."
+    },
+    {
+      "et": "Wed 12:18pm",
+      "who": "Scout",
+      "kind": "FLAG",
+      "text": "FLAG CHI Thu KXHIGHCHI-26SEP03-B90.5 26/27 post-only 26c x50. Settlement KMDW (not KORD). Peak 90@12-15 CDT IN 90-91, daily/NDFD 90. Live hopped to B92.5 29/30. Wx kicked. No CLEAR yet."
+    },
+    {
+      "et": "Wed 12:01pm",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "Wed T max: PHX 93 vs 100-101, DC 87 vs 89-90 (hottest, 2F below), PHIL 76 vs 84-85 OVC, AUS 91 vs 98-99, ATL 90 vs 95-96, OKC 92 vs 98-99. MSP Thu not started. No kill. Cash last Trader 11:19 $1,978.63 / all-in mid $2,093.55 / bid $2,087.52."
+    },
     {
       "et": "Wed 11:19am",
       "who": "Trader",
@@ -368,7 +412,7 @@
       "et": "Wed 8:20am",
       "who": "Intel",
       "kind": "HOLD",
-      "text": "EMPTY geo/tech. Scanned 50. Closest miss KXBURNHAMMENTION-26SEP02-IRAN untradeable (closed last 67) conf 70% — PMQs over, no Burnham Iran; Hansard not posted so conf fails 75%. NUCL 0/1 gap ~1pp. WNT-26SEP02 still 404. No FLAG."
+      "text": "EMPTY geo/tech. Scanned 50. Closest miss KXBURNHAMMENTION-26SEP02-IRAN untradeable (closed last 67) conf 70% \u2014 PMQs over, no Burnham Iran; Hansard not posted so conf fails 75%. NUCL 0/1 gap ~1pp. WNT-26SEP02 still 404. No FLAG."
     },
     {
       "et": "Wed 5:16am",
@@ -516,7 +560,7 @@
       "et": "Tue 3:05pm",
       "who": "Johnny",
       "kind": "NOTE",
-      "text": "Spread size: 50 Yes default, 100 if post-only ≤20c, 200 only if full-bin ≤10c, cap $500/name. Concentration city-count RISK KILLs OFF. Take Wx PASS empties."
+      "text": "Spread size: 50 Yes default, 100 if post-only \u226420c, 200 only if full-bin \u226410c, cap $500/name. Concentration city-count RISK KILLs OFF. Take Wx PASS empties."
     },
     {
       "et": "Tue 3:04pm",
@@ -679,32 +723,32 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "11:16 FLAG MSP Thu B86.5 CLEAR/REST; 11:20 FLAG none DAL Thu; occupied Wed PHX/DC/PHIL/AUS/ATL/OKC + Thu MSP; Tue LAX/SEA/SFO dead; Intel EMPTY 9:26"
+      "state": "12:18 FLAG CHI Thu B90.5 CLEAR/REST; occupied Wed PHX/DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI; Tue LAX/SEA/SFO dead; MSP printed; Intel last EMPTY 9:26/11:45 kick"
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "MSP Thu B86.5 PASS peak 86 IN; Tue finals LAX FAIL 75 / SEA FAIL 66 / MSP HOLD 90 IN; Wed Printer HOLD 10:59 PHX 93 DC 86 PHIL 75 AUS 88 ATL 88 OKC 88"
+      "state": "CHI Thu B90.5 PASS peak 90 IN KMDW; MSP Thu B86.5 PASS peak 86 IN; Wed Printer HOLD 12:01 PHX 93 DC 87 PHIL 76 AUS 91 ATL 90 OKC 92"
     },
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "CLEAR MSP Thu @13c; Wed rests live; Tue LAX+SEA dead MSP printed; concentration RISK KILLs OFF; spread 50/100≤20c/200≤10c; no averaging down"
+      "state": "CLEAR CHI Thu @26c + MSP Thu @13c; Wed rests live; Tue LAX+SEA dead MSP printed; concentration RISK KILLs OFF; spread 50/100\u226420c/200\u226410c; no averaging down"
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "MSP Thu 100@13c REST 01a062b3; Wed PHX 100@26c / DC 100@13c / PHIL 200@8c FILLED / AUS 100@27c / ATL 100@20c / OKC 50@34c; Tue LAX+SEA dead"
+      "state": "CHI Thu 50@26c REST 01a062ea; MSP Thu 100@13c REST 01a062b3; Wed PHX 100@26c / DC 100@13c / PHIL 200@8c FILLED / AUS 100@27c / ATL 100@20c / OKC 50@34c; Tue LAX+SEA dead"
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "10:59 HOLD Wed T max PHX 93 / DC 86 (hottest 3F below) / PHIL 75 overcast / AUS 88 / ATL 88 / OKC 88; MSP Thu watch starts Thu 0500Z; Tue finals LAX+SEA KILL MSP 90 IN"
+      "state": "12:01 HOLD Wed T max PHX 93 / DC 87 (hottest 2F below) / PHIL 76 OVC / AUS 91 / ATL 90 / OKC 92; MSP+CHI Thu watch starts Thu 0500Z; Tue finals LAX+SEA KILL MSP 90 IN"
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $1978.63 / all-in mid $2093.55 / bid $2087.52 (Trader Wed 11:19; weather $65.68 other $49.24)"
+      "state": "cash $1978.63 / all-in mid $2075.97 / bid $2071.77 (Trader Wed 12:19; weather $48.10 other $49.24)"
     }
   ]
 }
