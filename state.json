@@ -1,60 +1,28 @@
 {
-  "asOf": "2026-09-03T08:46:00-04:00",
-  "asOfLabel": "Thu 8:46am ET",
-  "cash": 1964.59,
-  "allInMid": 2021.92,
-  "allInBid": 2019.61,
-  "weatherMarked": 8.09,
-  "otherMarked": 49.24,
-  "scoreboard": "$500+ now, thousands next week",
+  "asOf": "2026-09-03T09:57:00-04:00",
+  "asOfLabel": "Thu 9:57am ET",
+  "cash": 1951.61,
+  "allInMid": 1980.74,
+  "allInBid": 1976.73,
+  "weatherMarked": 5.4,
+  "otherMarked": 23.73,
+  "scoreboard": "+$1,000 cash by Mon Sep 7 (clock $2,951.61)",
   "live": [
-    {
-      "ticker": "KXHIGHTDC-26SEP02-B89.5",
-      "city": "DC",
-      "bin": "89-90",
-      "side": "100 Yes @13c rest",
-      "status": "REST",
-      "note": "Wed Sep 2. Order 01a05d8a-dde8-7e2b-995c-a5a8d6019616 unfilled. Printer HOLD 8:00: T-group rnd 90 IN 89-90 (2352Z now 78). Kill only if T-group rounds 91+. No kill. PHX+AUS Wed dead."
-    },
-    {
-      "ticker": "KXHIGHPHIL-26SEP02-B84.5",
-      "city": "PHIL",
-      "bin": "84-85",
-      "side": "200 Yes filled @8c",
-      "status": "FILLED",
-      "note": "FILLED 200@8c. Printer HOLD 8:00: Wed T max 77 vs 84-85. Kill 86+. No kill. PHX+AUS Wed dead."
-    },
-    {
-      "ticker": "KXHIGHTATL-26SEP02-B95.5",
-      "city": "ATL",
-      "bin": "95-96",
-      "side": "100 Yes @20c rest",
-      "status": "REST",
-      "note": "Wed Sep 2. Order 01a05e6d-7d88-7adc-82d7-bd46040d0ccc unfilled. Printer HOLD 8:00: Wed T max rnd 95 IN 95-96 (2352Z cooled 91). Kill 97+. No kill. PHX+AUS Wed dead."
-    },
-    {
-      "ticker": "KXHIGHTOKC-26SEP02-B98.5",
-      "city": "OKC",
-      "bin": "98-99",
-      "side": "50 Yes @34c rest",
-      "status": "REST",
-      "note": "Wed Sep 2. Order 01a05e5e-8198-71ee-aa8f-fdf0c753e9c4 unfilled. Printer HOLD 8:00: Wed T max rnd 99 vs 98-99 IN BIN. 00Z 1-group rnd 100 is FLAG not T-group (no T0378 SPECI). Kill 100+ T-group not 99. No kill. PHX+AUS Wed dead."
-    },
     {
       "ticker": "KXHIGHTMIN-26SEP03-B86.5",
       "city": "MSP",
       "bin": "86-87",
-      "side": "100 Yes @13c rest",
-      "status": "REST",
-      "note": "Thu Sep 3. Order 01a062b3-c258-766d-9d55-da639afa9ef8 unfilled (joined 13, did not take 15). Wx PASS peak 86 IN 86-87. Watch Thu 0500Z CDT. Wed T-groups do not count. Kill 88+. No second MSP."
+      "side": "8 Yes filled @13c + 92 Yes @13c rest",
+      "status": "PARTIAL",
+      "note": "Thu Sep 3. Order 01a062b3-c258-766d-9d55-da639afa9ef8 still resting 92 of 100. Mark 28/32 at Trader 9:16. Wx PASS peak 86 IN 86-87. Watch Thu 0500Z CDT. Wed T-groups do not count. Kill 88+. No second MSP, no chase B88.5/B92.5."
     },
     {
       "ticker": "KXHIGHCHI-26SEP03-B90.5",
       "city": "CHI",
       "bin": "90-91",
-      "side": "50 Yes @26c rest",
-      "status": "REST",
-      "note": "Thu Sep 3. Order 01a062ea-dbd0-70f7-a51c-891b25b9033c unfilled (joined 26, did not take 27). Settlement KMDW not KORD. Wx PASS peak 90 IN 90-91. Watch Thu 0500Z CDT. Storms noted. Kill 92+. No second CHI. CHI Wed leftover B94.5 never rested."
+      "side": "50 Yes filled @26c",
+      "status": "FILLED",
+      "note": "Thu Sep 3. FILLED 50@26c. Mark 5/7 at Trader 9:16. Settlement KMDW not KORD. Wx PASS peak 90 IN 90-91. Watch Thu 0500Z CDT. Storms noted. Kill 92+. No second CHI."
     }
   ],
   "printed": [
@@ -88,6 +56,12 @@
     }
   ],
   "dead": [
+    {
+      "city": "PHIL",
+      "bin": "84-85",
+      "cost": 16.0,
+      "why": "Wed settled No / 200 filled @8c"
+    },
     {
       "city": "AUS",
       "bin": "98-99",
@@ -329,9 +303,39 @@
       "cash": 1964.59,
       "allIn": 2021.92,
       "note": "AUS Wed filled then dead T100; Trader all-in"
+    },
+    {
+      "t": "Thu 9:16am",
+      "cash": 1951.61,
+      "allIn": 1980.74,
+      "note": "$1,500 idx-2 to idx-0; Wed DC/PHIL/ATL/OKC done; CHI 50 filled; MSP 8+92 rest"
     }
   ],
   "tape": [
+    {
+      "et": "Thu 9:19am",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none on size-supersede re-hunt. DAL Thu gap 45c and NDFD IN B93.5 but METAR 79 climbing ~7.6h. ATL 16c climbing ~6.6h. DC 7c, under 8c anyway. Fri still 0/0 unrestable. Sat 404. Sun 26SEP06 CHI+DAL 404. Size now 100/200/400 cap $1,000/name. Occupied skip Thu CHI filled / MSP rest."
+    },
+    {
+      "et": "Thu 9:16am",
+      "who": "Trader",
+      "kind": "NOTE",
+      "text": "TRANSFER complete. $1,500 idx-2 to idx-0, id c4f35c75-b5e4-43a6-8427-7aa3b4583575. idx-0 $1,511.96 / idx-2 $439.65 / total cash $1,951.61. All-in mid $1,980.74 / bid $1,976.73. Weather marked $5.40 (CHI 50 @5/7, MSP 8 @28/32) other Fed $23.73. Did not sell Fed. Did not cancel MSP rest 01a062b3 or CHI 50. No new weather ticket. Waiting on CLEAR."
+    },
+    {
+      "et": "Thu 9:12am",
+      "who": "Johnny",
+      "kind": "NOTE",
+      "text": "Size SUPERSEDED: 100 Yes default / 200 if post-only 20c or less / 400 if full-bin 10c or less, notional cap $1,000/name. Scoreboard now +$1,000 cash by Mon Sep 7 or sooner. Wed book closed out: DC/PHIL/OKC settled No (PHIL 200@8c the only fill, $16), ATL 100@20c never filled, AUS+PHX filled then dead. Concentration RISK KILLs stay OFF. No averaging down."
+    },
+    {
+      "et": "Thu 9:06am",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none on morning SEARCH. DAL leftover GRID/NDFD/daily 93/94/94 NDFD-exit CLOSED IN B93.5 but METAR 79/81 rising ~7.9h. ATL 15c vs B95.5 and DC 13c vs B93.5, both climbing hours of heat. NOLA NDFD 93 still exits. HOU 3c. OKC on-bin. Fri listed 0/0 unrestable (was 404). Sat CHI+DAL 404. Occupied skip Thu MSP/CHI. PHX/AUS/LAX/SEA/SFO dead."
+    },
     {
       "et": "Thu 8:35am",
       "who": "Intel",
@@ -366,7 +370,7 @@
       "et": "Wed 7:58pm",
       "who": "Scout",
       "kind": "HOLD",
-      "text": "FLAG none on 7:58 delta. All four TODAY peaks past. CHI 91/96 falling through 92; B94.5 0/1 killed, live B96.5 99/100 do-not-chase. DAL 94/99 falling no 100; live B100.5 99/100 do-not-chase. NOLA 84/91 falling, NDFD 93 still exits. MSP 86/88 falling IN 87-88, live T88 99c vs B87.5 0/1 unrestable. DAL Thu gap 14c but NDFD 95 still exits B93.5 Wx-FAIL \u2014 not FLAGed. Occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX/AUS dead. Fri 404. No FLAG."
+      "text": "FLAG none on 7:58 delta. All four TODAY peaks past. CHI 91/96 falling through 92; B94.5 0/1 killed, live B96.5 99/100 do-not-chase. DAL 94/99 falling no 100; live B100.5 99/100 do-not-chase. NOLA 84/91 falling, NDFD 93 still exits. MSP 86/88 falling IN 87-88, live T88 99c vs B87.5 0/1 unrestable. DAL Thu gap 14c but NDFD 95 still exits B93.5 Wx-FAIL — not FLAGed. Occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX/AUS dead. Fri 404. No FLAG."
     },
     {
       "et": "Wed 7:25pm",
@@ -420,7 +424,7 @@
       "et": "Wed 5:54pm",
       "who": "Scout",
       "kind": "HOLD",
-      "text": "FLAG none on 5:54 delta. CHI 94/96 falling peak past; B94.5 0/1 killed, live B96.5 99/100 do-not-chase. DAL 99/99 flat; B100.5 97/98 do-not-chase. NOLA NDFD 93 still exits. MSP 88 IN unrestable. DAL Thu 7c not \u22658c. Occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX/AUS dead. Fri 404. No FLAG."
+      "text": "FLAG none on 5:54 delta. CHI 94/96 falling peak past; B94.5 0/1 killed, live B96.5 99/100 do-not-chase. DAL 99/99 flat; B100.5 97/98 do-not-chase. NOLA NDFD 93 still exits. MSP 88 IN unrestable. DAL Thu 7c not ≥8c. Occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX/AUS dead. Fri 404. No FLAG."
     },
     {
       "et": "Wed 4:55pm",
@@ -456,7 +460,7 @@
       "et": "Wed 3:50pm",
       "who": "Scout",
       "kind": "HOLD",
-      "text": "FLAG none on 3:50 hourly. CHI Wed B94.5 0/1 still killed; live B96.5 93/94 do-not-chase; T-max 95 not 96. DAL Wed NDFD 98\u219297 closed B96.5 exit. NOLA TS crash. PHX Wed dead, no new PHX bin. Occupied skip Wed DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI. Fri 404. No FLAG."
+      "text": "FLAG none on 3:50 hourly. CHI Wed B94.5 0/1 still killed; live B96.5 93/94 do-not-chase; T-max 95 not 96. DAL Wed NDFD 98→97 closed B96.5 exit. NOLA TS crash. PHX Wed dead, no new PHX bin. Occupied skip Wed DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI. Fri 404. No FLAG."
     },
     {
       "et": "Wed 3:08pm",
@@ -606,7 +610,7 @@
       "et": "Wed 8:20am",
       "who": "Intel",
       "kind": "HOLD",
-      "text": "EMPTY geo/tech. Scanned 50. Closest miss KXBURNHAMMENTION-26SEP02-IRAN untradeable (closed last 67) conf 70% \u2014 PMQs over, no Burnham Iran; Hansard not posted so conf fails 75%. NUCL 0/1 gap ~1pp. WNT-26SEP02 still 404. No FLAG."
+      "text": "EMPTY geo/tech. Scanned 50. Closest miss KXBURNHAMMENTION-26SEP02-IRAN untradeable (closed last 67) conf 70% — PMQs over, no Burnham Iran; Hansard not posted so conf fails 75%. NUCL 0/1 gap ~1pp. WNT-26SEP02 still 404. No FLAG."
     },
     {
       "et": "Wed 5:16am",
@@ -754,7 +758,7 @@
       "et": "Tue 3:05pm",
       "who": "Johnny",
       "kind": "NOTE",
-      "text": "Spread size: 50 Yes default, 100 if post-only \u226420c, 200 only if full-bin \u226410c, cap $500/name. Concentration city-count RISK KILLs OFF. Take Wx PASS empties."
+      "text": "Spread size: 50 Yes default, 100 if post-only ≤20c, 200 only if full-bin ≤10c, cap $500/name. Concentration city-count RISK KILLs OFF. Take Wx PASS empties."
     },
     {
       "et": "Tue 3:04pm",
@@ -917,32 +921,32 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "8:51 FLAG none last weekday; CHI/DAL do-not-chase; DAL Thu NDFD-exit not FLAGed; occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX+AUS Wed dead; Tue LAX/SEA/SFO dead; MSP printed; Printer last HOLD 8:53; Intel Thu 8:35 EMPTY"
+      "state": "9:19 FLAG none on size-supersede re-hunt; DAL 45c but METAR climbing ~7.6h; ATL 16c climbing; DC under 8c; Fri 0/0 unrestable; Sat+Sun 404; occupied skip Thu CHI filled / MSP rest; Wed DC/PHIL/OKC settled No, ATL never filled; PHX/AUS/LAX/SEA/SFO dead"
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "CHI Wed leftover B94.5 FAIL earlier; CHI Thu B90.5 PASS; MSP Thu B86.5 PASS; Printer 8:00 HOLD DC 90 IN / ATL 95 IN / OKC 99 IN / PHIL 77 (OKC 00Z 1-group 100 FLAG not T-group); AUS KILL T100 + PHX KILL T102 earlier"
+      "state": "No new Thu call yet. Standing: MSP Thu B86.5 PASS (peak 86 IN 86-87) and CHI Thu B90.5 PASS (KMDW peak 90 IN 90-91). Wed book closed; DAL Thu B93.5 was NDFD-exit FAIL, NDFD has since closed IN but METAR climbing"
     },
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "KILL AUS Wed B98.5 T100; KILL PHX Wed B100.5 T102 earlier; KILL CHI Wed leftover B94.5 earlier; CLEAR CHI Thu @26c + MSP Thu @13c still live; Wed DC/PHIL/ATL/OKC live; concentration RISK KILLs OFF; no averaging down"
+      "state": "Size 100/200/400 cap $1,000/name; goal +$1,000 cash by Mon Sep 7; idx-0 funded $1,511.96 so tickets can rest; holding CHI Thu 50 filled + MSP Thu 8 filled/92 rest; waiting on Scout FLAGs; concentration RISK KILLs OFF; no averaging down"
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "AUS Wed 100 filled then dead (rest 404); PHX Wed filled then dead earlier; CHI Thu 50@26c REST 01a062ea; MSP Thu 100@13c REST 01a062b3; Wed DC 100@13c / PHIL 200@8c FILLED / ATL 100@20c / OKC 50@34c; Tue LAX+SEA dead; cash last Wed 5:56"
+      "state": "9:16 transfer complete idx-2 to idx-0 $1,500; idx-0 $1,511.96 / idx-2 $439.65; CHI Thu 50 FILLED @26c (mark 5/7); MSP Thu 8 FILLED + 92@13c REST 01a062b3 (mark 28/32); Fed not sold (short DEC 34 / OCT 30, long SEP 159); Wed tickets closed; cash $1,951.61"
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "8:53 HOLD last weekday DC 90 IN / PHIL 77 / ATL 95 IN (cooled 91) / OKC 99 IN (00Z 1-group 100 FLAG not T-group); AUS KILL T100 5:56; PHX skip dead; MSP+CHI Thu climate day started overnight \u2014 no Thu T-max yet this morning; Tue finals LAX+SEA KILL MSP 90 IN; no Wed finals yet"
+      "state": "No Thu T-max report yet this session. Wed finals in: DC/PHIL/OKC settled No, AUS+PHX filled then dead. Thu MSP+CHI climate day running, watch 0500Z CDT; Wed T-groups do not count"
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $1964.59 / all-in mid $2021.92 / bid $2019.61 (Trader Wed 5:56 post-AUS; weather $8.09 other $49.24; no newer Macro overnight/Thu morning)"
+      "state": "cash $1,951.61 / all-in mid $1,980.74 / bid $1,976.73 (Trader Thu 9:16; weather $5.40 other Fed $23.73; no newer Macro ledger)"
     }
   ]
 }
