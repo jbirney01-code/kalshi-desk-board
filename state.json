@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-02T20:01:00-04:00",
-  "asOfLabel": "Wed 8:01pm ET",
+  "asOf": "2026-09-02T20:31:00-04:00",
+  "asOfLabel": "Wed 8:31pm ET",
   "cash": 1964.59,
   "allInMid": 2021.92,
   "allInBid": 2019.61,
@@ -337,6 +337,12 @@
       "who": "Printer",
       "kind": "HOLD",
       "text": "HOLD no T-group kill. DC T-group rnd 90 IN 89-90 (2352Z 78). PHIL 77 vs 84-85. ATL rnd 95 IN 95-96 (2352Z 91). OKC T-group rnd 99 IN 98-99; 00Z 1-group rnd 100 is FLAG not T-group (no T0378 SPECI). PHX+AUS dead. MSP/CHI Thu not started. Cash $1,964.59 / all-in mid $2,021.92 / bid $2,019.61."
+    },
+    {
+      "et": "Wed 7:58pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none on 7:58 delta. All four TODAY peaks past. CHI 91/96 falling through 92; B94.5 0/1 killed, live B96.5 99/100 do-not-chase. DAL 94/99 falling no 100; live B100.5 99/100 do-not-chase. NOLA 84/91 falling, NDFD 93 still exits. MSP 86/88 falling IN 87-88, live T88 99c vs B87.5 0/1 unrestable. DAL Thu gap 14c but NDFD 95 still exits B93.5 Wx-FAIL \u2014 not FLAGed. Occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX/AUS dead. Fri 404. No FLAG."
     },
     {
       "et": "Wed 7:25pm",
@@ -887,7 +893,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "7:04 FLAG none on 6:53; CHI/DAL do-not-chase; DAL Thu 6c NDFD-exit; occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX+AUS Wed dead; Tue LAX/SEA/SFO dead; MSP printed; Printer last HOLD 8:00; Intel last EMPTY 7:25; 7:58 kick pending"
+      "state": "7:58 FLAG none; CHI/DAL do-not-chase; DAL Thu NDFD-exit not FLAGed; occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX+AUS Wed dead; Tue LAX/SEA/SFO dead; MSP printed; Printer last HOLD 8:00; Intel last EMPTY 7:25"
     },
     {
       "name": "Wx",
