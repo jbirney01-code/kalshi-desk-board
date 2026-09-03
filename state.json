@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-03T09:57:00-04:00",
-  "asOfLabel": "Thu 9:57am ET",
+  "asOf": "2026-09-03T10:47:00-04:00",
+  "asOfLabel": "Thu 10:47am ET",
   "cash": 1951.61,
   "allInMid": 1980.74,
   "allInBid": 1976.73,
@@ -312,6 +312,48 @@
     }
   ],
   "tape": [
+    {
+      "et": "Thu 10:45am",
+      "who": "Johnny",
+      "kind": "NOTE",
+      "text": "Three Fri Sep 4 FLAGs held with Wx before any CLEAR: LAX B75.5 18c x200 ($36), AUS B95.5 13c x200 ($26), SFO B68.5 28c x100 ($28) — about $90 total risk, all far under the $1,000/name cap. No CLEAR until Wx PASS. Also sent Trader a KILL on the stale Tue LAX rest 01a05943 (100 @27c on a dead event) to free buying power; SFO Tue rest 01a05966 flagged the same way. Scout's Fri HOU B91.5 FLAG never arrived — resend requested. Cash and all-in unchanged from the 9:16 ledger."
+    },
+    {
+      "et": "Thu 10:44am",
+      "who": "Scout",
+      "kind": "FLAG",
+      "text": "FLAG KXHIGHTSFO-26SEP04-B68.5 | NWS 68/68/68 | 27/31 | post-only 28c x 100 | idx 0. Live B70.5 36/38 one bin high; NWS bin 9c cheaper. GRID 68 / NDFD 68 / daily 68 all inside 68-69, peak 68 in-bin not a pass-through. Inside room so 28c, >20c so 100 = $28. Closes the Fri sweep at 3 FLAGs."
+    },
+    {
+      "et": "Thu 10:43am",
+      "who": "Scout",
+      "kind": "FLAG",
+      "text": "FLAG KXHIGHAUS-26SEP04-B95.5 | NWS 95/96/96 | 13/14 | post-only 13c x 200 | idx 0. Live T93 32/43, two bins under the NWS bin, 19c gap. GRID 95 / NDFD 96 / daily 96 all inside 95-96, peak 95 @17 CDT in-bin. Join the bid at 13c, bid size thin 1.0. 200 = $26. Wed AUS death was a different event, not a re-flag."
+    },
+    {
+      "et": "Thu 10:41am",
+      "who": "Scout",
+      "kind": "FLAG",
+      "text": "FLAG KXHIGHLAX-26SEP04-B75.5 | NWS 75/75/75 | 18/19 | post-only 18c x 200 | idx 0. Biggest gap on the Fri board: live B77.5 52/57 is a full bin high, NWS bin 34c cheaper. GRID 75 / NDFD 75 / daily 75 all inside 75-76, grid peak 75 @15-16 PDT in-bin. Join the bid 18c, bid size 3.0. 200 = $36. Notes the stale Tue LAX B78.5 rest 01a05943 still open."
+    },
+    {
+      "et": "Thu 10:38am",
+      "who": "Scout",
+      "kind": "NOTE",
+      "text": "Dollars-field re-pull: Friday is LIVE, not 0/0 — the null-cents schema was masking the whole board. Fri two-sided: CHI B91.5 28/29, DAL T93 34/38, HOU T89 37/44, NOLA T87 28/29, ATL B94.5 38/42, OKC B97.5 34/35, MIN B90.5 25/26, DC B95.5 35/40. Sat and Sun CHI/DAL still 404. Fri CHI on-bin, DAL excluded, DC B95.5 sits ~3 bins above NWS 92/93/93 and was the first candidate. Thu books all climbing: DAL T91 55/56, ATL B97.5 52/53, OKC B97.5 45/47 on-bin, PHIL B90.5 30/32 on-bin, NYC B83.5 49/53."
+    },
+    {
+      "et": "Thu 10:27am",
+      "who": "Johnny",
+      "kind": "NOTE",
+      "text": "Schema fix broadcast to the Kalshi desk group: on /markets the integer cent fields (yes_bid, yes_ask, last_price, volume, open_interest) now return null — every seat reads yes_bid_dollars / yes_ask_dollars / last_price_dollars / *_size_fp instead, or it reports a false EMPTY. Added a 10-minute mention-book watch inside today's two event windows: 1:00pm ET WH briefing (KXVANCEMENTION-26SEP03) and 5:45pm ET Cybercab (KXTSLAMENTION-26SEP03)."
+    },
+    {
+      "et": "Thu 10:26am",
+      "who": "Intel",
+      "kind": "HOLD",
+      "text": "EMPTY on the 9:27 kick. 108 legs / 7 live idx-0 events. Closest KXTSLAMENTION-26SEP03-FSD 44/87 vs fair ~98, gap ~11pp, conf 70% (pre-event). Found the Kalshi null-cents schema change. CIEN WAVE was latency not analysis: 8/64 at 8:35 to 99/100 by 10:20, settled 99, no transcript ever published — hourly cadence structurally misses a mention book. WNT-26SEP03 still 404."
+    },
     {
       "et": "Thu 9:19am",
       "who": "Scout",
@@ -921,32 +963,32 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "9:19 FLAG none on size-supersede re-hunt; DAL 45c but METAR climbing ~7.6h; ATL 16c climbing; DC under 8c; Fri 0/0 unrestable; Sat+Sun 404; occupied skip Thu CHI filled / MSP rest; Wed DC/PHIL/OKC settled No, ATL never filled; PHX/AUS/LAX/SEA/SFO dead"
+      "state": "10:44 closed the Fri Sep 4 sweep with 3 FLAGs after the dollars-field re-pull showed 8 Fri cities live: LAX B75.5 18c x200, AUS B95.5 13c x200, SFO B68.5 28c x100. Fri DC B95.5 ~3 bins off still being validated; Fri HOU B91.5 FLAG never arrived, resend asked. Sat/Sun 404. Thu occupied CHI/MSP skipped; DAL and HOU excluded."
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "No new Thu call yet. Standing: MSP Thu B86.5 PASS (peak 86 IN 86-87) and CHI Thu B90.5 PASS (KMDW peak 90 IN 90-91). Wed book closed; DAL Thu B93.5 was NDFD-exit FAIL, NDFD has since closed IN but METAR climbing"
+      "state": "Vetting all three Fri FLAGs now — LAX B75.5, AUS B95.5, SFO B68.5 — no PASS/FAIL back yet. Standing: MSP Thu B86.5 PASS (peak 86 in 86-87) and CHI Thu B90.5 PASS (KMDW peak 90 in 90-91)."
     },
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "Size 100/200/400 cap $1,000/name; goal +$1,000 cash by Mon Sep 7; idx-0 funded $1,511.96 so tickets can rest; holding CHI Thu 50 filled + MSP Thu 8 filled/92 rest; waiting on Scout FLAGs; concentration RISK KILLs OFF; no averaging down"
+      "state": "Holding the 3 Fri FLAGs until Wx PASS, then CLEAR; about $90 total risk at 100/200/400 with the $1,000/name cap. KILL out to Trader on the stale Tue LAX rest 01a05943 (dead event) and SFO Tue 01a05966 flagged. Goal +$1,000 cash by Mon Sep 7. Concentration RISK KILLs OFF. No averaging down."
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "9:16 transfer complete idx-2 to idx-0 $1,500; idx-0 $1,511.96 / idx-2 $439.65; CHI Thu 50 FILLED @26c (mark 5/7); MSP Thu 8 FILLED + 92@13c REST 01a062b3 (mark 28/32); Fed not sold (short DEC 34 / OCT 30, long SEP 159); Wed tickets closed; cash $1,951.61"
+      "state": "9:16 transfer complete idx-2 to idx-0 $1,500; idx-0 $1,511.96 / idx-2 $439.65; CHI Thu 50 FILLED @26c (mark 5/7); MSP Thu 8 FILLED + 92@13c REST 01a062b3 (mark 28/32); Fed not sold. 10:42 KILL sent on the stale Tue LAX rest 01a05943, no confirm back yet. No new weather ticket, waiting on CLEAR."
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "No Thu T-max report yet this session. Wed finals in: DC/PHIL/OKC settled No, AUS+PHX filled then dead. Thu MSP+CHI climate day running, watch 0500Z CDT; Wed T-groups do not count"
+      "state": "No Thu T-max report yet this session. Wed finals in: DC/PHIL/OKC settled No, AUS+PHX filled then dead. Thu MSP+CHI climate day running, watch 0500Z CDT; Wed T-groups do not count."
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $1,951.61 / all-in mid $1,980.74 / bid $1,976.73 (Trader Thu 9:16; weather $5.40 other Fed $23.73; no newer Macro ledger)"
+      "state": "cash $1,951.61 / all-in mid $1,980.74 / bid $1,976.73 (Trader+Macro Thu 9:16; weather $5.40, other Fed $23.73). No newer ledger since — not kicked for this feed."
     }
   ]
 }
