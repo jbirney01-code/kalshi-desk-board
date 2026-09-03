@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-03T08:26:00-04:00",
-  "asOfLabel": "Thu 8:26am ET",
+  "asOf": "2026-09-03T08:46:00-04:00",
+  "asOfLabel": "Thu 8:46am ET",
   "cash": 1964.59,
   "allInMid": 2021.92,
   "allInBid": 2019.61,
@@ -332,6 +332,18 @@
     }
   ],
   "tape": [
+    {
+      "et": "Thu 8:35am",
+      "who": "Intel",
+      "kind": "HOLD",
+      "text": "EMPTY geo/tech. Scanned 4 live events / 49 legs (+11 404 probes). Closest miss KXEARNINGSMENTIONCIEN-26SEP03-WAVE last 65 vs slide-implied ~90 gap ~25pp conf ~70% (WaveLogic on slide 10, not SAID; book 8/64). Delta vs Wed 8:29: CIEN Q3 PR+8-K+slides out, no spoken/webcast lock yet; WNT-26SEP03 still 404; no new idx-0 names. No FLAG."
+    },
+    {
+      "et": "Wed 8:45pm",
+      "who": "Intel",
+      "kind": "HOLD",
+      "text": "EMPTY geo/tech last weekday slot. Scanned 38 event tickers (120 legs). Closest miss LULU TARI gap ~3pp (96/97 vs ~99) conf ~60%. 26SEP03 live YES (CIEN/ZS/LULU/PATH) no spoken lock. Leftover 26SEP02 two-sided none. WNT-26SEP03 404. No FLAG."
+    },
     {
       "et": "Wed 9:00pm",
       "who": "Scout",
@@ -905,7 +917,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "8:51 FLAG none last weekday; CHI/DAL do-not-chase; DAL Thu NDFD-exit not FLAGed; occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX+AUS Wed dead; Tue LAX/SEA/SFO dead; MSP printed; Printer last HOLD 8:53; Intel last EMPTY 7:25"
+      "state": "8:51 FLAG none last weekday; CHI/DAL do-not-chase; DAL Thu NDFD-exit not FLAGed; occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX+AUS Wed dead; Tue LAX/SEA/SFO dead; MSP printed; Printer last HOLD 8:53; Intel Thu 8:35 EMPTY"
     },
     {
       "name": "Wx",
@@ -920,17 +932,17 @@
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "AUS Wed 100 filled then dead (rest 404); PHX Wed filled then dead earlier; CHI Thu 50@26c REST 01a062ea; MSP Thu 100@13c REST 01a062b3; Wed DC 100@13c / PHIL 200@8c FILLED / ATL 100@20c / OKC 50@34c; Tue LAX+SEA dead"
+      "state": "AUS Wed 100 filled then dead (rest 404); PHX Wed filled then dead earlier; CHI Thu 50@26c REST 01a062ea; MSP Thu 100@13c REST 01a062b3; Wed DC 100@13c / PHIL 200@8c FILLED / ATL 100@20c / OKC 50@34c; Tue LAX+SEA dead; cash last Wed 5:56"
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "8:53 HOLD last weekday DC 90 IN / PHIL 77 / ATL 95 IN (cooled 91) / OKC 99 IN (00Z 1-group 100 FLAG not T-group); AUS KILL T100 5:56; PHX skip dead (KILL T102 earlier); MSP+CHI Thu climate day started overnight \u2014 no Thu T-max yet this morning; Tue finals LAX+SEA KILL MSP 90 IN"
+      "state": "8:53 HOLD last weekday DC 90 IN / PHIL 77 / ATL 95 IN (cooled 91) / OKC 99 IN (00Z 1-group 100 FLAG not T-group); AUS KILL T100 5:56; PHX skip dead; MSP+CHI Thu climate day started overnight \u2014 no Thu T-max yet this morning; Tue finals LAX+SEA KILL MSP 90 IN; no Wed finals yet"
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $1964.59 / all-in mid $2021.92 / bid $2019.61 (Trader Wed 5:56 post-AUS; weather $8.09 other $49.24; no newer Macro overnight)"
+      "state": "cash $1964.59 / all-in mid $2021.92 / bid $2019.61 (Trader Wed 5:56 post-AUS; weather $8.09 other $49.24; no newer Macro overnight/Thu morning)"
     }
   ]
 }
