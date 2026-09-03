@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-02T20:31:00-04:00",
-  "asOfLabel": "Wed 8:31pm ET",
+  "asOf": "2026-09-03T08:26:00-04:00",
+  "asOfLabel": "Thu 8:26am ET",
   "cash": 1964.59,
   "allInMid": 2021.92,
   "allInBid": 2019.61,
@@ -332,6 +332,18 @@
     }
   ],
   "tape": [
+    {
+      "et": "Wed 9:00pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none on 8:51 last weekday hourly. TODAY peaks past CHI/DAL/NOLA/MSP. CHI falling; DAL no 100 B100.5 do-not-chase; NOLA NDFD 93 still exits; MSP T-group IN 87-88 unrestable vs B87.5 0/1. DAL Thu gap 19c but NDFD 95 exits B93.5 Wx-FAIL. Occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX/AUS dead. Fri 404. No FLAG."
+    },
+    {
+      "et": "Wed 8:53pm",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "HOLD last weekday slot. DC T-group rnd 90 IN 89-90 (latest 78). PHIL 77 vs 84-85. ATL rnd 95 IN 95-96 (latest 91). OKC T-group rnd 99 IN 98-99; 00Z 1-group rnd 100 still FLAG not T-group. PHX+AUS dead. MSP/CHI Thu not started (0500Z later). No kill. Cash $1,964.59 / all-in mid $2,021.92 / bid $2,019.61."
+    },
     {
       "et": "Wed 8:00pm",
       "who": "Printer",
@@ -893,7 +905,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "7:58 FLAG none; CHI/DAL do-not-chase; DAL Thu NDFD-exit not FLAGed; occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX+AUS Wed dead; Tue LAX/SEA/SFO dead; MSP printed; Printer last HOLD 8:00; Intel last EMPTY 7:25"
+      "state": "8:51 FLAG none last weekday; CHI/DAL do-not-chase; DAL Thu NDFD-exit not FLAGed; occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX+AUS Wed dead; Tue LAX/SEA/SFO dead; MSP printed; Printer last HOLD 8:53; Intel last EMPTY 7:25"
     },
     {
       "name": "Wx",
@@ -913,12 +925,12 @@
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "8:00 HOLD DC 90 IN / PHIL 77 / ATL 95 IN (cooled 91) / OKC 99 IN (00Z 1-group 100 FLAG not T-group); AUS KILL T100 5:56; PHX skip dead (KILL T102 earlier); MSP+CHI Thu watch starts Thu 0500Z; Tue finals LAX+SEA KILL MSP 90 IN"
+      "state": "8:53 HOLD last weekday DC 90 IN / PHIL 77 / ATL 95 IN (cooled 91) / OKC 99 IN (00Z 1-group 100 FLAG not T-group); AUS KILL T100 5:56; PHX skip dead (KILL T102 earlier); MSP+CHI Thu climate day started overnight \u2014 no Thu T-max yet this morning; Tue finals LAX+SEA KILL MSP 90 IN"
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $1964.59 / all-in mid $2021.92 / bid $2019.61 (Trader Wed 5:56 post-AUS; weather $8.09 other $49.24)"
+      "state": "cash $1964.59 / all-in mid $2021.92 / bid $2019.61 (Trader Wed 5:56 post-AUS; weather $8.09 other $49.24; no newer Macro overnight)"
     }
   ]
 }
