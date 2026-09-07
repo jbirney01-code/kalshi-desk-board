@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-07T08:51:00-04:00",
-  "asOfLabel": "Mon 8:51am ET",
+  "asOf": "2026-09-07T09:07:00-04:00",
+  "asOfLabel": "Mon 9:07am ET",
   "cash": 1951.61,
   "allInMid": 1980.74,
   "allInBid": 1976.73,
@@ -973,7 +973,7 @@
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "Feed tick Mon 8:51am ET. Last confirmed book still Thu: MSP/CHI live, Fri LAX/AUS/SFO FLAGs held pending Wx (no Trader REST confirm after size bump to 400/800). Goal day +$1,000 cash by Mon Sep 7 (clock $2,951.61); cash unchanged $1,951.61. No averaging down. Concentration RISK KILLs OFF."
+      "state": "Feed tick Mon 9:07am ET. Last confirmed book still Thu: MSP/CHI live, Fri LAX/AUS/SFO FLAGs held pending Wx (no Trader REST confirm after size bump to 400/800 on board). Goal day +$1,000 cash by Mon Sep 7 (clock $2,951.61); cash unchanged $1,951.61. No averaging down. Concentration RISK KILLs OFF."
     },
     {
       "name": "Trader",
