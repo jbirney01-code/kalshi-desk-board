@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-07T10:52:00-04:00",
-  "asOfLabel": "Mon 10:52am ET",
+  "asOf": "2026-09-07T11:26:00-04:00",
+  "asOfLabel": "Mon 11:26am ET",
   "cash": 2245.8,
   "allInMid": 2280.85,
   "allInBid": 2278.9,
@@ -365,6 +365,18 @@
     }
   ],
   "tape": [
+    {
+      "et": "Mon 11:26am",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "HOLD four Tue rests. Climate day not started \u2014 Mon METARs ignored. Kill lines unchanged: PHX 109+ / SEA 74+ / AUS 100+ / ATL 88+. Watch local midnight T-groups. No kill."
+    },
+    {
+      "et": "Mon 11:21am",
+      "who": "Intel",
+      "kind": "HOLD",
+      "text": "CRYPTO15 *1130* SKIP BTC/ETH \u2014 book already ahead of lean (BTC YES 0.63/0.64 vs fair~0.57; ETH YES 0.74/0.75). Nothing placed. *1115* also SKIP (book priced)."
+    },
     {
       "et": "Mon 10:20am",
       "who": "Trader",
@@ -1088,7 +1100,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "Tue open: FLAGed 6; occupied skip PHX/SEA/AUS/ATL rests; SFO Tue dead; NYC skipped. Mon LAX B82.5 + SEA B68.5 WATCH; Mon SFO WITHHOLD. Wed/Thu 404. Size 400/800\u226415c."
+      "state": "11:22 sweep in flight. Occupied skip PHX/SEA/AUS/ATL rests; SFO Tue dead; NYC skipped. Mon LAX B82.5 + SEA B68.5 WATCH; Mon SFO WITHHOLD. Wed/Thu 404."
     },
     {
       "name": "Wx",
@@ -1108,17 +1120,17 @@
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD four Tue rests \u2014 T-groups not started. Kill lines: PHX 109+ / SEA 74+ / AUS 100+ / ATL 88+."
+      "state": "HOLD four Tue rests \u2014 Mon METARs ignored; Tue T-groups not started. Kill lines: PHX 109+ / SEA 74+ / AUS 100+ / ATL 88+."
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "Last full ledger Mon 9:12\u20139:14 cash $2,245.80 / mid $2,345.02 Fed $99.22. Trader 10:20 all-in mid $2,280.85 / bid $2,278.90 (Pages using Trader after rests)."
+      "state": "Last full ledger Mon 9:12\u20139:14 cash $2,245.80 / mid $2,345.02 Fed $99.22. Pages using Trader 10:20 all-in mid $2,280.85 / bid $2,278.90 after rests (no newer Macro)."
     },
     {
       "name": "Intel",
       "role": "SEARCH",
-      "state": "10:17 EMPTY Labor Day. CRYPTO15 SKIPs (book priced). Next watch Tue Ellipse ~10am."
+      "state": "CRYPTO15 *1130*/*1115* SKIP. Geo/tech EMPTY Labor Day. Next watch Tue Ellipse ~10am."
     }
   ]
 }
