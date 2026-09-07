@@ -1,12 +1,12 @@
 {
-  "asOf": "2026-09-07T18:05:00-04:00",
-  "asOfLabel": "Mon 6:05pm ET",
+  "asOf": "2026-09-07T18:50:00-04:00",
+  "asOfLabel": "Mon 6:50pm ET",
   "cash": 1209.58,
   "allInMid": 1318.9,
   "allInBid": 1261.0,
   "weatherMarked": 41.61,
   "otherMarked": 67.71,
-  "scoreboard": "Mon Sep 7 +$1,000 missed; cash $1,209.58; CHI Mon 11111@9c HOLD T79; 4 Tue rests $372; *1730* both No +$39; *1815* BTC SKIP cross",
+  "scoreboard": "Mon Sep 7 +$1,000 missed; cash $1,209.58; CHI Mon 11111@9c HOLD T79; 4 Tue rests $372; *1730* both No +$39; *1815*/*1900* SKIP; crypto flat",
   "live": [
     {
       "ticker": "KXHIGHCHI-26SEP07-B78.5",
@@ -475,6 +475,24 @@
     }
   ],
   "tape": [
+    {
+      "et": "Mon 6:47pm",
+      "who": "Intel",
+      "kind": "SKIP",
+      "text": "CRYPTO15 *1900* SKIP BTC|ETH \u2014 lean Yes but live Yes bid BTC 0.79/0.80 ETH 0.81/0.82 (>70\u00a2 bar). CB BTC +$93 / ETH +$2.8 vs floor; cannot join \u226470\u00a2. Never place. *1830*/*1845* finalized both No with no desk tickets."
+    },
+    {
+      "et": "Mon 6:24pm",
+      "who": "Intel",
+      "kind": "EMPTY",
+      "text": "Geo/tech EMPTY \u2014 no gap>12pp+conf>75%; inventory next 2h (6:22\u21928:22pm) none; only open KXVANCEMENTION-26SEP09 RNC not today. Next Trump Tue Sep 8 ~10am Ellipse."
+    },
+    {
+      "et": "Mon 6:06pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "EMPTY/HOLD vs 5:56 kick. SEA Mon B68.5 still WATCH escalate N (T 67/67 rising ~2.1h; live 34/40). SFO WITHHOLD (warming AFD; T 80; B78.5 0/1 unrestable). Mon DNR LAX/DAL/OKC/PHIL; Mon NEW_OFF none; Tue empties none; Wed/Thu CHI+DAL 404. Occupied skip CHI Mon filled + Tue PHX/SEA/AUS/ATL. Actionable none."
+    },
     {
       "et": "Mon 6:05pm",
       "who": "Trader",
@@ -1654,7 +1672,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "EMPTY ~4:50 (5:56 kick in flight). SEA Mon WATCH. SFO WITHHOLD. Mon DNR LAX/DAL/OKC/PHIL. CHI Mon FILLED occupied. Tue rests occupied. Wed/Thu 404."
+      "state": "EMPTY/HOLD ~6:06. SEA Mon WATCH (T67 rising). SFO WITHHOLD. Mon DNR LAX/DAL/OKC/PHIL. CHI Mon FILLED occupied. Tue rests occupied. Wed/Thu 404."
     },
     {
       "name": "Wx",
@@ -1664,27 +1682,27 @@
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "CHI Mon 11111@9c FILLED HOLD T79 + 4 Tue rests ($372). *1730* both No +$39; *1815* BTC SKIP cross / ETH SKIP. Stand by next CRYPTO15 OPEN join-bid \u226470\u00a2. No averaging down."
+      "state": "CHI Mon 11111@9c FILLED HOLD T79 + 4 Tue rests ($372). *1730* both No +$39; *1815* BTC SKIP cross / ETH SKIP; *1830*/*1845* miss no ticket; *1900* SKIP Yes>70\u00a2. Stand by next CRYPTO15 OPEN join-bid \u226470\u00a2. No averaging down."
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "CHI 11111@9c FILLED HOLD 01a07ce8 + PHX/SEA/AUS/ATL rests. Crypto flat after *1730* settle. Cash $1,209.58 / all-in mid $1,318.90 / bid $1,261.00 (Trader ~6:05)."
+      "state": "CHI 11111@9c FILLED HOLD 01a07ce8 + PHX/SEA/AUS/ATL rests. Crypto flat after *1730* settle. Cash $1,209.58 / all-in mid $1,318.90 / bid $1,261.00 (Trader ~6:05; no newer)."
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD CHI Mon FILLED \u2014 KMDW T-group max rnd 79 IN BIN (kill 80+) + four Tue rests (Tue T-groups not started). Last confirm ~5:10 (2053Z same)."
+      "state": "HOLD CHI Mon FILLED \u2014 KMDW T-group max rnd 79 IN BIN (kill 80+) + four Tue rests (Tue T-groups not started). Last confirm ~5:10 (2053Z same); 5:56 kick reply pending."
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "Last full Macro Mon 9:12\u20139:14. Pages using Trader ~6:05 cash $1,209.58 / mid $1,318.90 / bid $1,261.00 (no newer Macro)."
+      "state": "Last full Macro Mon 9:12\u20139:14. Pages using Trader ~6:05 cash $1,209.58 / mid $1,318.90 / bid $1,261.00 (no newer Macro; cash unchanged this tick)."
     },
     {
       "name": "Intel",
       "role": "SEARCH",
-      "state": "CRYPTO15 *1730* both No +$39; *1815* BTC FLAG\u2192CLEAR\u2192SKIP cross / ETH SKIP; *1745*/*1800* SKIP/miss. Geo EMPTY ~5:22. Event-window EMPTY ~5:54 Labor Day thin. Force bar open \u226470\u00a2 join-bid idx-2. Next Trump Tue Ellipse ~10am."
+      "state": "CRYPTO15 *1900* SKIP Yes>70\u00a2; *1815* BTC SKIP cross / ETH SKIP; *1830*/*1845* miss no ticket; *1730* both No +$39. Geo EMPTY ~6:24. Event-window EMPTY ~5:54 Labor Day thin. Force bar open \u226470\u00a2 join-bid idx-2. Next Trump Tue Ellipse ~10am."
     }
   ]
 }
