@@ -1,31 +1,21 @@
 {
-  "asOf": "2026-09-07T09:07:00-04:00",
-  "asOfLabel": "Mon 9:07am ET",
-  "cash": 1951.61,
-  "allInMid": 1980.74,
-  "allInBid": 1976.73,
-  "weatherMarked": 5.4,
-  "otherMarked": 23.73,
-  "scoreboard": "+$1,000 cash by Mon Sep 7 (clock $2,951.61)",
-  "live": [
-    {
-      "ticker": "KXHIGHTMIN-26SEP03-B86.5",
-      "city": "MSP",
-      "bin": "86-87",
-      "side": "8 Yes filled @13c + 92 Yes @13c rest",
-      "status": "PARTIAL",
-      "note": "Thu Sep 3. Order 01a062b3-c258-766d-9d55-da639afa9ef8 still resting 92 of 100. Mark 28/32 at Trader 9:16. Wx PASS peak 86 IN 86-87. Watch Thu 0500Z CDT. Wed T-groups do not count. Kill 88+. No second MSP, no chase B88.5/B92.5."
-    },
-    {
-      "ticker": "KXHIGHCHI-26SEP03-B90.5",
-      "city": "CHI",
-      "bin": "90-91",
-      "side": "50 Yes filled @26c",
-      "status": "FILLED",
-      "note": "Thu Sep 3. FILLED 50@26c. Mark 5/7 at Trader 9:16. Settlement KMDW not KORD. Wx PASS peak 90 IN 90-91. Watch Thu 0500Z CDT. Storms noted. Kill 92+. No second CHI."
-    }
-  ],
+  "asOf": "2026-09-07T09:49:00-04:00",
+  "asOfLabel": "Mon 9:49am ET",
+  "cash": 2245.8,
+  "allInMid": 2345.02,
+  "allInBid": 2343.24,
+  "weatherMarked": 0.0,
+  "otherMarked": 99.22,
+  "scoreboard": "Mon Sep 7 +$1,000 missed (+$294 vs Thu; cash $2,245.80)",
+  "live": [],
   "printed": [
+    {
+      "city": "AUS",
+      "bin": "95-96",
+      "cli": 95,
+      "qty": 800,
+      "cost": 104.0
+    },
     {
       "city": "HOU",
       "bin": "96-97",
@@ -56,6 +46,24 @@
     }
   ],
   "dead": [
+    {
+      "city": "MSP",
+      "bin": "86-87",
+      "cost": 13.0,
+      "why": "CLI 90 / Thu No 100@13c"
+    },
+    {
+      "city": "CHI",
+      "bin": "90-91",
+      "cost": 13.0,
+      "why": "CLI 92 / Thu No 50@26c"
+    },
+    {
+      "city": "LAX",
+      "bin": "75-76",
+      "cost": 72.0,
+      "why": "CLI 78 / Fri No 400@18c"
+    },
     {
       "city": "PHIL",
       "bin": "84-85",
@@ -309,9 +317,51 @@
       "cash": 1951.61,
       "allIn": 1980.74,
       "note": "$1,500 idx-2 to idx-0; Wed DC/PHIL/ATL/OKC done; CHI 50 filled; MSP 8+92 rest"
+    },
+    {
+      "t": "Mon 9:14am",
+      "cash": 2245.8,
+      "allIn": 2345.02,
+      "note": "weekend AUS Yes 800@13c; MSP/CHI/LAX No; $2k idx-2\u2192idx-0"
     }
   ],
   "tape": [
+    {
+      "et": "Mon 9:44am",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "Tue 26SEP08 dollars re-pull: all 16 cities HTTP 200 listed but truly empty \u2014 dollars 0/0 size 0/0 status initialized. Wed/Thu CHI+DAL true 404. No FLAG."
+    },
+    {
+      "et": "Mon 9:35am",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "FLAG none. Mon leftovers LAX B82.5 16/17 CEILING-EDGE GRID 83 and SEA B68.5 25/28 CEILING-EDGE GRID 69 are WATCH only \u2014 T-group short with heat left. SFO B78.5 WITHHELD. Tue all 0/0. Wed/Thu 404. Occupied none. Size 400/800\u226415c."
+    },
+    {
+      "et": "Mon 9:14am",
+      "who": "Printer",
+      "kind": "PRINT",
+      "text": "CATCH-UP finals. PRINT Fri AUS KXHIGHAUS-26SEP04-B95.5 CLI 95 IN 95-96 (800@13c paid). KILL Thu MSP CLI 90 vs 86-87; KILL Thu CHI CLI 92 vs 90-91; KILL Fri LAX CLI 78 vs 75-76. No live occupied left."
+    },
+    {
+      "et": "Mon 9:14am",
+      "who": "Trader",
+      "kind": "NOTE",
+      "text": "TRANSFER $2,000 idx-2\u2192idx-0 complete, id 394c5215-24b7-4968-bcc1-bb6be4e2ed02. idx-0 $2,000 / idx-2 $245.80 / total cash $2,245.80. Weather flat. All-in mid $2,345.02 / bid $2,343.24 (Macro). Standing 400/800\u226415c cap $1,000/name. Waiting CLEAR."
+    },
+    {
+      "et": "Mon 9:12am",
+      "who": "Macro",
+      "kind": "NOTE",
+      "text": "LEDGER after Thu\u2013Sun dark. Cash $2,245.80 (was all idx-2; then Trader moved $2k). All-in mid $2,345.02 / bid $2,343.24. Weather $0. Other Fed mid $99.22. Weekend: Fri AUS 800@13c Yes +$696; Fri LAX 400@18c No \u2212$72; Thu MSP 100@13c No; Thu CHI 50@26c No. Vs Thu 9:16 +$294.19. Goal +$1,000 by Mon missed."
+    },
+    {
+      "et": "Mon 9:12am",
+      "who": "Scout",
+      "kind": "NOTE",
+      "text": "Occupied cleared. Drop Fri LAX/AUS and Thu MSP/CHI \u2014 all settled gone. Hunting Mon leftovers + Tue Sep 8 + Wed Sep 9 at 400/800\u226415c / cap $1,000."
+    },
     {
       "et": "Thu 10:45am",
       "who": "Johnny",
@@ -963,32 +1013,32 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "10:44 closed the Fri Sep 4 sweep with 3 FLAGs after the dollars-field re-pull showed 8 Fri cities live: LAX B75.5 18c x200, AUS B95.5 13c x200, SFO B68.5 28c x100. Fri DC B95.5 ~3 bins off still being validated; Fri HOU B91.5 FLAG never arrived, resend asked. Sat/Sun 404. Thu occupied CHI/MSP skipped; DAL and HOU excluded."
+      "state": "9:35/9:44 FLAG none. Mon LAX B82.5 + SEA B68.5 WATCH only (ceiling-edge, T short). Tue initialized empty 0/0; Wed/Thu 404. Size 400/800\u226415c. Occupied none."
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "Vetting all three Fri FLAGs now \u2014 LAX B75.5, AUS B95.5, SFO B68.5 \u2014 no PASS/FAIL back yet. Standing: MSP Thu B86.5 PASS (peak 86 in 86-87) and CHI Thu B90.5 PASS (KMDW peak 90 in 90-91)."
+      "state": "On deck for next FLAG. Standing Fri AUS was the weekend Yes (CLI 95). No live FLAG to vet."
     },
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "Feed tick Mon 9:07am ET. Last confirmed book still Thu: MSP/CHI live, Fri LAX/AUS/SFO FLAGs held pending Wx (no Trader REST confirm after size bump to 400/800 on board). Goal day +$1,000 cash by Mon Sep 7 (clock $2,951.61); cash unchanged $1,951.61. No averaging down. Concentration RISK KILLs OFF."
+      "state": "Desk back after weekend dark. Goal +$1,000 by Mon missed (+$294). Pages catch-up to Macro 9:12 / Trader 9:14. Weather flat, hunting Mon/Tue/Wed. Size 400/800\u226415c. No averaging down."
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "9:16 transfer complete idx-2 to idx-0 $1,500; idx-0 $1,511.96 / idx-2 $439.65; CHI Thu 50 FILLED @26c (mark 5/7); MSP Thu 8 FILLED + 92@13c REST 01a062b3 (mark 28/32); Fed not sold. 10:42 KILL sent on the stale Tue LAX rest 01a05943, no confirm back yet. No new weather ticket, waiting on CLEAR."
+      "state": "9:14 TRANSFER $2k idx-2\u2192idx-0 done (394c5215). idx-0 $2,000 / idx-2 $245.80. Weather flat, no open orders. Waiting CLEAR. Size 400/800\u226415c."
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "No Thu T-max report yet this session. Wed finals in: DC/PHIL/OKC settled No, AUS+PHX filled then dead. Thu MSP+CHI climate day running, watch 0500Z CDT; Wed T-groups do not count."
+      "state": "Catch-up finals in: PRINT AUS Fri CLI 95; KILL MSP/CHI Thu + LAX Fri. Nothing occupied live. Idle until next ticket."
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $1,951.61 / all-in mid $1,980.74 / bid $1,976.73 (Trader+Macro Thu 9:16; weather $5.40, other Fed $23.73). Still newest real ledger after weekend feed gaps \u2014 not kicked for this feed."
+      "state": "cash $2,245.80 / all-in mid $2,345.02 / bid $2,343.24 (Mon 9:12\u20139:14; weather $0, Fed other $99.22). Newest real ledger."
     }
   ]
 }
