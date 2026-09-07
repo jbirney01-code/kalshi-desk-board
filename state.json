@@ -1,12 +1,12 @@
 {
-  "asOf": "2026-09-07T18:50:00-04:00",
-  "asOfLabel": "Mon 6:50pm ET",
+  "asOf": "2026-09-07T19:08:00-04:00",
+  "asOfLabel": "Mon 7:08pm ET",
   "cash": 1209.58,
   "allInMid": 1318.9,
   "allInBid": 1261.0,
   "weatherMarked": 41.61,
   "otherMarked": 67.71,
-  "scoreboard": "Mon Sep 7 +$1,000 missed; cash $1,209.58; CHI Mon 11111@9c HOLD T79; 4 Tue rests $372; *1730* both No +$39; *1815*/*1900* SKIP; crypto flat",
+  "scoreboard": "Mon Sep 7 +$1,000 missed; cash $1,209.58; CHI Mon 11111@9c HOLD T79; 4 Tue rests $372; Tue LAX B86.5 FLAG\u2192Wx FAIL\u2192KILL never rested; *1730* both No +$39; *1815*/*1900* SKIP; crypto flat",
   "live": [
     {
       "ticker": "KXHIGHCHI-26SEP07-B78.5",
@@ -475,6 +475,30 @@
     }
   ],
   "tape": [
+    {
+      "et": "Mon 7:01pm",
+      "who": "Johnny",
+      "kind": "KILL",
+      "text": "KILL Tue LAX KXHIGHLAX-26SEP08-B86.5 \u2014 Wx FAIL ceiling pin (one-hour 87 under W 15 onshore). Never rested. DNR + no chase B88.5. SEA Mon stay WATCH. Occupied CHI Mon + Tue PHX/SEA/AUS/ATL unchanged."
+    },
+    {
+      "et": "Mon 7:00pm",
+      "who": "Wx",
+      "kind": "FAIL",
+      "text": "FAIL Tue LAX KXHIGHLAX-26SEP08-B86.5 CEILING-EDGE. KLAX peak 87@14 ONLY, daily/grid/NDFD 87 IN {86,87} on paper; W 15 onshore through peak (same cool bar as Tue SFO). Ask 24c >15 \u2014 no full-$1k path. Do not CLEAR."
+    },
+    {
+      "et": "Mon 6:59pm",
+      "who": "Scout",
+      "kind": "FLAG",
+      "text": "FLAG KXHIGHLAX-26SEP08-B86.5 | NWS 87/87/87 | 22/24 | post-only 22c x400 | CEILING-EDGE | grid peak 87 @14 PDT | idx 0. Live B88.5 33/34. SEA escalate N stay WATCH. Mon NEW_OFF NONE. Wed/Thu 404. Occupied Mon CHI + Tue PHX/SEA/AUS/ATL."
+    },
+    {
+      "et": "Mon 6:54pm",
+      "who": "Intel",
+      "kind": "EMPTY",
+      "text": "Event-window EMPTY (last weekday daytime fire) \u2014 inventory next 2h none; only open KXVANCEMENTION-26SEP09 RNC not today. Next Trump Tue Sep 8 ~10am Ellipse."
+    },
     {
       "et": "Mon 6:47pm",
       "who": "Intel",
@@ -1672,17 +1696,17 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "EMPTY/HOLD ~6:06. SEA Mon WATCH (T67 rising). SFO WITHHOLD. Mon DNR LAX/DAL/OKC/PHIL. CHI Mon FILLED occupied. Tue rests occupied. Wed/Thu 404."
+      "state": "FLAG Tue LAX B86.5 ~6:59 \u2192 Wx FAIL/Johnny KILL DNR. SEA Mon WATCH. Mon DNR LAX/DAL/OKC/PHIL. Occupied CHI Mon + Tue PHX/SEA/AUS/ATL. Wed/Thu 404."
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "FAIL Mon LAX/OKC/DAL leftover. PASS CHI Mon B78.5 filled HOLD T79. Tue set PASS PHX/SEA/AUS/ATL; FAIL SFO. On deck for next FLAG."
+      "state": "FAIL Tue LAX B86.5 ceiling pin (one-hour 87 + W15 onshore). PASS CHI Mon B78.5 filled HOLD T79. Tue set PASS PHX/SEA/AUS/ATL; FAIL SFO+LAX. On deck for next FLAG."
     },
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "CHI Mon 11111@9c FILLED HOLD T79 + 4 Tue rests ($372). *1730* both No +$39; *1815* BTC SKIP cross / ETH SKIP; *1830*/*1845* miss no ticket; *1900* SKIP Yes>70\u00a2. Stand by next CRYPTO15 OPEN join-bid \u226470\u00a2. No averaging down."
+      "state": "CHI Mon 11111@9c FILLED HOLD T79 + 4 Tue rests ($372). KILL Tue LAX B86.5 never rested. *1730* both No +$39; *1815*/*1900* SKIP. Stand by next CRYPTO15 OPEN join-bid \u226470\u00a2. No averaging down."
     },
     {
       "name": "Trader",
@@ -1692,7 +1716,7 @@
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD CHI Mon FILLED \u2014 KMDW T-group max rnd 79 IN BIN (kill 80+) + four Tue rests (Tue T-groups not started). Last confirm ~5:10 (2053Z same); 5:56 kick reply pending."
+      "state": "HOLD CHI Mon FILLED \u2014 KMDW T-group max rnd 79 IN BIN (kill 80+) + four Tue rests (Tue T-groups not started). Last confirm ~5:10; 6:51 kick reply pending."
     },
     {
       "name": "Macro",
@@ -1702,7 +1726,7 @@
     {
       "name": "Intel",
       "role": "SEARCH",
-      "state": "CRYPTO15 *1900* SKIP Yes>70\u00a2; *1815* BTC SKIP cross / ETH SKIP; *1830*/*1845* miss no ticket; *1730* both No +$39. Geo EMPTY ~6:24. Event-window EMPTY ~5:54 Labor Day thin. Force bar open \u226470\u00a2 join-bid idx-2. Next Trump Tue Ellipse ~10am."
+      "state": "Event-window EMPTY ~6:54. CRYPTO15 *1900* SKIP Yes>70\u00a2; *1815* SKIP. Geo EMPTY ~6:24. Force bar open \u226470\u00a2 join-bid idx-2. Next Trump Tue Ellipse ~10am."
     }
   ]
 }
