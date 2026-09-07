@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-07T16:41:00-04:00",
-  "asOfLabel": "Mon 4:41pm ET",
+  "asOf": "2026-09-07T17:08:00-04:00",
+  "asOfLabel": "Mon 5:08pm ET",
   "cash": 1150.68,
   "allInMid": 1255.5,
   "allInBid": 1197.73,
@@ -47,6 +47,14 @@
       "side": "400 Yes @23c rest",
       "status": "REST",
       "note": "Tue Sep 8. Order 01a07c3d-8268-716f-8bc3-d253dd780724 rem 400. Live 23/24 at rest. Wx PASS FLOOR-EDGE ridge/subsidence. Kill 88+. Printer HOLD \u2014 Tue T-groups not started."
+    },
+    {
+      "ticker": "KXETH15M-26SEP071715-15",
+      "city": "ETH",
+      "bin": "*1715*",
+      "side": "50 Yes @51c rest",
+      "status": "REST",
+      "note": "CRYPTO15 *1715*. Order 01a07dad-7d88-7047-8d1d-64184f91a555 rem 50. Joined live bid 51/53 (CLEAR was @62c; Trader joined current). BTC Yes @62c SKIP post-only cross. Hold to fill/settle \u2014 never lift/retry BTC. Next *1730* OPEN."
     }
   ],
   "printed": [
@@ -463,6 +471,36 @@
     }
   ],
   "tape": [
+    {
+      "et": "Mon 5:08pm",
+      "who": "Trader",
+      "kind": "REST",
+      "text": "*1715* ETH Yes 50@51c REST 01a07dad (joined live 51/53). BTC Yes @62c SKIP post-only cross \u2014 did not retry. Cash $1,150.68 / all-in mid $1,255.50 / bid $1,197.73. CHI 11111@9c still HOLD + four Tue rests."
+    },
+    {
+      "et": "Mon 5:07pm",
+      "who": "Johnny",
+      "kind": "CLEAR",
+      "text": "CLEAR CRYPTO15 *1715* both Yes join-bid: BTC Yes @62\u00a2 x50 + ETH Yes @62\u00a2 x50, post-only idx-2. Trader: BTC SKIP cross; ETH joined @51c REST."
+    },
+    {
+      "et": "Mon 5:06pm",
+      "who": "Intel",
+      "kind": "FLAG",
+      "text": "CRYPTO15 *1715* at-open FLAG both lean Yes \u226470\u00a2 join CURRENT bid: BTC Yes 0.62/0.63 (CB 79234 vs fl 79218 +$15.4); ETH Yes 0.62/0.63 (CB 2494.6 vs fl 2494.53). Prefer BTC one-ticket."
+    },
+    {
+      "et": "Mon 4:50pm",
+      "who": "Scout",
+      "kind": "FLAG",
+      "text": "FLAG none ~4:42\u20134:50. SEA Mon B68.5 WATCH (T 64/64 ~3.2h short); SFO WITHHOLD marine; Mon DNR LAX/DAL/OKC/PHIL; Tue empties none; Wed/Thu 404. Occupied CHI Mon filled + Tue PHX/SEA/AUS/ATL."
+    },
+    {
+      "et": "Mon 4:48pm",
+      "who": "Trader",
+      "kind": "SKIP",
+      "text": "*1700* both SKIP \u2014 exchange rejected post-only cross (No@57/62 vs live No 62/63). Did not retry. Did not lift. Cash unchanged $1,150.68 / all-in mid $1,255.50."
+    },
     {
       "et": "Mon 4:41pm",
       "who": "Trader",
@@ -1546,7 +1584,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "EMPTY ~4:07. SEA Mon WATCH. SFO WITHHOLD. Mon DNR LAX/DAL/OKC/PHIL. CHI Mon FILLED occupied. Tue rests occupied. Wed/Thu 404."
+      "state": "EMPTY ~4:50. SEA Mon WATCH. SFO WITHHOLD. Mon DNR LAX/DAL/OKC/PHIL. CHI Mon FILLED occupied. Tue rests occupied. Wed/Thu 404."
     },
     {
       "name": "Wx",
@@ -1556,27 +1594,27 @@
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "CHI Mon 11111@9c FILLED HOLD T79 + 4 Tue rests ($372). *1630* ETH No +$23.50; *1645* SKIP >70\u00a2. Stand by *1700* OPEN join-bid \u226470\u00a2. No averaging down."
+      "state": "CHI Mon 11111@9c FILLED HOLD T79 + 4 Tue rests ($372). *1715* ETH Yes50@51\u00a2 REST / BTC SKIP; *1700* SKIP cross; *1645* SKIP >70\u00a2. Stand by *1730* OPEN join-bid \u226470\u00a2. No averaging down."
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "CHI 11111@9c FILLED HOLD 01a07ce8 + PHX/SEA/AUS/ATL rests. *1630* ETH No printed +$23.50; *1645* SKIP. Cash $1,150.68 / all-in mid $1,255.50 / bid $1,197.73 (Trader ~4:41)."
+      "state": "CHI 11111@9c FILLED HOLD 01a07ce8 + PHX/SEA/AUS/ATL rests + ETH *1715* 50@51c REST 01a07dad. *1700* SKIP cross. Cash $1,150.68 / all-in mid $1,255.50 / bid $1,197.73 (Trader ~5:07)."
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD CHI Mon FILLED \u2014 KMDW T-group max rnd 79 IN BIN (kill 80+) + four Tue rests (Tue T-groups not started). Last max note ~2:45/3:58."
+      "state": "HOLD CHI Mon FILLED \u2014 KMDW T-group max rnd 79 IN BIN (kill 80+) + four Tue rests (Tue T-groups not started). Last max note ~2:45/3:58; 4:59 kick pending."
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "Last full Macro Mon 9:12\u20139:14. Pages using Trader ~4:41 cash $1,150.68 / mid $1,255.50 / bid $1,197.73 (no newer Macro)."
+      "state": "Last full Macro Mon 9:12\u20139:14. Pages using Trader ~5:07 cash $1,150.68 / mid $1,255.50 / bid $1,197.73 (no newer Macro)."
     },
     {
       "name": "Intel",
       "role": "SEARCH",
-      "state": "CRYPTO15 *1630* ETH rest\u2192print +$23.50 / BTC SKIP; *1645* FLAG\u2192CLEAR\u2192Trader SKIP >70\u00a2; *1615* \u2212$63.50. Event-window EMPTY Labor Day thin. Force bar open \u226470\u00a2 join-bid idx-2. Next Trump Tue Ellipse ~10am."
+      "state": "CRYPTO15 *1715* ETH REST @51\u00a2 / BTC SKIP cross; *1700* SKIP cross; *1645* SKIP >70\u00a2; *1630* ETH No +$23.50. Event-window EMPTY Labor Day thin. Force bar open \u226470\u00a2 join-bid idx-2. Next Trump Tue Ellipse ~10am."
     }
   ]
 }
