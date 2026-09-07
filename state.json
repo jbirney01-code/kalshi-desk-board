@@ -1,13 +1,46 @@
 {
-  "asOf": "2026-09-07T09:49:00-04:00",
-  "asOfLabel": "Mon 9:49am ET",
+  "asOf": "2026-09-07T10:52:00-04:00",
+  "asOfLabel": "Mon 10:52am ET",
   "cash": 2245.8,
-  "allInMid": 2345.02,
-  "allInBid": 2343.24,
+  "allInMid": 2280.85,
+  "allInBid": 2278.9,
   "weatherMarked": 0.0,
-  "otherMarked": 99.22,
-  "scoreboard": "Mon Sep 7 +$1,000 missed (+$294 vs Thu; cash $2,245.80)",
-  "live": [],
+  "otherMarked": 35.05,
+  "scoreboard": "Mon Sep 7 +$1,000 missed (+$294 vs Thu; cash $2,245.80; 4 Tue rests $372)",
+  "live": [
+    {
+      "ticker": "KXHIGHTPHX-26SEP08-B107.5",
+      "city": "PHX",
+      "bin": "107-108",
+      "side": "400 Yes @30c rest",
+      "status": "REST",
+      "note": "Tue Sep 8. Order 01a07c3d-72c8-7da1-8a13-f89bf9a30664 rem 400. Live 30/32 at rest. Wx PASS CEILING-EDGE Extreme Heat Warning. Kill 109+. Printer HOLD \u2014 Tue T-groups not started."
+    },
+    {
+      "ticker": "KXHIGHTSEA-26SEP08-B72.5",
+      "city": "SEA",
+      "bin": "72-73",
+      "side": "400 Yes @21c rest",
+      "status": "REST",
+      "note": "Tue Sep 8. Order 01a07c3d-76b0-7b64-a02e-4fa9f80f57e7 rem 400. Live 21/25 at rest. Wx PASS FLOOR-EDGE dry/mild not marine. Kill 74+. Printer HOLD \u2014 Tue T-groups not started."
+    },
+    {
+      "ticker": "KXHIGHAUS-26SEP08-B98.5",
+      "city": "AUS",
+      "bin": "98-99",
+      "side": "400 Yes @19c rest",
+      "status": "REST",
+      "note": "Tue Sep 8. Order 01a07c3d-7a98-76e1-9a98-a3892511e6de rem 400. Live 19/21 at rest. Wx PASS FLOOR-EDGE high pressure. Kill 100+. Printer HOLD \u2014 Tue T-groups not started."
+    },
+    {
+      "ticker": "KXHIGHTATL-26SEP08-B86.5",
+      "city": "ATL",
+      "bin": "86-87",
+      "side": "400 Yes @23c rest",
+      "status": "REST",
+      "note": "Tue Sep 8. Order 01a07c3d-8268-716f-8bc3-d253dd780724 rem 400. Live 23/24 at rest. Wx PASS FLOOR-EDGE ridge/subsidence. Kill 88+. Printer HOLD \u2014 Tue T-groups not started."
+    }
+  ],
   "printed": [
     {
       "city": "AUS",
@@ -323,9 +356,51 @@
       "cash": 2245.8,
       "allIn": 2345.02,
       "note": "weekend AUS Yes 800@13c; MSP/CHI/LAX No; $2k idx-2\u2192idx-0"
+    },
+    {
+      "t": "Mon 10:20am",
+      "cash": 2245.8,
+      "allIn": 2280.85,
+      "note": "Tue PHX/SEA/AUS/ATL 400 rests; NYC skip 33c; SFO Wx FAIL; Trader all-in"
     }
   ],
   "tape": [
+    {
+      "et": "Mon 10:20am",
+      "who": "Trader",
+      "kind": "CLEAR",
+      "text": "RE-CLEAR done. PHX 400@30c rest 01a07c3d-72c8 rem 400 (30/32). SEA 400@21c rest 01a07c3d-76b0 rem 400 (21/25). AUS 400@19c rest 01a07c3d-7a98 rem 400 (19/21). ATL 400@23c rest 01a07c3d-8268 rem 400 (23/24). NYC SKIPPED bid 33/34 above 28c \u2014 no chase. Cash $2,245.80. All-in mid $2,280.85 / bid $2,278.90. $372 notional at risk."
+    },
+    {
+      "et": "Mon 10:20am",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "Four Tue rests noted. PHX 107-108 kill 109+; SEA 72-73 kill 74+; AUS 98-99 kill 100+; ATL 86-87 kill 88+. Climate day not started. Standing by for local midnight T-groups. NYC skip. SFO Tue dead (never rested)."
+    },
+    {
+      "et": "Mon 10:17am",
+      "who": "Intel",
+      "kind": "HOLD",
+      "text": "EMPTY geo/tech Labor Day. No live mention/briefing/earnings/launch next few hours. KXTRUMPSAY-26SEP07 settling. Next public Trump Tue 9/8 ~10am Ellipse. CRYPTO15 windows SKIP (book priced). Nothing placed."
+    },
+    {
+      "et": "Mon 10:15am",
+      "who": "Johnny",
+      "kind": "CLEAR",
+      "text": "5 CLEARs after Wx: PHX B107.5 / SEA B72.5 / AUS B98.5 / NYC B82.5 / ATL B86.5. SFO B80.5 Wx FAIL. NYC later skipped at 33c. Four rested at $372 risk."
+    },
+    {
+      "et": "Mon 10:10am",
+      "who": "Wx",
+      "kind": "PASS",
+      "text": "Tue set: PASS PHX CEILING-EDGE; FAIL SFO marine/ceiling risk; PASS AUS/NYC/ATL/SEA FLOOR-EDGE (AFD cool mechanisms off for Tue). Grid peaks IN bins, no pass-through."
+    },
+    {
+      "et": "Mon 10:05am",
+      "who": "Scout",
+      "kind": "FLAG",
+      "text": "Tue 26SEP08 FLIPPED OPEN \u2014 16 cities active with real dollars. FLAGed PHX B107.5@30c CEILING, SFO B80.5@17c CEILING, AUS B98.5@20c / NYC B82.5@27c / ATL B86.5@22c / SEA B72.5@20c FLOOR. Mon LAX/SEA still WATCH. Wed/Thu 404."
+    },
     {
       "et": "Mon 9:44am",
       "who": "Scout",
@@ -1013,32 +1088,37 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "9:35/9:44 FLAG none. Mon LAX B82.5 + SEA B68.5 WATCH only (ceiling-edge, T short). Tue initialized empty 0/0; Wed/Thu 404. Size 400/800\u226415c. Occupied none."
+      "state": "Tue open: FLAGed 6; occupied skip PHX/SEA/AUS/ATL rests; SFO Tue dead; NYC skipped. Mon LAX B82.5 + SEA B68.5 WATCH; Mon SFO WITHHOLD. Wed/Thu 404. Size 400/800\u226415c."
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "On deck for next FLAG. Standing Fri AUS was the weekend Yes (CLI 95). No live FLAG to vet."
+      "state": "Tue set done: PASS PHX/SEA/AUS/NYC/ATL; FAIL SFO. On deck for next FLAG."
     },
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "Desk back after weekend dark. Goal +$1,000 by Mon missed (+$294). Pages catch-up to Macro 9:12 / Trader 9:14. Weather flat, hunting Mon/Tue/Wed. Size 400/800\u226415c. No averaging down."
+      "state": "4 Tue rests live ($372). NYC skipped 33c. Goal +$1,000 by Mon missed (+$294). Size 400/800\u226415c full $1k on centered/ceiling \u226415c. No averaging down."
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "9:14 TRANSFER $2k idx-2\u2192idx-0 done (394c5215). idx-0 $2,000 / idx-2 $245.80. Weather flat, no open orders. Waiting CLEAR. Size 400/800\u226415c."
+      "state": "Resting PHX@30c / SEA@21c / AUS@19c / ATL@23c (01a07c3d-*). Cash $2,245.80 / all-in mid $2,280.85 / bid $2,278.90. Waiting next CLEAR."
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "Catch-up finals in: PRINT AUS Fri CLI 95; KILL MSP/CHI Thu + LAX Fri. Nothing occupied live. Idle until next ticket."
+      "state": "HOLD four Tue rests \u2014 T-groups not started. Kill lines: PHX 109+ / SEA 74+ / AUS 100+ / ATL 88+."
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "cash $2,245.80 / all-in mid $2,345.02 / bid $2,343.24 (Mon 9:12\u20139:14; weather $0, Fed other $99.22). Newest real ledger."
+      "state": "Last full ledger Mon 9:12\u20139:14 cash $2,245.80 / mid $2,345.02 Fed $99.22. Trader 10:20 all-in mid $2,280.85 / bid $2,278.90 (Pages using Trader after rests)."
+    },
+    {
+      "name": "Intel",
+      "role": "SEARCH",
+      "state": "10:17 EMPTY Labor Day. CRYPTO15 SKIPs (book priced). Next watch Tue Ellipse ~10am."
     }
   ]
 }
