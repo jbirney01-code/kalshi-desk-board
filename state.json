@@ -1,12 +1,12 @@
 {
-  "asOf": "2026-09-07T17:08:00-04:00",
-  "asOfLabel": "Mon 5:08pm ET",
-  "cash": 1150.68,
-  "allInMid": 1255.5,
-  "allInBid": 1197.73,
+  "asOf": "2026-09-07T17:34:00-04:00",
+  "asOfLabel": "Mon 5:34pm ET",
+  "cash": 1143.18,
+  "allInMid": 1230.42,
+  "allInBid": 1172.57,
   "weatherMarked": 41.61,
-  "otherMarked": 63.21,
-  "scoreboard": "Mon Sep 7 +$1,000 missed; cash $1,150.68; CHI Mon 11111@9c HOLD T79; 4 Tue rests $372; CRYPTO15 *1630* ETH No +$23.50; *1645* SKIP >70\u00a2; *1700* next",
+  "otherMarked": 45.63,
+  "scoreboard": "Mon Sep 7 +$1,000 missed; cash $1,143.18; CHI Mon 11111@9c HOLD T79; 4 Tue rests $372; CRYPTO15 *1715* ETH Yes +$24.50; *1730* BTC No HOLD + ETH No REST",
   "live": [
     {
       "ticker": "KXHIGHCHI-26SEP07-B78.5",
@@ -14,7 +14,7 @@
       "bin": "78-79",
       "side": "11111 Yes @9c filled",
       "status": "HOLD",
-      "note": "Mon Sep 7 go-hard FILLED. Order 01a07ce8 executed 11111@9c cost $999.99. Wx PASS CEILING-EDGE. Printer HOLD \u2014 KMDW T-group max T0261=78.98F rnd 79 IN BIN. Kill 80+. Mon LAX/DAL/OKC leftovers KILLed never rested."
+      "note": "Mon Sep 7 go-hard FILLED. Order 01a07ce8 executed 11111@9c cost $999.99. Wx PASS CEILING-EDGE. Printer HOLD \u2014 KMDW T-group max T0261=78.98F rnd 79 IN BIN (2053Z same). Kill 80+. Mon LAX/DAL/OKC leftovers KILLed never rested."
     },
     {
       "ticker": "KXHIGHTPHX-26SEP08-B107.5",
@@ -49,12 +49,20 @@
       "note": "Tue Sep 8. Order 01a07c3d-8268-716f-8bc3-d253dd780724 rem 400. Live 23/24 at rest. Wx PASS FLOOR-EDGE ridge/subsidence. Kill 88+. Printer HOLD \u2014 Tue T-groups not started."
     },
     {
-      "ticker": "KXETH15M-26SEP071715-15",
+      "ticker": "KXBTC15M-26SEP071730-30",
+      "city": "BTC",
+      "bin": "*1730*",
+      "side": "50 No @64c filled",
+      "status": "HOLD",
+      "note": "CRYPTO15 *1730*. Order 01a07dbb-5480-7653-833b-33cb980e6810 FILLED. Joined live No bid @64c. Hold to settle \u2014 never lift. *1715* ETH Yes settled +$24.50. Next *1745* OPEN."
+    },
+    {
+      "ticker": "KXETH15M-26SEP071730-30",
       "city": "ETH",
-      "bin": "*1715*",
-      "side": "50 Yes @51c rest",
+      "bin": "*1730*",
+      "side": "50 No @58c rest",
       "status": "REST",
-      "note": "CRYPTO15 *1715*. Order 01a07dad-7d88-7047-8d1d-64184f91a555 rem 50. Joined live bid 51/53 (CLEAR was @62c; Trader joined current). BTC Yes @62c SKIP post-only cross. Hold to fill/settle \u2014 never lift/retry BTC. Next *1730* OPEN."
+      "note": "CRYPTO15 *1730*. Order 01a07dbb-5868-7cdb-a1c3-848fa7ee0497 rem 50. Joined live No bid @58c. Hold to fill/settle \u2014 never lift. BTC No already FILLED same window. Next *1745* OPEN."
     }
   ],
   "printed": [
@@ -468,9 +476,51 @@
       "cash": 1150.68,
       "allIn": 1255.5,
       "note": "*1630* ETH No settle +$23.50; *1645* SKIP Yes>70\u00a2; Trader all-in"
+    },
+    {
+      "t": "Mon 5:17pm",
+      "cash": 1143.18,
+      "allIn": 1230.42,
+      "note": "*1715* ETH Yes settle +$24.50; *1730* BTC No@64c FILLED + ETH No@58c REST; Trader all-in"
     }
   ],
   "tape": [
+    {
+      "et": "Mon 5:29pm",
+      "who": "Intel",
+      "kind": "SKIP",
+      "text": "SKIP BTC|ETH *1730* \u2014 mid/late + already live (BTC No fill / ETH No rest); No lean \u226599\u00a2 (\u226585\u00a2 R:R dead); no second ticket."
+    },
+    {
+      "et": "Mon 5:22pm",
+      "who": "Intel",
+      "kind": "EMPTY",
+      "text": "Geo/tech EMPTY \u2014 no gap>12pp+conf>75%; inventory next 2h none; only open KXVANCEMENTION-26SEP09 RNC not today. Next Trump Tue Sep 8 ~10am Ellipse."
+    },
+    {
+      "et": "Mon 5:17pm",
+      "who": "Trader",
+      "kind": "PRINT",
+      "text": "*1715* ETH Yes 50@51c settled YES +$24.50. *1730*: BTC No 50@64c FILLED 01a07dbb-5480 HOLD; ETH No 50@58c REST 01a07dbb-5868. Cash $1,143.18 / all-in mid $1,230.42 / bid $1,172.57. CHI 11111@9c still HOLD + four Tue rests."
+    },
+    {
+      "et": "Mon 5:16pm",
+      "who": "Johnny",
+      "kind": "CLEAR",
+      "text": "CLEAR CRYPTO15 *1730* both No join-bid: BTC No + ETH No post-only idx-2. Trader: BTC No 50@64c FILLED; ETH No 50@58c REST."
+    },
+    {
+      "et": "Mon 5:15pm",
+      "who": "Intel",
+      "kind": "FLAG",
+      "text": "CRYPTO15 *1730* at-open FLAG both lean No \u226470\u00a2 join CURRENT bid (idx-2). Johnny CLEAR \u2192 Trader filled BTC No / rested ETH No."
+    },
+    {
+      "et": "Mon 5:10pm",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "HOLD CHI Mon. KMDW max still T0261=26.1C=78.98F rnd 79 vs 78-79. 2053Z same. IN BIN. Kill 80+. Tue PHX/SEA/AUS/ATL not started."
+    },
     {
       "et": "Mon 5:08pm",
       "who": "Trader",
@@ -1594,27 +1644,27 @@
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "CHI Mon 11111@9c FILLED HOLD T79 + 4 Tue rests ($372). *1715* ETH Yes50@51\u00a2 REST / BTC SKIP; *1700* SKIP cross; *1645* SKIP >70\u00a2. Stand by *1730* OPEN join-bid \u226470\u00a2. No averaging down."
+      "state": "CHI Mon 11111@9c FILLED HOLD T79 + 4 Tue rests ($372). *1715* ETH Yes +$24.50; *1730* BTC No HOLD + ETH No REST. Stand by *1745* OPEN join-bid \u226470\u00a2. No averaging down."
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "CHI 11111@9c FILLED HOLD 01a07ce8 + PHX/SEA/AUS/ATL rests + ETH *1715* 50@51c REST 01a07dad. *1700* SKIP cross. Cash $1,150.68 / all-in mid $1,255.50 / bid $1,197.73 (Trader ~5:07)."
+      "state": "CHI 11111@9c FILLED HOLD 01a07ce8 + PHX/SEA/AUS/ATL rests + BTC *1730* No 50@64c FILLED 01a07dbb-5480 + ETH *1730* No 50@58c REST 01a07dbb-5868. Cash $1,143.18 / all-in mid $1,230.42 / bid $1,172.57 (Trader ~5:17)."
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD CHI Mon FILLED \u2014 KMDW T-group max rnd 79 IN BIN (kill 80+) + four Tue rests (Tue T-groups not started). Last max note ~2:45/3:58; 4:59 kick pending."
+      "state": "HOLD CHI Mon FILLED \u2014 KMDW T-group max rnd 79 IN BIN (kill 80+) + four Tue rests (Tue T-groups not started). Last confirm ~5:10 (2053Z same)."
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "Last full Macro Mon 9:12\u20139:14. Pages using Trader ~5:07 cash $1,150.68 / mid $1,255.50 / bid $1,197.73 (no newer Macro)."
+      "state": "Last full Macro Mon 9:12\u20139:14. Pages using Trader ~5:17 cash $1,143.18 / mid $1,230.42 / bid $1,172.57 (no newer Macro)."
     },
     {
       "name": "Intel",
       "role": "SEARCH",
-      "state": "CRYPTO15 *1715* ETH REST @51\u00a2 / BTC SKIP cross; *1700* SKIP cross; *1645* SKIP >70\u00a2; *1630* ETH No +$23.50. Event-window EMPTY Labor Day thin. Force bar open \u226470\u00a2 join-bid idx-2. Next Trump Tue Ellipse ~10am."
+      "state": "CRYPTO15 *1730* BTC No FILL / ETH No REST; *1715* ETH Yes +$24.50; mid/late SKIP. Geo EMPTY ~5:22. Event-window EMPTY Labor Day thin. Force bar open \u226470\u00a2 join-bid idx-2. Next Trump Tue Ellipse ~10am."
     }
   ]
 }
