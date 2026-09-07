@@ -1,12 +1,12 @@
 {
-  "asOf": "2026-09-07T19:08:00-04:00",
-  "asOfLabel": "Mon 7:08pm ET",
-  "cash": 1209.58,
-  "allInMid": 1318.9,
-  "allInBid": 1261.0,
-  "weatherMarked": 41.61,
-  "otherMarked": 67.71,
-  "scoreboard": "Mon Sep 7 +$1,000 missed; cash $1,209.58; CHI Mon 11111@9c HOLD T79; 4 Tue rests $372; Tue LAX B86.5 FLAG\u2192Wx FAIL\u2192KILL never rested; *1730* both No +$39; *1815*/*1900* SKIP; crypto flat",
+  "asOf": "2026-09-07T19:41:00-04:00",
+  "asOfLabel": "Mon 7:41pm ET",
+  "cash": 1111.23,
+  "allInMid": 1289.51,
+  "allInBid": 1229.31,
+  "weatherMarked": 141.5,
+  "otherMarked": 36.78,
+  "scoreboard": "Mon Sep 7 +$1,000 missed; cash $1,111.23; CHI Mon 11111@9c HOLD T79; AUS Tue 400@19c FILLED; ATL 168.63@23c +231.37 rest; PHX 1+399@30c; SEA 400@21c rest; *1930* SKIP; crypto flat",
   "live": [
     {
       "ticker": "KXHIGHCHI-26SEP07-B78.5",
@@ -14,15 +14,31 @@
       "bin": "78-79",
       "side": "11111 Yes @9c filled",
       "status": "HOLD",
-      "note": "Mon Sep 7 go-hard FILLED. Order 01a07ce8 executed 11111@9c cost $999.99. Wx PASS CEILING-EDGE. Printer HOLD \u2014 KMDW T-group max T0261=78.98F rnd 79 IN BIN (2053Z same). Kill 80+. Mon LAX/DAL/OKC leftovers KILLed never rested."
+      "note": "Mon Sep 7 go-hard FILLED. Order 01a07ce8 executed 11111@9c cost $999.99. Wx PASS CEILING-EDGE. Printer HOLD — KMDW T-group max rnd 79 IN BIN (kill 80+). Live yes 0/1."
+    },
+    {
+      "ticker": "KXHIGHAUS-26SEP08-B98.5",
+      "city": "AUS",
+      "bin": "98-99",
+      "side": "400 Yes @19c filled",
+      "status": "HOLD",
+      "note": "Tue Sep 8. Rest 01a07c3d-7a98 fully filled @19c cost $76. Live 11/12. Wx PASS FLOOR-EDGE. Kill 100+. Printer HOLD — Tue T-groups not started."
+    },
+    {
+      "ticker": "KXHIGHTATL-26SEP08-B86.5",
+      "city": "ATL",
+      "bin": "86-87",
+      "side": "168.63 filled + 231.37 @23c rest",
+      "status": "PARTIAL",
+      "note": "Tue Sep 8. Order 01a07c3d-8268 rem 231.37 / fill 168.63 @23c. Live 23/24. Wx PASS FLOOR-EDGE. Kill 88+. Printer HOLD — Tue T-groups not started."
     },
     {
       "ticker": "KXHIGHTPHX-26SEP08-B107.5",
       "city": "PHX",
       "bin": "107-108",
-      "side": "400 Yes @30c rest",
-      "status": "REST",
-      "note": "Tue Sep 8. Order 01a07c3d-72c8-7da1-8a13-f89bf9a30664 rem 400. Live 30/32 at rest. Wx PASS CEILING-EDGE Extreme Heat Warning. Kill 109+. Printer HOLD \u2014 Tue T-groups not started."
+      "side": "1 filled + 399 @30c rest",
+      "status": "PARTIAL",
+      "note": "Tue Sep 8. Order 01a07c3d-72c8 rem 399 / fill 1 @30c. Live 31/32. Wx PASS CEILING-EDGE Extreme Heat Warning. Kill 109+. Printer HOLD — Tue T-groups not started."
     },
     {
       "ticker": "KXHIGHTSEA-26SEP08-B72.5",
@@ -30,23 +46,7 @@
       "bin": "72-73",
       "side": "400 Yes @21c rest",
       "status": "REST",
-      "note": "Tue Sep 8. Order 01a07c3d-76b0-7b64-a02e-4fa9f80f57e7 rem 400. Live 21/25 at rest. Wx PASS FLOOR-EDGE dry/mild not marine. Kill 74+. Printer HOLD \u2014 Tue T-groups not started."
-    },
-    {
-      "ticker": "KXHIGHAUS-26SEP08-B98.5",
-      "city": "AUS",
-      "bin": "98-99",
-      "side": "400 Yes @19c rest",
-      "status": "REST",
-      "note": "Tue Sep 8. Order 01a07c3d-7a98-76e1-9a98-a3892511e6de rem 400. Live 19/21 at rest. Wx PASS FLOOR-EDGE high pressure. Kill 100+. Printer HOLD \u2014 Tue T-groups not started."
-    },
-    {
-      "ticker": "KXHIGHTATL-26SEP08-B86.5",
-      "city": "ATL",
-      "bin": "86-87",
-      "side": "400 Yes @23c rest",
-      "status": "REST",
-      "note": "Tue Sep 8. Order 01a07c3d-8268-716f-8bc3-d253dd780724 rem 400. Live 23/24 at rest. Wx PASS FLOOR-EDGE ridge/subsidence. Kill 88+. Printer HOLD \u2014 Tue T-groups not started."
+      "note": "Tue Sep 8. Order 01a07c3d-76b0 rem 400. Live yes ~21. Wx PASS FLOOR-EDGE. Kill 74+. Printer HOLD — Tue T-groups not started."
     }
   ],
   "printed": [
@@ -393,7 +393,7 @@
       "t": "Mon 9:14am",
       "cash": 2245.8,
       "allIn": 2345.02,
-      "note": "weekend AUS Yes 800@13c; MSP/CHI/LAX No; $2k idx-2\u2192idx-0"
+      "note": "weekend AUS Yes 800@13c; MSP/CHI/LAX No; $2k idx-2→idx-0"
     },
     {
       "t": "Mon 10:20am",
@@ -405,7 +405,7 @@
       "t": "Mon 1:05pm",
       "cash": 2153.11,
       "allIn": 2224.42,
-      "note": "CRYPTO15 *1300* Nos \u2212$57; ETH *1315* 50@60c filled; BTC skip; Trader all-in"
+      "note": "CRYPTO15 *1300* Nos −$57; ETH *1315* 50@60c filled; BTC skip; Trader all-in"
     },
     {
       "t": "Mon 1:27pm",
@@ -417,7 +417,7 @@
       "t": "Mon 1:40pm",
       "cash": 2183.81,
       "allIn": 2247.54,
-      "note": "ETH *1315* Yes settle +$20; net crypto \u2212$37; CHI + 4 Tue rests; Trader all-in"
+      "note": "ETH *1315* Yes settle +$20; net crypto −$37; CHI + 4 Tue rests; Trader all-in"
     },
     {
       "t": "Mon 2:10pm",
@@ -435,13 +435,13 @@
       "t": "Mon 2:32pm",
       "cash": 1190.91,
       "allIn": 1296.25,
-      "note": "*1430* settle BTC Yes \u2212$28 / ETH No +$22; CHI HOLD; Trader all-in"
+      "note": "*1430* settle BTC Yes −$28 / ETH No +$22; CHI HOLD; Trader all-in"
     },
     {
       "t": "Mon 3:03pm",
       "cash": 1190.91,
       "allIn": 1296.27,
-      "note": "*1515* SKIP both (BTC would cross / ETH No>70\u00a2); Trader mark tick; CHI HOLD T79"
+      "note": "*1515* SKIP both (BTC would cross / ETH No>70¢); Trader mark tick; CHI HOLD T79"
     },
     {
       "t": "Mon 4:16pm",
@@ -453,13 +453,13 @@
       "t": "Mon 4:30pm",
       "cash": 1127.18,
       "allIn": 1232.07,
-      "note": "*1615* settle No \u2212$63.50; *1630* ETH No@53c rest; Trader all-in"
+      "note": "*1615* settle No −$63.50; *1630* ETH No@53c rest; Trader all-in"
     },
     {
       "t": "Mon 4:41pm",
       "cash": 1150.68,
       "allIn": 1255.5,
-      "note": "*1630* ETH No settle +$23.50; *1645* SKIP Yes>70\u00a2; Trader all-in"
+      "note": "*1630* ETH No settle +$23.50; *1645* SKIP Yes>70¢; Trader all-in"
     },
     {
       "t": "Mon 5:17pm",
@@ -472,20 +472,44 @@
       "cash": 1209.58,
       "allIn": 1318.9,
       "note": "*1730* both No settle +$39; *1815* BTC SKIP post-only cross / ETH SKIP; Trader all-in"
+    },
+    {
+      "t": "Mon 7:41pm",
+      "cash": 1111.23,
+      "allIn": 1289.51,
+      "note": "AUS Tue 400@19c FILLED; ATL 168.63@23c partial; PHX 1+399; SEA 400 rest; *1930* SKIP; live mark"
     }
   ],
   "tape": [
     {
+      "et": "Mon 7:41pm",
+      "who": "Trader",
+      "kind": "PRINT",
+      "text": "AUS Tue B98.5 400@19c FILLED ($76). ATL B86.5 168.63@23c filled / 231.37 rest. PHX B107.5 1+399@30c. SEA 400@21c still rest. CHI HOLD. Cash $1,111.23 / all-in mid $1,289.51 / bid $1,229.31."
+    },
+    {
+      "et": "Mon 7:30pm",
+      "who": "Trader",
+      "kind": "SKIP",
+      "text": "*1930* BTC skipped — No already 74¢ (>70). ETH stayed off. Then cash $1,140.21 / mid $1,272.88 (pre-AUS finish mark)."
+    },
+    {
+      "et": "Mon 7:30pm",
+      "who": "Johnny",
+      "kind": "CLEAR",
+      "text": "CLEAR CRYPTO15 *1930* BTC No 50@66¢ join-bid; ETH SKIP. Trader: BTC SKIP No bid 74/75 — no chase."
+    },
+    {
       "et": "Mon 7:01pm",
       "who": "Johnny",
       "kind": "KILL",
-      "text": "KILL Tue LAX KXHIGHLAX-26SEP08-B86.5 \u2014 Wx FAIL ceiling pin (one-hour 87 under W 15 onshore). Never rested. DNR + no chase B88.5. SEA Mon stay WATCH. Occupied CHI Mon + Tue PHX/SEA/AUS/ATL unchanged."
+      "text": "KILL Tue LAX KXHIGHLAX-26SEP08-B86.5 — Wx FAIL ceiling pin (one-hour 87 under W 15 onshore). Never rested. DNR + no chase B88.5. SEA Mon stay WATCH. Occupied CHI Mon + Tue PHX/SEA/AUS/ATL unchanged."
     },
     {
       "et": "Mon 7:00pm",
       "who": "Wx",
       "kind": "FAIL",
-      "text": "FAIL Tue LAX KXHIGHLAX-26SEP08-B86.5 CEILING-EDGE. KLAX peak 87@14 ONLY, daily/grid/NDFD 87 IN {86,87} on paper; W 15 onshore through peak (same cool bar as Tue SFO). Ask 24c >15 \u2014 no full-$1k path. Do not CLEAR."
+      "text": "FAIL Tue LAX KXHIGHLAX-26SEP08-B86.5 CEILING-EDGE. KLAX peak 87@14 ONLY, daily/grid/NDFD 87 IN {86,87} on paper; W 15 onshore through peak (same cool bar as Tue SFO). Ask 24c >15 — no full-$1k path. Do not CLEAR."
     },
     {
       "et": "Mon 6:59pm",
@@ -497,19 +521,19 @@
       "et": "Mon 6:54pm",
       "who": "Intel",
       "kind": "EMPTY",
-      "text": "Event-window EMPTY (last weekday daytime fire) \u2014 inventory next 2h none; only open KXVANCEMENTION-26SEP09 RNC not today. Next Trump Tue Sep 8 ~10am Ellipse."
+      "text": "Event-window EMPTY (last weekday daytime fire) — inventory next 2h none; only open KXVANCEMENTION-26SEP09 RNC not today. Next Trump Tue Sep 8 ~10am Ellipse."
     },
     {
       "et": "Mon 6:47pm",
       "who": "Intel",
       "kind": "SKIP",
-      "text": "CRYPTO15 *1900* SKIP BTC|ETH \u2014 lean Yes but live Yes bid BTC 0.79/0.80 ETH 0.81/0.82 (>70\u00a2 bar). CB BTC +$93 / ETH +$2.8 vs floor; cannot join \u226470\u00a2. Never place. *1830*/*1845* finalized both No with no desk tickets."
+      "text": "CRYPTO15 *1900* SKIP BTC|ETH — lean Yes but live Yes bid BTC 0.79/0.80 ETH 0.81/0.82 (>70¢ bar). CB BTC +$93 / ETH +$2.8 vs floor; cannot join ≤70¢. Never place. *1830*/*1845* finalized both No with no desk tickets."
     },
     {
       "et": "Mon 6:24pm",
       "who": "Intel",
       "kind": "EMPTY",
-      "text": "Geo/tech EMPTY \u2014 no gap>12pp+conf>75%; inventory next 2h (6:22\u21928:22pm) none; only open KXVANCEMENTION-26SEP09 RNC not today. Next Trump Tue Sep 8 ~10am Ellipse."
+      "text": "Geo/tech EMPTY — no gap>12pp+conf>75%; inventory next 2h (6:22→8:22pm) none; only open KXVANCEMENTION-26SEP09 RNC not today. Next Trump Tue Sep 8 ~10am Ellipse."
     },
     {
       "et": "Mon 6:06pm",
@@ -527,37 +551,37 @@
       "et": "Mon 6:03pm",
       "who": "Johnny",
       "kind": "CLEAR",
-      "text": "CLEAR CRYPTO15 *1815* BTC No 50@52\u00a2 join-bid post-only idx-2; ETH SKIP (>70\u00a2). Trader: BTC SKIP post-only cross \u2014 no chase."
+      "text": "CLEAR CRYPTO15 *1815* BTC No 50@52¢ join-bid post-only idx-2; ETH SKIP (>70¢). Trader: BTC SKIP post-only cross — no chase."
     },
     {
       "et": "Mon 6:02pm",
       "who": "Intel",
       "kind": "FLAG",
-      "text": "CRYPTO15 *1815* FLAG BTC lean No post-only No 50@52\u00a2 join CURRENT bid idx-2; SKIP ETH No lean ~0.81/0.82 (>70\u00a2 bar)."
+      "text": "CRYPTO15 *1815* FLAG BTC lean No post-only No 50@52¢ join CURRENT bid idx-2; SKIP ETH No lean ~0.81/0.82 (>70¢ bar)."
     },
     {
       "et": "Mon 6:00pm",
       "who": "Intel",
       "kind": "SKIP",
-      "text": "CRYPTO15 *1745* SKIP mid/late (already); *1800* open missed \u2014 both finalized No, no tickets. Stand by *1815* OPEN."
+      "text": "CRYPTO15 *1745* SKIP mid/late (already); *1800* open missed — both finalized No, no tickets. Stand by *1815* OPEN."
     },
     {
       "et": "Mon 5:54pm",
       "who": "Intel",
       "kind": "EMPTY",
-      "text": "Event-window EMPTY \u2014 inventory next 2h none; only open KXVANCEMENTION-26SEP09 RNC not today. Next Trump Tue Sep 8 ~10am Ellipse."
+      "text": "Event-window EMPTY — inventory next 2h none; only open KXVANCEMENTION-26SEP09 RNC not today. Next Trump Tue Sep 8 ~10am Ellipse."
     },
     {
       "et": "Mon 5:29pm",
       "who": "Intel",
       "kind": "SKIP",
-      "text": "SKIP BTC|ETH *1730* \u2014 mid/late + already live (BTC No fill / ETH No rest); No lean \u226599\u00a2 (\u226585\u00a2 R:R dead); no second ticket."
+      "text": "SKIP BTC|ETH *1730* — mid/late + already live (BTC No fill / ETH No rest); No lean ≥99¢ (≥85¢ R:R dead); no second ticket."
     },
     {
       "et": "Mon 5:22pm",
       "who": "Intel",
       "kind": "EMPTY",
-      "text": "Geo/tech EMPTY \u2014 no gap>12pp+conf>75%; inventory next 2h none; only open KXVANCEMENTION-26SEP09 RNC not today. Next Trump Tue Sep 8 ~10am Ellipse."
+      "text": "Geo/tech EMPTY — no gap>12pp+conf>75%; inventory next 2h none; only open KXVANCEMENTION-26SEP09 RNC not today. Next Trump Tue Sep 8 ~10am Ellipse."
     },
     {
       "et": "Mon 5:17pm",
@@ -575,7 +599,7 @@
       "et": "Mon 5:15pm",
       "who": "Intel",
       "kind": "FLAG",
-      "text": "CRYPTO15 *1730* at-open FLAG both lean No \u226470\u00a2 join CURRENT bid (idx-2). Johnny CLEAR \u2192 Trader filled BTC No / rested ETH No."
+      "text": "CRYPTO15 *1730* at-open FLAG both lean No ≤70¢ join CURRENT bid (idx-2). Johnny CLEAR → Trader filled BTC No / rested ETH No."
     },
     {
       "et": "Mon 5:10pm",
@@ -587,61 +611,61 @@
       "et": "Mon 5:08pm",
       "who": "Trader",
       "kind": "REST",
-      "text": "*1715* ETH Yes 50@51c REST 01a07dad (joined live 51/53). BTC Yes @62c SKIP post-only cross \u2014 did not retry. Cash $1,150.68 / all-in mid $1,255.50 / bid $1,197.73. CHI 11111@9c still HOLD + four Tue rests."
+      "text": "*1715* ETH Yes 50@51c REST 01a07dad (joined live 51/53). BTC Yes @62c SKIP post-only cross — did not retry. Cash $1,150.68 / all-in mid $1,255.50 / bid $1,197.73. CHI 11111@9c still HOLD + four Tue rests."
     },
     {
       "et": "Mon 5:07pm",
       "who": "Johnny",
       "kind": "CLEAR",
-      "text": "CLEAR CRYPTO15 *1715* both Yes join-bid: BTC Yes @62\u00a2 x50 + ETH Yes @62\u00a2 x50, post-only idx-2. Trader: BTC SKIP cross; ETH joined @51c REST."
+      "text": "CLEAR CRYPTO15 *1715* both Yes join-bid: BTC Yes @62¢ x50 + ETH Yes @62¢ x50, post-only idx-2. Trader: BTC SKIP cross; ETH joined @51c REST."
     },
     {
       "et": "Mon 5:06pm",
       "who": "Intel",
       "kind": "FLAG",
-      "text": "CRYPTO15 *1715* at-open FLAG both lean Yes \u226470\u00a2 join CURRENT bid: BTC Yes 0.62/0.63 (CB 79234 vs fl 79218 +$15.4); ETH Yes 0.62/0.63 (CB 2494.6 vs fl 2494.53). Prefer BTC one-ticket."
+      "text": "CRYPTO15 *1715* at-open FLAG both lean Yes ≤70¢ join CURRENT bid: BTC Yes 0.62/0.63 (CB 79234 vs fl 79218 +$15.4); ETH Yes 0.62/0.63 (CB 2494.6 vs fl 2494.53). Prefer BTC one-ticket."
     },
     {
       "et": "Mon 4:50pm",
       "who": "Scout",
       "kind": "FLAG",
-      "text": "FLAG none ~4:42\u20134:50. SEA Mon B68.5 WATCH (T 64/64 ~3.2h short); SFO WITHHOLD marine; Mon DNR LAX/DAL/OKC/PHIL; Tue empties none; Wed/Thu 404. Occupied CHI Mon filled + Tue PHX/SEA/AUS/ATL."
+      "text": "FLAG none ~4:42–4:50. SEA Mon B68.5 WATCH (T 64/64 ~3.2h short); SFO WITHHOLD marine; Mon DNR LAX/DAL/OKC/PHIL; Tue empties none; Wed/Thu 404. Occupied CHI Mon filled + Tue PHX/SEA/AUS/ATL."
     },
     {
       "et": "Mon 4:48pm",
       "who": "Trader",
       "kind": "SKIP",
-      "text": "*1700* both SKIP \u2014 exchange rejected post-only cross (No@57/62 vs live No 62/63). Did not retry. Did not lift. Cash unchanged $1,150.68 / all-in mid $1,255.50."
+      "text": "*1700* both SKIP — exchange rejected post-only cross (No@57/62 vs live No 62/63). Did not retry. Did not lift. Cash unchanged $1,150.68 / all-in mid $1,255.50."
     },
     {
       "et": "Mon 4:41pm",
       "who": "Trader",
       "kind": "PRINT",
-      "text": "*1630* ETH No 50@53c filled + settled No (+$23.50). *1645* both SKIP \u2014 Yes bid >70\u00a2 (BTC 71/72, ETH 75/76), no chase. Cash $1,150.68 / all-in mid $1,255.50 / bid $1,197.73. CHI 11111@9c still HOLD."
+      "text": "*1630* ETH No 50@53c filled + settled No (+$23.50). *1645* both SKIP — Yes bid >70¢ (BTC 71/72, ETH 75/76), no chase. Cash $1,150.68 / all-in mid $1,255.50 / bid $1,197.73. CHI 11111@9c still HOLD."
     },
     {
       "et": "Mon 4:32pm",
       "who": "Trader",
       "kind": "SKIP",
-      "text": "*1645* both SKIP \u2014 Yes already >70\u00a2 at rest attempt (BTC 71/72, ETH 75/76). Did not place. Did not chase."
+      "text": "*1645* both SKIP — Yes already >70¢ at rest attempt (BTC 71/72, ETH 75/76). Did not place. Did not chase."
     },
     {
       "et": "Mon 4:31pm",
       "who": "Johnny",
       "kind": "CLEAR",
-      "text": "CLEAR CRYPTO15 *1645* both Yes join-bid: BTC Yes @51\u00a2 x50 + ETH Yes @62\u00a2 x50, post-only idx-2. Superseded \u2014 Trader SKIP when Yes >70\u00a2."
+      "text": "CLEAR CRYPTO15 *1645* both Yes join-bid: BTC Yes @51¢ x50 + ETH Yes @62¢ x50, post-only idx-2. Superseded — Trader SKIP when Yes >70¢."
     },
     {
       "et": "Mon 4:31pm",
       "who": "Intel",
       "kind": "FLAG",
-      "text": "CRYPTO15 *1645* at-open FLAG both \u226470\u00a2 join-bid: BTC YES 0.51/0.52 CB +$3.7; ETH YES 0.62/0.63 CB +$0.86. Prefer BTC if one. Nothing placed."
+      "text": "CRYPTO15 *1645* at-open FLAG both ≤70¢ join-bid: BTC YES 0.51/0.52 CB +$3.7; ETH YES 0.62/0.63 CB +$0.86. Prefer BTC if one. Nothing placed."
     },
     {
       "et": "Mon 4:30pm",
       "who": "Trader",
       "kind": "PRINT",
-      "text": "*1615* both Yes settled No (\u2212$29.50 BTC / \u2212$34 ETH). *1630*: BTC No SKIP (would cross); ETH No 50@53c resting 01a07d84-3338-7f95-b196-ae9642960fc3. Cash $1,127.18 / all-in mid $1,232.07 / bid $1,174.25. CHI 11111@9c still HOLD."
+      "text": "*1615* both Yes settled No (−$29.50 BTC / −$34 ETH). *1630*: BTC No SKIP (would cross); ETH No 50@53c resting 01a07d84-3338-7f95-b196-ae9642960fc3. Cash $1,127.18 / all-in mid $1,232.07 / bid $1,174.25. CHI 11111@9c still HOLD."
     },
     {
       "et": "Mon 4:16pm",
@@ -653,7 +677,7 @@
       "et": "Mon 4:15pm",
       "who": "Johnny",
       "kind": "CLEAR",
-      "text": "CLEAR CRYPTO15 *1615* both Yes join-bid only: BTC Yes @59\u00a2 x50 + ETH Yes @68\u00a2 x50, post-only idx-2. Never lift/chase."
+      "text": "CLEAR CRYPTO15 *1615* both Yes join-bid only: BTC Yes @59¢ x50 + ETH Yes @68¢ x50, post-only idx-2. Never lift/chase."
     },
     {
       "et": "Mon 4:07pm",
@@ -665,31 +689,31 @@
       "et": "Mon 3:51pm",
       "who": "Trader",
       "kind": "SKIP",
-      "text": "*1600* both SKIP \u2014 cleared No limits would cross live Yes bid (BTC 54/55, ETH 54/56). Did not lift. Cash $1,190.68 / all-in mid $1,295.94 / bid $1,238.17."
+      "text": "*1600* both SKIP — cleared No limits would cross live Yes bid (BTC 54/55, ETH 54/56). Did not lift. Cash $1,190.68 / all-in mid $1,295.94 / bid $1,238.17."
     },
     {
       "et": "Mon 3:41pm",
       "who": "Trader",
       "kind": "SKIP",
-      "text": "*1545* both SKIP \u2014 Yes already ~98\u00a2 (>70). No tickets. Cash $1,190.68 / all-in mid $1,295.94 / bid $1,238.17. Prior CLEAR superseded."
+      "text": "*1545* both SKIP — Yes already ~98¢ (>70). No tickets. Cash $1,190.68 / all-in mid $1,295.94 / bid $1,238.17. Prior CLEAR superseded."
     },
     {
       "et": "Mon 3:37pm",
       "who": "Johnny",
       "kind": "CLEAR",
-      "text": "CLEAR CRYPTO15 *1545* both: BTC Yes 50@62\u00a2 (KXBTC15M-26SEP071545-45) + ETH Yes 50@60\u00a2 (KXETH15M-26SEP071545-45), post-only idx-2. Spot above floor, lean \u226470\u00a2 at open. Trader rests in flight."
+      "text": "CLEAR CRYPTO15 *1545* both: BTC Yes 50@62¢ (KXBTC15M-26SEP071545-45) + ETH Yes 50@60¢ (KXETH15M-26SEP071545-45), post-only idx-2. Spot above floor, lean ≤70¢ at open. Trader rests in flight."
     },
     {
       "et": "Mon 3:37pm",
       "who": "Intel",
       "kind": "FLAG",
-      "text": "CRYPTO15 *1545* at-open FLAG both \u226470\u00a2: BTC YES 0.62/0.63 CB +$28.8; ETH YES 0.60/0.61 CB +$1.05. Prefer BTC if one. Nothing placed."
+      "text": "CRYPTO15 *1545* at-open FLAG both ≤70¢: BTC YES 0.62/0.63 CB +$28.8; ETH YES 0.60/0.61 CB +$1.05. Prefer BTC if one. Nothing placed."
     },
     {
       "et": "Mon 3:30pm",
       "who": "Intel",
       "kind": "SKIP",
-      "text": "CRYPTO15 *1530* mid/late SKIP both \u2014 OPEN-only missed; books already Yes ~92\u00a2/87\u00a2 (>85\u00a2). Nothing placed."
+      "text": "CRYPTO15 *1530* mid/late SKIP both — OPEN-only missed; books already Yes ~92¢/87¢ (>85¢). Nothing placed."
     },
     {
       "et": "Mon 3:20pm",
@@ -713,7 +737,7 @@
       "et": "Mon 3:17pm",
       "who": "Johnny",
       "kind": "KILL",
-      "text": "KILL Mon OKC KXHIGHTOKC-26SEP07-B99.5 after Wx FAIL \u2014 ceiling climb into heatwave. No rest."
+      "text": "KILL Mon OKC KXHIGHTOKC-26SEP07-B99.5 after Wx FAIL — ceiling climb into heatwave. No rest."
     },
     {
       "et": "Mon 3:17pm",
@@ -725,7 +749,7 @@
       "et": "Mon 3:16pm",
       "who": "Johnny",
       "kind": "KILL",
-      "text": "KILL Mon LAX KXHIGHLAX-26SEP07-B82.5 after Wx FAIL \u2014 T on 83 ceiling climbing hard. Same as PHIL. No rest."
+      "text": "KILL Mon LAX KXHIGHLAX-26SEP07-B82.5 after Wx FAIL — T on 83 ceiling climbing hard. Same as PHIL. No rest."
     },
     {
       "et": "Mon 3:16pm",
@@ -743,25 +767,25 @@
       "et": "Mon 3:03pm",
       "who": "Trader",
       "kind": "SKIP",
-      "text": "*1515* both SKIP: BTC Yes 50c live 37/38 would cross (did not lift); ETH No 51c bid 71/72 >70\u00a2 (did not place). Cash $1,190.91 / all-in mid $1,296.27 / bid $1,238.84. CHI 11111@9c still HOLD. RE-CLEAR BTC @37c may still be in flight."
+      "text": "*1515* both SKIP: BTC Yes 50c live 37/38 would cross (did not lift); ETH No 51c bid 71/72 >70¢ (did not place). Cash $1,190.91 / all-in mid $1,296.27 / bid $1,238.84. CHI 11111@9c still HOLD. RE-CLEAR BTC @37c may still be in flight."
     },
     {
       "et": "Mon 3:01pm",
       "who": "Intel",
       "kind": "FLAG",
-      "text": "CRYPTO15 *1515* at-open FLAG both \u226470\u00a2: BTC YES 0.50/0.51 CB +$2.8; ETH No ~0.51/0.53 CB \u2212$0.20. Prefer BTC if one. Nothing placed."
+      "text": "CRYPTO15 *1515* at-open FLAG both ≤70¢: BTC YES 0.50/0.51 CB +$2.8; ETH No ~0.51/0.53 CB −$0.20. Prefer BTC if one. Nothing placed."
     },
     {
       "et": "Mon 2:52pm",
       "who": "Intel",
       "kind": "SKIP",
-      "text": "CRYPTO15 *1500* mid/late SKIP both \u2014 Yes already \u226585\u201396\u00a2; open-only \u226470\u00a2 fails. Nothing placed."
+      "text": "CRYPTO15 *1500* mid/late SKIP both — Yes already ≥85–96¢; open-only ≤70¢ fails. Nothing placed."
     },
     {
       "et": "Mon 2:55pm",
       "who": "Intel",
       "kind": "HOLD",
-      "text": "Event-window EMPTY next 2h (~2:55\u21924:55pm ET): no mention/briefing/earnings/launch; only open KXVANCEMENTION-26SEP09 RNC (not today)."
+      "text": "Event-window EMPTY next 2h (~2:55→4:55pm ET): no mention/briefing/earnings/launch; only open KXVANCEMENTION-26SEP09 RNC (not today)."
     },
     {
       "et": "Mon 2:45pm",
@@ -773,7 +797,7 @@
       "et": "Mon 2:32pm",
       "who": "Trader",
       "kind": "PRINT",
-      "text": "*1430* settle: BTC Yes 50@56c (01a07d16) finalized No \u2212$28; ETH No 50@56c (01a07d17) finalized No +$22 (paid $28\u2192$50). Cash $1,190.91 / all-in mid $1,296.25 / bid $1,238.82. CHI 11111@9c still HOLD. Net *1430* \u2212$6; crypto day ~\u2212$43."
+      "text": "*1430* settle: BTC Yes 50@56c (01a07d16) finalized No −$28; ETH No 50@56c (01a07d17) finalized No +$22 (paid $28→$50). Cash $1,190.91 / all-in mid $1,296.25 / bid $1,238.82. CHI 11111@9c still HOLD. Net *1430* −$6; crypto day ~−$43."
     },
     {
       "et": "Mon 2:18pm",
@@ -785,25 +809,25 @@
       "et": "Mon 2:16pm",
       "who": "Johnny",
       "kind": "CLEAR",
-      "text": "CLEAR CRYPTO15 *1430*: BTC Yes @56\u00a2 x50 and ETH No @56\u00a2 x50 (RE-CLEAR ETH after 58\u00a2 would cross). idx-2."
+      "text": "CLEAR CRYPTO15 *1430*: BTC Yes @56¢ x50 and ETH No @56¢ x50 (RE-CLEAR ETH after 58¢ would cross). idx-2."
     },
     {
       "et": "Mon 2:15pm",
       "who": "Intel",
       "kind": "FLAG",
-      "text": "CRYPTO15 *1430* at-open FLAG both \u226470\u00a2: BTC YES 0.56/0.57 CB +$9.8; ETH No ~0.58/0.60 CB \u2212$1.15. Prefer BTC if one. Nothing placed."
+      "text": "CRYPTO15 *1430* at-open FLAG both ≤70¢: BTC YES 0.56/0.57 CB +$9.8; ETH No ~0.58/0.60 CB −$1.15. Prefer BTC if one. Nothing placed."
     },
     {
       "et": "Mon 2:12pm",
       "who": "Intel",
       "kind": "SKIP",
-      "text": "CRYPTO15 *1415* mid/late SKIP both \u2014 past open bar; ETH >70\u00a2 lean. Nothing placed. Next *1430* at open."
+      "text": "CRYPTO15 *1415* mid/late SKIP both — past open bar; ETH >70¢ lean. Nothing placed. Next *1430* at open."
     },
     {
       "et": "Mon 2:10pm",
       "who": "Trader",
       "kind": "PRINT",
-      "text": "CHI Mon B78.5 FILLED 11111 Yes @9c (01a07ce8) cost $999.99 HOLD. PHIL Mon B80.5 KILL \u2014 no ticket. Cash $1,196.91 / all-in mid $1,302.25 / bid $1,244.82."
+      "text": "CHI Mon B78.5 FILLED 11111 Yes @9c (01a07ce8) cost $999.99 HOLD. PHIL Mon B80.5 KILL — no ticket. Cash $1,196.91 / all-in mid $1,302.25 / bid $1,244.82."
     },
     {
       "et": "Mon 2:10pm",
@@ -815,19 +839,19 @@
       "et": "Mon 2:00pm",
       "who": "Intel",
       "kind": "SKIP",
-      "text": "CRYPTO15 *1400* SKIP both \u2014 truly flat (BTC CB\u2248fl \u2212$0.13; ETH \u2212$0.37; mid~50\u201353\u00a2). Nothing placed. Force-play open-only \u226470\u00a2 still stands."
+      "text": "CRYPTO15 *1400* SKIP both — truly flat (BTC CB≈fl −$0.13; ETH −$0.37; mid~50–53¢). Nothing placed. Force-play open-only ≤70¢ still stands."
     },
     {
       "et": "Mon 1:43pm",
       "who": "Intel",
       "kind": "SKIP",
-      "text": "CRYPTO15 *1345* mid/late SKIP both \u2014 lean Yes already \u226585\u00a2 (BTC YES 0.94 / ETH 0.99); open-only \u226470\u00a2 bar fails. Next *1400* at open."
+      "text": "CRYPTO15 *1345* mid/late SKIP both — lean Yes already ≥85¢ (BTC YES 0.94 / ETH 0.99); open-only ≤70¢ bar fails. Next *1400* at open."
     },
     {
       "et": "Mon 1:40pm",
       "who": "Trader",
       "kind": "PRINT",
-      "text": "ETH *1315* Yes 50@60c (01a07cd2-1590) settled YES +$20 (cost $30\u2192$50). Cash $2,183.81 / all-in mid $2,247.54 / bid $2,244.81. Net crypto day ~\u2212$37 after *1300* \u2212$57."
+      "text": "ETH *1315* Yes 50@60c (01a07cd2-1590) settled YES +$20 (cost $30→$50). Cash $2,183.81 / all-in mid $2,247.54 / bid $2,244.81. Net crypto day ~−$37 after *1300* −$57."
     },
     {
       "et": "Mon 1:40pm",
@@ -851,13 +875,13 @@
       "et": "Mon 1:27pm",
       "who": "Trader",
       "kind": "REST",
-      "text": "CHI Mon B78.5 FULL CAP 11111 Yes @9c (01a07ce8-fcd8) rem 11111 unfilled. Bid 7\u21929 joined 9 did not take 11. Notional $999.99. Cash $2,196.90. All-in mid $2,246.81 / bid $2,244.81."
+      "text": "CHI Mon B78.5 FULL CAP 11111 Yes @9c (01a07ce8-fcd8) rem 11111 unfilled. Bid 7→9 joined 9 did not take 11. Notional $999.99. Cash $2,196.90. All-in mid $2,246.81 / bid $2,244.81."
     },
     {
       "et": "Mon 1:26pm",
       "who": "Johnny",
       "kind": "CLEAR",
-      "text": "CLEAR Mon CHI 78-79 full $1,000 at 7\u00a2 path; Trader joined 9c (bid moved). Wx PASS CEILING-EDGE KMDW T already 78 in-bin, lake breeze caps through-to-80."
+      "text": "CLEAR Mon CHI 78-79 full $1,000 at 7¢ path; Trader joined 9c (bid moved). Wx PASS CEILING-EDGE KMDW T already 78 in-bin, lake breeze caps through-to-80."
     },
     {
       "et": "Mon 1:25pm",
@@ -875,37 +899,37 @@
       "et": "Mon 1:14pm",
       "who": "Printer",
       "kind": "HOLD",
-      "text": "HOLD four Tue rests \u2014 Tue climate day still not started. Mon METARs ignored. Kill lines unchanged once local Tue midnight."
+      "text": "HOLD four Tue rests — Tue climate day still not started. Mon METARs ignored. Kill lines unchanged once local Tue midnight."
     },
     {
       "et": "Mon 1:05pm",
       "who": "Trader",
       "kind": "CLEAR",
-      "text": "ETH *1315* filled 50 Yes @60c (01a07cd2-1590) HOLD. BTC *1315* still SKIP \u2014 live 51/52, cleared 55c would cross; did not lift. Cash $2,153.11. All-in mid $2,224.42 / bid $2,222.21."
+      "text": "ETH *1315* filled 50 Yes @60c (01a07cd2-1590) HOLD. BTC *1315* still SKIP — live 51/52, cleared 55c would cross; did not lift. Cash $2,153.11. All-in mid $2,224.42 / bid $2,222.21."
     },
     {
       "et": "Mon 1:02pm",
       "who": "Trader",
       "kind": "KILL",
-      "text": "*1300* settle: both No filled 50/50, markets finalized Yes against us. BTC \u2212$29.50 / ETH \u2212$27.50 scratch \u2212$57. *1315* ETH Yes 50@60c rest; BTC Yes 56c SKIP (would cross). Cash $2,183.11 \u2192 then fill. All-in mid $2,226.17 / bid $2,224.21 pre-fill."
+      "text": "*1300* settle: both No filled 50/50, markets finalized Yes against us. BTC −$29.50 / ETH −$27.50 scratch −$57. *1315* ETH Yes 50@60c rest; BTC Yes 56c SKIP (would cross). Cash $2,183.11 → then fill. All-in mid $2,226.17 / bid $2,224.21 pre-fill."
     },
     {
       "et": "Mon 1:01pm",
       "who": "Johnny",
       "kind": "CLEAR",
-      "text": "CLEAR CRYPTO15 *1315* at open: BTC Yes @56\u00a2 x50 and ETH Yes @60\u00a2 x50. Spot slightly over floor + 5m up lean. idx-2."
+      "text": "CLEAR CRYPTO15 *1315* at open: BTC Yes @56¢ x50 and ETH Yes @60¢ x50. Spot slightly over floor + 5m up lean. idx-2."
     },
     {
       "et": "Mon 1:01pm",
       "who": "Intel",
       "kind": "FLAG",
-      "text": "CRYPTO15 *1315* FLAG both Yes \u226470\u00a2: BTC YES 0.56/0.57 fairY~0.51 CB +$7; ETH YES 0.60/0.61 fairY~0.56 CB +$1.6. Prefer BTC if one. Nothing placed."
+      "text": "CRYPTO15 *1315* FLAG both Yes ≤70¢: BTC YES 0.56/0.57 fairY~0.51 CB +$7; ETH YES 0.60/0.61 fairY~0.56 CB +$1.6. Prefer BTC if one. Nothing placed."
     },
     {
       "et": "Mon 12:59pm",
       "who": "Intel",
       "kind": "HOLD",
-      "text": "CRYPTO15 *1300* late SKIP \u2014 already live rests BTC No 50@59\u00a2 / ETH No 50@55\u00a2 idx-2; lean No \u226585\u00a2; no second ticket."
+      "text": "CRYPTO15 *1300* late SKIP — already live rests BTC No 50@59¢ / ETH No 50@55¢ idx-2; lean No ≥85¢; no second ticket."
     },
     {
       "et": "Mon 12:49pm",
@@ -917,19 +941,19 @@
       "et": "Mon 12:48pm",
       "who": "Johnny",
       "kind": "CLEAR",
-      "text": "CLEAR CRYPTO15 *1300*: BTC No @59\u00a2 x50 and ETH No @55\u00a2 x50 (~$57). Spot soft under floor at open \u2014 first force-play tickets."
+      "text": "CLEAR CRYPTO15 *1300*: BTC No @59¢ x50 and ETH No @55¢ x50 (~$57). Spot soft under floor at open — first force-play tickets."
     },
     {
       "et": "Mon 12:47pm",
       "who": "Intel",
       "kind": "FLAG",
-      "text": "CRYPTO15 *1300* at-open FLAG both No \u226470\u00a2: BTC No~0.59/0.60 fair No~0.63 CB \u2212$18; ETH No~0.55/0.56 fair No~0.57 CB \u2212$0.80. Prefer BTC if one. Nothing placed."
+      "text": "CRYPTO15 *1300* at-open FLAG both No ≤70¢: BTC No~0.59/0.60 fair No~0.63 CB −$18; ETH No~0.55/0.56 fair No~0.57 CB −$0.80. Prefer BTC if one. Nothing placed."
     },
     {
       "et": "Mon 12:37pm",
       "who": "Johnny",
       "kind": "KILL",
-      "text": "KILL CRYPTO15 *1245* BTC/ETH YES @0.95\u20130.97 (force lean FLAG after Jason thinner-residual mandate). Refined bar: force-play only at OPEN first 1\u20133m; post-only lean side \u226470\u00a2; if lean \u226585\u00a2 SKIP that window. Size 50 / $200. Nothing placed."
+      "text": "KILL CRYPTO15 *1245* BTC/ETH YES @0.95–0.97 (force lean FLAG after Jason thinner-residual mandate). Refined bar: force-play only at OPEN first 1–3m; post-only lean side ≤70¢; if lean ≥85¢ SKIP that window. Size 50 / $200. Nothing placed."
     },
     {
       "et": "Mon 12:31pm",
@@ -941,19 +965,19 @@
       "et": "Mon 12:30pm",
       "who": "Intel",
       "kind": "HOLD",
-      "text": "CRYPTO15 *1245* at-open SKIP BTC/ETH \u2014 CB BTC +$26 YES already 0.62/0.63; ETH flat YES \u2248 fair. Later mid-window force FLAG @0.95\u20130.97 killed by Johnny. Nothing placed. Next open-window under \u226470\u00a2 bar."
+      "text": "CRYPTO15 *1245* at-open SKIP BTC/ETH — CB BTC +$26 YES already 0.62/0.63; ETH flat YES ≈ fair. Later mid-window force FLAG @0.95–0.97 killed by Johnny. Nothing placed. Next open-window under ≤70¢ bar."
     },
     {
       "et": "Mon 11:54am",
       "who": "Intel",
       "kind": "HOLD",
-      "text": "CRYPTO15 *1200* SKIP BTC/ETH \u2014 book priced (YES ~0.56\u20130.82 through window; mid/late rechecks still no residual). Nothing placed. Next *1215* at open."
+      "text": "CRYPTO15 *1200* SKIP BTC/ETH — book priced (YES ~0.56–0.82 through window; mid/late rechecks still no residual). Nothing placed. Next *1215* at open."
     },
     {
       "et": "Mon 11:49am",
       "who": "Intel",
       "kind": "HOLD",
-      "text": "Event-window EMPTY. Inventory next 2h (\u2192~1:49pm ET): none \u2014 no live mention/briefing/earnings/launch; only open mention KXVANCEMENTION-26SEP09 RNC (not today). Also covers 11:44 geo light delta vs 10:17 EMPTY."
+      "text": "Event-window EMPTY. Inventory next 2h (→~1:49pm ET): none — no live mention/briefing/earnings/launch; only open mention KXVANCEMENTION-26SEP09 RNC (not today). Also covers 11:44 geo light delta vs 10:17 EMPTY."
     },
     {
       "et": "Mon 11:36am",
@@ -965,19 +989,19 @@
       "et": "Mon 11:26am",
       "who": "Printer",
       "kind": "HOLD",
-      "text": "HOLD four Tue rests. Climate day not started \u2014 Mon METARs ignored. Kill lines unchanged: PHX 109+ / SEA 74+ / AUS 100+ / ATL 88+. Watch local midnight T-groups. No kill."
+      "text": "HOLD four Tue rests. Climate day not started — Mon METARs ignored. Kill lines unchanged: PHX 109+ / SEA 74+ / AUS 100+ / ATL 88+. Watch local midnight T-groups. No kill."
     },
     {
       "et": "Mon 11:21am",
       "who": "Intel",
       "kind": "HOLD",
-      "text": "CRYPTO15 *1130* SKIP BTC/ETH \u2014 book already ahead of lean (BTC YES 0.63/0.64 vs fair~0.57; ETH YES 0.74/0.75). Nothing placed. *1115* also SKIP (book priced)."
+      "text": "CRYPTO15 *1130* SKIP BTC/ETH — book already ahead of lean (BTC YES 0.63/0.64 vs fair~0.57; ETH YES 0.74/0.75). Nothing placed. *1115* also SKIP (book priced)."
     },
     {
       "et": "Mon 10:20am",
       "who": "Trader",
       "kind": "CLEAR",
-      "text": "RE-CLEAR done. PHX 400@30c rest 01a07c3d-72c8 rem 400 (30/32). SEA 400@21c rest 01a07c3d-76b0 rem 400 (21/25). AUS 400@19c rest 01a07c3d-7a98 rem 400 (19/21). ATL 400@23c rest 01a07c3d-8268 rem 400 (23/24). NYC SKIPPED bid 33/34 above 28c \u2014 no chase. Cash $2,245.80. All-in mid $2,280.85 / bid $2,278.90. $372 notional at risk."
+      "text": "RE-CLEAR done. PHX 400@30c rest 01a07c3d-72c8 rem 400 (30/32). SEA 400@21c rest 01a07c3d-76b0 rem 400 (21/25). AUS 400@19c rest 01a07c3d-7a98 rem 400 (19/21). ATL 400@23c rest 01a07c3d-8268 rem 400 (23/24). NYC SKIPPED bid 33/34 above 28c — no chase. Cash $2,245.80. All-in mid $2,280.85 / bid $2,278.90. $372 notional at risk."
     },
     {
       "et": "Mon 10:20am",
@@ -1007,19 +1031,19 @@
       "et": "Mon 10:05am",
       "who": "Scout",
       "kind": "FLAG",
-      "text": "Tue 26SEP08 FLIPPED OPEN \u2014 16 cities active with real dollars. FLAGed PHX B107.5@30c CEILING, SFO B80.5@17c CEILING, AUS B98.5@20c / NYC B82.5@27c / ATL B86.5@22c / SEA B72.5@20c FLOOR. Mon LAX/SEA still WATCH. Wed/Thu 404."
+      "text": "Tue 26SEP08 FLIPPED OPEN — 16 cities active with real dollars. FLAGed PHX B107.5@30c CEILING, SFO B80.5@17c CEILING, AUS B98.5@20c / NYC B82.5@27c / ATL B86.5@22c / SEA B72.5@20c FLOOR. Mon LAX/SEA still WATCH. Wed/Thu 404."
     },
     {
       "et": "Mon 9:44am",
       "who": "Scout",
       "kind": "HOLD",
-      "text": "Tue 26SEP08 dollars re-pull: all 16 cities HTTP 200 listed but truly empty \u2014 dollars 0/0 size 0/0 status initialized. Wed/Thu CHI+DAL true 404. No FLAG."
+      "text": "Tue 26SEP08 dollars re-pull: all 16 cities HTTP 200 listed but truly empty — dollars 0/0 size 0/0 status initialized. Wed/Thu CHI+DAL true 404. No FLAG."
     },
     {
       "et": "Mon 9:35am",
       "who": "Scout",
       "kind": "HOLD",
-      "text": "FLAG none. Mon leftovers LAX B82.5 16/17 CEILING-EDGE GRID 83 and SEA B68.5 25/28 CEILING-EDGE GRID 69 are WATCH only \u2014 T-group short with heat left. SFO B78.5 WITHHELD. Tue all 0/0. Wed/Thu 404. Occupied none. Size 400/800\u226415c."
+      "text": "FLAG none. Mon leftovers LAX B82.5 16/17 CEILING-EDGE GRID 83 and SEA B68.5 25/28 CEILING-EDGE GRID 69 are WATCH only — T-group short with heat left. SFO B78.5 WITHHELD. Tue all 0/0. Wed/Thu 404. Occupied none. Size 400/800≤15c."
     },
     {
       "et": "Mon 9:14am",
@@ -1031,25 +1055,25 @@
       "et": "Mon 9:14am",
       "who": "Trader",
       "kind": "NOTE",
-      "text": "TRANSFER $2,000 idx-2\u2192idx-0 complete, id 394c5215-24b7-4968-bcc1-bb6be4e2ed02. idx-0 $2,000 / idx-2 $245.80 / total cash $2,245.80. Weather flat. All-in mid $2,345.02 / bid $2,343.24 (Macro). Standing 400/800\u226415c cap $1,000/name. Waiting CLEAR."
+      "text": "TRANSFER $2,000 idx-2→idx-0 complete, id 394c5215-24b7-4968-bcc1-bb6be4e2ed02. idx-0 $2,000 / idx-2 $245.80 / total cash $2,245.80. Weather flat. All-in mid $2,345.02 / bid $2,343.24 (Macro). Standing 400/800≤15c cap $1,000/name. Waiting CLEAR."
     },
     {
       "et": "Mon 9:12am",
       "who": "Macro",
       "kind": "NOTE",
-      "text": "LEDGER after Thu\u2013Sun dark. Cash $2,245.80 (was all idx-2; then Trader moved $2k). All-in mid $2,345.02 / bid $2,343.24. Weather $0. Other Fed mid $99.22. Weekend: Fri AUS 800@13c Yes +$696; Fri LAX 400@18c No \u2212$72; Thu MSP 100@13c No; Thu CHI 50@26c No. Vs Thu 9:16 +$294.19. Goal +$1,000 by Mon missed."
+      "text": "LEDGER after Thu–Sun dark. Cash $2,245.80 (was all idx-2; then Trader moved $2k). All-in mid $2,345.02 / bid $2,343.24. Weather $0. Other Fed mid $99.22. Weekend: Fri AUS 800@13c Yes +$696; Fri LAX 400@18c No −$72; Thu MSP 100@13c No; Thu CHI 50@26c No. Vs Thu 9:16 +$294.19. Goal +$1,000 by Mon missed."
     },
     {
       "et": "Mon 9:12am",
       "who": "Scout",
       "kind": "NOTE",
-      "text": "Occupied cleared. Drop Fri LAX/AUS and Thu MSP/CHI \u2014 all settled gone. Hunting Mon leftovers + Tue Sep 8 + Wed Sep 9 at 400/800\u226415c / cap $1,000."
+      "text": "Occupied cleared. Drop Fri LAX/AUS and Thu MSP/CHI — all settled gone. Hunting Mon leftovers + Tue Sep 8 + Wed Sep 9 at 400/800≤15c / cap $1,000."
     },
     {
       "et": "Thu 10:45am",
       "who": "Johnny",
       "kind": "NOTE",
-      "text": "Three Fri Sep 4 FLAGs held with Wx before any CLEAR: LAX B75.5 18c x200 ($36), AUS B95.5 13c x200 ($26), SFO B68.5 28c x100 ($28) \u2014 about $90 total risk, all far under the $1,000/name cap. No CLEAR until Wx PASS. Also sent Trader a KILL on the stale Tue LAX rest 01a05943 (100 @27c on a dead event) to free buying power; SFO Tue rest 01a05966 flagged the same way. Scout's Fri HOU B91.5 FLAG never arrived \u2014 resend requested. Cash and all-in unchanged from the 9:16 ledger."
+      "text": "Three Fri Sep 4 FLAGs held with Wx before any CLEAR: LAX B75.5 18c x200 ($36), AUS B95.5 13c x200 ($26), SFO B68.5 28c x100 ($28) — about $90 total risk, all far under the $1,000/name cap. No CLEAR until Wx PASS. Also sent Trader a KILL on the stale Tue LAX rest 01a05943 (100 @27c on a dead event) to free buying power; SFO Tue rest 01a05966 flagged the same way. Scout's Fri HOU B91.5 FLAG never arrived — resend requested. Cash and all-in unchanged from the 9:16 ledger."
     },
     {
       "et": "Thu 10:44am",
@@ -1073,19 +1097,19 @@
       "et": "Thu 10:38am",
       "who": "Scout",
       "kind": "NOTE",
-      "text": "Dollars-field re-pull: Friday is LIVE, not 0/0 \u2014 the null-cents schema was masking the whole board. Fri two-sided: CHI B91.5 28/29, DAL T93 34/38, HOU T89 37/44, NOLA T87 28/29, ATL B94.5 38/42, OKC B97.5 34/35, MIN B90.5 25/26, DC B95.5 35/40. Sat and Sun CHI/DAL still 404. Fri CHI on-bin, DAL excluded, DC B95.5 sits ~3 bins above NWS 92/93/93 and was the first candidate. Thu books all climbing: DAL T91 55/56, ATL B97.5 52/53, OKC B97.5 45/47 on-bin, PHIL B90.5 30/32 on-bin, NYC B83.5 49/53."
+      "text": "Dollars-field re-pull: Friday is LIVE, not 0/0 — the null-cents schema was masking the whole board. Fri two-sided: CHI B91.5 28/29, DAL T93 34/38, HOU T89 37/44, NOLA T87 28/29, ATL B94.5 38/42, OKC B97.5 34/35, MIN B90.5 25/26, DC B95.5 35/40. Sat and Sun CHI/DAL still 404. Fri CHI on-bin, DAL excluded, DC B95.5 sits ~3 bins above NWS 92/93/93 and was the first candidate. Thu books all climbing: DAL T91 55/56, ATL B97.5 52/53, OKC B97.5 45/47 on-bin, PHIL B90.5 30/32 on-bin, NYC B83.5 49/53."
     },
     {
       "et": "Thu 10:27am",
       "who": "Johnny",
       "kind": "NOTE",
-      "text": "Schema fix broadcast to the Kalshi desk group: on /markets the integer cent fields (yes_bid, yes_ask, last_price, volume, open_interest) now return null \u2014 every seat reads yes_bid_dollars / yes_ask_dollars / last_price_dollars / *_size_fp instead, or it reports a false EMPTY. Added a 10-minute mention-book watch inside today's two event windows: 1:00pm ET WH briefing (KXVANCEMENTION-26SEP03) and 5:45pm ET Cybercab (KXTSLAMENTION-26SEP03)."
+      "text": "Schema fix broadcast to the Kalshi desk group: on /markets the integer cent fields (yes_bid, yes_ask, last_price, volume, open_interest) now return null — every seat reads yes_bid_dollars / yes_ask_dollars / last_price_dollars / *_size_fp instead, or it reports a false EMPTY. Added a 10-minute mention-book watch inside today's two event windows: 1:00pm ET WH briefing (KXVANCEMENTION-26SEP03) and 5:45pm ET Cybercab (KXTSLAMENTION-26SEP03)."
     },
     {
       "et": "Thu 10:26am",
       "who": "Intel",
       "kind": "HOLD",
-      "text": "EMPTY on the 9:27 kick. 108 legs / 7 live idx-0 events. Closest KXTSLAMENTION-26SEP03-FSD 44/87 vs fair ~98, gap ~11pp, conf 70% (pre-event). Found the Kalshi null-cents schema change. CIEN WAVE was latency not analysis: 8/64 at 8:35 to 99/100 by 10:20, settled 99, no transcript ever published \u2014 hourly cadence structurally misses a mention book. WNT-26SEP03 still 404."
+      "text": "EMPTY on the 9:27 kick. 108 legs / 7 live idx-0 events. Closest KXTSLAMENTION-26SEP03-FSD 44/87 vs fair ~98, gap ~11pp, conf 70% (pre-event). Found the Kalshi null-cents schema change. CIEN WAVE was latency not analysis: 8/64 at 8:35 to 99/100 by 10:20, settled 99, no transcript ever published — hourly cadence structurally misses a mention book. WNT-26SEP03 still 404."
     },
     {
       "et": "Thu 9:19am",
@@ -1145,7 +1169,7 @@
       "et": "Wed 7:58pm",
       "who": "Scout",
       "kind": "HOLD",
-      "text": "FLAG none on 7:58 delta. All four TODAY peaks past. CHI 91/96 falling through 92; B94.5 0/1 killed, live B96.5 99/100 do-not-chase. DAL 94/99 falling no 100; live B100.5 99/100 do-not-chase. NOLA 84/91 falling, NDFD 93 still exits. MSP 86/88 falling IN 87-88, live T88 99c vs B87.5 0/1 unrestable. DAL Thu gap 14c but NDFD 95 still exits B93.5 Wx-FAIL \u2014 not FLAGed. Occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX/AUS dead. Fri 404. No FLAG."
+      "text": "FLAG none on 7:58 delta. All four TODAY peaks past. CHI 91/96 falling through 92; B94.5 0/1 killed, live B96.5 99/100 do-not-chase. DAL 94/99 falling no 100; live B100.5 99/100 do-not-chase. NOLA 84/91 falling, NDFD 93 still exits. MSP 86/88 falling IN 87-88, live T88 99c vs B87.5 0/1 unrestable. DAL Thu gap 14c but NDFD 95 still exits B93.5 Wx-FAIL — not FLAGed. Occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX/AUS dead. Fri 404. No FLAG."
     },
     {
       "et": "Wed 7:25pm",
@@ -1199,7 +1223,7 @@
       "et": "Wed 5:54pm",
       "who": "Scout",
       "kind": "HOLD",
-      "text": "FLAG none on 5:54 delta. CHI 94/96 falling peak past; B94.5 0/1 killed, live B96.5 99/100 do-not-chase. DAL 99/99 flat; B100.5 97/98 do-not-chase. NOLA NDFD 93 still exits. MSP 88 IN unrestable. DAL Thu 7c not \u22658c. Occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX/AUS dead. Fri 404. No FLAG."
+      "text": "FLAG none on 5:54 delta. CHI 94/96 falling peak past; B94.5 0/1 killed, live B96.5 99/100 do-not-chase. DAL 99/99 flat; B100.5 97/98 do-not-chase. NOLA NDFD 93 still exits. MSP 88 IN unrestable. DAL Thu 7c not ≥8c. Occupied skip Wed DC/PHIL/ATL/OKC + Thu MSP/CHI; PHX/AUS dead. Fri 404. No FLAG."
     },
     {
       "et": "Wed 4:55pm",
@@ -1235,7 +1259,7 @@
       "et": "Wed 3:50pm",
       "who": "Scout",
       "kind": "HOLD",
-      "text": "FLAG none on 3:50 hourly. CHI Wed B94.5 0/1 still killed; live B96.5 93/94 do-not-chase; T-max 95 not 96. DAL Wed NDFD 98\u219297 closed B96.5 exit. NOLA TS crash. PHX Wed dead, no new PHX bin. Occupied skip Wed DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI. Fri 404. No FLAG."
+      "text": "FLAG none on 3:50 hourly. CHI Wed B94.5 0/1 still killed; live B96.5 93/94 do-not-chase; T-max 95 not 96. DAL Wed NDFD 98→97 closed B96.5 exit. NOLA TS crash. PHX Wed dead, no new PHX bin. Occupied skip Wed DC/PHIL/AUS/ATL/OKC + Thu MSP/CHI. Fri 404. No FLAG."
     },
     {
       "et": "Wed 3:08pm",
@@ -1385,7 +1409,7 @@
       "et": "Wed 8:20am",
       "who": "Intel",
       "kind": "HOLD",
-      "text": "EMPTY geo/tech. Scanned 50. Closest miss KXBURNHAMMENTION-26SEP02-IRAN untradeable (closed last 67) conf 70% \u2014 PMQs over, no Burnham Iran; Hansard not posted so conf fails 75%. NUCL 0/1 gap ~1pp. WNT-26SEP02 still 404. No FLAG."
+      "text": "EMPTY geo/tech. Scanned 50. Closest miss KXBURNHAMMENTION-26SEP02-IRAN untradeable (closed last 67) conf 70% — PMQs over, no Burnham Iran; Hansard not posted so conf fails 75%. NUCL 0/1 gap ~1pp. WNT-26SEP02 still 404. No FLAG."
     },
     {
       "et": "Wed 5:16am",
@@ -1533,7 +1557,7 @@
       "et": "Tue 3:05pm",
       "who": "Johnny",
       "kind": "NOTE",
-      "text": "Spread size: 50 Yes default, 100 if post-only \u226420c, 200 only if full-bin \u226410c, cap $500/name. Concentration city-count RISK KILLs OFF. Take Wx PASS empties."
+      "text": "Spread size: 50 Yes default, 100 if post-only ≤20c, 200 only if full-bin ≤10c, cap $500/name. Concentration city-count RISK KILLs OFF. Take Wx PASS empties."
     },
     {
       "et": "Tue 3:04pm",
@@ -1696,37 +1720,37 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "FLAG Tue LAX B86.5 ~6:59 \u2192 Wx FAIL/Johnny KILL DNR. SEA Mon WATCH. Mon DNR LAX/DAL/OKC/PHIL. Occupied CHI Mon + Tue PHX/SEA/AUS/ATL. Wed/Thu 404."
+      "state": "FLAG Tue LAX B86.5 ~6:59 → Wx FAIL/Johnny KILL DNR. SEA Mon WATCH. Occupied CHI Mon + AUS filled + ATL/PHX partial + SEA rest. Wed/Thu 404."
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "FAIL Tue LAX B86.5 ceiling pin (one-hour 87 + W15 onshore). PASS CHI Mon B78.5 filled HOLD T79. Tue set PASS PHX/SEA/AUS/ATL; FAIL SFO+LAX. On deck for next FLAG."
+      "state": "FAIL Tue LAX B86.5. PASS CHI Mon B78.5 HOLD T79. Tue PASS PHX/SEA/AUS/ATL (AUS now filled). On deck for next FLAG."
     },
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "CHI Mon 11111@9c FILLED HOLD T79 + 4 Tue rests ($372). KILL Tue LAX B86.5 never rested. *1730* both No +$39; *1815*/*1900* SKIP. Stand by next CRYPTO15 OPEN join-bid \u226470\u00a2. No averaging down."
+      "state": "CHI HOLD T79; AUS Tue 400 FILLED; ATL/PHX partial; SEA rest. KILL Tue LAX never rested. *1930* SKIP. Stand by next CRYPTO15 OPEN ≤70¢. No averaging down."
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "CHI 11111@9c FILLED HOLD 01a07ce8 + PHX/SEA/AUS/ATL rests. Crypto flat after *1730* settle. Cash $1,209.58 / all-in mid $1,318.90 / bid $1,261.00 (Trader ~6:05; no newer)."
+      "state": "CHI HOLD; AUS 400 filled; ATL 168.63+231.37; PHX 1+399; SEA 400 rest. Crypto flat. Cash $1,111.23 / mid $1,289.51 / bid $1,229.31."
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD CHI Mon FILLED \u2014 KMDW T-group max rnd 79 IN BIN (kill 80+) + four Tue rests (Tue T-groups not started). Last confirm ~5:10; 6:51 kick reply pending."
+      "state": "HOLD CHI Mon FILLED — T-group max rnd 79 IN BIN (kill 80+) + AUS filled + ATL/PHX/SEA Tue (Tue T-groups not started)."
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "Last full Macro Mon 9:12\u20139:14. Pages using Trader ~6:05 cash $1,209.58 / mid $1,318.90 / bid $1,261.00 (no newer Macro; cash unchanged this tick)."
+      "state": "Pages using live Kalshi mark (Trader formula) ~Mon 7:41pm ET: cash $1,111.23 / mid $1,289.51 / bid $1,229.31. Last Macro morning 9:14."
     },
     {
       "name": "Intel",
       "role": "SEARCH",
-      "state": "Event-window EMPTY ~6:54. CRYPTO15 *1900* SKIP Yes>70\u00a2; *1815* SKIP. Geo EMPTY ~6:24. Force bar open \u226470\u00a2 join-bid idx-2. Next Trump Tue Ellipse ~10am."
+      "state": "CRYPTO15 *1930* SKIP No>70¢; *1900* SKIP. Event-window EMPTY ~6:54. Force bar open ≤70¢ join-bid idx-2. Next Trump Tue Ellipse ~10am."
     }
   ]
 }
