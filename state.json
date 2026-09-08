@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-08T08:30:00-04:00",
-  "asOfLabel": "Tue 8:30am ET",
+  "asOf": "2026-09-08T09:06:00-04:00",
+  "asOfLabel": "Tue 9:06am ET",
   "cash": 876.84,
   "allInMid": 1095.73,
   "allInBid": 1084.91,
@@ -491,6 +491,12 @@
     }
   ],
   "tape": [
+    {
+      "et": "Tue ~8:49am",
+      "who": "Intel",
+      "kind": "SKIP",
+      "text": "CRYPTO15 *0900* SKIP BTC|ETH \u2014 past OPEN (~4.3m at FLAG). Never place. Desk cash still $876.84 / mid $1,095.73 (Pages 8:30 mark)."
+    },
     {
       "et": "Tue 8:30am",
       "who": "Macro",
@@ -1790,7 +1796,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "Last EMPTY/HOLD ~Mon 8:00. Occupied now AUS/ATL FILLED + PHX/SEA PARTIAL. CHI Mon dead. Next weekday hunt due."
+      "state": "Last EMPTY/HOLD ~Mon 8:00. Occupied AUS/ATL FILLED + PHX/SEA PARTIAL. CHI Mon dead. Tue 9:01 hourly kick pending reply."
     },
     {
       "name": "Wx",
@@ -1800,7 +1806,7 @@
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "CHI dead No. Live: AUS+ATL FILLED; PHX/SEA PARTIAL. Crypto flat. No averaging down. Pages catch-up Tue 8:30am."
+      "state": "CHI dead No. Live: AUS+ATL FILLED; PHX/SEA PARTIAL. Crypto flat (*0900* SKIP). No averaging down. Pages asOf Tue 9:06am."
     },
     {
       "name": "Trader",
@@ -1810,7 +1816,7 @@
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "CHI Mon DEAD settled No. HOLD AUS/ATL FILLED + PHX/SEA PARTIAL \u2014 Tue kill lines PHX 109+ / SEA 74+ / AUS 100+ / ATL 88+."
+      "state": "CHI Mon DEAD settled No. HOLD AUS/ATL FILLED + PHX/SEA PARTIAL \u2014 kill PHX 109+ / SEA 74+ / AUS 100+ / ATL 88+. Tue 9:01 pass kick pending."
     },
     {
       "name": "Macro",
@@ -1820,7 +1826,7 @@
     {
       "name": "Intel",
       "role": "SEARCH",
-      "state": "Overnight CRYPTO15 windows settled; no open crypto ticket at Pages catch-up. Geo/event last EMPTY Mon eve. Force bar open \u226470\u00a2 join-bid idx-2."
+      "state": "CRYPTO15 *0900* SKIP past OPEN. No open crypto ticket. Geo/event last EMPTY Mon eve. Force bar open \u226470\u00a2 join-bid idx-2."
     }
   ]
 }
