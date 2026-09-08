@@ -1,12 +1,12 @@
 {
-  "asOf": "2026-09-08T16:19-04:00",
-  "asOfLabel": "Tue 4:19pm ET",
+  "asOf": "2026-09-08T16:38-04:00",
+  "asOfLabel": "Tue 4:38pm ET",
   "cash": 876.84,
   "allInMid": 1095.73,
   "allInBid": 1084.91,
   "weatherMarked": 115.41,
   "otherMarked": 103.48,
-  "scoreboard": "Tue Sep 8 4:19pm; cash $876.84 / mid $1,095.73 / bid $1,084.91; CHI Mon B78.5 settled No (−$999.99); AUS 400@19c FILLED; ATL 400@23c FILLED; PHX 72.95 filled +327.05@30c rest; SEA 25.17 filled +374.83@21c rest; crypto flat; Fed marked ~$103; Scout EMPTY ~4:07; Printer HOLD AUS 98 IN BIN/ATL 86 IN BIN/PHX 102/SEA 69; CRYPTO15 *1600*/*1615* SKIP (no ticket); Intel event EMPTY ~3:57; Wed PHIL B86.5 KILL/DNR",
+  "scoreboard": "Tue Sep 8 4:38pm; cash $876.84 / mid $1,095.73 / bid $1,084.91; CHI Mon B78.5 settled No (−$999.99); AUS 400@19c FILLED; ATL 400@23c FILLED; PHX 72.95 filled +327.05@30c rest; SEA 25.17 filled +374.83@21c rest; crypto flat; Fed marked ~$103; Scout EMPTY ~4:22; Printer HOLD AUS 98 IN BIN/ATL 86 IN BIN/PHX 102/SEA 69; CRYPTO15 *1645* SKIP (no ticket); Intel geo EMPTY ~4:28; Wed PHIL B86.5 KILL/DNR",
   "live": [
     {
       "ticker": "KXHIGHAUS-26SEP08-B98.5",
@@ -491,6 +491,24 @@
     }
   ],
   "tape": [
+    {
+      "et": "Tue ~4:38pm",
+      "who": "Johnny",
+      "kind": "SKIP",
+      "text": "CRYPTO15 *1645* SKIP BTC|ETH — mid/late (~4m past OPEN); OPEN only first 1–3m. Never place. Johnny accepted. Next *1700* OPEN ≤70¢ join-bid. Cash still $876.84 / mid $1,095.73."
+    },
+    {
+      "et": "Tue ~4:28pm",
+      "who": "Intel",
+      "kind": "EMPTY",
+      "text": "Geo/tech EMPTY ~4:28. Fed H25 still under bar; no geo FLAG. Braze AMC/webcast live but NO Kalshi idx-0 book (probes empty/404). Mentions EMPTY. Inventory ~2h: Braze (no book) → 5pm Oval Closed Press → ~6:30 ABC WNT (KXWORLDNEWSMENTION-26SEP08). No FLAG."
+    },
+    {
+      "et": "Tue ~4:22pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "EMPTY/HOLD ~4:22. Tue empties OPEN (quote churn only); Wed NYC B86.5 WITHHOLD (OKX warmest Wed/Thu); CHI B82.5 GRID-exit DNR; PHIL DNR; Thu CHI+DAL 404. Occupied AUS/ATL/PHX/SEA. No NEW clears."
+    },
     {
       "et": "Tue ~4:07pm",
       "who": "Johnny",
@@ -2006,7 +2024,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "EMPTY/HOLD ~4:07. Tue empties NONE; Wed NYC WITHHOLD; CHI/PHIL DNR; Thu 404; occupied AUS/ATL/PHX/SEA skipped."
+      "state": "EMPTY/HOLD ~4:22. Tue empties OPEN; Wed NYC WITHHOLD; CHI/PHIL DNR; Thu 404; occupied AUS/ATL/PHX/SEA skipped."
     },
     {
       "name": "Wx",
@@ -2016,7 +2034,7 @@
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "Live: AUS+ATL FILLED; PHX/SEA PARTIAL. AUS+ATL T max IN BIN (HOLD). KILL/DNR Wed PHIL B86.5. Crypto flat (*1600*/*1615* SKIP). Pages asOf Tue 4:19pm ET."
+      "state": "Live: AUS+ATL FILLED; PHX/SEA PARTIAL. AUS+ATL T max IN BIN (HOLD). KILL/DNR Wed PHIL B86.5. Crypto flat (*1645* SKIP). Pages asOf Tue 4:38pm ET."
     },
     {
       "name": "Trader",
@@ -2036,7 +2054,7 @@
     {
       "name": "Intel",
       "role": "SEARCH",
-      "state": "CRYPTO15 *1600*/*1615* SKIP no ticket. Event-window EMPTY ~3:57 (5pm Closed Press only). Force bar open ≤70¢ join-bid idx-2."
+      "state": "CRYPTO15 *1645* SKIP no ticket. Geo EMPTY ~4:28 (Braze no book; WNT ~6:30). Force bar open ≤70¢ join-bid idx-2."
     }
   ]
 }
