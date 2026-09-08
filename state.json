@@ -1,68 +1,44 @@
 {
-  "asOf": "2026-09-07T20:08:00-04:00",
-  "asOfLabel": "Mon 8:08pm ET",
-  "cash": 1111.23,
-  "allInMid": 1287.5,
-  "allInBid": 1225.3,
-  "weatherMarked": 141.5,
-  "otherMarked": 34.77,
-  "scoreboard": "Mon Sep 7 +$1,000 missed; cash $1,111.23; CHI Mon 11111@9c HOLD T79; AUS Tue 400@19c FILLED; ATL 168.63@23c +231.37 rest; PHX 1+399@30c; SEA 400@21c rest; *2000* BTC No@35c + ETH Yes@64c REST; *2015* stand by",
+  "asOf": "2026-09-08T08:30:00-04:00",
+  "asOfLabel": "Tue 8:30am ET",
+  "cash": 876.84,
+  "allInMid": 1095.73,
+  "allInBid": 1084.91,
+  "weatherMarked": 115.41,
+  "otherMarked": 103.48,
+  "scoreboard": "Tue Sep 8 open; cash $876.84 / mid $1,095.73 / bid $1,084.91; CHI Mon B78.5 settled No (\u2212$999.99); AUS 400@19c FILLED; ATL 400@23c FILLED; PHX 72.95 filled +327.05@30c rest; SEA 25.17 filled +374.83@21c rest; crypto flat; Fed marked ~$103",
   "live": [
-    {
-      "ticker": "KXHIGHCHI-26SEP07-B78.5",
-      "city": "CHI",
-      "bin": "78-79",
-      "side": "11111 Yes @9c filled",
-      "status": "HOLD",
-      "note": "Mon Sep 7 go-hard FILLED. Order 01a07ce8 executed 11111@9c cost $999.99. Wx PASS CEILING-EDGE. Printer HOLD \u2014 KMDW T-group max rnd 79 IN BIN (kill 80+). Live yes 0/1."
-    },
     {
       "ticker": "KXHIGHAUS-26SEP08-B98.5",
       "city": "AUS",
       "bin": "98-99",
       "side": "400 Yes @19c filled",
       "status": "HOLD",
-      "note": "Tue Sep 8. Rest 01a07c3d-7a98 fully filled @19c cost $76. Live 11/12. Wx PASS FLOOR-EDGE. Kill 100+. Printer HOLD \u2014 Tue T-groups not started."
+      "note": "Tue Sep 8. Fully filled @19c cost $76. Live mark mid ~12\u00a2. Kill 100+. Printer HOLD \u2014 Tue T-groups in progress / watch."
     },
     {
       "ticker": "KXHIGHTATL-26SEP08-B86.5",
       "city": "ATL",
       "bin": "86-87",
-      "side": "168.63 filled + 231.37 @23c rest",
-      "status": "PARTIAL",
-      "note": "Tue Sep 8. Order 01a07c3d-8268 rem 231.37 / fill 168.63 @23c. Live 23/24. Wx PASS FLOOR-EDGE. Kill 88+. Printer HOLD \u2014 Tue T-groups not started."
+      "side": "400 Yes @23c filled",
+      "status": "HOLD",
+      "note": "Tue Sep 8. Rest 01a07c3d-8268 fully filled 400@23c cost $92. Live mark mid ~9\u00a2. Kill 88+. Printer HOLD."
     },
     {
       "ticker": "KXHIGHTPHX-26SEP08-B107.5",
       "city": "PHX",
       "bin": "107-108",
-      "side": "1 filled + 399 @30c rest",
+      "side": "72.95 filled + 327.05 @30c rest",
       "status": "PARTIAL",
-      "note": "Tue Sep 8. Order 01a07c3d-72c8 rem 399 / fill 1 @30c. Live 31/32. Wx PASS CEILING-EDGE Extreme Heat Warning. Kill 109+. Printer HOLD \u2014 Tue T-groups not started."
+      "note": "Tue Sep 8. Order 01a07c3d-72c8 rem 327.05 / fill 72.95 @30c. Live mark mid ~31.5\u00a2. Kill 109+. Printer HOLD."
     },
     {
       "ticker": "KXHIGHTSEA-26SEP08-B72.5",
       "city": "SEA",
       "bin": "72-73",
-      "side": "400 Yes @21c rest",
-      "status": "REST",
-      "note": "Tue Sep 8. Order 01a07c3d-76b0 rem 400. Live yes ~21. Wx PASS FLOOR-EDGE. Kill 74+. Printer HOLD \u2014 Tue T-groups not started."
-    },
-    {
-      "ticker": "KXBTC15M-26SEP072000-00",
-      "city": "BTC",
-      "bin": "*2000*",
-      "side": "50 No @35c rest",
-      "status": "REST",
-      "note": "CRYPTO15 *2000*. Order 01a07e44-db88-720f-b8af-07f312d961e2 rem 50 / fill 0 @35c (joined live No 35/36). Intel FLAG lean No \u2192 Johnny CLEAR @49\u00a2 \u2192 Trader join-bid. idx-2. Stand by fill/settle. No second ticket."
-    },
-    {
-      "ticker": "KXETH15M-26SEP072000-00",
-      "city": "ETH",
-      "bin": "*2000*",
-      "side": "50 Yes @64c rest",
-      "status": "REST",
-      "note": "CRYPTO15 *2000*. Order 01a07e44-df70-7f2f-b9f3-acd4c52106d5 rem 50 / fill 0 @64c (joined live Yes 64/65). Intel FLAG lean Yes \u2192 Johnny CLEAR @58\u00a2 \u2192 Trader join-bid. idx-2. Stand by fill/settle. No second ticket."
+      "side": "25.17 filled + 374.83 @21c rest",
+      "status": "PARTIAL",
+      "note": "Tue Sep 8. Order 01a07c3d-76b0 rem 374.83 / fill 25.17 @21c. Live mark mid ~33.5\u00a2. Kill 74+. Printer HOLD."
     }
   ],
   "printed": [
@@ -103,6 +79,12 @@
     }
   ],
   "dead": [
+    {
+      "city": "CHI",
+      "bin": "78-79",
+      "cost": 999.99,
+      "why": "Mon go-hard 11111@9c filled; settled No (KXHIGHCHI-26SEP07-B78.5)"
+    },
     {
       "city": "ETH",
       "bin": "*1615*",
@@ -500,9 +482,33 @@
       "cash": 1111.23,
       "allIn": 1287.5,
       "note": "*2000* BTC No@35c + ETH Yes@64c REST; AUS filled mark; live crypto"
+    },
+    {
+      "t": "Tue 8:30am",
+      "cash": 876.84,
+      "allIn": 1095.73,
+      "note": "CHI Mon settled No; overnight CRYPTO15; AUS/ATL filled; PHX/SEA partial; live Kalshi mark"
     }
   ],
   "tape": [
+    {
+      "et": "Tue 8:30am",
+      "who": "Macro",
+      "kind": "LEDGER",
+      "text": "Pages catch-up live Kalshi: cash $876.84 / all-in mid $1,095.73 / bid $1,084.91 (wx $115.41 / other $103.48). idx-0 $176.83 / idx-2 $700.01."
+    },
+    {
+      "et": "Tue ~am",
+      "who": "Printer",
+      "kind": "DEAD",
+      "text": "CHI Mon KXHIGHCHI-26SEP07-B78.5 finalized No \u2014 go-hard 11111@9c (\u2212$999.99) off live. Tue AUS/ATL FILLED HOLD; PHX/SEA PARTIAL rests live."
+    },
+    {
+      "et": "Tue 8:30am",
+      "who": "Trader",
+      "kind": "BOOK",
+      "text": "Live book: AUS 400@19c FILLED; ATL 400@23c FILLED; PHX 72.95+327.05@30c; SEA 25.17+374.83@21c. No CRYPTO15 open. Cash $876.84 / mid $1,095.73 / bid $1,084.91."
+    },
     {
       "et": "Mon 8:00pm",
       "who": "Scout",
@@ -1784,37 +1790,37 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "EMPTY/HOLD ~8:00. SEA Mon WATCH escalate Y (T68\u2192GRID 69). SFO WITHHOLD. Tue LAX DNR. Occupied CHI Mon + AUS filled + ATL/PHX partial + SEA rest. Wed/Thu 404."
+      "state": "Last EMPTY/HOLD ~Mon 8:00. Occupied now AUS/ATL FILLED + PHX/SEA PARTIAL. CHI Mon dead. Next weekday hunt due."
     },
     {
       "name": "Wx",
       "role": "FORECAST",
-      "state": "FAIL Tue LAX B86.5. PASS CHI Mon B78.5 HOLD T79. Tue PASS PHX/SEA/AUS/ATL (AUS filled). On deck for next FLAG."
+      "state": "CHI Mon settled No (prior PASS T79 then finalize). Tue PASS book still AUS/ATL/PHX/SEA. On deck for next FLAG."
     },
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "CHI HOLD T79; AUS FILLED; ATL/PHX partial; SEA rest. *2000* BTC No@35c + ETH Yes@64c REST. *2015* stand by OPEN \u226470\u00a2. No averaging down."
+      "state": "CHI dead No. Live: AUS+ATL FILLED; PHX/SEA PARTIAL. Crypto flat. No averaging down. Pages catch-up Tue 8:30am."
     },
     {
       "name": "Trader",
       "role": "SNIPER",
-      "state": "CHI HOLD; AUS 400 filled; ATL 168.63+231.37; PHX 1+399; SEA 400 rest; *2000* BTC No@35c + ETH Yes@64c REST. Cash $1,111.23 / mid $1,287.50 / bid $1,225.30."
+      "state": "AUS 400 filled; ATL 400 filled; PHX 72.95+327.05@30c; SEA 25.17+374.83@21c. Cash $876.84 / mid $1,095.73 / bid $1,084.91."
     },
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD CHI Mon FILLED \u2014 T-group max rnd 79 IN BIN (2253Z cooled 77; kill 80+) + AUS filled + ATL/PHX/SEA Tue (Tue T-groups not started)."
+      "state": "CHI Mon DEAD settled No. HOLD AUS/ATL FILLED + PHX/SEA PARTIAL \u2014 Tue kill lines PHX 109+ / SEA 74+ / AUS 100+ / ATL 88+."
     },
     {
       "name": "Macro",
       "role": "LEDGER",
-      "state": "Pages using live Kalshi mark (Trader formula) ~Mon 7:49pm ET: cash $1,111.23 / mid $1,287.50 / bid $1,225.30. Last Macro morning 9:14."
+      "state": "Pages live Kalshi mark Tue 8:30am ET: cash $876.84 / mid $1,095.73 / bid $1,084.91. wx $115.41 / other $103.48."
     },
     {
       "name": "Intel",
       "role": "SEARCH",
-      "state": "CRYPTO15 *2000* FLAG\u2192REST both; *1945* SKIP; *2015* stand by. Geo/event EMPTY ~7:48. Force bar open \u226470\u00a2 join-bid idx-2. Next Trump Tue Ellipse ~10am."
+      "state": "Overnight CRYPTO15 windows settled; no open crypto ticket at Pages catch-up. Geo/event last EMPTY Mon eve. Force bar open \u226470\u00a2 join-bid idx-2."
     }
   ]
 }
