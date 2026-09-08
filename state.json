@@ -1,12 +1,12 @@
 {
-  "asOf": "2026-09-08T13:29:00-04:00",
-  "asOfLabel": "Tue 1:29pm ET",
+  "asOf": "2026-09-08T14:44-04:00",
+  "asOfLabel": "Tue 2:44pm ET",
   "cash": 876.84,
   "allInMid": 1095.73,
   "allInBid": 1084.91,
   "weatherMarked": 115.41,
   "otherMarked": 103.48,
-  "scoreboard": "Tue Sep 8 1:29pm; cash $876.84 / mid $1,095.73 / bid $1,084.91; CHI Mon B78.5 settled No (\u2212$999.99); AUS 400@19c FILLED; ATL 400@23c FILLED; PHX 72.95 filled +327.05@30c rest; SEA 25.17 filled +374.83@21c rest; crypto flat; Fed marked ~$103; Scout EMPTY ~1:14; Printer HOLD AUS 93/ATL 83/PHX 97/SEA 62; CRYPTO15 *1315* SKIP; Wed PHIL B86.5 KILL/DNR",
+  "scoreboard": "Tue Sep 8 2:44pm; cash $876.84 / mid $1,095.73 / bid $1,084.91; CHI Mon B78.5 settled No (\u2212$999.99); AUS 400@19c FILLED; ATL 400@23c FILLED; PHX 72.95 filled +327.05@30c rest; SEA 25.17 filled +374.83@21c rest; crypto flat; Fed marked ~$103; Scout EMPTY ~2:29; Printer HOLD AUS 95/ATL 84/PHX 97/SEA 66; CRYPTO15 *1430* SKIP; Intel event EMPTY ~1:48; Wed PHIL B86.5 KILL/DNR",
   "live": [
     {
       "ticker": "KXHIGHAUS-26SEP08-B98.5",
@@ -14,7 +14,7 @@
       "bin": "98-99",
       "side": "400 Yes @19c filled",
       "status": "HOLD",
-      "note": "Tue Sep 8. Fully filled @19c cost $76. Kill 100+. Printer HOLD \u2014 T max rnd 93 vs 98-99. Bins open."
+      "note": "Tue Sep 8. Fully filled @19c cost $76. Kill 100+. Printer HOLD \u2014 T max rnd 95 vs 98-99. Bins open."
     },
     {
       "ticker": "KXHIGHTATL-26SEP08-B86.5",
@@ -22,7 +22,7 @@
       "bin": "86-87",
       "side": "400 Yes @23c filled",
       "status": "HOLD",
-      "note": "Tue Sep 8. Rest 01a07c3d-8268 fully filled 400@23c cost $92. Kill 88+. Printer HOLD \u2014 T max rnd 83 vs 86-87. Bins open."
+      "note": "Tue Sep 8. Rest 01a07c3d-8268 fully filled 400@23c cost $92. Kill 88+. Printer HOLD \u2014 T max rnd 84 vs 86-87. Bins open."
     },
     {
       "ticker": "KXHIGHTPHX-26SEP08-B107.5",
@@ -38,7 +38,7 @@
       "bin": "72-73",
       "side": "25.17 filled + 374.83 @21c rest",
       "status": "PARTIAL",
-      "note": "Tue Sep 8. Order 01a07c3d-76b0 rem 374.83 / fill 25.17 @21c. Kill 74+. Printer HOLD \u2014 T max rnd 62 vs 72-73. Bins open."
+      "note": "Tue Sep 8. Order 01a07c3d-76b0 rem 374.83 / fill 25.17 @21c. Kill 74+. Printer HOLD \u2014 T max rnd 66 vs 72-73. Bins open."
     }
   ],
   "printed": [
@@ -491,6 +491,30 @@
     }
   ],
   "tape": [
+    {
+      "et": "Tue ~2:44pm",
+      "who": "Printer",
+      "kind": "HOLD",
+      "text": "HOLD all. Heating \u2014 AUS T max rnd 95 vs 98-99 kill 100+; ATL rnd 84 vs 86-87 kill 88+; PHX rnd 97 vs 107-108 kill 109+; SEA rnd 66 vs 72-73 kill 74+. Bins open. No kill."
+    },
+    {
+      "et": "Tue ~2:29pm",
+      "who": "Scout",
+      "kind": "HOLD",
+      "text": "EMPTY/FLAG none ~2:29. Tue empties OPEN; Wed NYC/CHI WITHHOLD; PHIL DNR; Thu CHI+DAL 404. Occupied AUS/ATL/PHX/SEA. No WITHHOLD flip vs 2:13."
+    },
+    {
+      "et": "Tue ~2:22pm",
+      "who": "Intel",
+      "kind": "SKIP",
+      "text": "CRYPTO15 *1430* SKIP BTC|ETH \u2014 past OPEN (~7\u20138m); lean Yes both but join-bid \u226585\u00a2 / >70\u00a2. *1415* closed no ticket. Johnny accepted. Next *1445* OPEN \u226470\u00a2 join-bid. Cash still $876.84 / mid $1,095.73."
+    },
+    {
+      "et": "Tue ~1:48pm",
+      "who": "Intel",
+      "kind": "EMPTY",
+      "text": "Event-window EMPTY. KXTRUMPMENTION-26SEP08 settled; afternoon WH Policy Mtgs Closed Press \u2014 zero live mention books. No FLAG. Geo EMPTY ack ~1:52 (Fed gap under bar)."
+    },
     {
       "et": "Tue ~1:17pm",
       "who": "Printer",
@@ -1922,7 +1946,7 @@
     {
       "name": "Scout",
       "role": "SEARCH",
-      "state": "EMPTY/HOLD ~1:14. Tue empties none under gates; Wed NYC/CHI WITHHOLD; PHIL DNR; Thu 404; occupied AUS/ATL/PHX/SEA skipped."
+      "state": "EMPTY/HOLD ~2:29. Tue empties OPEN; Wed NYC/CHI WITHHOLD; PHIL DNR; Thu 404; occupied AUS/ATL/PHX/SEA skipped."
     },
     {
       "name": "Wx",
@@ -1932,7 +1956,7 @@
     {
       "name": "Johnny",
       "role": "RISK",
-      "state": "Live: AUS+ATL FILLED; PHX/SEA PARTIAL. KILL/DNR Wed PHIL B86.5. Crypto flat (*1315* SKIP). Pages asOf Tue 1:29pm."
+      "state": "Live: AUS+ATL FILLED; PHX/SEA PARTIAL. KILL/DNR Wed PHIL B86.5. Crypto flat (*1430* SKIP). Pages asOf Tue 2:44pm ET."
     },
     {
       "name": "Trader",
@@ -1942,7 +1966,7 @@
     {
       "name": "Printer",
       "role": "PRINT",
-      "state": "HOLD all Tue T-groups \u2014 AUS 93 / ATL 83 / PHX 97 / SEA 62 vs bins. Kill 100+/88+/109+/74+. No kill."
+      "state": "HOLD all Tue T-groups \u2014 AUS 95 / ATL 84 / PHX 97 / SEA 66 vs bins. Kill 100+/88+/109+/74+. No kill."
     },
     {
       "name": "Macro",
@@ -1952,7 +1976,7 @@
     {
       "name": "Intel",
       "role": "SEARCH",
-      "state": "CRYPTO15 *1315* SKIP. Event-window last EMPTY ~12:32 (Ellipse residual closed). Force bar open \u226470\u00a2 join-bid idx-2."
+      "state": "CRYPTO15 *1430* SKIP. Event-window EMPTY ~1:48 (Ellipse settled; Closed Press only). Force bar open \u226470\u00a2 join-bid idx-2."
     }
   ]
 }
